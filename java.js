@@ -1,7 +1,7 @@
 $(function () {
     $('#dg-container').carrousel({
         current: 0,
-        autoplay: true,
+        autoplay: false,
         interval: 3000
     });
 });
@@ -238,8 +238,9 @@ $(function () {
                             'opacity': 1,
                             'visibility': 'visible',
                             'filter': 'blur(3px)',
+                            '-ms-filter': 'blur(3px)',
                             'padding-top': '0'
-                        };
+                        }
                         break;
                     case 'right':
                         return {
@@ -251,6 +252,7 @@ $(function () {
                             'opacity': 1,
                             'visibility': 'visible',
                             'filter': 'blur(3px)',
+                            '-ms-filter': 'blur(3px)',
                             'padding-top': '0'
                         };
                         break;
@@ -264,6 +266,7 @@ $(function () {
                             'opacity': 1,
                             'visibility': 'visible',
                             'filter': 'blur(0)',
+                            '-ms-filter': 'blur(0)',
                             'padding-top': '50px'
                         };
                         break;
@@ -311,7 +314,9 @@ $(function () {
                             'opacity': 1,
                             'visibility': 'visible',
                             'z-index': 3,
-                            'filter': 'blur(3px)'
+                            'filter': 'blur(3px)',
+                            '-ms-filter': 'progid:DXImageTransform.Microsoft.Blur(PixelRadius="3")',
+                            'filter': 'url(#blur)'
                         };
                         break;
                     case 'right':
@@ -324,7 +329,9 @@ $(function () {
                             'opacity': 1,
                             'visibility': 'visible',
                             'z-index': 3,
-                            'filter': 'blur(3px)'
+                            'filter': 'blur(3px)',
+                            '-ms-filter': 'progid:DXImageTransform.Microsoft.Blur(PixelRadius="3")',
+                            'filter': 'url(#blur)'
                         };
                         break;
                     case 'center':
@@ -338,7 +345,8 @@ $(function () {
                             'visibility': 'visible',
                             'z-index': 4,
                             'filter': 'blur(0)',
-                            'top': '20px'
+                            'top': '20px',
+                            '-ms-filter': 'blur(0)',
                         };
                     case 'hide':
                         return {
