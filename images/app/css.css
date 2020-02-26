@@ -1,0 +1,39 @@
+
+path.d.one {
+    animation-name: op;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+path.d.two, .cir_two {
+    animation-name: op;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+path.d.three, .cir_one {
+    animation-name: op;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes op {
+    0% {
+        stroke: #000;
+        fill: #000;
+    }
+    50% {
+        stroke: #E72327;
+        fill:  #E72327;
+    }
+    100% {
+        stroke: #000;
+        fill: #000;
+    }
+}

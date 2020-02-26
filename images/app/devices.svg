@@ -1,1 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="202" height="113.5" viewBox="0 0 202 113.5"><defs><style>.a,.b,.c,.f{fill:none;}.a,.b,.c{stroke:#2e3031;}.a,.c{stroke-width:2px;}.b,.c{stroke-linecap:round;}.d{stroke:#000;}.e{stroke:none;}</style></defs><g transform="translate(-337.692 -738.166)"><g class="a" transform="translate(337.692 738.166)"><rect class="e" width="64" height="112" rx="11"/><rect class="f" x="1" y="1" width="62" height="110" rx="10"/></g><line class="b" x2="23" transform="translate(358.192 748.666)"/><line class="b" x2="4" transform="translate(389.192 748.666)"/><line class="b" x2="7" transform="translate(366.192 837.666)"/><g transform="translate(-113)"><g class="a" transform="translate(553.692 818.166)"><rect class="e" width="99" height="27" rx="5"/><rect class="f" x="1" y="1" width="97" height="25" rx="4"/></g><line class="c" y1="56" transform="translate(574.192 762.666)"/><path class="c" d="M0,0V5.943" transform="translate(574.192 844.375)"/><line class="c" y1="56" transform="translate(633.192 762.666)"/><line class="c" y2="6.291" transform="translate(633.192 844.375)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(565.692 830.166)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(594.692 830.166)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(594.692 830.166)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(604.692 830.166)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(614.692 830.166)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(614.692 830.166)"/><circle cx="1.5" cy="1.5" r="1.5" transform="translate(624.692 830.166)"/><g transform="translate(1652.057 -3202.842)"><path class="d" d="M-1048.154,3981.052a24.632,24.632,0,0,0-17.528,7.272.489.489,0,0,0,0,.69.478.478,0,0,0,.345.143.478.478,0,0,0,.344-.143h0a23.663,23.663,0,0,1,16.838-6.987,23.663,23.663,0,0,1,16.838,6.987.478.478,0,0,0,.345.143.478.478,0,0,0,.345-.143.488.488,0,0,0,0-.689A24.63,24.63,0,0,0-1048.154,3981.052Z"/><path class="d" d="M-1014.778,4052.521h-.043a.478.478,0,0,0-.333.125.488.488,0,0,0-.162.361.5.5,0,0,0,.488.488.494.494,0,0,0,.364-.17.456.456,0,0,0,.123-.357A.506.506,0,0,0-1014.778,4052.521Z" transform="translate(-33.325 -47.155)"/><path class="d" d="M-1031.5,4016.784a12.57,12.57,0,0,0-8.941,3.7.477.477,0,0,0-.143.344.476.476,0,0,0,.142.344.477.477,0,0,0,.345.144h0a.479.479,0,0,0,.345-.142,11.6,11.6,0,0,1,8.252-3.417,11.6,11.6,0,0,1,8.252,3.417.478.478,0,0,0,.344.142.478.478,0,0,0,.345-.143.478.478,0,0,0,.143-.345.477.477,0,0,0-.143-.345A12.568,12.568,0,0,0-1031.5,4016.784Z" transform="translate(-16.652 -23.576)"/></g></g></g></svg>
+<!--<?xml-stylesheet type="text/css" href="./css.css"?>-->
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="113.5" viewBox="0 0 202 113.5">
+    <defs>
+        <style>
+            .a,.b,.c,.f{fill:none;}.a,.b,.c{stroke:#2e3031;}.a,.c{stroke-width:2px;}.b,.c{stroke-linecap:round;}.d{stroke:#000;}.e{stroke:none;}
+            path.d.one {
+            animation-name: op;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1.5s;
+            }
+            path.d.two, .cir_two {
+            animation-name: op;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            }
+            path.d.three, .cir_one {
+            animation-name: op;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            }
+            @keyframes op {
+            0% { stroke: #000; fill: #000; }
+            50% { stroke: #E72327; fill:  #E72327; }
+            100% { stroke: #000; fill: #000; }
+            }
+        </style>
+    </defs>
+    <g transform="translate(-337.692 -738.166)">
+        <g class="a" transform="translate(337.692 738.166)">
+            <rect class="e" width="64" height="112" rx="11"/>
+            <rect class="f" x="1" y="1" width="62" height="110" rx="10"/>
+        </g>
+        <line class="b" x2="23" transform="translate(358.192 748.666)"/>
+        <line class="b" x2="4" transform="translate(389.192 748.666)"/>
+        <line class="b" x2="7" transform="translate(366.192 837.666)"/>
+        <g transform="translate(-113)">
+            <g class="a" transform="translate(553.692 818.166)">
+                <rect class="e" width="99" height="27" rx="5"/>
+                <rect class="f" x="1" y="1" width="97" height="25" rx="4"/>
+            </g>
+            <line class="c" y1="56" transform="translate(574.192 762.666)"/>
+            <path class="c" d="M0,0V5.943" transform="translate(574.192 844.375)"/>
+            <line class="c" y1="56" transform="translate(633.192 762.666)"/>
+            <line class="c" y2="6.291" transform="translate(633.192 844.375)"/>
+            <circle cx="1.5" cy="1.5" r="1.5" transform="translate(565.692 830.166)"/>
+            <circle cx="1.5" cy="1.5" r="1.5" transform="translate(594.692 830.166)"/>
+            <circle cx="1.5" cy="1.5" r="1.5" transform="translate(594.692 830.166)"/>
+            <circle class="cir_one" cx="1.5" cy="1.5" r="1.5" transform="translate(604.692 830.166)"/>
+            <circle cx="1.5" cy="1.5" r="1.5" transform="translate(614.692 830.166)"/>
+            <circle cx="1.5" cy="1.5" r="1.5" transform="translate(614.692 830.166)"/>
+            <circle class="cir_two" cx="1.5" cy="1.5" r="1.5" transform="translate(624.692 830.166)"/>
+            <g transform="translate(1652.057 -3202.842)">
+                <path class="d one"
+                      d="M-1048.154,3981.052a24.632,24.632,0,0,0-17.528,7.272.489.489,0,0,0,0,.69.478.478,0,0,0,.345.143.478.478,0,0,0,.344-.143h0a23.663,23.663,0,0,1,16.838-6.987,23.663,23.663,0,0,1,16.838,6.987.478.478,0,0,0,.345.143.478.478,0,0,0,.345-.143.488.488,0,0,0,0-.689A24.63,24.63,0,0,0-1048.154,3981.052Z"/>
+                <path class="d two"
+                      d="M-1014.778,4052.521h-.043a.478.478,0,0,0-.333.125.488.488,0,0,0-.162.361.5.5,0,0,0,.488.488.494.494,0,0,0,.364-.17.456.456,0,0,0,.123-.357A.506.506,0,0,0-1014.778,4052.521Z"
+                      transform="translate(-33.325 -47.155)"/>
+                <path class="d three"
+                      d="M-1031.5,4016.784a12.57,12.57,0,0,0-8.941,3.7.477.477,0,0,0-.143.344.476.476,0,0,0,.142.344.477.477,0,0,0,.345.144h0a.479.479,0,0,0,.345-.142,11.6,11.6,0,0,1,8.252-3.417,11.6,11.6,0,0,1,8.252,3.417.478.478,0,0,0,.344.142.478.478,0,0,0,.345-.143.478.478,0,0,0,.143-.345.477.477,0,0,0-.143-.345A12.568,12.568,0,0,0-1031.5,4016.784Z"
+                      transform="translate(-16.652 -23.576)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -30,7 +30,8 @@ p.descriptions {
   letter-spacing: 0;
   color: $global-text-gray;
 }
-p.contact{
+
+p.contact {
   font: 500 1rem/1.5rem Lato;
   letter-spacing: 0;
   color: $global-text-gray;
@@ -238,11 +239,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     li {
       cursor: pointer;
       display: inline-block;
-      margin-right: 10px;
+      margin-right: 15px;
     }
 
     .light {
       transform: scale(1.1);
+
+      object {
+        filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
+      }
     }
   }
 
@@ -400,7 +405,10 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .products-strip {
   background: $global-background;
   padding: 237px 0 137px;
-
+  object{
+    filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
+    margin: 5px 5px 0 0 ;
+   }
   .products_title_box {
     padding-bottom: 187px;
   }
@@ -409,6 +417,10 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     max-width: 741px;
     margin-left: auto;
     margin-right: auto;
+  }
+  h4{
+    margin-bottom: 30px;
+
   }
 
   .img_products_box {
@@ -427,7 +439,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
 .contact-strip {
   padding: 163px 0 63px;
-  button[type='submit']{
+
+  button[type='submit'] {
     border-radius: 0;
     width: 265px;
     height: 56px;
@@ -438,10 +451,46 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     color: #FFFFFF;
   }
 }
-footer{
+
+footer {
   background-color: $global-red;
-  padding: 24px 0;
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar a {
+    display: block;
+    color: #f2f2f2;
+    padding: 10px 8px;
+    text-decoration: none;
+    text-align: center;
+    font: 500 1rem/1.5rem Lato;
+  }
+
+  .navbar:nth-child(1) {
+    padding: 10px 8px 10px 0px;
+  }
+
+  .navbar a:hover {
+    color: rgb(247, 219, 212);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar a.active {
+    color: rgb(247, 219, 212);
+    transition: all 0.3s ease-in-out;
+  }
+
 }
+
+.one_icon {
+  height: 52px;
+  width: 50px;
+}
+
+
+
 
 
 

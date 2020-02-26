@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/app/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slider/czujnik.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slider/czujnik_okno.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slider/glowica.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slider/grzejnik.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f5b5de209191551c8212472eaeb5bc6d1f96ce27/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/f5b5de209191551c8212472eaeb5bc6d1f96ce27/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/app/devices.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/app/devices.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slider/grzalka.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/slider/grzalka.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/java.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -26,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -39,23 +45,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/termaservices/xampp/htdocs/www-terma2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/slider" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Koble\Desktop\smart\images\products" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\downloadApp" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\smollSlider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Koble\Desktop\smart\images\app" />
       <recent name="C:\Users\Koble\Desktop\smart" />
       <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\products" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\downloadApp" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\smollSlider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,6 +92,7 @@
       <workItem from="1582631586135" duration="4758000" />
       <workItem from="1582642911493" duration="1345000" />
       <workItem from="1582699480116" duration="7188000" />
+      <workItem from="1582712450770" duration="8450000" />
     </task>
     <servers />
   </component>
@@ -97,7 +104,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

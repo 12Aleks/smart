@@ -502,3 +502,7 @@ $(document).ready(function(){
         $(this).addClass("active");
     });
 });
+// var object = document.getElementById("’object’"); //получаем элмент object
+// var svgDocument = object.contentDocument; //получаем svg элемент внутри object
+// var svgElement = svgDocument.getElementById("some_id_in_svg"); //получаем любой элемент внутри svg
+// svgElement.setAttribute("fill", "black"); //меняем атрибуты выбранного элемента
