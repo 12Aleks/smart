@@ -648,15 +648,16 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    $(window).resize(function() {
-        var myDiv = jQuery(".img-room"),
-            myChild = myDiv.find("> *:first-child");
+
+
+    var myDiv = $(".img-room");
+    $(window).resize(function (e) {
+        var myChild = myDiv.find("> *:first-child");
         myDiv.animate({
             scrollLeft: (myChild.width() - myDiv.width()) / 2
         }, {
             duration: 0
         });
     });
-
     $(window).resize();
 });

@@ -298,6 +298,63 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       margin-right: -50%;
       transform: translate(-50%, -50%);
 
+      img {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        -moz-animation: hand .8s;
+        -o-animation: hand 3s;
+        -webkit-animation: hand 3s;
+        animation: hand 3s;
+        //animation-fill-mode: forwards;
+        //animation-iteration-count: 1;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+
+    @keyframes hand {
+      0% {
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      25% {
+        left: -10px;
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+
+      }
+      50% {
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      75%{
+        left: 10px;
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg);
+      }
+      100%{
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
     }
 
     .img-room {
@@ -374,16 +431,45 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   .appFirst, .appSecond {
     position: absolute;
     z-index: 9;
+    width: 800px;
+    transition: all .100ms;
+
+    @media(max-width: 1680px){
+     width: 700px;
+      transition: width .5s;
+  }
+    @media(max-width: 1540px){
+      width: 590px;
+
+    }
+    @media(max-width: 1350px){
+      width: 490px;
+    }
+    @media(max-width: 1198.99px){
+      display: none;
+    }
   }
 
   .appFirst {
     top: 125px;
-    left: -285px
+    //left: -285px
+    left: -19%;
   }
 
   .appSecond {
     bottom: -265px;
-    right: -200px;
+    right: -14%;
+    @media(max-width: 1680px){
+      bottom: -150px;
+    }
+    @media(max-width: 1540px){
+      bottom: -95px;
+
+    }
+    @media(max-width: 1350px){
+
+      width: -65px;
+    }
   }
 
   .app_descriptions {
