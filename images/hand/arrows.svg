@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94.85" height="58.304" viewBox="0 0 94.85 58.304">
+    <defs>
+        <style>.a{fill:#fff;stroke-width:2px;}.a,.b{stroke:#fff;}.b{fill:none;stroke-linecap:round;stroke-width:3px;}
+        </style>
+    </defs>
+    <g transform="translate(-915.542 -836.225)">
+        <g transform="translate(973.703 842.353) rotate(-1)">
+            <path class="b" d="M0,1.144S17.076-3.323,33.87,5.4" transform="translate(0 0.863)"/>
+            <path class="b" d="M0,6.818H6.7L5.085,0" transform="translate(26.53 1.279) rotate(-11)"/>
+        </g>
+        <g transform="matrix(-1, -0.017, 0.017, -1, 952.092, 850.324)">
+            <path class="b" d="M0,4.254S17.076,8.721,33.87,0" transform="translate(0 1.711)"/>
+            <path class="b" d="M0,0H6.7L5.085,6.818" transform="translate(27.831 0) rotate(11)"/>
+        </g>
+    </g>
+</svg>
