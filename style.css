@@ -183,17 +183,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       pointer-events: none; }
   .dg-container .button .light {
     transform: scale(1.1); }
-    .dg-container .button .light object {
-      filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%); }
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        .dg-container .button .light object {
-          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
-      @supports (-ms-accelerator: true) {
-        .dg-container .button .light object {
-          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
-      @supports (-ms-ime-align: auto) {
-        .dg-container .button .light object {
-          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
+    .dg-container .button .light svg .a, .dg-container .button .light svg .b {
+      stroke: #e72327; }
 .dg-container nav {
   display: none; }
   .dg-container nav span:hover {
@@ -379,19 +370,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .products-strip {
   background: #F9F9F9;
   padding: 237px 0 137px; }
-  .products-strip object {
-    -webkit-filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
-    filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
-    margin: 5px 5px 0 0; }
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      .products-strip object {
-        filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
-    @supports (-ms-accelerator: true) {
-      .products-strip object {
-        filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
-    @supports (-ms-ime-align: auto) {
-      .products-strip object {
-        filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
+  .products-strip svg .a, .products-strip svg .b {
+    stroke: #e72327; }
   .products-strip .products_title_box {
     padding-bottom: 187px; }
   .products-strip h3 {
