@@ -248,19 +248,34 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
     .light {
       transform: scale(1.1);
-      svg .a,  svg .b {
-        stroke: #e72327;
-        //svg path {
-        //  fill: none;
-        //  stroke-width: 3px;
-        //  stroke: #fafafa;
-        //  stroke-dasharray: 400;
-        //  stroke-dashoffset: 400;
-        //  animation-name: text-outline;
-        //  animation-duration: 4s;
-        //  animation-fill-mode: forwards;
-        //  animation-iteration-count: infinite;
-        //}
+
+      svg .a, svg .b, svg line.a, svg line.b {
+        //stroke: #e72327;
+      }
+
+      svg path, svg line.a, svg line.b {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 1000;
+        animation-name: icon-animation;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes icon-animation {
+        0% {
+          stroke-dashoffset: 1000;
+          opacity: 1;
+        }
+        50% {
+          stroke-dashoffset: 500;
+          opacity: 0.5;
+        }
+        100% {
+          stroke: #e72327;
+          stroke-dashoffset: 0;
+          opacity: 1;
+        }
       }
     }
   }
@@ -339,7 +354,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
       }
-      75%{
+      75% {
         left: 10px;
         -webkit-transform: rotate(20deg);
         -moz-transform: rotate(20deg);
@@ -347,7 +362,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         -o-transform: rotate(20deg);
         transform: rotate(20deg);
       }
-      100%{
+      100% {
         left: 0;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -434,18 +449,18 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     width: 800px;
     transition: all .100ms;
 
-    @media(max-width: 1680px){
-     width: 700px;
+    @media(max-width: 1680px) {
+      width: 700px;
       transition: width .5s;
-  }
-    @media(max-width: 1540px){
+    }
+    @media(max-width: 1540px) {
       width: 590px;
 
     }
-    @media(max-width: 1350px){
+    @media(max-width: 1350px) {
       width: 490px;
     }
-    @media(max-width: 1198.99px){
+    @media(max-width: 1198.99px) {
       display: none;
     }
   }
@@ -459,14 +474,14 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   .appSecond {
     bottom: -265px;
     right: -14%;
-    @media(max-width: 1680px){
+    @media(max-width: 1680px) {
       bottom: -150px;
     }
-    @media(max-width: 1540px){
+    @media(max-width: 1540px) {
       bottom: -95px;
 
     }
-    @media(max-width: 1350px){
+    @media(max-width: 1350px) {
 
       width: -65px;
     }
@@ -521,8 +536,9 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .products-strip {
   background: $global-background;
   padding: 237px 0 137px;
-    svg .a,  svg .b {
-      stroke: #e72327;
+
+  svg .a, svg .b {
+    stroke: #e72327;
   }
 
   .products_title_box {

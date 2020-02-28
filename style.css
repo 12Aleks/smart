@@ -183,8 +183,24 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       pointer-events: none; }
   .dg-container .button .light {
     transform: scale(1.1); }
-    .dg-container .button .light svg .a, .dg-container .button .light svg .b {
-      stroke: #e72327; }
+    .dg-container .button .light svg path, .dg-container .button .light svg line.a, .dg-container .button .light svg line.b {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 1000;
+      animation-name: icon-animation;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite; }
+@keyframes icon-animation {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 1; }
+  50% {
+    stroke-dashoffset: 500;
+    opacity: 0.5; }
+  100% {
+    stroke: #e72327;
+    stroke-dashoffset: 0;
+    opacity: 1; } }
 .dg-container nav {
   display: none; }
   .dg-container nav span:hover {
