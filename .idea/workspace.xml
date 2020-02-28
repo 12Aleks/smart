@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/carusel/color.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carusel/design.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carusel/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carusel/safety.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/app/devices.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/app/devices.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/slider/glowica.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/slider/glowica.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/java.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -44,23 +38,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/carusel" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/wdmuchiwarki" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\hand" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\carusel" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\products" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Koble\Desktop\smart\images\app" />
       <recent name="C:\Users\Koble\Desktop\smart" />
       <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\carusel" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\products" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\downloadApp" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -91,7 +85,9 @@
       <workItem from="1582631586135" duration="4758000" />
       <workItem from="1582642911493" duration="1345000" />
       <workItem from="1582699480116" duration="7188000" />
-      <workItem from="1582712450770" duration="14694000" />
+      <workItem from="1582712450770" duration="14818000" />
+      <workItem from="1582799110892" duration="3997000" />
+      <workItem from="1582803169864" duration="13018000" />
     </task>
     <servers />
   </component>

@@ -7,8 +7,11 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400&display=swap&subset=latin-ext"
           rel="stylesheet">
@@ -32,8 +35,8 @@
 
 
                     <!-- Toggler/collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#collapsibleNavbar">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <div id="nav-icon">
                             <div></div>
                         </div>
@@ -78,19 +81,29 @@
                     <section id="dg-container" class="dg-container">
                         <ol class="button pb-4 pt-4" id="lightButton">
                             <li index="0" style="height: 52px ;width: 50px;">
-                                <object type="image/svg+xml" data="./images/slider/grzalka.svg" style="height: 52px ;width: 50px;"> Your browser does not support SVG</object>
-                                </li>
+                                <object type="image/svg+xml" data="./images/slider/grzalka.svg"
+                                        style="height: 52px ;width: 52px;"> Your browser does not support SVG
+                                </object>
+                            </li>
                             <li index="1" style="height: 54px ;width: 61px;">
-                                <object type="image/svg+xml" data="./images/slider/glowica.svg" style="height: 54px ;width: 61px;"> Your browser does not support SVG</object>
+                                <object type="image/svg+xml" data="./images/slider/glowica.svg"
+                                        style="height: 54px ;width: 61px;"> Your browser does not support SVG
+                                </object>
                             </li>
                             <li index="2" style="height: 54px ;width: 54px;">
-                                <object type="image/svg+xml" data="./images/slider/grzejnik.svg" style="height: 54px ;width: 54px;"> Your browser does not support SVG</object>
+                                <object type="image/svg+xml" data="./images/slider/grzejnik.svg"
+                                        style="height: 54px ;width: 54px;"> Your browser does not support SVG
+                                </object>
                             </li>
                             <li index="3" style="height: 44px ;width: 70px;">
-                                <object type="image/svg+xml" data="./images/slider/czujnik_okno.svg" style="height: 44px ;width: 70px;"> Your browser does not support SVG</object>
+                                <object type="image/svg+xml" data="./images/slider/czujnik_okno.svg"
+                                        style="height: 44px ;width: 70px;"> Your browser does not support SVG
+                                </object>
                             </li>
                             <li index="4" style="height: 42px ;width: 68px;">
-                                <object type="image/svg+xml" data="./images/slider/czujnik.svg" style="height: 42px ;width: 68px;"> Your browser does not support SVG</object>
+                                <object type="image/svg+xml" data="./images/slider/czujnik.svg"
+                                        style="height: 42px ;width: 68px;"> Your browser does not support SVG
+                                </object>
                             </li>
                         </ol>
                         <div class="dg-wrapper">
@@ -122,8 +135,11 @@
     </div>
     <div class="container-fluid room-strip">
         <div class="row">
+            <div class="hand_box" style="background-image: url('./images/hand/arrows.svg')">
+                <img src="./images/hand/hand.svg" alt="hand">
+            </div>
             <div class="col-lg-12 img-room">
-                <img src="./images/wizualizacja.png" alt="">
+                <img src="./images/wizualizacja.png" alt="wizualizacja">
             </div>
         </div>
     </div>
@@ -143,7 +159,12 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <h4 class="subTitle pb-3"><object type="image/svg+xml" data="./images/carusel/phone.svg" > Your browser does not support SVG</object> Zdalne sterowanie</h4>
+                            <h4 class="subTitle pb-3">
+                                <object type="image/svg+xml" data="./images/carusel/phone.svg"> Your browser does not
+                                    support SVG
+                                </object>
+                                Zdalne sterowanie
+                            </h4>
                             <p class="descriptions">Do zdalnego sterowania można wykorzystać dowolne urządzenie
                                 przenośne (np.
                                 smartfon lub tablet), które umożliwia połączenie z siecią WiFi. Za pomocą jednego
@@ -160,7 +181,12 @@
                                 TERMA Smart, dostępna dla systemów Android oraz iOS.</p>
                         </div>
                         <div class="carousel-item">
-                            <h4 class="subTitle pb-3"><object type="image/svg+xml" data="./images/carusel/safety.svg" > Your browser does not support SVG</object> Bezpieczeństwo</h4>
+                            <h4 class="subTitle pb-3">
+                                <object type="image/svg+xml" data="./images/carusel/safety.svg"> Your browser does not
+                                    support SVG
+                                </object>
+                                Bezpieczeństwo
+                            </h4>
                             <p class="descriptions"> Grzałka wyposażona jest w ochronę przeciwzamarzaniową (ANTIFROST).
                                 Przed
                                 nadmiernym wzrostem temperatury grzejnika zabezpiecza podwójny system ochrony (w klasie
@@ -169,7 +195,12 @@
                                 alarmowe bezpośrednio oraz poprzez aplikację sterującą. </p>
                         </div>
                         <div class="carousel-item">
-                            <h4 class="subTitle pb-3"><object type="image/svg+xml" data="./images/carusel/design.svg" > Your browser does not support SVG</object> Design i konstrukcja</h4>
+                            <h4 class="subTitle pb-3">
+                                <object type="image/svg+xml" data="./images/carusel/design.svg"> Your browser does not
+                                    support SVG
+                                </object>
+                                Design i konstrukcja
+                            </h4>
                             <p class="descriptions">Paskowy wskaźnik LED informuje o aktualnie ustawionej temperaturze
                                 pracy, sygnalizuje uruchomiony TIMER lub aktywowane funkcje ochronne. Panel sterujący
                                 adaptuje się do pozycji montażu grzałki (pionowej lub poziomej). Dostępne warianty
@@ -181,7 +212,12 @@
                                 o dowolnej mocy.</p>
                         </div>
                         <div class="carousel-item pb-3">
-                            <h4 class="subTitle pb-3"><object type="image/svg+xml" data="./images/carusel/color.svg" > Your browser does not support SVG</object>Kolorystyka</h4>
+                            <h4 class="subTitle pb-3">
+                                <object type="image/svg+xml" data="./images/carusel/color.svg"> Your browser does not
+                                    support SVG
+                                </object>
+                                Kolorystyka
+                            </h4>
                             <p class="descriptions">Obudowa główna wraz z panelem frontowym w kolorze białym lub
                                 czarnym. Ozdobne
                                 nakładki boczne w kolorach: białym, silver, chrom oraz czarnym. Przy jednora¬zowym
@@ -244,7 +280,9 @@
                 </div>
                 <div class="col-lg-12 app_img_box pt-5 pb-5">
                     <img class='router img-fluid' src="images/app/router.svg" alt="devices">
-                    <object class='group' type="image/svg+xml" data="./images/app/devices.svg" > Your browser does not support SVG</object>
+                    <object class='group' type="image/svg+xml" data="./images/app/devices.svg"> Your browser does not
+                        support SVG
+                    </object>
                 </div>
                 <div class="col-lg-12 app_download_box pt-5 pb-5">
                     <div class="row">
@@ -273,7 +311,10 @@
                     </div>
                     <div class="col-lg-7 d-flex flex-column justify-content-center mt-lg-5">
                         <h4 class="subTitle">
-                            <object type="image/svg+xml" data="./images/slider/grzalka.svg" style="height: 52px ;width: 50px;"> Your browser does not support SVG</object>  Grzałka VEO
+                            <object type="image/svg+xml" data="./images/slider/grzalka.svg"
+                                    style="height: 52px ;width: 52px;"> Your browser does not support SVG
+                            </object>
+                            Grzałka VEO
                         </h4>
                         <p class="descriptions">
                             Do zdalnego sterowania można wykorzystać dowolne urządzenie przenośne (np. smartfon lub
@@ -288,7 +329,10 @@
 
                     <div class="col-lg-7 d-flex flex-column justify-content-center mt-lg-5">
                         <h4 class="subTitle">
-                            <object type="image/svg+xml" data="./images/slider/glowica.svg" style="height: 54px ;width: 61px;"> Your browser does not support SVG</object>Głowica
+                            <object type="image/svg+xml" data="./images/slider/glowica.svg"
+                                    style="height: 54px ;width: 61px;"> Your browser does not support SVG
+                            </object>
+                            Głowica
                         </h4>
                         <p class="descriptions">
                             Do zdalnego sterowania można wykorzystać dowolne urządzenie przenośne (np. smartfon lub
@@ -311,7 +355,10 @@
                     </div>
                     <div class="col-lg-7 d-flex flex-column justify-content-center mt-lg-5">
                         <h4 class="subTitle">
-                            <object type="image/svg+xml" data="./images/slider/grzejnik.svg" style="height: 54px ;width: 54px;"> Your browser does not support SVG</object>Grzejnik
+                            <object type="image/svg+xml" data="./images/slider/grzejnik.svg"
+                                    style="height: 54px ;width: 54px;"> Your browser does not support SVG
+                            </object>
+                            Grzejnik
                         </h4>
                         <p class="descriptions">
                             Do zdalnego sterowania można wykorzystać dowolne urządzenie przenośne (np. smartfon lub
@@ -326,7 +373,10 @@
 
                     <div class="col-lg-7 d-flex flex-column justify-content-center mt-lg-5">
                         <h4 class="subTitle ">
-                            <object type="image/svg+xml" data="./images/slider/czujnik.svg" style="height: 42px ;width: 68px;"> Your browser does not support SVG</object>Czujniki
+                            <object type="image/svg+xml" data="./images/slider/czujnik.svg"
+                                    style="height: 42px ;width: 68px;"> Your browser does not support SVG
+                            </object>
+                            Czujniki
                         </h4>
                         <p class="descriptions">
                             Do zdalnego sterowania można wykorzystać dowolne urządzenie przenośne (np. smartfon lub
@@ -383,13 +433,13 @@
                                    placeholder="Telefon">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control"  id="exampleFormControlTextarea1" rows="6"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                         </div>
-                        <button type="submit" >WYŚLIJ</button>
-                </form>
+                        <button type="submit">WYŚLIJ</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <footer>
@@ -409,15 +459,9 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
-<!--        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"-->
-<!--        crossorigin="anonymous"></script>-->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="java.js"></script>
 </body>
 </html>

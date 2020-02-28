@@ -185,6 +185,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     transform: scale(1.1); }
     .dg-container .button .light object {
       filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%); }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .dg-container .button .light object {
+          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
+      @supports (-ms-accelerator: true) {
+        .dg-container .button .light object {
+          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
+      @supports (-ms-ime-align: auto) {
+        .dg-container .button .light object {
+          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
 .dg-container nav {
   display: none; }
   .dg-container nav span:hover {
@@ -196,15 +205,70 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 /*end banner strip*/
 .room-strip {
   padding-top: 203px; }
-  .room-strip .img-room {
-    width: 100%;
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 0; }
+  .room-strip .row {
+    position: relative;
+    z-index: 10; }
+    .room-strip .row .hand_box {
+      width: 95px;
+      height: 59px;
+      position: absolute;
+      z-index: 15;
+      top: 92%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+      .room-strip .row .hand_box img {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        -moz-animation: hand .8s;
+        -o-animation: hand 3s;
+        -webkit-animation: hand 3s;
+        animation: hand 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+@keyframes hand {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  25% {
+    left: -10px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg); }
+  50% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  75% {
+    left: 10px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg); }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+    .room-strip .row .img-room {
+      width: 100%;
+      height: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding: 0; }
 
 .smart {
   padding: 237px 15px 137px;
@@ -250,13 +314,37 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   position: relative; }
   .app-strip .appFirst, .app-strip .appSecond {
     position: absolute;
-    z-index: 9; }
+    z-index: 9;
+    width: 800px;
+    transition: all .100ms; }
+    @media (max-width: 1680px) {
+      .app-strip .appFirst, .app-strip .appSecond {
+        width: 700px;
+        transition: width .5s; } }
+    @media (max-width: 1540px) {
+      .app-strip .appFirst, .app-strip .appSecond {
+        width: 590px; } }
+    @media (max-width: 1350px) {
+      .app-strip .appFirst, .app-strip .appSecond {
+        width: 490px; } }
+    @media (max-width: 1198.99px) {
+      .app-strip .appFirst, .app-strip .appSecond {
+        display: none; } }
   .app-strip .appFirst {
     top: 125px;
-    left: -285px; }
+    left: -19%; }
   .app-strip .appSecond {
     bottom: -265px;
-    right: -200px; }
+    right: -14%; }
+    @media (max-width: 1680px) {
+      .app-strip .appSecond {
+        bottom: -150px; } }
+    @media (max-width: 1540px) {
+      .app-strip .appSecond {
+        bottom: -95px; } }
+    @media (max-width: 1350px) {
+      .app-strip .appSecond {
+        width: -65px; } }
   .app-strip .app_descriptions {
     max-width: 741px;
     padding: 0 15px;
@@ -295,6 +383,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     -webkit-filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
     filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
     margin: 5px 5px 0 0; }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .products-strip object {
+        filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
+    @supports (-ms-accelerator: true) {
+      .products-strip object {
+        filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
+    @supports (-ms-ime-align: auto) {
+      .products-strip object {
+        filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%); } }
   .products-strip .products_title_box {
     padding-bottom: 187px; }
   .products-strip h3 {
