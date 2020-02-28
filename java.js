@@ -1,7 +1,7 @@
 $(function () {
     $('#dg-container').carrousel({
         current: 0,
-        autoplay: false,
+        autoplay: true,
         interval: 3000
     });
 });
