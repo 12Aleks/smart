@@ -248,19 +248,19 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
     .light {
       transform: scale(1.1);
-
-      object {
-        filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%);
-        }
-        @supports (-ms-accelerator:true) {
-          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%);
-        }
-        @supports (-ms-ime-align:auto) {
-          filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%);
-        }
-
+      svg .a,  svg .b {
+        stroke: #e72327;
+        //svg path {
+        //  fill: none;
+        //  stroke-width: 3px;
+        //  stroke: #fafafa;
+        //  stroke-dasharray: 400;
+        //  stroke-dashoffset: 400;
+        //  animation-name: text-outline;
+        //  animation-duration: 4s;
+        //  animation-fill-mode: forwards;
+        //  animation-iteration-count: infinite;
+        //}
       }
     }
   }
@@ -521,21 +521,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .products-strip {
   background: $global-background;
   padding: 237px 0 137px;
-
-  object {
-    -webkit-filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
-    filter: invert(10%) sepia(98%) saturate(6547%) hue-rotate(355deg) brightness(103%) contrast(81%);
-    margin: 5px 5px 0 0;
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%);
-    }
-    @supports (-ms-accelerator:true) {
-      filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%);
-    }
-    @supports (-ms-ime-align:auto) {
-      filter: invert(20%) sepia(98%) saturate(16547%) hue-rotate(355deg) brightness(113%) contrast(811%);
-    }
-
+    svg .a,  svg .b {
+      stroke: #e72327;
   }
 
   .products_title_box {
