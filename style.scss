@@ -13,7 +13,8 @@ h3.title {
   line-height: 1;
 }
 
-h4.subTitle {
+h4.subTitle, span.subTitle {
+
   font: 300 3rem/1.875rem Lato;
   letter-spacing: 0;
   color: $global-text-gray;
@@ -247,11 +248,13 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     }
 
     .light {
+      //transition: all .2s ease-in-out;
+
       transform: scale(1.1);
 
-      svg .a, svg .b, svg line.a, svg line.b {
-        //stroke: #e72327;
-      }
+      //svg .a, svg .b, svg line.a, svg line.b {
+      //stroke: #e72327;
+      //}
 
       svg path, svg line.a, svg line.b {
         stroke-dasharray: 500;
@@ -269,7 +272,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         }
         50% {
           stroke-dashoffset: 500;
-          opacity: 0.5;
+          opacity: 0.9;
         }
         100% {
           stroke: #e72327;
@@ -391,6 +394,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
   #carouselExampleIndicators {
     height: 580px;
+
+    h4 {
+      height: 77px;
+
+      svg .a, svg .b {
+        stroke: #e72327;
+
+      }
+    }
   }
 
   .carousel-indicators {
@@ -443,19 +455,17 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   padding: 268px 0 168px;
   position: relative;
 
-  .appFirst, .appSecond {
+  .appImgFirst, .appImgSecond{
+    width: 800px;
     position: absolute;
     z-index: 9;
-    width: 800px;
-    transition: all .100ms;
+    transition: width  3ms linear;
 
     @media(max-width: 1680px) {
       width: 700px;
-      transition: width .5s;
     }
     @media(max-width: 1540px) {
       width: 590px;
-
     }
     @media(max-width: 1350px) {
       width: 490px;
@@ -465,26 +475,44 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     }
   }
 
-  .appFirst {
+  .appImgFirst {
     top: 125px;
-    //left: -285px
-    left: -19%;
+    left: -70%;
   }
 
-  .appSecond {
+  .appImgSecond {
     bottom: -265px;
-    right: -14%;
+    right: -70%;
     @media(max-width: 1680px) {
       bottom: -150px;
     }
     @media(max-width: 1540px) {
       bottom: -95px;
-
     }
     @media(max-width: 1350px) {
-
       width: -65px;
     }
+  }
+
+  .appFirst, .appSecond {
+    -moz-transition: left  ease-out 2s;
+    -o-transition:left  ease-out 2s;
+    -webkit-transition:left  ease-out 2s;
+    transition: left ease-out 2s;
+  }
+  .appSecond{
+    -moz-transition:  right ease-out 2s;
+    -o-transition: right ease-out 2s;
+    -webkit-transition:  right ease-out 2s;
+    transition:  right ease-out 2s;
+  }
+
+  .appFirst {
+    left: -19%;
+  }
+
+  .appSecond {
+    right: -14%;
   }
 
   .app_descriptions {

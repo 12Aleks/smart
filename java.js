@@ -648,8 +648,6 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-
-
     var myDiv = $(".img-room");
     $(window).resize(function (e) {
         var myChild = myDiv.find("> *:first-child");
@@ -661,13 +659,28 @@ $(document).ready(function () {
     });
     $(window).resize();
 
+    $(window).on("load resize scroll", function () {
+        $("#aplikacja").each(function () {
+            var windowTop = $(window).scrollTop();
+            console.log(windowTop);
+            var elementTop = $(this).offset().top;
+            console.log(elementTop);
+            var leftPosition = windowTop - elementTop;
+            console.log(leftPosition);
+            var maxScroll = -900;
+            var minScroll = 150;
+            if (leftPosition >= maxScroll) $(this).find(".appImgFirst").one().addClass('appFirst');
+            if (leftPosition >= minScroll) $(this).find(".appImgSecond").one().addClass('appSecond');
+        });
+    });
+
 //function for adding SVG images in my index.html file
-    $('img.svg').each(function(){
+    $('img.svg').each(function () {
         var $img = $(this);
         var imgID = $img.attr('id');
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
-        $.get(imgURL, function(data) {
+        $.get(imgURL, function (data) {
             // Get the SVG tag, ignore the rest
             var $svg = $(data).find('svg');
             // Add replaced image's ID to the new SVG
@@ -676,7 +689,7 @@ $(document).ready(function () {
             }
             // Add replaced image's classes to the new SVG
             if (typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass+' replaced-svg');
+                $svg = $svg.attr('class', imgClass + ' replaced-svg');
             }
             // Remove any invalid XML tags as per http:validator.w3.org
             $svg = $svg.removeAttr('xmlns:a');
