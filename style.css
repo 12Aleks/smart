@@ -34,7 +34,7 @@ p.contact {
   width: 100%;
   top: 0;
   z-index: 100;
-  position: fixed;
+  position: relative;
   left: 0; }
   #navigation .active {
     color: #E72327; }
@@ -130,7 +130,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
 /*main*/
 #main {
-  margin-top: 180px; }
+  margin-top: 100px; }
 
 /*banner strip*/
 .banner {
