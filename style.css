@@ -1,5 +1,21 @@
 /*Global color*/
 /*Global class*/
+h1.title {
+  font: 300 4rem/4.8rem Lato;
+  letter-spacing: 0;
+  color: #303030;
+  opacity: 1;
+  line-height: 1;
+  transition: 3ms; }
+  @media (max-width: 767.98px) {
+    h1.title {
+      font: 300 2.5rem/2.8rem Lato;
+      transition: 3ms; } }
+  @media (max-width: 575.98px) {
+    h1.title {
+      font: 300 2rem/2.8rem Lato;
+      transition: 3ms; } }
+
 h3.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
@@ -36,6 +52,20 @@ p.contact {
   z-index: 100;
   position: relative;
   left: 0; }
+  #navigation .logo-wrapper img.small-logo {
+    display: none;
+    height: 55px; }
+  #navigation .logo-wrapper img.big-logo {
+    display: inherit;
+    height: 55px; }
+  @media (max-width: 991.98px) {
+    #navigation .container {
+      padding: 0; } }
+  @media (max-width: 429.98px) {
+    #navigation .logo-wrapper img.small-logo {
+      display: inherit; }
+    #navigation .logo-wrapper img.big-logo {
+      display: none; } }
   #navigation .active {
     color: #E72327; }
 
@@ -102,7 +132,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   font-size: 1.25rem;
   line-height: 1;
   background-color: white;
-  border: 1px solid white;
+  border: 2px solid #303030;
   border-radius: .25rem; }
 
 #nav-icon {
@@ -112,7 +142,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 #nav-icon:after,
 #nav-icon:before,
 #nav-icon div {
-  background-color: #9f9d9e;
+  background-color: #303030;
   content: '';
   display: block;
   height: 3px;
@@ -341,34 +371,54 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       .app-strip .appImgFirst, .app-strip .appImgSecond {
         display: none; } }
   .app-strip .appImgFirst {
-    top: 125px;
+    top: 800px;
     left: -70%; }
+    @media (max-width: 1680px) {
+      .app-strip .appImgFirst {
+        top: 700px; } }
+    @media (max-width: 1540px) {
+      .app-strip .appImgFirst {
+        top: 590px; } }
+    @media (max-width: 1350px) {
+      .app-strip .appImgFirst {
+        top: 490px; } }
   .app-strip .appImgSecond {
-    bottom: -265px;
+    bottom: 800px;
     right: -70%; }
     @media (max-width: 1680px) {
       .app-strip .appImgSecond {
-        bottom: -150px; } }
+        bottom: 700px; } }
     @media (max-width: 1540px) {
       .app-strip .appImgSecond {
-        bottom: -95px; } }
+        bottom: 590px; } }
     @media (max-width: 1350px) {
       .app-strip .appImgSecond {
-        width: -65px; } }
+        bottom: 490px; } }
   .app-strip .appFirst, .app-strip .appSecond {
-    -moz-transition: left  ease-out 2s;
-    -o-transition: left  ease-out 2s;
-    -webkit-transition: left  ease-out 2s;
-    transition: left ease-out 2s; }
+    -moz-transition: left ease-out 3s, top ease-out 3s;
+    -o-transition: left ease-out 3s, top ease-out 3s;
+    -webkit-transition: left ease-out 3s, top ease-out 3s;
+    transition: left ease-out 3s, top ease-out  3s; }
   .app-strip .appSecond {
-    -moz-transition: right ease-out 2s;
-    -o-transition: right ease-out 2s;
-    -webkit-transition: right ease-out 2s;
-    transition: right ease-out 2s; }
+    -moz-transition: right ease-out 3s, bottom ease-out 3s;
+    -o-transition: right ease-out 3s, bottom ease-out 3s;
+    -webkit-transition: right ease-out 3s, bottom ease-out 3s;
+    transition: right ease-out 3s, bottom ease-out 3s; }
   .app-strip .appFirst {
+    top: 125px;
     left: -19%; }
   .app-strip .appSecond {
+    bottom: -265px;
     right: -14%; }
+    @media (max-width: 1680px) {
+      .app-strip .appSecond {
+        bottom: -150px; } }
+    @media (max-width: 1540px) {
+      .app-strip .appSecond {
+        bottom: -95px; } }
+    @media (max-width: 1350px) {
+      .app-strip .appSecond {
+        bottom: -65px; } }
   .app-strip .app_descriptions {
     max-width: 741px;
     padding: 0 15px;

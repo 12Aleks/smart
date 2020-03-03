@@ -5,6 +5,22 @@ $global-background: #F9F9F9;
 
 /*Global class*/
 
+h1.title {
+  font: 300 4rem/4.8rem Lato;
+  letter-spacing: 0;
+  color: #303030;
+  opacity: 1;
+  line-height: 1;
+  transition: 3ms;
+  @media (max-width: 767.98px) {
+    font: 300 2.5rem/2.8rem Lato;
+    transition: 3ms;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 2rem/2.8rem Lato;
+    transition: 3ms;
+  }
+}
 h3.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
@@ -50,7 +66,32 @@ p.contact {
   //position: fixed;
   position: relative;
   left: 0;
+  .logo-wrapper{
+    img.small-logo{
+      display: none;
+      height: 55px;
+    }
+    img.big-logo{
+      display: inherit;
+      height: 55px;
+    }
+  }
+  @media(max-width: 991.98px){
+    .container{
+      padding: 0;
+    }
+  }
+  @media(max-width: 429.98px) {
+    .logo-wrapper {
+      img.small-logo {
+        display: inherit;
+      }
 
+      img.big-logo {
+        display: none;
+      }
+    }
+  }
   .active {
     color: $global-red;
   }
@@ -137,7 +178,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   font-size: 1.25rem;
   line-height: 1;
   background-color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 2px solid $global-text-gray;
   border-radius: .25rem;
 }
 
@@ -150,7 +191,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 #nav-icon:after,
 #nav-icon:before,
 #nav-icon div {
-  background-color: #9f9d9e;
+  background-color:  $global-text-gray;
+
   content: '';
   display: block;
   height: 3px;
@@ -461,7 +503,6 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     position: absolute;
     z-index: 9;
     transition: width  3ms linear;
-
     @media(max-width: 1680px) {
       width: 700px;
     }
@@ -477,13 +518,54 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   }
 
   .appImgFirst {
-    top: 125px;
+    top: 800px;
     left: -70%;
+    @media(max-width: 1680px) {
+      top: 700px;
+    }
+    @media(max-width: 1540px) {
+      top: 590px;
+    }
+    @media(max-width: 1350px) {
+      top: 490px;
+    }
   }
 
   .appImgSecond {
-    bottom: -265px;
+    bottom: 800px;
     right: -70%;
+    @media(max-width: 1680px) {
+      bottom: 700px;
+    }
+    @media(max-width: 1540px) {
+      bottom: 590px;
+    }
+    @media(max-width: 1350px) {
+      bottom: 490px;
+    }
+  }
+
+  .appFirst, .appSecond {
+    -moz-transition: left ease-out 3s, top ease-out 3s;
+    -o-transition: left ease-out 3s, top ease-out 3s;
+    -webkit-transition: left ease-out 3s, top ease-out 3s;
+    transition: left ease-out 3s, top ease-out  3s;
+  }
+  .appSecond{
+    -moz-transition:  right ease-out 3s, bottom ease-out 3s;
+    -o-transition:  right ease-out 3s, bottom ease-out 3s;
+    -webkit-transition:  right ease-out 3s, bottom ease-out 3s;
+    transition:   right ease-out 3s, bottom ease-out 3s;
+  }
+
+  .appFirst {
+    top: 125px;
+    left: -19%;
+  }
+
+  .appSecond {
+    bottom: -265px;
+    right: -14%;
     @media(max-width: 1680px) {
       bottom: -150px;
     }
@@ -491,29 +573,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       bottom: -95px;
     }
     @media(max-width: 1350px) {
-      width: -65px;
+      bottom: -65px;
     }
-  }
-
-  .appFirst, .appSecond {
-    -moz-transition: left  ease-out 2s;
-    -o-transition:left  ease-out 2s;
-    -webkit-transition:left  ease-out 2s;
-    transition: left ease-out 2s;
-  }
-  .appSecond{
-    -moz-transition:  right ease-out 2s;
-    -o-transition: right ease-out 2s;
-    -webkit-transition:  right ease-out 2s;
-    transition:  right ease-out 2s;
-  }
-
-  .appFirst {
-    left: -19%;
-  }
-
-  .appSecond {
-    right: -14%;
   }
 
   .app_descriptions {

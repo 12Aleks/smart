@@ -637,6 +637,10 @@ $(function () {
 })(jQuery);
 
 $(document).ready(function () {
+    $('.navbar-toggler').click(function () {
+        console.log('Click');
+        $('#nav-icon').toggleClass('active')
+    });
     $("#menu a").click(function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
