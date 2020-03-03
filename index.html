@@ -8,9 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400&display=swap&subset=latin-ext"
@@ -22,28 +20,29 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 mt-2 mb-2 ">
-                <nav id='navbar-main' class="navbar navbar-expand-lg">
+                <nav id='navbar-main' class="navbar  navbar-expand-lg">
 
                     <!-- Brand -->
                     <a href="/pl" title="Strona główna" rel="home" class="navbar-brand">
                         <div class="d-flex align-content-center flex-wrap">
-                            <div class="logo-wrapper img-fluid d-inline-block align-top">
-                                <img src="images/logo_terma_smart.svg" alt="logo" class="logo-symbol">
+                            <div class="logo-wrapper d-inline-block align-top">
+                                <img class="big-logo" src="images/logo_terma_smart.png" alt="logo" class="logo-symbol">
+                                <img class="small-logo" src="images/logo_terma_smart_small.png" alt="logo" class="logo-symbol">
                             </div>
                         </div>
                     </a>
 
 
                     <!-- Toggler/collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
                         <div id="nav-icon">
                             <div></div>
                         </div>
                     </button>
 
                     <!-- Navbar links -->
-                    <div id="menu" class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-item nav-link" href="#opis">Opis systemu<span
@@ -65,7 +64,6 @@
                     </div>
                 </nav>
             </div>
-
         </div>
     </div>
 </saction>
@@ -73,8 +71,8 @@
     <div class="container-fluid banner-strip">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="text-center title">Poznaj rodzinę naszych</h3>
-                <h3 class="text-center title">produktów WiFi</h3>
+                <h1 class="text-center title">Poznaj rodzinę naszych
+                <br />produktów WiFi</h1>
             </div>
             <div class="col-lg-12">
                 <div class="banner">
@@ -109,10 +107,10 @@
                                 <img src="./images/slider/terma_glowica.png" alt="heating element controller">
                             </a>
                             <a href="#">
-                                <img src="https://ru.termaheat.com/sites/default/files/styles/fullscreen/public/products/heaters/ktx4_blue_silver_web.jpg?itok=heNzGo5S">
+                                <img src="./images/slider/terma_glowica.png" alt="heating element">
                             </a>
                             <a href="#">
-                                <img src="https://ru.termaheat.com/sites/default/files/styles/fullscreen/public/products/heaters/ktx4_blue_silver_web.jpg?itok=heNzGo5S">
+                                <img src="./images/slider/terma_czujnik.png" alt="sensor">
                             </a>
                             <a href="#">
                                 <img src="./images/slider/terma_czujnik.png" alt="sensor">
@@ -441,8 +439,10 @@
         </div>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
         integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
