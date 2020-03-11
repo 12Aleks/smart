@@ -2,7 +2,7 @@ $(function () {
     $('#dg-container').carrousel({
         current: 0,
         autoplay: true,
-        interval: 3000
+        interval: 3950
     });
 });
 
@@ -523,15 +523,21 @@ $(function () {
                         this._showButton();
                         this.current = this.$rightItm.index();
                         // current item moves left
-                        this.$currentItm.addClass(speedClass).css(this._getCoordinates('left'));
+                        this.$currentItm.addClass(speedClass).css(this._getCoordinates('left')).find('video').each(function(){
+                            this.pause();
+                        });
 
                         // right item moves to the center
-                        this.$rightItm.addClass(speedClass).css(this._getCoordinates('center'));
+                        this.$rightItm.addClass(speedClass).css(this._getCoordinates('center')).find('video').each(function(){
+                            this.play();
+                        });
 
                         // left item moves out
                         this.$leftItm.addClass(speedClass).css(this._getCoordinates('outleft'));
 
-                        this.$nextItm.addClass(speedClass).css(this._getCoordinates('right'));
+                        this.$nextItm.addClass(speedClass).css(this._getCoordinates('right')).find('video').each(function(){
+                            this.pause();
+                        });
 
                         if (this.itemsCount > 5) {
                             this.$prevItm.addClass(speedClass).css(this._getCoordinates('hide'));
@@ -641,27 +647,27 @@ $(document).ready(function () {
         console.log('Click');
         $('#nav-icon').toggleClass('active')
     });
-    $("#menu a").click(function (event) {
+    $("#collapsibleNavbar a").click(function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-    $("#menu a.nav-link").on("click", function () {
+    $("#collapsibleNavbar a.nav-link").on("click", function () {
         $("a.nav-link").removeClass("active");
         $(this).addClass("active");
     });
 
-    var myDiv = $(".img-room");
-    $(window).resize(function (e) {
-        var myChild = myDiv.find("> *:first-child");
-        myDiv.animate({
-            scrollLeft: (myChild.width() - myDiv.width()) / 2
-        }, {
-            duration: 0
-        });
-    });
-    $(window).resize();
+    // var myDiv = $(".img-room");
+    // $(window).resize(function (e) {
+    //     var myChild = myDiv.find("> *:first-child");
+    //     myDiv.animate({
+    //         scrollLeft: (myChild.width() - myDiv.width()) / 2
+    //     }, {
+    //         duration: 0
+    //     });
+    // });
+    // $(window).resize();
 
     $(window).on("load resize scroll", function () {
         $("#aplikacja").each(function () {

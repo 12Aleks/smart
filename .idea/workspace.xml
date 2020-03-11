@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/logo_terma_smart_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/glowica.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/grzalka_www.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_terma_smart.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/java.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -45,19 +45,19 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\hand" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\carusel" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\products" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images\app" />
       <recent name="C:\Users\Koble\Desktop\smart" />
       <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\hand" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\carusel" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\products" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +93,13 @@
       <workItem from="1582803169864" duration="13293000" />
       <workItem from="1582872119501" duration="16498000" />
       <workItem from="1583143665788" duration="12160000" />
-      <workItem from="1583226801681" duration="12223000" />
+      <workItem from="1583226801681" duration="31846000" />
+      <workItem from="1583392447006" duration="3960000" />
+      <workItem from="1583489894559" duration="577000" />
+      <workItem from="1583495602686" duration="1640000" />
+      <workItem from="1583744205732" duration="8000" />
+      <workItem from="1583745392093" duration="6922000" />
+      <workItem from="1583836612745" duration="8606000" />
     </task>
     <servers />
   </component>

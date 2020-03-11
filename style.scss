@@ -12,28 +12,60 @@ h1.title {
   opacity: 1;
   line-height: 1;
   transition: 3ms;
+  @media (max-width: 991.98px) {
+    font: 300 3rem/3.3rem Lato;
+    transition: 3ms;
+  }
   @media (max-width: 767.98px) {
     font: 300 2.5rem/2.8rem Lato;
     transition: 3ms;
   }
   @media (max-width: 575.98px) {
-    font: 300 2rem/2.8rem Lato;
+    font: 300 2rem/2.3rem Lato;
     transition: 3ms;
   }
 }
+
 h3.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
   color: #303030;
   opacity: 1;
   line-height: 1;
+  @media (max-width: 991.98px) {
+    font: 300 3rem/3.3rem Lato;
+    transition: 3ms;
+  }
+  @media (max-width: 767.98px) {
+    font: 300 2.5rem/2.8rem Lato;
+    transition: 3ms;
+    text-align: center;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 2rem/2.3rem Lato;
+    transition: 3ms;
+  }
 }
 
 h4.subTitle, span.subTitle {
-
-  font: 300 3rem/1.875rem Lato;
+  font: 300 3rem/2.4rem Lato;
   letter-spacing: 0;
   color: $global-text-gray;
+  @media (max-width: 991.98px) {
+    font: 300 2.5rem/1.875rem Lato;
+    transition: 3ms;
+    text-align: center;
+    margin-top: 40px;
+  }
+  @media (max-width: 767.98px) {
+    font: 300 2rem/1.875remLato;
+    transition: 3ms;
+    text-align: center;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 1.5rem/1.3rem Lato;
+    transition: 3ms;
+  }
 }
 
 h6.sm_title {
@@ -46,6 +78,15 @@ p.descriptions {
   font: 300 1.5rem/1.875rem Lato;
   letter-spacing: 0;
   color: $global-text-gray;
+  @media (max-width: 991.98px) {
+    font: 300 1.2rem/1.5rem Lato;
+  }
+  @media (max-width: 767.98px) {
+    font: 300 1.1rem/1.4rem Lato;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 1rem/1.3rem Lato;
+  }
 }
 
 p.contact {
@@ -53,6 +94,7 @@ p.contact {
   letter-spacing: 0;
   color: $global-text-gray;
 }
+
 
 /*End global class*/
 
@@ -66,18 +108,21 @@ p.contact {
   //position: fixed;
   position: relative;
   left: 0;
-  .logo-wrapper{
-    img.small-logo{
+
+  .logo-wrapper {
+    img.small-logo {
       display: none;
       height: 55px;
     }
-    img.big-logo{
+
+    img.big-logo {
       display: inherit;
       height: 55px;
     }
   }
-  @media(max-width: 991.98px){
-    .container{
+
+  @media(max-width: 991.98px) {
+    .container {
       padding: 0;
     }
   }
@@ -92,6 +137,7 @@ p.contact {
       }
     }
   }
+
   .active {
     color: $global-red;
   }
@@ -191,7 +237,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 #nav-icon:after,
 #nav-icon:before,
 #nav-icon div {
-  background-color:  $global-text-gray;
+  background-color: $global-text-gray;
 
   content: '';
   display: block;
@@ -240,21 +286,27 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
+  @media(max-width: 1198.98px){
+    width: 280px;
+  }
+  @media(max-width: 991.98px){
+    width: 250px;
 
+  }
   a {
     width: 100%;
-    height: 250px;
+    height: 426px;
     display: block;
     position: absolute;
     left: 0;
     top: 0;
+    background: #fff;
 
     img {
       display: block;
       border-radius: 4px;
       width: 100%;
       height: auto;
-      background: #fff;
     }
 
     &:first-child {
@@ -423,6 +475,8 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       height: auto;
       overflow-x: scroll;
       overflow-y: hidden;
+      overflow-scrolling:touch;
+      -webkit-overflow-scrolling:touch;
       padding: 0;
     }
   }
@@ -434,16 +488,29 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   max-width: 741px;
   margin-left: auto;
   margin-right: auto;
-
+  @media (max-width: 991.98px) {
+    padding: 180px 50px 80px;
+  }
+  @media (max-width: 767.98px) {
+    padding: 180px 30px 80px;
+  }
+  @media (max-width: 575.98px) {
+    padding: 180px 18px 80px;
+  }
   #carouselExampleIndicators {
     height: 580px;
-
+    @media (max-width: 575.98px) {
+      height: 590px;
+    }
     h4 {
       height: 77px;
-
-      svg .a, svg .b {
-        stroke: #e72327;
-
+      @media (max-width: 575.98px) {
+        height: 60px;
+      }
+      object {
+        @media (max-width: 575.98px) {
+          max-height: 40px;
+        }
       }
     }
   }
@@ -451,6 +518,12 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   .carousel-indicators {
     position: relative;
     margin: 40px 0 60px;
+    @media (max-width: 767.98px) {
+      margin: 40px 0 40px;
+    }
+    @media (max-width: 575.98px) {
+      margin: 15px 0 15px;
+    }
 
     li {
       box-sizing: content-box;
@@ -497,12 +570,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .app-strip {
   padding: 268px 0 168px;
   position: relative;
+  @media (max-width: 991.98px) {
+    padding: 180px 15px 138px;
+  }
 
-  .appImgFirst, .appImgSecond{
+  .appImgFirst, .appImgSecond {
     width: 800px;
     position: absolute;
     z-index: 9;
-    transition: width  3ms linear;
+    transition: width 3ms linear;
     @media(max-width: 1680px) {
       width: 700px;
     }
@@ -549,13 +625,14 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     -moz-transition: left ease-out 3s, top ease-out 3s;
     -o-transition: left ease-out 3s, top ease-out 3s;
     -webkit-transition: left ease-out 3s, top ease-out 3s;
-    transition: left ease-out 3s, top ease-out  3s;
+    transition: left ease-out 3s, top ease-out 3s;
   }
-  .appSecond{
-    -moz-transition:  right ease-out 3s, bottom ease-out 3s;
-    -o-transition:  right ease-out 3s, bottom ease-out 3s;
-    -webkit-transition:  right ease-out 3s, bottom ease-out 3s;
-    transition:   right ease-out 3s, bottom ease-out 3s;
+
+  .appSecond {
+    -moz-transition: right ease-out 3s, bottom ease-out 3s;
+    -o-transition: right ease-out 3s, bottom ease-out 3s;
+    -webkit-transition: right ease-out 3s, bottom ease-out 3s;
+    transition: right ease-out 3s, bottom ease-out 3s;
   }
 
   .appFirst {
@@ -595,6 +672,20 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   background-size: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (max-width: 767.98px) {
+    height: 680px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  @media (max-width: 575.98px) {
+    height: 500px;
+  }
+  @media (max-width: 399.98px) {
+    height: 300px;
+  }
 
   .router {
     display: block;
@@ -608,6 +699,13 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    @media (max-width: 575.98px) {
+      width: 150px;
+      height: auto;
+    }
+    @media (max-width: 399.98px) {
+      width: 100px;
+    }
   }
 
   .router-app {
@@ -626,6 +724,9 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .products-strip {
   background: $global-background;
   padding: 237px 0 137px;
+  @media (max-width: 991.98px) {
+    padding: 80px 15px 70px;
+  }
 
   svg .a, svg .b {
     stroke: #e72327;
@@ -633,6 +734,9 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
   .products_title_box {
     padding-bottom: 187px;
+    @media (max-width: 991.98px) {
+      padding-bottom: 90px;
+    }
   }
 
   h3 {
@@ -652,16 +756,17 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     height: auto;
     border-radius: 50%;
     box-shadow: -4px -4px 0px #e72327;
-  }
-
-  .img_products_box.even {
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    @media(max-width: 991.98px) {
+      max-width: 300px;
+      max-height: 300px;
+    }
   }
 }
 
 .contact-strip {
-  padding: 163px 0 63px;
-
+  padding: 163px 15px 63px;
   button[type='submit'] {
     border-radius: 0;
     width: 265px;
@@ -676,34 +781,28 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 
 footer {
   background-color: $global-red;
-
   .navbar {
     width: 100%;
+    a {
+      display: block;
+      color: #f2f2f2;
+      padding: 10px 8px;
+      text-decoration: none;
+      text-align: center;
+      font: 500 1rem/1.5rem Lato;
+      &:hover {
+        color: rgb(247, 219, 212);
+        transition: all 0.3s ease-in-out;
+      }
+      .active {
+        color: rgb(247, 219, 212);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &:nth-child(1) {
+      padding: 10px 8px 10px 0px;
+    }
   }
-
-  .navbar a {
-    display: block;
-    color: #f2f2f2;
-    padding: 10px 8px;
-    text-decoration: none;
-    text-align: center;
-    font: 500 1rem/1.5rem Lato;
-  }
-
-  .navbar:nth-child(1) {
-    padding: 10px 8px 10px 0px;
-  }
-
-  .navbar a:hover {
-    color: rgb(247, 219, 212);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .navbar a.active {
-    color: rgb(247, 219, 212);
-    transition: all 0.3s ease-in-out;
-  }
-
 }
 
 .one_icon {
