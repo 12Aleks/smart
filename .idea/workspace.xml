@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/video/czujnik_www.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/video/glowica.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/video/grzalka_www.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/video/czujnik_temp_www.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/video/grzejnik_smart_www.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -41,25 +40,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/wdmuchiwarki/wdmu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/video" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
-      <recent name="C:\Users\Koble\Desktop\smart" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\video" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\hand" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\carusel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
+      <recent name="C:\Users\Koble\Desktop\smart" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
+      <recent name="C:\Users\Koble\Desktop\smart\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,7 +99,7 @@
       <workItem from="1583999304445" duration="10906000" />
       <workItem from="1584083531714" duration="139000" />
       <workItem from="1584083720308" duration="1345000" />
-      <workItem from="1584085173583" duration="16310000" />
+      <workItem from="1584085173583" duration="20925000" />
     </task>
     <servers />
   </component>

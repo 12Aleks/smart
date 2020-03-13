@@ -245,9 +245,14 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     cursor: pointer;
     display: inline-block;
     margin-right: 15px; }
-  .banner_box .dg-container .button .light_bottom {
+.banner_box .dg-container .animate_Bottom {
+  animation-name: anim_Bottom;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
+  .banner_box .dg-container .animate_Bottom .light {
     transform: scale(1.1); }
-    .banner_box .dg-container .button .light_bottom svg path, .banner_box .dg-container .button .light_bottom svg line.a, .banner_box .dg-container .button .light_bottom svg line.b {
+    .banner_box .dg-container .animate_Bottom .light svg path, .banner_box .dg-container .animate_Bottom .light svg line.a, .banner_box .dg-container .animate_Bottom .light svg line.b {
       stroke-dasharray: 500;
       stroke-dashoffset: 1000;
       animation-name: icon-animation;
@@ -265,11 +270,6 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     stroke: #e72327;
     stroke-dashoffset: 0;
     opacity: 1; } }
-.banner_box .dg-container .animate_Bottom {
-  animation-name: anim_Bottom;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1; }
 @keyframes anim_Bottom {
   0% {
     top: -20vh; }

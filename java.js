@@ -647,15 +647,14 @@ $(function () {
 })(jQuery);
 
 $(document).ready(function () {
+    let $icons = $('#lightButton'),
+        $title_banner_box = $('.title_banner_box');
 
     $('.navbar-toggler').click(function () {
-        console.log('Click');
         $('#nav-icon').toggleClass('active')
     });
     $("h1 a").click(function (event) {
         event.preventDefault();
-        let $icons = $('#lightButton'),
-            $title_banner_box = $('.title_banner_box');
         $icons.addClass('animate_Bottom');
         $title_banner_box.addClass('animate_title');
     });
@@ -682,17 +681,24 @@ $(document).ready(function () {
     $(window).resize();
 
     $(window).on("load resize scroll", function () {
+        let $windowTop = $(window).scrollTop()
+        $('.title_banner_box').each(function () {
+            let $elementTop = $(this).offset().top;
+            let $position = $windowTop - $elementTop;
+            let $banner = -90;
+            console.log($position);
+            if ($position >= $banner) {
+                $icons.addClass('animate_Bottom');
+                $(this).addClass('animate_title');
+            };
+        });
         $("#aplikacja").each(function () {
-            var windowTop = $(window).scrollTop();
-            console.log(windowTop);
-            var elementTop = $(this).offset().top;
-            console.log(elementTop);
-            var leftPosition = windowTop - elementTop;
-            console.log(leftPosition);
-            var maxScroll = -900;
-            var minScroll = 150;
-            if (leftPosition >= maxScroll) $(this).find(".appImgFirst").one().addClass('appFirst');
-            if (leftPosition >= minScroll) $(this).find(".appImgSecond").one().addClass('appSecond');
+            let $elementTop = $(this).offset().top;
+            let $leftPosition = $windowTop - $elementTop;
+            let $maxScroll = -900,
+                $minScroll = 150;
+            if ($leftPosition >= $maxScroll) $(this).find(".appImgFirst").one().addClass('appFirst');
+            if ($leftPosition >= $minScroll) $(this).find(".appImgSecond").one().addClass('appSecond');
         });
     });
 
