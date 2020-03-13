@@ -6,21 +6,25 @@ $global-background: #F9F9F9;
 /*Global class*/
 
 h1.title {
-  font: 300 4rem/4.8rem Lato;
-  letter-spacing: 0;
-  color: #303030;
-  opacity: 1;
-  line-height: 1;
-  transition: 3ms;
-  @media (max-width: 767.98px) {
-    font: 300 2.5rem/2.8rem Lato;
+  a{
+    font: 300 4rem/4.8rem Lato;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #303030;
+    opacity: 1;
+    line-height: 1;
     transition: 3ms;
-  }
-  @media (max-width: 575.98px) {
-    font: 300 2rem/2.8rem Lato;
-    transition: 3ms;
+    @media (max-width: 767.98px) {
+      font: 300 2.5rem/2.8rem Lato;
+      transition: 3ms;
+    }
+    @media (max-width: 575.98px) {
+      font: 300 2rem/2.8rem Lato;
+      transition: 3ms;
+    }
   }
 }
+
 h3.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
@@ -66,18 +70,21 @@ p.contact {
   //position: fixed;
   position: relative;
   left: 0;
-  .logo-wrapper{
-    img.small-logo{
+
+  .logo-wrapper {
+    img.small-logo {
       display: none;
       height: 55px;
     }
-    img.big-logo{
+
+    img.big-logo {
       display: inherit;
       height: 55px;
     }
   }
-  @media(max-width: 991.98px){
-    .container{
+
+  @media(max-width: 991.98px) {
+    .container {
       padding: 0;
     }
   }
@@ -92,6 +99,7 @@ p.contact {
       }
     }
   }
+
   .active {
     color: $global-red;
   }
@@ -113,12 +121,30 @@ p.contact {
   width: 100%;
 }
 
-.navbar-collapse a {
-  font: 300 1.125rem/22px Lato;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  color: #707070
+.navbar-collapse {
+  a {
+    font: 300 1.125rem/22px Lato;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #707070
+  }
+
+  a.rounded-pill {
+    color: #FFFFFF;
+    margin-left: .5rem;
+  }
+}
+
+.lang {
+  margin: 0 10px 5px 0;
+
+
+  a {
+    font: 300 14px/17px Lato;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #707070
+  }
 }
 
 .logo-symbol {
@@ -191,7 +217,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 #nav-icon:after,
 #nav-icon:before,
 #nav-icon div {
-  background-color:  $global-text-gray;
+  background-color: $global-text-gray;
 
   content: '';
   display: block;
@@ -212,134 +238,170 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   transform: scale(0);
 }
 
-/*main*/
-#main {
-  margin-top: 100px;
-}
-
 
 /*banner strip*/
 
-
-.banner {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.dg-container {
-  position: relative;
-  width: 100%;
-  height: 600px;
-}
-
-.dg-wrapper {
-  width: 320px;
-  height: 250px;
-  margin: 0 auto;
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-
-  a {
-    width: 100%;
-    height: 250px;
-    display: block;
+.title_banner_box{
+  height: 85vh;
+  h1{
+    padding-bottom: 16vh;
     position: absolute;
-    left: 0;
-    top: 0;
-
-    img {
-      display: block;
-      border-radius: 4px;
-      width: 100%;
-      height: auto;
-      background: #fff;
-    }
-
-    &:first-child {
-      z-index: 2;
-    }
-  }
-
-  a.dg-transition {
-    transition: all 0.5s ease-in-out;
-  }
-
-  a.dg-transition-fast {
-    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
   }
 }
-
-.dg-container {
-  #lightButton2 {
-    bottom: 20px;
-  }
-
-  .button {
-    position: relative;
-    z-index: 5;
-
-    li {
-      cursor: pointer;
-      display: inline-block;
-      margin-right: 15px;
-
-      object {
-        pointer-events: none;
-      }
-    }
-
-    .light {
-      //transition: all .2s ease-in-out;
-
-      transform: scale(1.1);
-
-      //svg .a, svg .b, svg line.a, svg line.b {
-      //stroke: #e72327;
-      //}
-
-      svg path, svg line.a, svg line.b {
-        stroke-dasharray: 500;
-        stroke-dashoffset: 1000;
-        animation-name: icon-animation;
-        animation-duration: 4s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes icon-animation {
-        0% {
-          stroke-dashoffset: 1000;
-          opacity: 1;
-        }
-        50% {
-          stroke-dashoffset: 500;
-          opacity: 0.9;
-        }
-        100% {
-          stroke: #e72327;
-          stroke-dashoffset: 0;
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-  nav {
+.animate_title{
+  animation-name: anim_title;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  h1{
     display: none;
+    opacity: 0;
+    transition: opacity .5s linear;
+  }
+}
+@keyframes anim_title {
+  0% {
+    height: 85vh;
+  }
+  100% {
+    height: 15vh;
+  }
+}
+.banner_box {
+  .banner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    span:hover {
-      opacity: 1;
+  .dg-container {
+    position: relative;
+    margin-top: -200px;
+    padding-top: 200px;
+    //margin-bottom: 100px;
+    width: 100%;
+    height: 600px;
+  }
+
+  .dg-wrapper {
+    width: 400px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    a {
+      width: 100%;
+      height: 320px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      video {
+        display: block;
+        border-radius: 4px;
+        width: 100%;
+        height: auto;
+        background: #fff;
+      }
+
+      &:first-child {
+        z-index: 2;
+      }
     }
 
-    span.dg-next {
-      background-position: top right;
-      margin-left: 10px;
+    a.dg-transition {
+      transition: all 0.5s ease-in-out;
+    }
+
+    a.dg-transition-fast {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .dg-container {
+    #lightButton2 {
+      bottom: 20px;
+    }
+
+    .button {
+      position: absolute;
+      top: -20vh;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+
+      li {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+      .light_bottom {
+        transform: scale(1.1);
+        svg path, svg line.a, svg line.b {
+          stroke-dasharray: 500;
+          stroke-dashoffset: 1000;
+          animation-name: icon-animation;
+          animation-duration: 4s;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes icon-animation {
+          0% {
+            stroke-dashoffset: 1000;
+            opacity: 1;
+          }
+          50% {
+            stroke-dashoffset: 500;
+            opacity: 0.9;
+          }
+          100% {
+            stroke: #e72327;
+            stroke-dashoffset: 0;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .animate_Bottom{
+      animation-name: anim_Bottom;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+    @keyframes anim_Bottom {
+      0% {
+        top: -20vh;
+      }
+      100% {
+        top: 150px;
+      }
+    }
+
+    nav {
+      display: none;
+
+      span:hover {
+        opacity: 1;
+      }
+
+      span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+      }
     }
   }
 }
-
 /*end banner strip*/
 
 .room-strip {
@@ -498,11 +560,11 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   padding: 268px 0 168px;
   position: relative;
 
-  .appImgFirst, .appImgSecond{
+  .appImgFirst, .appImgSecond {
     width: 800px;
     position: absolute;
     z-index: 9;
-    transition: width  3ms linear;
+    transition: width 3ms linear;
     @media(max-width: 1680px) {
       width: 700px;
     }
@@ -546,16 +608,19 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   }
 
   .appFirst, .appSecond {
-    -moz-transition: left ease-out 3s, top ease-out 3s;
-    -o-transition: left ease-out 3s, top ease-out 3s;
-    -webkit-transition: left ease-out 3s, top ease-out 3s;
-    transition: left ease-out 3s, top ease-out  3s;
+    -moz-transition: left ease-out 2.5s, top ease-out 2.5s;
+    -o-transition: left ease-out 2.5s, top ease-out 2.5s;
+    -webkit-transition: left ease-out 2.5s, top ease-out 2.5s;
+    transition: left ease-out 2.5s, top ease-out 2.5s;
   }
-  .appSecond{
-    -moz-transition:  right ease-out 3s, bottom ease-out 3s;
-    -o-transition:  right ease-out 3s, bottom ease-out 3s;
-    -webkit-transition:  right ease-out 3s, bottom ease-out 3s;
-    transition:   right ease-out 3s, bottom ease-out 3s;
+
+  .appSecond {
+    -moz-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    -o-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    -webkit-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    transition: right ease-out 2.5s, bottom ease-out 2.5s;
+
+
   }
 
   .appFirst {

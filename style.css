@@ -1,18 +1,19 @@
 /*Global color*/
 /*Global class*/
-h1.title {
+h1.title a {
   font: 300 4rem/4.8rem Lato;
+  text-decoration: none;
   letter-spacing: 0;
   color: #303030;
   opacity: 1;
   line-height: 1;
   transition: 3ms; }
   @media (max-width: 767.98px) {
-    h1.title {
+    h1.title a {
       font: 300 2.5rem/2.8rem Lato;
       transition: 3ms; } }
   @media (max-width: 575.98px) {
-    h1.title {
+    h1.title a {
       font: 300 2rem/2.8rem Lato;
       transition: 3ms; } }
 
@@ -84,9 +85,19 @@ p.contact {
 .navbar-collapse a {
   font: 300 1.125rem/22px Lato;
   text-decoration: none;
-  text-transform: uppercase;
   letter-spacing: 0;
   color: #707070; }
+.navbar-collapse a.rounded-pill {
+  color: #FFFFFF;
+  margin-left: .5rem; }
+
+.lang {
+  margin: 0 10px 5px 0; }
+  .lang a {
+    font: 300 14px/17px Lato;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #707070; }
 
 .logo-symbol {
   width: auto;
@@ -158,62 +169,85 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .active div {
   transform: scale(0); }
 
-/*main*/
-#main {
-  margin-top: 100px; }
-
 /*banner strip*/
-.banner {
+.title_banner_box {
+  height: 85vh; }
+  .title_banner_box h1 {
+    padding-bottom: 16vh;
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+
+.animate_title {
+  animation-name: anim_title;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
+  .animate_title h1 {
+    display: none;
+    opacity: 0;
+    transition: opacity .5s linear; }
+
+@keyframes anim_title {
+  0% {
+    height: 85vh; }
+  100% {
+    height: 15vh; } }
+.banner_box .banner {
   position: relative;
   margin: 0 auto;
   text-align: center; }
-
-.dg-container {
+.banner_box .dg-container {
   position: relative;
+  margin-top: -200px;
+  padding-top: 200px;
   width: 100%;
   height: 600px; }
-
-.dg-wrapper {
-  width: 320px;
-  height: 250px;
+.banner_box .dg-wrapper {
+  width: 400px;
+  height: 320px;
   margin: 0 auto;
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px; }
-  .dg-wrapper a {
+  .banner_box .dg-wrapper a {
     width: 100%;
-    height: 250px;
+    height: 320px;
     display: block;
     position: absolute;
     left: 0;
     top: 0; }
-    .dg-wrapper a img {
+    .banner_box .dg-wrapper a video {
       display: block;
       border-radius: 4px;
       width: 100%;
       height: auto;
       background: #fff; }
-    .dg-wrapper a:first-child {
+    .banner_box .dg-wrapper a:first-child {
       z-index: 2; }
-  .dg-wrapper a.dg-transition {
+  .banner_box .dg-wrapper a.dg-transition {
     transition: all 0.5s ease-in-out; }
-  .dg-wrapper a.dg-transition-fast {
+  .banner_box .dg-wrapper a.dg-transition-fast {
     transition: all 0.2s ease-in-out; }
-
-.dg-container #lightButton2 {
+.banner_box .dg-container #lightButton2 {
   bottom: 20px; }
-.dg-container .button {
-  position: relative;
+.banner_box .dg-container .button {
+  position: absolute;
+  top: -20vh;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   z-index: 5; }
-  .dg-container .button li {
+  .banner_box .dg-container .button li {
     cursor: pointer;
     display: inline-block;
     margin-right: 15px; }
-    .dg-container .button li object {
-      pointer-events: none; }
-  .dg-container .button .light {
+  .banner_box .dg-container .button .light_bottom {
     transform: scale(1.1); }
-    .dg-container .button .light svg path, .dg-container .button .light svg line.a, .dg-container .button .light svg line.b {
+    .banner_box .dg-container .button .light_bottom svg path, .banner_box .dg-container .button .light_bottom svg line.a, .banner_box .dg-container .button .light_bottom svg line.b {
       stroke-dasharray: 500;
       stroke-dashoffset: 1000;
       animation-name: icon-animation;
@@ -231,11 +265,21 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     stroke: #e72327;
     stroke-dashoffset: 0;
     opacity: 1; } }
-.dg-container nav {
+.banner_box .dg-container .animate_Bottom {
+  animation-name: anim_Bottom;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
+@keyframes anim_Bottom {
+  0% {
+    top: -20vh; }
+  100% {
+    top: 150px; } }
+.banner_box .dg-container nav {
   display: none; }
-  .dg-container nav span:hover {
+  .banner_box .dg-container nav span:hover {
     opacity: 1; }
-  .dg-container nav span.dg-next {
+  .banner_box .dg-container nav span.dg-next {
     background-position: top right;
     margin-left: 10px; }
 
@@ -357,7 +401,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     width: 800px;
     position: absolute;
     z-index: 9;
-    transition: width  3ms linear; }
+    transition: width 3ms linear; }
     @media (max-width: 1680px) {
       .app-strip .appImgFirst, .app-strip .appImgSecond {
         width: 700px; } }
@@ -395,15 +439,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       .app-strip .appImgSecond {
         bottom: 490px; } }
   .app-strip .appFirst, .app-strip .appSecond {
-    -moz-transition: left ease-out 3s, top ease-out 3s;
-    -o-transition: left ease-out 3s, top ease-out 3s;
-    -webkit-transition: left ease-out 3s, top ease-out 3s;
-    transition: left ease-out 3s, top ease-out  3s; }
+    -moz-transition: left ease-out 2.5s, top ease-out 2.5s;
+    -o-transition: left ease-out 2.5s, top ease-out 2.5s;
+    -webkit-transition: left ease-out 2.5s, top ease-out 2.5s;
+    transition: left ease-out 2.5s, top ease-out 2.5s; }
   .app-strip .appSecond {
-    -moz-transition: right ease-out 3s, bottom ease-out 3s;
-    -o-transition: right ease-out 3s, bottom ease-out 3s;
-    -webkit-transition: right ease-out 3s, bottom ease-out 3s;
-    transition: right ease-out 3s, bottom ease-out 3s; }
+    -moz-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    -o-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    -webkit-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    transition: right ease-out 2.5s, bottom ease-out 2.5s; }
   .app-strip .appFirst {
     top: 125px;
     left: -19%; }

@@ -186,7 +186,7 @@ $(function () {
             this.$navNext = this.$nav.find('.dg-next');
             this.button = $('#lightButton li');
             this.box = $('.banner');
-            this.imgWidth = $('.banner .dg-wrapper img').width();
+            this.imgWidth = $('.banner .dg-wrapper video').width();
 
             this.indexB = 0;
             this.CSSX = 0;
@@ -209,7 +209,7 @@ $(function () {
             }
 
             var _self = this;
-            for (var i = 0, len = this.button.length; i < len; i++) {     // 点击小圆点
+            for (var i = 0, len = this.button.length; i < len; i++) {
                 this.button[i].addEventListener('click', function () {
                     var toIndex = parseInt(this.getAttribute('index'));
                     var toMove = toIndex - _self.indexB;
@@ -522,16 +522,26 @@ $(function () {
                         }
                         this._showButton();
                         this.current = this.$rightItm.index();
+
                         // current item moves left
-                        this.$currentItm.addClass(speedClass).css(this._getCoordinates('left'));
+                        this.$currentItm.addClass(speedClass).css(this._getCoordinates('left')).find('video').each(function () {
+                            this.pause()
+                        });
 
                         // right item moves to the center
-                        this.$rightItm.addClass(speedClass).css(this._getCoordinates('center'));
-
+                        this.$rightItm.addClass(speedClass).css(this._getCoordinates('center')).find('video').each(function () {
+                            this.play();
+                        });
                         // left item moves out
-                        this.$leftItm.addClass(speedClass).css(this._getCoordinates('outleft'));
+                        this.$leftItm.addClass(speedClass).css(this._getCoordinates('outleft')).find('video').each(function () {
+                            this.pause();
+                        });
 
-                        this.$nextItm.addClass(speedClass).css(this._getCoordinates('right'));
+                        // current item moves right
+                        this.$nextItm.addClass(speedClass).css(this._getCoordinates('right')).find('video').each(function () {
+                            this.pause();
+                            this.currentTime = 0;
+                        });
 
                         if (this.itemsCount > 5) {
                             this.$prevItm.addClass(speedClass).css(this._getCoordinates('hide'));
@@ -637,9 +647,17 @@ $(function () {
 })(jQuery);
 
 $(document).ready(function () {
+
     $('.navbar-toggler').click(function () {
         console.log('Click');
         $('#nav-icon').toggleClass('active')
+    });
+    $("h1 a").click(function (event) {
+        event.preventDefault();
+        let $icons = $('#lightButton'),
+            $title_banner_box = $('.title_banner_box');
+        $icons.addClass('animate_Bottom');
+        $title_banner_box.addClass('animate_title');
     });
     $("#menu a").click(function (event) {
         event.preventDefault();
