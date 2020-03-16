@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/video/czujnik_temp_www.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/video/grzejnik_smart_www.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -43,7 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images/video" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,6 +98,8 @@
       <workItem from="1584083531714" duration="139000" />
       <workItem from="1584083720308" duration="1345000" />
       <workItem from="1584085173583" duration="20925000" />
+      <workItem from="1584342725819" duration="678000" />
+      <workItem from="1584348101855" duration="14855000" />
     </task>
     <servers />
   </component>

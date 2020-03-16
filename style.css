@@ -8,13 +8,17 @@ h1.title a {
   opacity: 1;
   line-height: 1;
   transition: 3ms; }
+  @media (max-width: 991.98px) {
+    h1.title a {
+      font: 300 3rem/3.3rem Lato;
+      transition: 3ms; } }
   @media (max-width: 767.98px) {
     h1.title a {
       font: 300 2.5rem/2.8rem Lato;
       transition: 3ms; } }
   @media (max-width: 575.98px) {
     h1.title a {
-      font: 300 2rem/2.8rem Lato;
+      font: 300 2rem/2.3rem Lato;
       transition: 3ms; } }
 
 h3.title {
@@ -23,11 +27,39 @@ h3.title {
   color: #303030;
   opacity: 1;
   line-height: 1; }
+  @media (max-width: 991.98px) {
+    h3.title {
+      font: 300 3rem/3.3rem Lato;
+      transition: 3ms; } }
+  @media (max-width: 767.98px) {
+    h3.title {
+      font: 300 2.5rem/2.8rem Lato;
+      transition: 3ms;
+      text-align: center; } }
+  @media (max-width: 575.98px) {
+    h3.title {
+      font: 300 2rem/2.3rem Lato;
+      transition: 3ms; } }
 
 h4.subTitle, span.subTitle {
-  font: 300 3rem/1.875rem Lato;
+  font: 300 3rem/2.4rem Lato;
   letter-spacing: 0;
   color: #303030; }
+  @media (max-width: 991.98px) {
+    h4.subTitle, span.subTitle {
+      font: 300 2.5rem/1.875rem Lato;
+      transition: 3ms;
+      text-align: center;
+      margin-top: 40px; } }
+  @media (max-width: 767.98px) {
+    h4.subTitle, span.subTitle {
+      font: 300 2rem/1.875remLato;
+      transition: 3ms;
+      text-align: center; } }
+  @media (max-width: 575.98px) {
+    h4.subTitle, span.subTitle {
+      font: 300 1.5rem/1.3rem Lato;
+      transition: 3ms; } }
 
 h6.sm_title {
   font: 500 1.25rem/1.5rem Lato;
@@ -38,6 +70,15 @@ p.descriptions {
   font: 300 1.5rem/1.875rem Lato;
   letter-spacing: 0;
   color: #303030; }
+  @media (max-width: 991.98px) {
+    p.descriptions {
+      font: 300 1.2rem/1.5rem Lato; } }
+  @media (max-width: 767.98px) {
+    p.descriptions {
+      font: 300 1.1rem/1.4rem Lato; } }
+  @media (max-width: 575.98px) {
+    p.descriptions {
+      font: 300 1rem/1.3rem Lato; } }
 
 p.contact {
   font: 500 1rem/1.5rem Lato;
@@ -209,6 +250,7 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .banner_box .dg-wrapper {
   width: 400px;
   height: 320px;
+  display: block;
   margin: 0 auto;
   position: relative;
   transform-style: preserve-3d;
@@ -220,6 +262,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     position: absolute;
     left: 0;
     top: 0; }
+    @media (max-width: 1500px) {
+      .banner_box .dg-wrapper a {
+        width: 320px; } }
+    @media (max-width: 1198.99px) {
+      .banner_box .dg-wrapper a {
+        width: 300px; } }
+    @media (max-width: 991.99px) {
+      .banner_box .dg-wrapper a {
+        width: 250px; } }
     .banner_box .dg-wrapper a video {
       display: block;
       border-radius: 4px;
@@ -356,15 +407,37 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   max-width: 741px;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 991.98px) {
+    .smart {
+      padding: 180px 50px 80px; } }
+  @media (max-width: 767.98px) {
+    .smart {
+      padding: 180px 30px 80px; } }
+  @media (max-width: 575.98px) {
+    .smart {
+      padding: 180px 18px 80px; } }
   .smart #carouselExampleIndicators {
     height: 580px; }
+    @media (max-width: 575.98px) {
+      .smart #carouselExampleIndicators {
+        height: 590px; } }
     .smart #carouselExampleIndicators h4 {
       height: 77px; }
-      .smart #carouselExampleIndicators h4 svg .a, .smart #carouselExampleIndicators h4 svg .b {
-        stroke: #e72327; }
+      @media (max-width: 575.98px) {
+        .smart #carouselExampleIndicators h4 {
+          height: 60px; } }
+      @media (max-width: 575.98px) {
+        .smart #carouselExampleIndicators h4 object {
+          max-height: 40px; } }
   .smart .carousel-indicators {
     position: relative;
     margin: 40px 0 60px; }
+    @media (max-width: 767.98px) {
+      .smart .carousel-indicators {
+        margin: 40px 0 40px; } }
+    @media (max-width: 575.98px) {
+      .smart .carousel-indicators {
+        margin: 15px 0 15px; } }
     .smart .carousel-indicators li {
       box-sizing: content-box;
       -ms-flex: 0 1 auto;
@@ -397,6 +470,9 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .app-strip {
   padding: 268px 0 168px;
   position: relative; }
+  @media (max-width: 991.98px) {
+    .app-strip {
+      padding: 180px 15px 138px; } }
   .app-strip .appImgFirst, .app-strip .appImgSecond {
     width: 800px;
     position: absolute;
@@ -479,6 +555,17 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   background-size: 100%;
   margin-right: auto;
   margin-left: auto; }
+  @media (max-width: 767.98px) {
+    .app_img_box {
+      height: 680px;
+      padding-top: 20px;
+      padding-bottom: 0; } }
+  @media (max-width: 575.98px) {
+    .app_img_box {
+      height: 500px; } }
+  @media (max-width: 399.98px) {
+    .app_img_box {
+      height: 300px; } }
   .app_img_box .router {
     display: block;
     margin-left: auto;
@@ -489,6 +576,13 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 575.98px) {
+      .app_img_box .group {
+        width: 150px;
+        height: auto; } }
+    @media (max-width: 399.98px) {
+      .app_img_box .group {
+        width: 100px; } }
   .app_img_box .router-app:hover {
     transform: scale(1.1); }
   .app_img_box .group-app:hover {
@@ -497,10 +591,16 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .products-strip {
   background: #F9F9F9;
   padding: 237px 0 137px; }
+  @media (max-width: 991.98px) {
+    .products-strip {
+      padding: 80px 15px 70px; } }
   .products-strip svg .a, .products-strip svg .b {
     stroke: #e72327; }
   .products-strip .products_title_box {
     padding-bottom: 187px; }
+    @media (max-width: 991.98px) {
+      .products-strip .products_title_box {
+        padding-bottom: 90px; } }
   .products-strip h3 {
     max-width: 741px;
     margin-left: auto;
@@ -513,9 +613,13 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     width: 100%;
     height: auto;
     border-radius: 50%;
-    box-shadow: -4px -4px 0px #e72327; }
-  .products-strip .img_products_box.even {
-    float: right; }
+    box-shadow: -4px -4px 0px #e72327;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 991.98px) {
+      .products-strip .img_products_box {
+        max-width: 300px;
+        max-height: 300px; } }
 
 .contact-strip {
   padding: 163px 0 63px; }
@@ -533,21 +637,21 @@ footer {
   background-color: #E72327; }
   footer .navbar {
     width: 100%; }
-  footer .navbar a {
-    display: block;
-    color: #f2f2f2;
-    padding: 10px 8px;
-    text-decoration: none;
-    text-align: center;
-    font: 500 1rem/1.5rem Lato; }
-  footer .navbar:nth-child(1) {
-    padding: 10px 8px 10px 0px; }
-  footer .navbar a:hover {
-    color: #f7dbd4;
-    transition: all 0.3s ease-in-out; }
-  footer .navbar a.active {
-    color: #f7dbd4;
-    transition: all 0.3s ease-in-out; }
+    footer .navbar a {
+      display: block;
+      color: #f2f2f2;
+      padding: 10px 8px;
+      text-decoration: none;
+      text-align: center;
+      font: 500 1rem/1.5rem Lato; }
+      footer .navbar a:hover {
+        color: #f7dbd4;
+        transition: all 0.3s ease-in-out; }
+      footer .navbar a .active {
+        color: #f7dbd4;
+        transition: all 0.3s ease-in-out; }
+    footer .navbar:nth-child(1) {
+      padding: 10px 8px 10px 0px; }
 
 .one_icon {
   height: 52px;

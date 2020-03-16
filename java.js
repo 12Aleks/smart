@@ -648,7 +648,8 @@ $(function () {
 
 $(document).ready(function () {
     let $icons = $('#lightButton'),
-        $title_banner_box = $('.title_banner_box');
+        $title_banner_box = $('.title_banner_box'),
+        $title = $('h1');
 
     $('.navbar-toggler').click(function () {
         $('#nav-icon').toggleClass('active')
@@ -690,6 +691,7 @@ $(document).ready(function () {
             if ($position >= $banner) {
                 $icons.addClass('animate_Bottom');
                 $(this).addClass('animate_title');
+                $title.addClass('animateH1 ');
             };
         });
         $("#aplikacja").each(function () {
