@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- My css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400&display=swap&subset=latin-ext"
           rel="stylesheet">
     <title>Smart</title>
@@ -78,76 +81,67 @@
 </saction>
 <section id="main">
     <div class="container-fluid banner-strip">
-        <div class="row">
-            <div class="col-lg-12 title_banner_box">
-                <h1 class="text-center title"><a href="#dg-container">Poznaj rodzinę naszych
-                    <br/>produktów WiFi</a></h1>
-            </div>
-            <div class="col-lg-12 banner_box">
-                <div class="banner">
-                    <section id="dg-container" class="dg-container">
-                        <ol class="button pb-4 pt-4 pl-0" id="lightButton">
-                            <li index="0" style="height: 52px ;width: 50px;">
-                                <img class='svg' src="./images/slider/grzalka.svg" alt="heating element wifi"
-                                     style="height: 52px ;width: 52px;">
-                            </li>
-                            <li index="1" style="height: 54px ;width: 61px;">
-                                <img class='svg' src="./images/slider/glowica.svg" alt="controller heating element wifi"
-                                     style="height: 54px ;width: 61px;">
-                            </li>
-                            <li index="2" style="height: 54px ;width: 54px;">
-                                <img class='svg' src="./images/slider/grzejnik.svg" alt="radiator"
-                                     style="height: 54px ;width: 54px;">
-                            </li>
-                            <li index="3" style="height: 44px ;width: 70px;">
-                                <img class='svg' src="./images/slider/czujnik_okno.svg" alt="sensor with window"
-                                     style="height: 44px ;width: 70px;">
-                            </li>
-                            <li index="4" style="height: 42px ;width: 68px;">
-                                <img class='svg' src="./images/slider/czujnik.svg" alt="sensor"
-                                     style="height: 42px ;width: 68px;">
-                            </li>
-                        </ol>
-                        <div class="dg-wrapper">
-                            <a href="#">
-                                <!--                                <img src="./images/slider/terma_grzalka.png" alt="heating element">-->
-                                <video loop playsinline muted>
-                                    <source src="./images/video/grzalka_www.mp4" type="video/mp4">
-                                </video>
-                            </a>
-                            <a href="#">
-                                <!--                                <img src="./images/slider/terma_glowica.png" alt="heating element controller">-->
-                                <video loop playsinline muted>
-                                    <source src="./images/video/glowica.mp4" type="video/mp4">
-                                </video>
-                            </a>
-                            <a href="#">
-                                <!--                                <img src="./images/slider/terma_glowica.png" alt="heating element">-->
-                                <video loop playsinline muted>
-                                    <source src="./images/video/grzejnik_smart_www.mp4" type="video/mp4">
-                                </video>
-                            </a>
-                            <a href="#">
-                                <!--                                <img src="./images/slider/terma_czujnik.png" alt="sensor">-->
-                                <video loop playsinline muted>
-                                    <source src="./images/video/czujnik_www.mp4" type="video/mp4">
-                                </video>
-                            </a>
-                            <a href="#">
-                                <!--                                <img src="./images/slider/terma_czujnik.png" alt="sensor">-->
-                                <video loop playsinline muted>
-                                    <source src="./images/video/czujnik_temp_www.mp4" type="video/mp4">
-                                </video>
-                            </a>
+            <div class="col-lg-12 ">
+                <div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel" data-pause='false'>
+                    <div class="row">
+                    <div class="col-lg-6 order-1 align-self-center">
+                     <h1 class="title ">Poznaj rodzinę naszych
+                            <br/>produktów WiFi</h1>
+                    <ol class="carousel-indicators">
+                        <li data-target="#video-carousel-example" data-slide-to="0" class="active" style="height: 52px ;width: 50px;">
+                            <img class='svg' src="./images/slider/grzalka.svg" alt="heating element wifi"
+                                 style="height: 52px ;width: 52px;">
+                        </li>
+                        <li data-target="#video-carousel-example" data-slide-to="1" style="height: 54px ;width: 61px;">
+                            <img class='svg' src="./images/slider/glowica.svg" alt="controller heating element wifi"
+                                 style="height: 54px ;width: 61px;">
+                        </li>
+                        <li data-target="#video-carousel-example" data-slide-to="2" style="height: 54px ;width: 54px;">
+                            <img class='svg' src="./images/slider/grzejnik.svg" alt="radiator"
+                                 style="height: 54px ;width: 54px;">
+                        </li>
+                        <li data-target="#video-carousel-example" data-slide-to="3" style="height: 44px ;width: 70px;">
+                            <img class='svg' src="./images/slider/czujnik_okno.svg" alt="sensor with window"
+                                 style="height: 44px ;width: 70px;">
+                        </li>
+                        <li data-target="#video-carousel-example" data-slide-to="4" style="height: 42px ;width: 68px;">
+                            <img class='svg' src="./images/slider/czujnik.svg" alt="sensor"
+                                 style="height: 42px ;width: 68px;">
+                        </li>
+                    </ol>
+                    </div>
+                    <div class="col-lg-6 order-0">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item slider active ">
+                            <video class="video-fluid"playsinline autoplay muted controls>
+                                <source src="./images/video/grzalka_www.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <!--                        <nav>-->
-                        <!--                            <span class="dg-prev"></span>-->
-                        <!--                            <span class="dg-next"></span>-->
-                        <!--                        </nav>-->
-                    </section>
+                        <div class="carousel-item slider">
+                            <video class="video-fluid"playsinline autoplay muted controls>
+                                <source src="./images/video/glowica.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="carousel-item slider">
+                            <video class="video-fluid"playsinline autoplay muted controls>
+                                <source src="./images/video/grzejnik_smart_www.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="carousel-item slider">
+                            <video  class="video-fluid" playsinline autoplay muted controls>
+                                <source src="./images/video/czujnik_www.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="carousel-item slider">
+                            <video class="video-fluid"playsinline autoplay muted controls>
+                                <source src="./images/video/czujnik_temp_www.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
     <div class="container-fluid room-strip">
         <div class="row">
@@ -430,7 +424,7 @@
         </div>
     </div>
 </footer>
-
+<!--Bootstrap 4-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
@@ -440,6 +434,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+<!--My js-->
 <script src="java.js"></script>
 </body>
 </html>

@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/old_products/czujniki_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/old_products/glowica_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/old_products/grzalka_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/old_products/grzejnik_circle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/czujniki_circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/czujniki_circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/glowica_circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/glowica_circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/grzalka_circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/grzalka_circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/grzejnik_circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/grzejnik_circle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/java.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -38,25 +46,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/video" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/products" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\video" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\hand" />
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\carusel" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images\app" />
       <recent name="C:\Users\Koble\Desktop\smart" />
       <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\products" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\video" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\hand" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,6 +108,10 @@
       <workItem from="1584085173583" duration="20925000" />
       <workItem from="1584342725819" duration="678000" />
       <workItem from="1584348101855" duration="14855000" />
+      <workItem from="1584514489499" duration="21082000" />
+      <workItem from="1584543961522" duration="1029000" />
+      <workItem from="1584603261456" duration="20499000" />
+      <workItem from="1584687015716" duration="23014000" />
     </task>
     <servers />
   </component>

@@ -4,28 +4,29 @@ $global-text-gray: #303030;
 $global-background: #F9F9F9;
 
 /*Global class*/
-
 h1.title {
-  a {
-    font: 300 4rem/4.8rem Lato;
-    text-decoration: none;
-    letter-spacing: 0;
-    color: #303030;
-    opacity: 1;
-    line-height: 1;
+  font: 300 4rem/4.8rem Lato;
+  letter-spacing: 0;
+  color: #303030;
+  opacity: 1;
+  line-height: 1;
+  transition: 3ms;
+
+  @media (max-width: 1599.98px) {
+    font: 300 3rem/3.3rem Lato;
     transition: 3ms;
-    @media (max-width: 991.98px) {
-      font: 300 3rem/3.3rem Lato;
-      transition: 3ms;
-    }
-    @media (max-width: 767.98px) {
-      font: 300 2.5rem/2.8rem Lato;
-      transition: 3ms;
-    }
-    @media (max-width: 575.98px) {
-      font: 300 2rem/2.3rem Lato;
-      transition: 3ms;
-    }
+  }
+  //@media (max-width: 991.98px) {
+  //  font: 300 3rem/3.3rem Lato;
+  //  transition: 3ms;
+  //}
+  @media (max-width: 767.98px) {
+    font: 300 2.5rem/2.8rem Lato;
+    transition: 3ms;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 2rem/2.3rem Lato;
+    transition: 3ms;
   }
 }
 
@@ -278,138 +279,45 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   transform: scale(0);
 }
 
+//#main {
+//  margin-top: 125px;
+//  @media (max-width: 1599.98px) {
+//    margin-top: 75px;
+//  }
+//}
 
-/*banner strip*/
+.banner-strip {
+  padding: 100px 10% 100px;
+  #video-carousel-example {
+    .carousel-inner {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
 
-.title_banner_box {
-  height: 85vh;
+      .video-fluid {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 550px;
+        max-height: 550px;
+      }
+    }
 
-  h1 {
-    padding-bottom: 16vh;
-    position: absolute;
-    opacity: 1;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-  }
-}
-
-.animate_title {
-  animation-name: anim_title;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-
-  h1 {
-    display: none;
-    opacity: 0;
-    transition: opacity .5s linear;
-  }
-}
-
-@keyframes anim_title {
-  0% {
-    height: 85vh;
-  }
-  100% {
-    height: 15vh;
-  }
-}
-
-.banner_box {
-  .banner {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .dg-container {
-    position: relative;
-    margin-top: -200px;
-    padding-top: 200px;
-    //margin-bottom: 100px;
-    width: 100%;
-    height: 600px;
-  }
-
-  .dg-wrapper {
-    width: 400px;
-    height: 320px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-
-    a {
-      width: 100%;
-      height: 320px;
-      display: block;
-      position: absolute;
-      left: 0;
+    .carousel-indicators {
       top: 0;
-      @media(max-width: 1500px) {
-        width: 320px;
-      }
-      @media(max-width: 1198.99px) {
-        width: 300px;
-      }
-      @media(max-width: 991.99px) {
-        width: 250px;
-      }
-
-      video {
-        display: block;
-        border-radius: 4px;
-        width: 100%;
-        height: auto;
-        background: #fff;
-      }
-
-      &:first-child {
-        z-index: 2;
-      }
-    }
-
-    a.dg-transition {
-      transition: all 0.5s ease-in-out;
-    }
-
-    a.dg-transition-fast {
-      transition: all 0.2s ease-in-out;
-    }
-  }
-
-  .dg-container {
-    #lightButton2 {
-      bottom: 20px;
-    }
-
-    .button {
-      position: absolute;
-      top: -20vh;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-      z-index: 5;
-
+      position: relative!important;
+      justify-content: start;
+      align-items: center;
+      margin: 0;
       li {
-        cursor: pointer;
-        display: inline-block;
+        width: 50px;
+        height: 50px;
         margin-right: 15px;
+        text-indent: 0;
+        opacity: 1 !important;
       }
-    }
 
-    .animate_Bottom {
-      animation-name: anim_Bottom;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-
-      .light {
+      .active {
         transform: scale(1.1);
-
         svg path, svg line.a, svg line.b {
           stroke-dasharray: 500;
           stroke-dashoffset: 1000;
@@ -436,36 +344,159 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         }
       }
     }
-
-    @keyframes anim_Bottom {
-      0% {
-        top: -20vh;
-      }
-      100% {
-        top: 150px;
-      }
-    }
-
-    nav {
-      display: none;
-
-      span:hover {
-        opacity: 1;
-      }
-
-      span.dg-next {
-        background-position: top right;
-        margin-left: 10px;
-      }
-    }
   }
 }
+
+/*banner strip*/
+
+
+
+//.banner_box {
+//  .banner {
+//    position: relative;
+//    margin: 0 auto;
+//    text-align: center;
+//  }
+//
+//  .dg-container {
+//    position: relative;
+//    width: 100%;
+//    height: 550px;
+//    margin: 0 0 50px;
+//    //position: relative;
+//    //margin-top: -200px;
+//    //padding-top: 200px;
+//    //margin-bottom: 100px;
+//    //width: 100%;
+//    //padding-bottom: 203px;
+//    //height: 600px;
+//  }
+//
+//  .dg-wrapper {
+//    width: 400px;
+//    height: 320px;
+//    display: block;
+//    margin: 0 auto;
+//    position: relative;
+//    transform-style: preserve-3d;
+//    perspective: 1000px;
+//
+//    a {
+//      width: 100%;
+//      height: 320px;
+//      display: block;
+//      position: absolute;
+//      left: 0;
+//      top: 0;
+//      @media (max-width: 1599.98px) {
+//        width: 300px;
+//      }
+//      @media(max-width: 991.99px) {
+//        width: 250px;
+//      }
+//
+//      video {
+//        display: block;
+//        border-radius: 4px;
+//        width: 100%;
+//        height: auto;
+//        background: #fff;
+//      }
+//
+//      &:first-child {
+//        z-index: 2;
+//      }
+//    }
+//
+//    a.dg-transition {
+//      transition: all 0.5s ease-in-out;
+//    }
+//
+//    a.dg-transition-fast {
+//      transition: all 0.2s ease-in-out;
+//    }
+//  }
+//
+//  .dg-container {
+//    #lightButton2 {
+//      bottom: 20px;
+//    }
+//
+//    .button {
+//      position: relative;
+//      z-index: 5;
+//      padding-top: 1.5rem;
+//      margin-bottom: 1.5rem;
+//      @media (max-width: 1599.98px) {
+//        margin-bottom: 1rem;
+//      }
+//
+//      li {
+//        cursor: pointer;
+//        display: inline-block;
+//        margin-right: 15px;
+//
+//        object {
+//          pointer-events: none;
+//        }
+//      }
+//
+//      .light {
+//        transform: scale(1.1);
+//        svg path, svg line.a, svg line.b {
+//          stroke-dasharray: 500;
+//          stroke-dashoffset: 1000;
+//          animation-name: icon-animation;
+//          animation-duration: 4s;
+//          animation-fill-mode: forwards;
+//          animation-iteration-count: infinite;
+//        }
+//
+//        @keyframes icon-animation {
+//          0% {
+//            stroke-dashoffset: 1000;
+//            opacity: 1;
+//          }
+//          50% {
+//            stroke-dashoffset: 500;
+//            opacity: 0.9;
+//          }
+//          100% {
+//            stroke: #e72327;
+//            stroke-dashoffset: 0;
+//            opacity: 1;
+//          }
+//        }
+//      }
+//    }
+//
+//    @keyframes anim_Bottom {
+//      0% {
+//        top: -20vh;
+//      }
+//      100% {
+//        top: 150px;
+//      }
+//    }
+//
+//    nav {
+//      display: none;
+//
+//      span:hover {
+//        opacity: 1;
+//      }
+//
+//      span.dg-next {
+//        background-position: top right;
+//        margin-left: 10px;
+//      }
+//    }
+//  }
+//}
 
 /*end banner strip*/
 
 .room-strip {
-  padding-top: 203px;
-
   .row {
     position: relative;
     z-index: 10;
@@ -488,8 +519,6 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         -o-animation: hand 3s;
         -webkit-animation: hand 3s;
         animation: hand 3s;
-        //animation-fill-mode: forwards;
-        //animation-iteration-count: 1;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
