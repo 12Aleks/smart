@@ -1,5 +1,8 @@
 /*Global color*/
 /*Global class*/
+section {
+  display: block; }
+
 h1.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
@@ -7,7 +10,7 @@ h1.title {
   opacity: 1;
   line-height: 1;
   transition: 3ms; }
-  @media (max-width: 1599.98px) {
+  @media (max-width: 1670.98px) {
     h1.title {
       font: 300 3rem/3.3rem Lato;
       transition: 3ms; } }
@@ -209,12 +212,19 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
 .active div {
   transform: scale(0); }
 
+/*banner strip*/
 .banner-strip {
-  padding: 100px 10% 100px; }
+  padding: 100px 10%; }
+  @media (max-width: 1599.98px) {
+    .banner-strip {
+      padding: 100px 5%; } }
+  @media (max-width: 991.98px) {
+    .banner-strip {
+      padding: 70px 0; } }
   .banner-strip #video-carousel-example .carousel-inner {
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px; }
+    max-width: 550px; }
     .banner-strip #video-carousel-example .carousel-inner .video-fluid {
       width: 100% !important;
       height: auto !important;
@@ -223,15 +233,22 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   .banner-strip #video-carousel-example .carousel-indicators {
     top: 0;
     position: relative !important;
-    justify-content: start;
     align-items: center;
     margin: 0; }
     .banner-strip #video-carousel-example .carousel-indicators li {
       width: 50px;
       height: 50px;
-      margin-right: 15px;
       text-indent: 0;
       opacity: 1 !important; }
+      @media (max-width: 767.98px) {
+        .banner-strip #video-carousel-example .carousel-indicators li {
+          transform: scale(0.8); } }
+      @media (max-width: 575.98px) {
+        .banner-strip #video-carousel-example .carousel-indicators li {
+          transform: scale(0.7); } }
+      @media (max-width: 379.98px) {
+        .banner-strip #video-carousel-example .carousel-indicators li {
+          transform: scale(0.6); } }
     .banner-strip #video-carousel-example .carousel-indicators .active {
       transform: scale(1.1); }
       .banner-strip #video-carousel-example .carousel-indicators .active svg path, .banner-strip #video-carousel-example .carousel-indicators .active svg line.a, .banner-strip #video-carousel-example .carousel-indicators .active svg line.b {
@@ -241,6 +258,15 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         animation-duration: 4s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite; }
+      @media (max-width: 767.98px) {
+        .banner-strip #video-carousel-example .carousel-indicators .active {
+          transform: scale(0.9); } }
+      @media (max-width: 575.98px) {
+        .banner-strip #video-carousel-example .carousel-indicators .active {
+          transform: scale(0.8); } }
+      @media (max-width: 379.98px) {
+        .banner-strip #video-carousel-example .carousel-indicators .active {
+          transform: scale(0.7); } }
 @keyframes icon-animation {
   0% {
     stroke-dashoffset: 1000;
@@ -252,7 +278,6 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     stroke: #e72327;
     stroke-dashoffset: 0;
     opacity: 1; } }
-/*banner strip*/
 /*end banner strip*/
 .room-strip .row {
   position: relative;
@@ -318,6 +343,10 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 0; }
+    @media (max-width: 991.98px) {
+      .room-strip .row .img-room img {
+        width: 1388px;
+        height: 666px; } }
 
 .smart {
   padding: 237px 15px 137px;
@@ -456,6 +485,53 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     @media (max-width: 1350px) {
       .app-strip .appSecond {
         bottom: -65px; } }
+  .app-strip .app_telephones {
+    display: none;
+    position: relative;
+    height: 530px;
+    margin-bottom: 65px; }
+    @media (max-width: 1199.98px) {
+      .app-strip .app_telephones {
+        display: inherit; } }
+    @media (max-width: 991.98px) {
+      .app-strip .app_telephones {
+        height: 515px; } }
+    @media (max-width: 767.98px) {
+      .app-strip .app_telephones {
+        height: 400px; } }
+    .app-strip .app_telephones .sm_appImgFirst, .app-strip .app_telephones .sm_appImgSecond {
+      height: 550px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+      @media (max-width: 991.98px) {
+        .app-strip .app_telephones .sm_appImgFirst, .app-strip .app_telephones .sm_appImgSecond {
+          height: 450px; } }
+      @media (max-width: 767.98px) {
+        .app-strip .app_telephones .sm_appImgFirst, .app-strip .app_telephones .sm_appImgSecond {
+          height: 338px; } }
+    .app-strip .app_telephones .sm_appImgFirst {
+      z-index: 100;
+      left: 39%;
+      top: 52%; }
+      @media (max-width: 991.98px) {
+        .app-strip .app_telephones .sm_appImgFirst {
+          left: 41%; } }
+      @media (max-width: 767.98px) {
+        .app-strip .app_telephones .sm_appImgFirst {
+          left: calc(50% - 50px); } }
+    .app-strip .app_telephones .sm_appImgSecond {
+      z-index: 99;
+      left: 61%;
+      top: 48%; }
+      @media (max-width: 991.98px) {
+        .app-strip .app_telephones .sm_appImgSecond {
+          left: 59%; } }
+      @media (max-width: 767.98px) {
+        .app-strip .app_telephones .sm_appImgSecond {
+          left: calc(50% + 50px); } }
   .app-strip .app_descriptions {
     max-width: 741px;
     padding: 0 15px;
@@ -474,12 +550,12 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   margin-left: auto; }
   @media (max-width: 767.98px) {
     .app_img_box {
-      height: 680px;
+      height: 500px;
       padding-top: 20px;
       padding-bottom: 0; } }
   @media (max-width: 575.98px) {
     .app_img_box {
-      height: 500px; } }
+      height: 450px; } }
   @media (max-width: 399.98px) {
     .app_img_box {
       height: 300px; } }
@@ -493,12 +569,17 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 767.98px) {
+      .app_img_box .group {
+        top: 65%; } }
     @media (max-width: 575.98px) {
       .app_img_box .group {
-        width: 150px;
+        top: 65%;
+        width: 140px;
         height: auto; } }
     @media (max-width: 399.98px) {
       .app_img_box .group {
+        top: 70%;
         width: 100px; } }
   .app_img_box .router-app:hover {
     transform: scale(1.1); }
