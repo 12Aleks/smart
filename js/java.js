@@ -1,6 +1,8 @@
 let $handBox = $('.hand_box'),
-     $nav = $('#navigation'),
-      $myDiv = $(".img-room");
+    $nav = $('#navigation'),
+    $navCol = $('.navbar-collapse'),
+    $navIcon = $('#nav-icon');
+$myDiv = $(".img-room");
 $(window).resize(function () {
     let $myChild = $myDiv.find("> *:first-child");
     $myDiv.animate({
@@ -9,16 +11,27 @@ $(window).resize(function () {
         duration: 0
     });
 });
-$(window).resize();
+
 
 $(document).ready(function () {
+    //
+    // $('video').on('play', function (e) {
+    //     $(".carouse").carousel('pause');
+    // });
+    // $('video').on('stop pause ended', function (e) {
+    //     $(".carouse").carousel();
+    // });
 
-    $('.carousel').carousel({
-        interval: 4000
-    });
+    // $('.carouse').carousel({
+    //     interval: 3000
+    // }).on('slide.bs.carousel', function () {
+    //     $('video').get(0).pause();
+    // });
 
     // $('.video-fluid').find('video').each(function () {
-    //     this[0].pause();
+    //     this.get(0).play();
+    //     // this[0].pause();
+    //     // console.log('pause')
     // });
     //
     // $('.active').find('video').get(0).currentTime = 0;
@@ -26,12 +39,22 @@ $(document).ready(function () {
     //     this.play();
     // });
 
-
     // var videos = document.querySelectorAll('video.video-fluid');
     // for(var i = 0; i < videos.length; i++) {
     //     videos[i].pause();
     //     videos[i].currentTime = 0;
     // }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,20 +74,25 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-
-    $myDiv.scroll(function() {
+    $myDiv.scroll(function () {
         $handBox.hide(100);
     });
+
     let iScrollPos = 0;
     $(window).scroll(function () {
         let iCurScrollPos = $(this).scrollTop();
         if (iCurScrollPos > iScrollPos) {
-            $nav.addClass('fold-active')
+            $nav.addClass('fold-active');
+            $navIcon.removeClass('active');
+            $navCol.collapse('hide');
         } else {
-            $nav.removeClass('fold-active')
+            $nav.removeClass('fold-active');
+            $navIcon.removeClass('active');
+            $navCol.collapse('hide');
         }
         iScrollPos = iCurScrollPos;
     });
+
     // function scroll() {
     //     if ($(this).scrollTop() > 400) {
     //         $nav.addClass('fold-active')
@@ -77,10 +105,8 @@ $(document).ready(function () {
     //         // $navigation.removeClass("scroll-nav");
     //     }
     // }
-
-    window.addEventListener("load", scroll);
-    window.addEventListener("scroll", scroll);
-
+    // window.addEventListener("load", scroll);
+    // window.addEventListener("scroll", scroll);
 
     $(window).on("load resize scroll", function (e) {
         let $windowTop = $(window).scrollTop();
@@ -96,20 +122,20 @@ $(document).ready(function () {
 
 //function for adding SVG images in my index.html file
     $('img.svg').each(function () {
-        var $img = $(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-        $.get(imgURL, function (data) {
+        let $img = $(this);
+        let $imgID = $img.attr('id');
+        let $imgClass = $img.attr('class');
+        let $imgURL = $img.attr('src');
+        $.get($imgURL, function (data) {
             // Get the SVG tag, ignore the rest
-            var $svg = $(data).find('svg');
+            let $svg = $(data).find('svg');
             // Add replaced image's ID to the new SVG
-            if (typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
+            if (typeof $imgID !== 'undefined') {
+                $svg = $svg.attr('id', $imgID);
             }
             // Add replaced image's classes to the new SVG
             if (typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass + ' replaced-svg');
+                $svg = $svg.attr('class', $imgClass + ' replaced-svg');
             }
             // Remove any invalid XML tags as per http:validator.w3.org
             $svg = $svg.removeAttr('xmlns:a');

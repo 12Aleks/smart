@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e700c3c9-ea0c-403f-9200-2f96227d03c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/java.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/java.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/java-compressed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
@@ -25,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,19 +47,19 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\js" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
+      <recent name="C:\Users\Koble\Desktop\smart" />
+      <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\downloadApp" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\products" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\video" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\app" />
-      <recent name="C:\Users\Koble\Desktop\smart" />
-      <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,7 +115,10 @@
       <workItem from="1585299696173" duration="9395000" />
       <workItem from="1585501144683" duration="1289000" />
       <workItem from="1585551451731" duration="21996000" />
-      <workItem from="1585635666258" duration="5263000" />
+      <workItem from="1585635666258" duration="23586000" />
+      <workItem from="1585725916396" duration="10586000" />
+      <workItem from="1585814041300" duration="249000" />
+      <workItem from="1585814413145" duration="3269000" />
     </task>
     <servers />
   </component>
