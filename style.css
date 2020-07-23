@@ -64,10 +64,11 @@ h4.subTitle, span.subTitle {
       text-align: center; } }
   @media (max-width: 767.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 2rem/1.875remLato; } }
+      font: 300 2rem/1.875rem Lato; } }
   @media (max-width: 575.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 1.3rem/1.3rem Lato; } }
+      font: 300 1.3rem/1.5rem Lato;
+      text-align: left; } }
 
 h6.sm_title {
   font: 500 1.25rem/1.5rem Lato;
