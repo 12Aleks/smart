@@ -109,7 +109,7 @@ ul.descriptions {
     ul.descriptions li:before {
       content: "\2022";
       color: red;
-      font-weight: bold;
+      font-weight: 200;
       display: inline-block;
       width: 1em;
       margin-left: -1em; }
@@ -482,10 +482,22 @@ p.contact {
       #main .smart {
         padding: 180px 18px 80px; } }
     #main .smart #carouselExampleIndicators {
-      height: 580px; }
+      height: 500px; }
+      @media (max-width: 991.98px) {
+        #main .smart #carouselExampleIndicators {
+          height: 400px; } }
       @media (max-width: 575.98px) {
         #main .smart #carouselExampleIndicators {
-          height: 590px; } }
+          height: 320px; } }
+      @media (max-width: 475.98px) {
+        #main .smart #carouselExampleIndicators {
+          height: 380px; } }
+      @media (max-width: 395.98px) {
+        #main .smart #carouselExampleIndicators {
+          height: 430px; } }
+      @media (max-width: 349.98px) {
+        #main .smart #carouselExampleIndicators {
+          height: 520px; } }
       #main .smart #carouselExampleIndicators h4 {
         height: 77px; }
         @media (max-width: 575.98px) {

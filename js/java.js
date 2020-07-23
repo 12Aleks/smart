@@ -15,6 +15,10 @@ $(window).resize(function () {
 
 
 $(document).ready(function () {
+    $('.carousel').carousel({
+        interval: 10000
+    })
+
     $('.navbar-toggler').click(function () {
         $('#nav-icon').toggleClass('active')
     });

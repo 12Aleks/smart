@@ -121,7 +121,7 @@ ul.descriptions{
     &:before {
       content: "\2022";
       color: red;
-      font-weight: bold;
+      font-weight: 200;
       display: inline-block;
       width: 1em;
       margin-left: -1em;
@@ -630,11 +630,22 @@ p.contact {
     }
 
     #carouselExampleIndicators {
-      height: 580px;
-      @media (max-width: 575.98px) {
-        height: 590px;
+      height: 500px;
+      @media (max-width: 991.98px) {
+        height: 400px;
       }
-
+      @media (max-width: 575.98px) {
+        height: 320px;
+      }
+      @media (max-width: 475.98px) {
+      height: 380px;
+    }
+      @media (max-width: 395.98px) {
+        height: 430px;
+      }
+      @media (max-width: 349.98px) {
+        height: 520px;
+      }
       h4 {
         height: 77px;
         @media (max-width: 575.98px) {
