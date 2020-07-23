@@ -4,6 +4,32 @@ $global-text-gray: #303030;
 $global-background: #F9F9F9;
 
 /*Global class*/
+section {
+  display: block;
+}
+
+h1.title {
+  font: 300 4rem/4.8rem Lato;
+  letter-spacing: 0;
+  color: #303030;
+  opacity: 1;
+  line-height: 1;
+  @media (max-width: 1670.98px) {
+    font: 300 3rem/3.3rem Lato;
+  }
+  @media(max-width: 1098.98px) {
+    font: 300 2.8rem/3rem Lato;
+  }
+  @media (max-width: 767.98px) {
+    font: 300 2.5rem/2.8rem Lato;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 2rem/2.3rem Lato;
+  }
+  @media (max-width: 379.98px) {
+    font: 300 1.8rem/2.3rem Lato;
+  }
+}
 
 h1.title {
   font: 300 4rem/4.8rem Lato;
@@ -32,6 +58,7 @@ h3.title {
   color: #303030;
   opacity: 1;
   line-height: 1;
+<<<<<<< HEAD
   @media (max-width: 991.98px) {
     font: 300 3rem/3.3rem Lato;
     transition: 3ms;
@@ -44,6 +71,23 @@ h3.title {
   @media (max-width: 575.98px) {
     font: 300 2rem/2.3rem Lato;
     transition: 3ms;
+=======
+  @media (max-width: 1670.98px) {
+    font: 300 3rem/3.3rem Lato;
+  }
+  @media(max-width: 1098.98px) {
+    font: 300 2.8rem/3rem Lato;
+  }
+  @media (max-width: 767.98px) {
+    font: 300 2.5rem/2.8rem Lato;
+  }
+  @media (max-width: 575.98px) {
+    font: 300 2rem/2.3rem Lato;
+    text-align: center;
+  }
+  @media (max-width: 379.98px) {
+    font: 300 1.8rem/2.3rem Lato;
+>>>>>>> dev
   }
 }
 
@@ -51,6 +95,7 @@ h4.subTitle, span.subTitle {
   font: 300 3rem/2.4rem Lato;
   letter-spacing: 0;
   color: $global-text-gray;
+<<<<<<< HEAD
   @media (max-width: 991.98px) {
     font: 300 2.5rem/1.875rem Lato;
     transition: 3ms;
@@ -60,11 +105,26 @@ h4.subTitle, span.subTitle {
   @media (max-width: 767.98px) {
     font: 300 2rem/1.875remLato;
     transition: 3ms;
+=======
+  @media (max-width: 1670.98px) {
+    font: 300 2.5rem/1.875rem Lato;
+    text-align: center;
+    margin-top: 40px;
+  }
+  @media(max-width: 1098.98px) {
+    font: 300 2.3rem/1.875rem Lato;
+  }
+  @media (max-width: 767.98px) {
+    font: 300 2rem/1.875remLato;
+>>>>>>> dev
     text-align: center;
   }
   @media (max-width: 575.98px) {
     font: 300 1.5rem/1.3rem Lato;
+<<<<<<< HEAD
     transition: 3ms;
+=======
+>>>>>>> dev
   }
 }
 
@@ -93,22 +153,47 @@ p.contact {
   font: 500 1rem/1.5rem Lato;
   letter-spacing: 0;
   color: $global-text-gray;
+  @media (max-width: 575.98px) {
+    font: 300 1rem/1.3rem Lato;
+  }
 }
 
 
 /*End global class*/
 
 
+#navigation.fold-active {
+  -ms-transform: translateZ(0) translateY(-105px);
+  -webkit-transform: translateZ(0) translateY(-105px);
+  transform: translateZ(0) translateY(-105px);
+}
+
 #navigation {
-  background-color: rgba(255, 255, 255, 0.9);
-  transition: 3s;
+  background-color: rgba(255, 255, 255, 0.99);
+  transition: -webkit-transform 500ms ease-in-out;
+  //transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out,
+  -webkit-transform 500ms ease-in-out;
+  -webkit-transform: translateZ(0) translateY(0);
+  transform: translateZ(0) translateY(0);
   width: 100%;
   top: 0;
+<<<<<<< HEAD
   z-index: 100;
   //position: fixed;
   position: relative;
+=======
+  z-index: 199;
+  position: fixed;
+>>>>>>> dev
   left: 0;
+  @media(max-width: 991.98px) {
+    .container {
+      padding: 0;
+    }
+  }
 
+<<<<<<< HEAD
   .logo-wrapper {
     img.small-logo {
       display: none;
@@ -140,85 +225,134 @@ p.contact {
 
   .active {
     color: $global-red;
+=======
+  .lang {
+    margin: 0 20px 0 0;
+    @media(max-width: 991.98px) {
+      margin: 0 1px 0 0;
+    }
+    @media(max-width: 576px) {
+      margin: 0 18px 0 0;
+    }
+
+    a {
+      font: 300 14px/17px Lato;
+      text-decoration: none;
+      letter-spacing: 0;
+      color: #707070
+    }
+>>>>>>> dev
+  }
+
+  .logo-wrapper {
+    img.small-logo {
+      display: none;
+      height: 55px;
+    }
+
+    img.big-logo {
+      display: inherit;
+      height: 55px;
+    }
+
+    @media(max-width: 429.98px) {
+      img.small-logo {
+        display: inherit;
+      }
+
+      img.big-logo {
+        display: none;
+      }
+    }
+  }
+
+  .active {
+    color: $global-red;
+  }
+
+  #navbar-main {
+    padding: 0 1rem;
+    @media(min-width: 576px) {
+      padding: 0;
+    }
+
+    .navbar-container {
+      width: 100%;
+      @media(max-width: 991.98px) {
+        width: auto;
+      }
+
+      .navbar-collapse {
+        a {
+          font: 300 1.125rem/22px Lato;
+          text-decoration: none;
+          letter-spacing: 0;
+          color: #707070
+        }
+
+        a.btn.btn-dark.text-white {
+          margin-left: .5rem;
+          border-radius: 20px;
+          padding: 10px 20px;
+          @media(max-width: 991.98px) {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .logo-symbol {
+        width: auto;
+        max-height: 3.35714rem;
+      }
+
+      .name-symbol, .subname-symbol {
+        margin-top: 0.92857rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid $global-text-gray;
+    border-radius: .25rem;
+  }
+
+  #nav-icon {
+    margin: 0.5em 0.9em;
+    width: 25px;
+  }
+
+  #nav-icon:after,
+  #nav-icon:before,
+  #nav-icon div {
+    background-color: $global-text-gray;
+
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 9px 0;
+    transition: all .2s ease-in-out;
+  }
+
+  .active:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  .active:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  .active div {
+    transform: scale(0);
   }
 }
 
-.scroll-nav {
-  background-color: rgba(255, 255, 255, 1) !important;
-  transition: 3s;
-}
 
-
-#site_name {
-  padding-left: 32px;
-  max-width: 276px;
-  height: auto;
-}
-
-#site_name img {
-  width: 100%;
-}
-
-.navbar-collapse a {
-  font: 300 1.125rem/22px Lato;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  color: #707070
-}
-
-.logo-symbol {
-  width: auto;
-  max-height: 3.35714rem;
-}
-
-.name-symbol, .subname-symbol {
-  margin-top: 0.92857rem;
-  margin-bottom: 0.5rem;
-}
-
-.logo-wrapper img {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  transition: all 0.3s ease-in-out;
-}
-
-
-.name-symbol, .subname-symbol {
-  margin-top: 0.92857rem;
-  margin-bottom: 0.5rem;
-}
-
-
-nav.f-nav .navbar-brand .logo-wrapper .img {
-  display: inherit !important;
-  transition: 3s;
-}
-
-nav.f-nav .navbar-brand .logo-wrapper .logo-symbol {
-  max-height: 2.5rem;
-  display: inline-block;
-  transition: .5s;
-}
-
-nav.f-nav .navbar-brand .logo-wrapper .name-symbol {
-  display: inline-block;
-  margin: auto 15px;
-  transition: 3s;
-}
-
-nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
-  display: none !important;
-
-}
-
-#opis, #aplikacja, #video, #kontakt, #produkty {
-  margin-top: -100px;
-}
-
-
+<<<<<<< HEAD
 #navigation .navbar-toggler {
   padding: 0;
   font-size: 1.25rem;
@@ -227,13 +361,33 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   border: 2px solid $global-text-gray;
   border-radius: .25rem;
 }
+=======
+#main {
+  margin-top: 105px;
+>>>>>>> dev
 
-#nav-icon {
-  margin: 0.5em 0.9em;
-  width: 25px;
+  #opis, #aplikacja, #video, #kontakt, #produkty {
+    margin-top: -100px;
+  }
 
-}
+  /*banner strip*/
+  .banner-strip {
+    padding: 130px 10% 160px;
+    height: 100%;
+    @media (max-width: 1599.98px) {
+      padding: 85px 5% 100px;
+    }
+    @media (max-width: 991.98px) {
+      padding: 70px 15px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 50px 15px;
+    }
+    @media (max-width: 575.98px) {
+      padding: 30px 15px;
+    }
 
+<<<<<<< HEAD
 #nav-icon:after,
 #nav-icon:before,
 #nav-icon div {
@@ -245,40 +399,136 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
   margin: 9px 0;
   transition: all .2s ease-in-out;
 }
+=======
+    .dg-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      width: 550px;
+      height: 550px;
+      position: relative;
+      @media (max-width: 1599.98px) {
+        max-width: 450px;
+        max-height: 450px;
+      }
+      @media (max-width: 576.98px) {
+        max-width: 300px;
+        max-height: 300px;
+      }
+      @media (max-width: 379.98px) {
+        max-width: 270px;
+        max-height: 270px;
+      }
+>>>>>>> dev
 
-.active:before {
-  transform: translateY(12px) rotate(135deg);
-}
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
 
-.active:after {
-  transform: translateY(-12px) rotate(-135deg);
-}
+        video {
+          height: auto !important;
+          max-width: 550px;
+          max-height: 550px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          @media (max-width: 1599.98px) {
+            max-width: 450px;
+            max-height: 450px;
+          }
+          @media (max-width: 576.98px) {
+            max-width: 300px;
+            max-height: 300px;
+          }
+          @media (max-width: 379.98px) {
+            max-width: 270px;
+            max-height: 270px;
+          }
+        }
 
-.active div {
-  transform: scale(0);
-}
+        &:first-child {
+          z-index: 2;
+        }
+      }
 
+      a.dg-transition {
+        transition: all 0.5s ease-in-out;
+      }
+
+<<<<<<< HEAD
 /*main*/
 #main {
   margin-top: 100px;
 }
+=======
+      a.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+      }
+    }
 
+    .dg-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+>>>>>>> dev
 
-/*banner strip*/
+      #lightButton2 {
+        bottom: 20px;
+      }
 
+      .button {
+        top: 0;
+        position: relative !important;
+        margin: 0;
+        @media (max-width: 991.98px) {
+          padding: 70px 0;
+        }
+        @media (max-width: 767.98px) {
+          padding: 50px 0;
+        }
+        @media (max-width: 575.98px) {
+          padding: 5px 0;
+        }
+        @media (max-width: 379.98px) {
+          height: 50px;
+        }
+        &:nth-child(1) li{
+          height: 58px;
+          width: 52px;
+          @media (max-width: 575.98px) {
+            height: 50px;
+            width: 40px;
+          }
+          @media (max-width: 379.98px) {
 
-.banner {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-}
+          }
+        }
 
-.dg-container {
-  position: relative;
-  width: 100%;
-  height: 600px;
-}
+        &:nth-child(2) li{
+          height: 58px;
+          width: 61px;
+          @media (max-width: 575.98px) {
+            height: 50px;
+            width: 51px;
+          }
+          @media (max-width: 379.98px) {
 
+          }
+        }
+
+        &:nth-child(3) li{
+          height: 58px;
+          width: 54px;
+          @media (max-width: 575.98px) {
+            height: 50px;
+            width: 44px;
+          }
+          @media (max-width: 379.98px) {
+
+<<<<<<< HEAD
 .dg-wrapper {
   width: 320px;
   height: 250px;
@@ -308,40 +558,124 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       width: 100%;
       height: auto;
     }
+=======
+          }
+        }
 
-    &:first-child {
-      z-index: 2;
-    }
-  }
+        &:nth-child(4) li{
+          height: 58px;
+          width: 70px;
+          @media (max-width: 575.98px) {
+            height: 50px;
+            width: 60px;
+          }
+          @media (max-width: 379.98px) {
 
-  a.dg-transition {
-    transition: all 0.5s ease-in-out;
-  }
+          }
+        }
+>>>>>>> dev
 
-  a.dg-transition-fast {
-    transition: all 0.2s ease-in-out;
-  }
-}
+        &:nth-child(5) li{
+          height: 42px;
+          width: 68px;
+          @media (max-width: 575.98px) {
+            height: 50px;
+            width: 58px;
+          }
+          @media (max-width: 379.98px) {
 
-.dg-container {
-  #lightButton2 {
-    bottom: 20px;
-  }
+          }
+        }
+        li {
+          cursor: pointer;
+          display: inline-block;
+          margin-right: 15px;
+          width: 50px;
+          height: 50px;
+          text-indent: 0;
+          opacity: 1 !important;
+          @media (max-width: 991.98px) {
+            transform: scale(.9);
+            margin-right: 10px;
+          }
+          @media (max-width: 767.98px) {
+            transform: scale(.8);
+            margin-right: 5px;
+          }
+          @media (max-width: 575.98px) {
+            transform: scale(.7);
+          }
+          @media (max-width: 379.98px) {
+            transform: scale(.6);
+          }
+        }
+      }
 
-  .button {
-    position: relative;
-    z-index: 5;
+      .light {
+        transform: scale(1.1);
 
-    li {
-      cursor: pointer;
-      display: inline-block;
-      margin-right: 15px;
+        svg path, svg line.a, svg line.b {
+          stroke-dasharray: 500;
+          stroke-dashoffset: 1000;
+          animation-name: icon-animation;
+          animation-duration: 4s;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+        }
 
-      object {
-        pointer-events: none;
+        @keyframes icon-animation {
+          0% {
+            stroke-dashoffset: 1000;
+            opacity: 1;
+          }
+          50% {
+            stroke-dashoffset: 500;
+            opacity: 0.9;
+          }
+          100% {
+            stroke: #e72327;
+            stroke-dashoffset: 0;
+            opacity: 1;
+          }
+        }
       }
     }
+  }
+  /*end banner strip*/
 
+  .room-strip {
+    .row {
+      position: relative;
+      z-index: 10;
+
+      .hand_box {
+        display: none;
+        width: 95px;
+        height: 59px;
+        position: absolute;
+        z-index: 15;
+        top: 92%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        @media(max-width: 991.98px) {
+          display: inherit;
+        }
+
+        img {
+          position: absolute;
+          top: 5px;
+          left: 0;
+          -moz-animation: hand .8s;
+          -o-animation: hand 3s;
+          -webkit-animation: hand 3s;
+          animation: hand 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      }
+
+<<<<<<< HEAD
     .light {
       //transition: all .2s ease-in-out;
 
@@ -374,58 +708,108 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
           stroke-dashoffset: 0;
           opacity: 1;
         }
+=======
+      @keyframes hand {
+        0% {
+          left: 0;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        25% {
+          left: -10px;
+          -webkit-transform: rotate(-5deg);
+          -moz-transform: rotate(-5deg);
+          -ms-transform: rotate(-5deg);
+          -o-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+
+        }
+        50% {
+          left: 0;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        75% {
+          left: 10px;
+          -webkit-transform: rotate(5deg);
+          -moz-transform: rotate(5deg);
+          -ms-transform: rotate(5deg);
+          -o-transform: rotate(5deg);
+          transform: rotate(5deg);
+        }
+        100% {
+          left: 0;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+      }
+
+      .img-room {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          @media(max-width: 991.98px) {
+            width: 1388px;
+            height: 666px;
+          }
+        }
+>>>>>>> dev
       }
     }
   }
 
-  nav {
-    display: none;
 
-    span:hover {
-      opacity: 1;
+  .smart {
+    padding: 237px 15px 137px;
+    max-width: 741px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 991.98px) {
+      padding: 180px 50px 80px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 180px 30px 80px;
+    }
+    @media (max-width: 575.98px) {
+      padding: 180px 18px 80px;
     }
 
-    span.dg-next {
-      background-position: top right;
-      margin-left: 10px;
-    }
-  }
-}
+    #carouselExampleIndicators {
+      height: 580px;
+      @media (max-width: 575.98px) {
+        height: 590px;
+      }
 
-/*end banner strip*/
+      h4 {
+        height: 77px;
+        @media (max-width: 575.98px) {
+          height: 60px;
+        }
 
-.room-strip {
-  padding-top: 203px;
-
-  .row {
-    position: relative;
-    z-index: 10;
-
-    .hand_box {
-      width: 95px;
-      height: 59px;
-      position: absolute;
-      z-index: 15;
-      top: 92%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-
-      img {
-        position: absolute;
-        top: 5px;
-        left: 0;
-        -moz-animation: hand .8s;
-        -o-animation: hand 3s;
-        -webkit-animation: hand 3s;
-        animation: hand 3s;
-        //animation-fill-mode: forwards;
-        //animation-iteration-count: 1;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
+        object {
+          @media (max-width: 575.98px) {
+            max-height: 40px;
+          }
+        }
       }
     }
 
+<<<<<<< HEAD
     @keyframes hand {
       0% {
         left: 0;
@@ -467,9 +851,43 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
+=======
+    .carousel-indicators {
+      position: relative;
+      margin: 40px 0 60px;
+      @media (max-width: 767.98px) {
+        margin: 40px 0 40px;
+>>>>>>> dev
       }
-    }
+      @media (max-width: 575.98px) {
+        margin: 15px 0 15px;
+      }
+      //@media (max-width: 379.98px) {
+      //  height: 50px;
+      //}
 
+      li {
+        box-sizing: content-box;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 155px;
+        height: 3px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 0 15px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #DEDEDE;
+        background-clip: padding-box;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+
+<<<<<<< HEAD
     .img-room {
       width: 100%;
       height: auto;
@@ -478,11 +896,24 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       overflow-scrolling:touch;
       -webkit-overflow-scrolling:touch;
       padding: 0;
+=======
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+
+      .active {
+        background-color: $global-red;
+      }
+>>>>>>> dev
     }
   }
-}
 
+  .over {
+    overflow: hidden;
+  }
 
+<<<<<<< HEAD
 .smart {
   padding: 237px 15px 137px;
   max-width: 741px;
@@ -512,11 +943,18 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
           max-height: 40px;
         }
       }
+=======
+  .video-strip {
+    .video-wrapper {
+      padding: 100px 0 0;
+>>>>>>> dev
     }
   }
 
-  .carousel-indicators {
+  .app-strip {
+    padding: 268px 0 168px;
     position: relative;
+<<<<<<< HEAD
     margin: 40px 0 60px;
     @media (max-width: 767.98px) {
       margin: 40px 0 40px;
@@ -541,32 +979,60 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
       opacity: .5;
+=======
+    @media (max-width: 991.98px) {
+      padding: 180px 15px 138px;
+    }
+>>>>>>> dev
 
-      &:nth-child(1) {
-        margin-left: 0;
+    .appImgFirst, .appImgSecond {
+      width: 800px;
+      position: absolute;
+      z-index: 9;
+      transition: width 3ms linear;
+      @media(max-width: 1680px) {
+        width: 700px;
       }
-
-      &:nth-last-child(1) {
-        margin-left: 0;
+      @media(max-width: 1540px) {
+        width: 590px;
+      }
+      @media(max-width: 1350px) {
+        width: 490px;
+      }
+      @media(max-width: 1198.99px) {
+        display: none;
       }
     }
 
-    .active {
-      background-color: $global-red;
+    .appImgFirst {
+      top: 800px;
+      left: -70%;
+      @media(max-width: 1680px) {
+        top: 700px;
+      }
+      @media(max-width: 1540px) {
+        top: 590px;
+      }
+      @media(max-width: 1350px) {
+        top: 490px;
+      }
     }
-  }
-}
 
-.over {
-  overflow: hidden;
-}
+    .appImgSecond {
+      bottom: 800px;
+      right: -70%;
+      @media(max-width: 1680px) {
+        bottom: 700px;
+      }
+      @media(max-width: 1540px) {
+        bottom: 590px;
+      }
+      @media(max-width: 1350px) {
+        bottom: 490px;
+      }
+    }
 
-.video-strip {
-  .video-wrapper {
-    padding: 100px 0 0;
-  }
-}
-
+<<<<<<< HEAD
 .app-strip {
   padding: 268px 0 168px;
   position: relative;
@@ -589,10 +1055,58 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       width: 490px;
     }
     @media(max-width: 1198.99px) {
-      display: none;
-    }
-  }
+=======
 
+    .appFirst, .appSecond {
+      -moz-transition: left ease-out 2.5s, top ease-out 2.5s;
+      -o-transition: left ease-out 2.5s, top ease-out 2.5s;
+      -webkit-transition: left ease-out 2.5s, top ease-out 2.5s;
+      transition: left ease-out 2.5s, top ease-out 2.5s;
+    }
+
+    .appSecond {
+      -moz-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+      -o-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+      -webkit-transition: right ease-out 2.5s, bottom ease-out 2.5s;
+      transition: right ease-out 2.5s, bottom ease-out 2.5s;
+    }
+
+    .appFirst {
+      top: 125px;
+      left: -19%;
+    }
+
+    .appSecond {
+      bottom: -165px;
+      right: -14%;
+      @media(max-width: 1680px) {
+        bottom: -125px;
+      }
+      @media(max-width: 1540px) {
+        bottom: -95px;
+      }
+      @media(max-width: 1350px) {
+        bottom: -65px;
+      }
+    }
+
+    .app_telephones {
+>>>>>>> dev
+      display: none;
+      position: relative;
+      height: 530px;
+      margin-bottom: 65px;
+      @media(max-width: 1199.98px) {
+        display: inherit;
+      }
+      @media(max-width: 991.98px) {
+        height: 515px;
+      }
+      @media(max-width: 767.98px) {
+        height: 400px;
+      }
+
+<<<<<<< HEAD
   .appImgFirst {
     top: 800px;
     left: -70%;
@@ -651,17 +1165,83 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     }
     @media(max-width: 1350px) {
       bottom: -65px;
+=======
+      .sm_appImgFirst, .sm_appImgSecond {
+        height: 550px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        @media(max-width: 991.98px) {
+          height: 450px;
+        }
+        @media(max-width: 767.98px) {
+          height: 338px;
+        }
+      }
+
+      .sm_appImgFirst {
+        z-index: 99;
+        left: 39%;
+        top: 52%;
+        @media(max-width: 991.98px) {
+          left: 41%;
+        }
+        @media(max-width: 767.98px) {
+          left: calc(50% - 50px);
+        }
+      }
+
+      .sm_appImgSecond {
+        z-index: 98;
+        left: 61%;
+        top: 48%;
+        @media(max-width: 991.98px) {
+          left: 59%;
+        }
+        @media(max-width: 767.98px) {
+          left: calc(50% + 50px);
+        }
+      }
+    }
+
+    .app_descriptions {
+      max-width: 741px;
+      padding: 0 15px;
+      margin-right: auto;
+      margin-left: auto;
+>>>>>>> dev
     }
   }
 
-  .app_descriptions {
+  .app_img_box {
     max-width: 741px;
-    padding: 0 15px;
+    height: 732px;
+    position: relative;
+    z-index: 10;
+    background-image: url("./images/app/group_20.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin-right: auto;
     margin-left: auto;
-  }
-}
+    @media (max-width: 1199.98px) {
+      max-width: 600px;
+      height: 500px;
+    }
+    @media (max-width: 767.98px) {
+      height: 500px;
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+    @media (max-width: 575.98px) {
+      height: 450px;
+    }
+    @media (max-width: 399.98px) {
+      height: 300px;
+    }
 
+<<<<<<< HEAD
 .app_img_box {
   max-width: 741px;
   height: 732px;
@@ -707,18 +1287,52 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       width: 100px;
     }
   }
+=======
+    .router {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  .router-app {
-    &:hover {
-      transform: scale(1.1);
+    .group {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 1199.98px) {
+        top: 65%;
+        width: 180px;
+        height: auto;
+      }
+      @media (max-width: 767.98px) {
+        top: 65%;
+      }
+      @media (max-width: 575.98px) {
+        top: 65%;
+        width: 140px;
+        height: auto;
+      }
+      @media (max-width: 399.98px) {
+        top: 70%;
+        width: 100px;
+      }
+    }
+>>>>>>> dev
+
+    .router-app {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .group-app {
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
-
-  .group-app {
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+<<<<<<< HEAD
 }
 
 .products-strip {
@@ -738,17 +1352,55 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
       padding-bottom: 90px;
     }
   }
+=======
 
-  h3 {
-    max-width: 741px;
-    margin-left: auto;
-    margin-right: auto;
+  .products-strip {
+    background: $global-background;
+    padding: 237px 0 137px;
+    @media (max-width: 991.98px) {
+      padding: 80px 15px 70px;
+    }
+
+    svg .a, svg .b {
+      stroke: #e72327;
+    }
+
+    .products_title_box {
+      padding-bottom: 187px;
+      @media (max-width: 991.98px) {
+        padding-bottom: 90px;
+      }
+    }
+
+    h3 {
+      max-width: 741px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+>>>>>>> dev
+
+    h4 {
+      margin-bottom: 30px;
+    }
+
+    .img_products_box {
+      max-width: 372px;
+      max-height: 372px;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: -4px -4px 0px #e72327;
+      margin-left: auto;
+
+      margin-right: auto;
+      @media(max-width: 991.98px) {
+        max-width: 300px;
+        max-height: 300px;
+      }
+    }
   }
 
-  h4 {
-    margin-bottom: 30px;
-  }
-
+<<<<<<< HEAD
   .img_products_box {
     max-width: 372px;
     max-height: 372px;
@@ -761,10 +1413,29 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     @media(max-width: 991.98px) {
       max-width: 300px;
       max-height: 300px;
+=======
+  .contact-strip {
+    padding: 163px 15px 63px;
+
+    button[type='submit'] {
+      border-radius: 0;
+      width: 265px;
+      height: 56px;
+      float: right;
+      background-color: $global-red;
+      font: 300 16px/19px Lato;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      @media (max-width: 379.98px) {
+        width: 235px;
+        height: 46px;
+      }
+>>>>>>> dev
     }
   }
 }
 
+<<<<<<< HEAD
 .contact-strip {
   padding: 163px 15px 63px;
   button[type='submit'] {
@@ -778,11 +1449,17 @@ nav.f-nav .navbar-brand .logo-wrapper .subname-symbol {
     color: #FFFFFF;
   }
 }
+=======
+>>>>>>> dev
 
 footer {
   background-color: $global-red;
   .navbar {
     width: 100%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
     a {
       display: block;
       color: #f2f2f2;
@@ -790,25 +1467,37 @@ footer {
       text-decoration: none;
       text-align: center;
       font: 500 1rem/1.5rem Lato;
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
       &:hover {
         color: rgb(247, 219, 212);
         transition: all 0.3s ease-in-out;
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
       .active {
         color: rgb(247, 219, 212);
         transition: all 0.3s ease-in-out;
       }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
     &:nth-child(1) {
       padding: 10px 8px 10px 0px;
     }
   }
 }
 
-.one_icon {
-  height: 52px;
-  width: 50px;
-}
+//.one_icon {
+//  height: 52px;
+//  width: 50px;
+//}
 
 
 

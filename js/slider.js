@@ -2,7 +2,11 @@ $(function () {
     $('#dg-container').carrousel({
         current: 0,
         autoplay: true,
+<<<<<<< HEAD:java.js
         interval: 3950
+=======
+        interval: 3800
+>>>>>>> dev:js/slider.js
     });
 });
 
@@ -186,7 +190,7 @@ $(function () {
             this.$navNext = this.$nav.find('.dg-next');
             this.button = $('#lightButton li');
             this.box = $('.banner');
-            this.imgWidth = $('.banner .dg-wrapper img').width();
+            this.imgWidth = $('.banner .dg-wrapper video').width();
 
             this.indexB = 0;
             this.CSSX = 0;
@@ -209,7 +213,7 @@ $(function () {
             }
 
             var _self = this;
-            for (var i = 0, len = this.button.length; i < len; i++) {     // 点击小圆点
+            for (var i = 0, len = this.button.length; i < len; i++) {
                 this.button[i].addEventListener('click', function () {
                     var toIndex = parseInt(this.getAttribute('index'));
                     var toMove = toIndex - _self.indexB;
@@ -248,15 +252,15 @@ $(function () {
 
         _updateWidth: function () {
             if (this.support3d) {
-                if (document.body.clientWidth < 1000) {
+                if (document.body.clientWidth < 991.98) {
                     this.CSSX = ($(this.box).width() - 10 - this.imgWidth * 0.7) / 2;
                     this.CSSXout = 0;
-                } else if (document.body.clientWidth >= 1000) {
+                } else if (document.body.clientWidth >= 991.98) {
                     this.CSSX = ($(this.box).width() * 1.2 + 480 - 10 - this.imgWidth * 0.5) / 2 * 0.5;
                     this.CSSXout = ($(this.box).width() * 1.2 + 480 - 10 - this.imgWidth * 0.5) / 2;
                 }
             } else if (this.support2d) {
-                if (document.body.clientWidth < 1464) {
+                if (document.body.clientWidth < 1460.98) {
                     this.CSSX = ($(this.box).width() - 10 - this.imgWidth * 0.9) / 2;
                     this.CSSXout = 0;
                 } else if (document.body.clientWidth >= 1464) {
@@ -362,63 +366,43 @@ $(function () {
                     case 'outleft':
                         return {
                             'opacity': 0,
-                            'visibility': 'hidden'
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'outright':
                         return {
                             'opacity': 0,
-                            'visibility': 'hidden'
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'left':
                         return {
-                            '-webkit-transform': 'translateX(-' + this.CSSX + 'px) translateZ(-300px) rotateY(25deg)',
-                            '-moz-transform': 'translateX(-' + this.CSSX + 'px) translateZ(-300px) rotateY(25deg)',
-                            '-o-transform': 'translateX(-' + this.CSSX + 'px) translateZ(-300px) rotateY(25deg)',
-                            '-ms-transform': 'translateX(-' + this.CSSX + 'px) translateZ(-300px) rotateY(25deg)',
-                            'transform': 'translateX(-' + this.CSSX + 'px) translateZ(-300px) rotateY(25deg)',
-                            'opacity': 1,
-                            'visibility': 'visible',
-                            'filter': 'blur(3px)',
-                            '-ms-filter': 'blur(3px)',
-                            'padding-top': '0'
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         }
                         break;
                     case 'right':
                         return {
-                            '-webkit-transform': 'translateX(' + this.CSSX + 'px) translateZ(-300px) rotateY(-25deg)',
-                            '-moz-transform': 'translateX(' + this.CSSX + 'px) translateZ(-300px) rotateY(-25deg)',
-                            '-o-transform': 'translateX(' + this.CSSX + 'px) translateZ(-300px) rotateY(-25deg)',
-                            '-ms-transform': 'translateX(' + this.CSSX + 'px) translateZ(-300px) rotateY(-25deg)',
-                            'transform': 'translateX(' + this.CSSX + 'px) translateZ(-300px) rotateY(-25deg)',
-                            'opacity': 1,
-                            'visibility': 'visible',
-                            'filter': 'blur(3px)',
-                            '-ms-filter': 'blur(3px)',
-                            'padding-top': '0'
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'center':
                         return {
-                            '-webkit-transform': 'translateX(0px) translateZ(0px) rotateY(0deg)',
-                            '-moz-transform': 'translateX(0px) translateZ(0px) rotateY(0deg)',
-                            '-o-transform': 'translateX(0px) translateZ(0px) rotateY(0deg)',
-                            '-ms-transform': 'translateX(0px) translateZ(0px) rotateY(0deg)',
-                            'transform': 'translateX(0px) translateZ(0px) rotateY(0deg)',
                             'opacity': 1,
                             'visibility': 'visible',
-                            'filter': 'blur(0)',
-                            '-ms-filter': 'blur(0)',
-                            'padding-top': '50px'
+                            'z-index': 4,
                         };
                         break;
                     case 'hide':
                         return {
-                            '-webkit-transform': 'translate(0px) scale(0.7)',
-                            'opacity': 1,
+                            'opacity': 0,
                             'visibility': 'visible',
-                            'z-index': 1
+                            'z-index': 1,
                         };
                         break;
                 }
@@ -426,80 +410,43 @@ $(function () {
                 switch (position) {
                     case 'outleft':
                         return {
-                            '-webkit-transform': 'translate(-' + this.CSSXout + 'px) scale(0.8)',
-                            '-moz-transform': 'translate(-' + this.CSSXout + 'px) scale(0.8)',
-                            '-o-transform': 'translate(-' + this.CSSXout + 'px) scale(0.8)',
-                            '-ms-transform': 'translate(-' + this.CSSXout + 'px) scale(0.8)',
-                            'transform': 'translate(-' + this.CSSXout + 'px) scale(0.8)',
-                            'opacity': 1,
-                            'z-index': 2
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'outright':
                         return {
-                            '-webkit-transform': 'translate(' + this.CSSXout + 'px) scale(0.8)',
-                            '-moz-transform': 'translate(' + this.CSSXout + 'px) scale(0.8)',
-                            '-o-transform': 'translate(' + this.CSSXout + 'px) scale(0.8)',
-                            '-ms-transform': 'translate(' + this.CSSXout + 'px) scale(0.8)',
-                            'transform': 'translate(' + this.CSSXout + 'px) scale(0.8)',
-                            'opacity': 1,
-                            'z-index': 2
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'left':
                         return {
-                            '-webkit-transform': 'translate(-' + this.CSSX + 'px) scale(0.9)',
-                            '-moz-transform': 'translate(-' + this.CSSX + 'px) scale(0.9)',
-                            '-o-transform': 'translate(-' + this.CSSX + 'px) scale(0.9)',
-                            '-ms-transform': 'translate(-' + this.CSSX + 'px) scale(0.9)',
-                            'transform': 'translate(-' + this.CSSX + 'px) scale(0.9)',
-                            'opacity': 1,
-                            'visibility': 'visible',
-                            'z-index': 3,
-                            'filter': 'blur(3px)',
-                            '-ms-filter': 'progid:DXImageTransform.Microsoft.Blur(PixelRadius="3")',
-                            'filter': 'url(#blur)'
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'right':
                         return {
-                            '-webkit-transform': 'translate(' + this.CSSX + 'px) scale(0.9)',
-                            '-moz-transform': 'translate(' + this.CSSX + 'px) scale(0.9)',
-                            '-o-transform': 'translate(' + this.CSSX + 'px) scale(0.9)',
-                            '-ms-transform': 'translate(' + this.CSSX + 'px) scale(0.9)',
-                            'transform': 'translate(' + this.CSSX + 'px) scale(0.9)',
-                            'opacity': 1,
-                            'visibility': 'visible',
-                            'z-index': 3,
-                            'filter': 'blur(3px)',
-                            '-ms-filter': 'progid:DXImageTransform.Microsoft.Blur(PixelRadius="3")',
-                            'filter': 'url(#blur)'
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         };
                         break;
                     case 'center':
                         return {
-                            '-webkit-transform': 'translate(0px) scale(1)',
-                            '-moz-transform': 'translate(0px) scale(1)',
-                            '-o-transform': 'translate(0px) scale(1)',
-                            '-ms-transform': 'translate(0px) scale(1)',
-                            'transform': 'translate(0px) scale(1)',
                             'opacity': 1,
                             'visibility': 'visible',
                             'z-index': 4,
-                            'filter': 'blur(0)',
-                            'top': '20px',
-                            '-ms-filter': 'blur(0)',
                         };
                     case 'hide':
                         return {
-                            '-webkit-transform': 'translate(0px) scale(0.7)',
-                            '-moz-transform': 'translate(0px) scale(0.7)',
-                            '-o-transform': 'translate(0px) scale(0.7)',
-                            '-ms-transform': 'translate(0px) scale(0.7)',
-                            'transform': 'translate(0px) scale(0.7)',
-                            'opacity': 1,
-                            'visibility': 'visible',
-                            'z-index': 1
+                            'opacity': 0,
+                            'visibility': 'hidden',
+                            'z-index': 1,
                         }
                         break;
                 }
@@ -522,7 +469,9 @@ $(function () {
                         }
                         this._showButton();
                         this.current = this.$rightItm.index();
+
                         // current item moves left
+<<<<<<< HEAD:java.js
                         this.$currentItm.addClass(speedClass).css(this._getCoordinates('left')).find('video').each(function(){
                             this.pause();
                         });
@@ -532,11 +481,30 @@ $(function () {
                             this.play();
                         });
 
-                        // left item moves out
-                        this.$leftItm.addClass(speedClass).css(this._getCoordinates('outleft'));
+=======
+                        this.$currentItm.addClass(speedClass).css(this._getCoordinates('left')).find('video').each(function () {
+                            this.pause()
+                        });
 
+                        // right item moves to the center
+                        this.$rightItm.addClass(speedClass).css(this._getCoordinates('center')).find('video').each(function () {
+                            this.play();
+                        });
+>>>>>>> dev:js/slider.js
+                        // left item moves out
+                        this.$leftItm.addClass(speedClass).css(this._getCoordinates('outleft')).find('video').each(function () {
+                            this.pause();
+                        });
+
+<<<<<<< HEAD:java.js
                         this.$nextItm.addClass(speedClass).css(this._getCoordinates('right')).find('video').each(function(){
                             this.pause();
+=======
+                        // current item moves right
+                        this.$nextItm.addClass(speedClass).css(this._getCoordinates('right')).find('video').each(function () {
+                            this.pause();
+                            this.currentTime = 0;
+>>>>>>> dev:js/slider.js
                         });
 
                         if (this.itemsCount > 5) {
@@ -639,8 +607,8 @@ $(function () {
         }
         return this;
     };
-
 })(jQuery);
+<<<<<<< HEAD:java.js
 
 $(document).ready(function () {
     $('.navbar-toggler').click(function () {
@@ -708,3 +676,5 @@ $(document).ready(function () {
         });
     });
 });
+=======
+>>>>>>> dev:js/slider.js

@@ -5,12 +5,6 @@
       <change afterPath="$PROJECT_DIR$/images/glowica.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/images/grzalka_www.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/63c153ab06f7042f8dbd68a0489d1bc88c3779c6/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/java.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,17 +34,32 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+=======
+    <property name="last_opened_file_path" value="E:/termaheat/xampp/htdocs/www-terma/terma" />
+>>>>>>> dev
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\js" />
+>>>>>>> dev
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
       <recent name="C:\Users\Koble\Desktop\smart\images\app" />
       <recent name="C:\Users\Koble\Desktop\smart" />
       <recent name="C:\Users\Koble\Desktop\smart\images\slider" />
-      <recent name="C:\Users\Koble\Desktop\smart\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\downloadApp" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\products" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\video" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
+      <recent name="E:\smart\xampp\htdocs\www-smart\smart\images\slider" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\smart\xampp\htdocs\www-smart\smart\images" />
@@ -93,6 +102,7 @@
       <workItem from="1582803169864" duration="13293000" />
       <workItem from="1582872119501" duration="16498000" />
       <workItem from="1583143665788" duration="12160000" />
+<<<<<<< HEAD
       <workItem from="1583226801681" duration="31846000" />
       <workItem from="1583392447006" duration="3960000" />
       <workItem from="1583489894559" duration="577000" />
@@ -100,6 +110,33 @@
       <workItem from="1583744205732" duration="8000" />
       <workItem from="1583745392093" duration="6922000" />
       <workItem from="1583836612745" duration="8606000" />
+=======
+      <workItem from="1583226801681" duration="12223000" />
+      <workItem from="1583935794539" duration="1971000" />
+      <workItem from="1583999304445" duration="10906000" />
+      <workItem from="1584083531714" duration="139000" />
+      <workItem from="1584083720308" duration="1345000" />
+      <workItem from="1584085173583" duration="20925000" />
+      <workItem from="1584342725819" duration="678000" />
+      <workItem from="1584348101855" duration="14855000" />
+      <workItem from="1584514489499" duration="21082000" />
+      <workItem from="1584543961522" duration="1029000" />
+      <workItem from="1584603261456" duration="20499000" />
+      <workItem from="1584687015716" duration="23014000" />
+      <workItem from="1584948428406" duration="22428000" />
+      <workItem from="1585056347405" duration="1352000" />
+      <workItem from="1585122892849" duration="962000" />
+      <workItem from="1585129430109" duration="16168000" />
+      <workItem from="1585216428238" duration="15582000" />
+      <workItem from="1585299696173" duration="9395000" />
+      <workItem from="1585501144683" duration="1289000" />
+      <workItem from="1585551451731" duration="21996000" />
+      <workItem from="1585635666258" duration="23586000" />
+      <workItem from="1585725916396" duration="10586000" />
+      <workItem from="1585814041300" duration="249000" />
+      <workItem from="1585814413145" duration="6512000" />
+      <workItem from="1585896282562" duration="4987000" />
+>>>>>>> dev
     </task>
     <servers />
   </component>
