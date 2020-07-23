@@ -74,7 +74,7 @@ h4.subTitle, span.subTitle {
     font: 300 2rem/1.875remLato;
   }
   @media (max-width: 575.98px) {
-    font: 300 1.5rem/1.3rem Lato;
+    font: 300 1.3rem/1.3rem Lato;
   }
 }
 
@@ -96,6 +96,34 @@ p.descriptions {
   }
   @media (max-width: 575.98px) {
     font: 300 1rem/1.3rem Lato;
+  }
+  span{
+    font-weight: 700;
+  }
+}
+ul.descriptions{
+  list-style: none;
+  li{
+    font: 300 1.5rem/1.875rem Lato;
+    letter-spacing: 0;
+    color: $global-text-gray;
+    @media (max-width: 991.98px) {
+      font: 300 1.2rem/1.5rem Lato;
+    }
+    @media (max-width: 767.98px) {
+      font: 300 1.1rem/1.4rem Lato;
+    }
+    @media (max-width: 575.98px) {
+      font: 300 1rem/1.3rem Lato;
+    }
+    &:before {
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
   }
 }
 
