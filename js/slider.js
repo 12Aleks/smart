@@ -2,13 +2,10 @@ $(function () {
     $('#dg-container').carrousel({
         current: 0,
         autoplay: true,
-<<<<<<< HEAD:java.js
-        interval: 3950
-=======
         interval: 3800
->>>>>>> dev:js/slider.js
     });
 });
+
 
 !function (e, n, t) {
     function r(e, n) {
@@ -471,17 +468,6 @@ $(function () {
                         this.current = this.$rightItm.index();
 
                         // current item moves left
-<<<<<<< HEAD:java.js
-                        this.$currentItm.addClass(speedClass).css(this._getCoordinates('left')).find('video').each(function(){
-                            this.pause();
-                        });
-
-                        // right item moves to the center
-                        this.$rightItm.addClass(speedClass).css(this._getCoordinates('center')).find('video').each(function(){
-                            this.play();
-                        });
-
-=======
                         this.$currentItm.addClass(speedClass).css(this._getCoordinates('left')).find('video').each(function () {
                             this.pause()
                         });
@@ -490,21 +476,15 @@ $(function () {
                         this.$rightItm.addClass(speedClass).css(this._getCoordinates('center')).find('video').each(function () {
                             this.play();
                         });
->>>>>>> dev:js/slider.js
                         // left item moves out
                         this.$leftItm.addClass(speedClass).css(this._getCoordinates('outleft')).find('video').each(function () {
                             this.pause();
                         });
 
-<<<<<<< HEAD:java.js
-                        this.$nextItm.addClass(speedClass).css(this._getCoordinates('right')).find('video').each(function(){
-                            this.pause();
-=======
                         // current item moves right
                         this.$nextItm.addClass(speedClass).css(this._getCoordinates('right')).find('video').each(function () {
                             this.pause();
                             this.currentTime = 0;
->>>>>>> dev:js/slider.js
                         });
 
                         if (this.itemsCount > 5) {
@@ -608,73 +588,3 @@ $(function () {
         return this;
     };
 })(jQuery);
-<<<<<<< HEAD:java.js
-
-$(document).ready(function () {
-    $('.navbar-toggler').click(function () {
-        console.log('Click');
-        $('#nav-icon').toggleClass('active')
-    });
-    $("#collapsibleNavbar a").click(function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
-    $("#collapsibleNavbar a.nav-link").on("click", function () {
-        $("a.nav-link").removeClass("active");
-        $(this).addClass("active");
-    });
-
-    // var myDiv = $(".img-room");
-    // $(window).resize(function (e) {
-    //     var myChild = myDiv.find("> *:first-child");
-    //     myDiv.animate({
-    //         scrollLeft: (myChild.width() - myDiv.width()) / 2
-    //     }, {
-    //         duration: 0
-    //     });
-    // });
-    // $(window).resize();
-
-    $(window).on("load resize scroll", function () {
-        $("#aplikacja").each(function () {
-            var windowTop = $(window).scrollTop();
-            console.log(windowTop);
-            var elementTop = $(this).offset().top;
-            console.log(elementTop);
-            var leftPosition = windowTop - elementTop;
-            console.log(leftPosition);
-            var maxScroll = -900;
-            var minScroll = 150;
-            if (leftPosition >= maxScroll) $(this).find(".appImgFirst").one().addClass('appFirst');
-            if (leftPosition >= minScroll) $(this).find(".appImgSecond").one().addClass('appSecond');
-        });
-    });
-
-//function for adding SVG images in my index.html file
-    $('img.svg').each(function () {
-        var $img = $(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-        $.get(imgURL, function (data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = $(data).find('svg');
-            // Add replaced image's ID to the new SVG
-            if (typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image's classes to the new SVG
-            if (typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass + ' replaced-svg');
-            }
-            // Remove any invalid XML tags as per http:validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-        });
-    });
-});
-=======
->>>>>>> dev:js/slider.js
