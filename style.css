@@ -143,7 +143,7 @@ p.contact {
     #navigation .container {
       padding: 0; } }
   #navigation .lang {
-    margin: 0 20px 0 0; }
+    margin: 0 10px 0 0; }
     @media (max-width: 991.98px) {
       #navigation .lang {
         margin: 0 1px 0 0; } }
@@ -154,7 +154,7 @@ p.contact {
       font: 300 14px/17px Lato;
       text-decoration: none;
       letter-spacing: 0;
-      color: #707070; }
+      color: #fff; }
   #navigation .logo-wrapper img.small-logo {
     display: none;
     height: 55px; }
@@ -755,6 +755,19 @@ p.contact {
           max-height: 300px; } }
   #main .contact-strip {
     padding: 163px 15px 63px; }
+    #main .contact-strip .form__error {
+      color: red;
+      text-align: left;
+      font-size: 12px;
+      display: block;
+      margin-top: 3px;
+      display: none; }
+    #main .contact-strip input:valid:not(:placeholder-shown) {
+      border-color: green; }
+    #main .contact-strip input:invalid:not(:placeholder-shown) {
+      border-color: red; }
+    #main .contact-strip input:invalid:not(:placeholder-shown) + .form__error {
+      display: block; }
     #main .contact-strip button[type='submit'] {
       border-radius: 0;
       width: 265px;

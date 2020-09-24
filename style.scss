@@ -167,7 +167,7 @@ p.contact {
   }
 
   .lang {
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
     @media(max-width: 991.98px) {
       margin: 0 1px 0 0;
     }
@@ -179,7 +179,8 @@ p.contact {
       font: 300 14px/17px Lato;
       text-decoration: none;
       letter-spacing: 0;
-      color: #707070
+      color: #fff;
+      //color: #707070
     }
   }
 
@@ -984,6 +985,26 @@ p.contact {
 
   .contact-strip {
     padding: 163px 15px 63px;
+
+    .form__error {
+      color: red;
+      text-align: left;
+      font-size: 12px;
+      display: block;
+      margin-top: 3px;
+      display: none;
+    }
+
+    input:valid:not(:placeholder-shown) {
+      border-color: green;
+    }
+
+    input:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
+    input:invalid:not(:placeholder-shown) + .form__error {
+      display: block;
+    }
 
     button[type='submit'] {
       border-radius: 0;
