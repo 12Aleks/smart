@@ -93,6 +93,9 @@ p.descriptions {
 
 ul.descriptions {
   list-style: none; }
+  @media (max-width: 575.98px) {
+    ul.descriptions {
+      padding-left: 15px; } }
   ul.descriptions li {
     font: 300 1.5rem/1.875rem Lato;
     letter-spacing: 0;
@@ -272,8 +275,7 @@ p.contact {
           height: auto !important;
           max-width: 550px;
           max-height: 550px;
-          margin-left: auto;
-          margin-right: auto;
+          margin: 0 auto;
           display: block; }
           @media (max-width: 1599.98px) {
             #main .banner-strip .dg-wrapper a video {
@@ -508,13 +510,13 @@ p.contact {
             max-height: 40px; } }
     #main .smart .carousel-indicators {
       position: relative;
-      margin: 40px 0 60px; }
+      margin: 40px 0; }
       @media (max-width: 767.98px) {
         #main .smart .carousel-indicators {
-          margin: 40px 0 40px; } }
+          margin: 40px 0; } }
       @media (max-width: 575.98px) {
         #main .smart .carousel-indicators {
-          margin: 15px 0 15px; } }
+          margin: 15px 0; } }
       #main .smart .carousel-indicators li {
         box-sizing: content-box;
         -ms-flex: 0 1 auto;
@@ -539,6 +541,65 @@ p.contact {
         background-color: #E72327; }
   #main .over {
     overflow: hidden; }
+    #main .over .houseSmart {
+      display: inherit; }
+      @media (max-width: 445.98px) {
+        #main .over .houseSmart {
+          display: none; } }
+      #main .over .houseSmart .app_img_box {
+        max-width: 705px;
+        height: auto;
+        position: relative;
+        z-index: 10;
+        background: url("./images/app/backgroundImg.png") no-repeat;
+        background-size: 100%;
+        margin: 0 auto; }
+        @media (max-width: 991.98px) {
+          #main .over .houseSmart .app_img_box {
+            max-width: 600px; }
+            #main .over .houseSmart .app_img_box .carousel-item img {
+              max-width: 600px;
+              height: auto; } }
+        @media (max-width: 767.98px) {
+          #main .over .houseSmart .app_img_box {
+            max-width: 450px; }
+            #main .over .houseSmart .app_img_box .carousel-item img {
+              max-width: 450px; } }
+        @media (max-width: 575.98px) {
+          #main .over .houseSmart .app_img_box {
+            max-width: 400px; }
+            #main .over .houseSmart .app_img_box .carousel-item img {
+              max-width: 400px; } }
+        #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade .carousel-item.active {
+          transition: opacity .1s ease-in-out; }
+        #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators {
+          position: relative;
+          padding: 40px 0; }
+          @media (max-width: 767.98px) {
+            #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators {
+              padding: 20px 0; } }
+          #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators li {
+            box-sizing: content-box;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 155px;
+            height: 3px;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 0 15px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #DEDEDE;
+            background-clip: padding-box;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            opacity: .5; }
+            #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators li:nth-child(1) {
+              margin-left: 0; }
+            #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators li:nth-last-child(1) {
+              margin-right: 0; }
+          #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators .active {
+            background-color: #E72327; }
   #main .video-strip .video-wrapper {
     padding: 100px 0 0; }
   #main .app-strip {
@@ -665,62 +726,6 @@ p.contact {
       padding: 0 15px;
       margin-right: auto;
       margin-left: auto; }
-  #main .app_img_box {
-    max-width: 741px;
-    height: 732px;
-    position: relative;
-    z-index: 10;
-    background-image: url("./images/app/group_20.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-right: auto;
-    margin-left: auto; }
-    @media (max-width: 1199.98px) {
-      #main .app_img_box {
-        max-width: 600px;
-        height: 500px; } }
-    @media (max-width: 767.98px) {
-      #main .app_img_box {
-        height: 500px;
-        padding-top: 20px;
-        padding-bottom: 0; } }
-    @media (max-width: 575.98px) {
-      #main .app_img_box {
-        height: 450px; } }
-    @media (max-width: 399.98px) {
-      #main .app_img_box {
-        height: 300px; } }
-    #main .app_img_box .router {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-    #main .app_img_box .group {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%); }
-      @media (max-width: 1199.98px) {
-        #main .app_img_box .group {
-          top: 65%;
-          width: 180px;
-          height: auto; } }
-      @media (max-width: 767.98px) {
-        #main .app_img_box .group {
-          top: 65%; } }
-      @media (max-width: 575.98px) {
-        #main .app_img_box .group {
-          top: 65%;
-          width: 140px;
-          height: auto; } }
-      @media (max-width: 399.98px) {
-        #main .app_img_box .group {
-          top: 70%;
-          width: 100px; } }
-    #main .app_img_box .router-app:hover {
-      transform: scale(1.1); }
-    #main .app_img_box .group-app:hover {
-      transform: scale(1.1); }
   #main .products-strip {
     background: #F9F9F9;
     padding: 237px 0 137px; }
@@ -759,7 +764,6 @@ p.contact {
       color: red;
       text-align: left;
       font-size: 12px;
-      display: block;
       margin-top: 3px;
       display: none; }
     #main .contact-strip input:valid:not(:placeholder-shown) {
@@ -800,6 +804,6 @@ footer {
         color: #f7dbd4;
         transition: all 0.3s ease-in-out; }
     footer .navbar:nth-child(1) {
-      padding: 10px 8px 10px 0px; }
+      padding: 10px 8px 10px 0; }
 
 /*# sourceMappingURL=style.css.map */

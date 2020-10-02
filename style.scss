@@ -105,6 +105,9 @@ p.descriptions {
 }
 ul.descriptions{
   list-style: none;
+  @media (max-width: 575.98px) {
+    padding-left: 15px;
+  }
   li{
     font: 300 1.5rem/1.875rem Lato;
     letter-spacing: 0;
@@ -347,8 +350,7 @@ p.contact {
           height: auto !important;
           max-width: 550px;
           max-height: 550px;
-          margin-left: auto;
-          margin-right: auto;
+          margin: 0 auto;
           display: block;
           @media (max-width: 1599.98px) {
             max-width: 450px;
@@ -409,9 +411,6 @@ p.contact {
           @media (max-width: 575.98px) {
             height: 50px;
             width: 40px;
-          }
-          @media (max-width: 379.98px) {
-
           }
         }
 
@@ -489,7 +488,6 @@ p.contact {
 
       .light {
         transform: scale(1.1);
-
         svg path, svg line.a, svg line.b {
           stroke-dasharray: 500;
           stroke-dashoffset: 1000;
@@ -663,16 +661,13 @@ p.contact {
 
     .carousel-indicators {
       position: relative;
-      margin: 40px 0 60px;
+      margin: 40px 0;
       @media (max-width: 767.98px) {
-        margin: 40px 0 40px;
+        margin: 40px 0;
       }
       @media (max-width: 575.98px) {
-        margin: 15px 0 15px;
+        margin: 15px 0;
       }
-      //@media (max-width: 379.98px) {
-      //  height: 50px;
-      //}
 
       li {
         box-sizing: content-box;
@@ -708,6 +703,88 @@ p.contact {
 
   .over {
     overflow: hidden;
+    .houseSmart{
+      display: inherit;
+      @media (max-width: 445.98px) {
+        display: none;
+      }
+      .app_img_box{
+        max-width: 705px;
+        height: auto;
+        position: relative;
+        z-index: 10;
+        background: url("./images/app/backgroundImg.png") no-repeat;
+        background-size: 100%;
+        margin: 0 auto;
+        @media (max-width: 991.98px) {
+          max-width: 600px;
+          .carousel-item{
+            img{
+              max-width: 600px;
+              height: auto;
+            }
+          }
+        }
+        @media (max-width: 767.98px) {
+          max-width: 450px;
+          .carousel-item{
+            img{
+              max-width: 450px;
+            }
+          }
+        }
+        @media (max-width: 575.98px) {
+          max-width: 400px;
+          .carousel-item{
+            img{
+              max-width: 400px;
+            }
+          }
+        }
+
+        #carouselExampleIndicators2.carousel-fade{
+          .carousel-item.active{
+            transition: opacity .1s ease-in-out;
+          }
+          ol.carousel-indicators {
+            position: relative;
+            padding: 40px 0;
+            @media (max-width: 767.98px) {
+              padding: 20px 0;
+            }
+
+            li{
+              box-sizing: content-box;
+              -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
+              width: 155px;
+              height: 3px;
+              margin-right: 10px;
+              margin-left: 10px;
+              padding: 0 15px;
+              text-indent: -999px;
+              cursor: pointer;
+              background-color: #DEDEDE;
+              background-clip: padding-box;
+              border-top: 10px solid transparent;
+              border-bottom: 10px solid transparent;
+              opacity: .5;
+
+              &:nth-child(1) {
+                margin-left: 0;
+              }
+
+              &:nth-last-child(1) {
+                margin-right: 0;
+              }
+            }
+            .active {
+              background-color: $global-red;
+            }
+          }
+        }
+      }
+    }
   }
 
   .video-strip {
@@ -868,76 +945,6 @@ p.contact {
     }
   }
 
-  .app_img_box {
-    max-width: 741px;
-    height: 732px;
-    position: relative;
-    z-index: 10;
-    background-image: url("./images/app/group_20.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    @media (max-width: 1199.98px) {
-      max-width: 600px;
-      height: 500px;
-    }
-    @media (max-width: 767.98px) {
-      height: 500px;
-      padding-top: 20px;
-      padding-bottom: 0;
-    }
-    @media (max-width: 575.98px) {
-      height: 450px;
-    }
-    @media (max-width: 399.98px) {
-      height: 300px;
-    }
-
-    .router {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .group {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-      @media (max-width: 1199.98px) {
-        top: 65%;
-        width: 180px;
-        height: auto;
-      }
-      @media (max-width: 767.98px) {
-        top: 65%;
-      }
-      @media (max-width: 575.98px) {
-        top: 65%;
-        width: 140px;
-        height: auto;
-      }
-      @media (max-width: 399.98px) {
-        top: 70%;
-        width: 100px;
-      }
-    }
-
-    .router-app {
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    .group-app {
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
-
   .products-strip {
     background: $global-background;
     padding: 237px 0 137px;
@@ -990,7 +997,6 @@ p.contact {
       color: red;
       text-align: left;
       font-size: 12px;
-      display: block;
       margin-top: 3px;
       display: none;
     }
@@ -1050,18 +1056,7 @@ footer {
     }
 
     &:nth-child(1) {
-      padding: 10px 8px 10px 0px;
+      padding: 10px 8px 10px 0;
     }
   }
 }
-
-//.one_icon {
-//  height: 52px;
-//  width: 50px;
-//}
-
-
-
-
-
-

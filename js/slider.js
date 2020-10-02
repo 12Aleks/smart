@@ -1,3 +1,4 @@
+
 $(function () {
     $('#dg-container').carrousel({
         current: 0,
@@ -5,7 +6,6 @@ $(function () {
         interval: 3800
     });
 });
-
 
 !function (e, n, t) {
     function r(e, n) {
@@ -159,16 +159,15 @@ $(function () {
 
 
 (function ($) {
-
     $.carrousel = function (options, element) {
         this.$el = $(element);
         this._init(options);
     };
 
     $.carrousel.defaults = {
-        current: 0,	// index of current item
-        autoplay: true,// slideshow on / off
-        interval: 3000  // time between transitions
+        current: 0,
+        autoplay: true,
+        interval: 3000
     };
 
     $.carrousel.prototype = {
@@ -202,9 +201,9 @@ $(function () {
             });
             this._updateWidth();
             this._layout();
-            // load the events
+
             this._loadEvents();
-            // slideshow
+
             if (this.options.autoplay) {
                 this._startSlideshow();
             }
@@ -505,13 +504,11 @@ $(function () {
                         }
                         this._showButton();
                         this.current = this.$leftItm.index();
-                        // current item moves right
+
                         this.$currentItm.addClass(speedClass).css(this._getCoordinates('right'));
 
-                        // left item moves to the center
                         this.$leftItm.addClass(speedClass).css(this._getCoordinates('center'));
 
-                        // right item moves out
                         this.$rightItm.addClass(speedClass).css(this._getCoordinates('outright'));
 
                         this.$prevItm.addClass(speedClass).css(this._getCoordinates('left'));

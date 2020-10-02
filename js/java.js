@@ -15,9 +15,12 @@ $(window).resize(function () {
 
 
 $(document).ready(function () {
-    $('.carousel').carousel({
+    $('#carouselExampleIndicators.carousel').carousel({
         interval: 10000
-    })
+    });
+    $('#carouselExampleIndicators2.carousel').carousel({
+        interval: 3000
+    });
 
     $('.navbar-toggler').click(function () {
         $('#nav-icon').toggleClass('active')
