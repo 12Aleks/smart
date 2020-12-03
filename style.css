@@ -463,6 +463,9 @@ p.contact {
       overflow-y: hidden;
       padding: 0; }
       #main .room-strip .row .img-room img {
+        margin: 0 auto;
+        max-width: 1920px;
+        display: block;
         width: 100%;
         height: auto; }
         @media (max-width: 991.98px) {
@@ -602,6 +605,9 @@ p.contact {
             background-color: #E72327; }
   #main .video-strip .video-wrapper {
     padding: 100px 0 0; }
+    #main .video-strip .video-wrapper .embed-responsive {
+      max-width: 1920px;
+      margin: 0 auto; }
   #main .app-strip {
     padding: 268px 0 168px;
     position: relative; }

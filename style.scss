@@ -599,8 +599,10 @@ p.contact {
         overflow-x: auto;
         overflow-y: hidden;
         padding: 0;
-
         img {
+          margin: 0 auto;
+          max-width: 1920px;
+          display: block;
           width: 100%;
           height: auto;
           @media(max-width: 991.98px) {
@@ -790,6 +792,10 @@ p.contact {
   .video-strip {
     .video-wrapper {
       padding: 100px 0 0;
+      .embed-responsive{
+        max-width: 1920px;
+        margin: 0 auto;
+      }
     }
   }
 
