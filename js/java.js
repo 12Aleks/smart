@@ -60,7 +60,7 @@ $(document).ready(function () {
             $nav.addClass('fold-active');
             $navIcon.removeClass('active');
             $navCol.collapse('hide');
-        } else if($(this).scrollTop() > 300) {
+        } else if($(this).scrollTop() <= 300) {
             $nav.removeClass('fold-active');
             $navIcon.removeClass('active');
             $navCol.collapse('hide');
