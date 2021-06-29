@@ -3,6 +3,14 @@
 section {
   display: block; }
 
+#mediaCarousel video {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  margin: 0 auto;
+  display: block; }
+
 h1.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
@@ -264,43 +272,46 @@ p.contact {
         #main .banner-strip .dg-wrapper {
           max-width: 270px;
           max-height: 270px; } }
-      #main .banner-strip .dg-wrapper a {
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item {
+        opacity: 0;
+        transition: opacity ease-out 0.7s; }
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item.active,
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item-next.carousel-item-left,
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item-prev.carousel-item-right {
+        opacity: 1; }
+      #main .banner-strip .dg-wrapper .carousel-fade .active.carousel-item-left,
+      #main .banner-strip .dg-wrapper .carousel-fade .active.carousel-item-right {
+        opacity: 0; }
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item-next,
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item-prev,
+      #main .banner-strip .dg-wrapper .carousel-fade .carousel-item.active,
+      #main .banner-strip .dg-wrapper .carousel-fade .active.carousel-item-left,
+      #main .banner-strip .dg-wrapper .carousel-fade .active.carousel-item-prev {
+        transform: translateX(0);
+        transform: translate3d(0, 0, 0); }
+      #main .banner-strip .dg-wrapper video {
+        object-fit: fill;
         width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0; }
-        #main .banner-strip .dg-wrapper a video {
-          height: auto !important;
-          max-width: 550px;
-          max-height: 550px;
-          margin: 0 auto;
-          display: block; }
-          @media (max-width: 1599.98px) {
-            #main .banner-strip .dg-wrapper a video {
-              max-width: 450px;
-              max-height: 450px; } }
-          @media (max-width: 576.98px) {
-            #main .banner-strip .dg-wrapper a video {
-              max-width: 300px;
-              max-height: 300px; } }
-          @media (max-width: 379.98px) {
-            #main .banner-strip .dg-wrapper a video {
-              max-width: 270px;
-              max-height: 270px; } }
-        #main .banner-strip .dg-wrapper a:first-child {
-          z-index: 2; }
-      #main .banner-strip .dg-wrapper a.dg-transition {
-        transition: all 0.5s ease-in-out; }
-      #main .banner-strip .dg-wrapper a.dg-transition-fast {
-        transition: all 0.2s ease-in-out; }
+        height: auto;
+        max-width: 550px;
+        margin: 0 auto;
+        display: block; }
+        @media (max-width: 1599.98px) {
+          #main .banner-strip .dg-wrapper video {
+            max-width: 450px;
+            max-height: 450px; } }
+        @media (max-width: 576.98px) {
+          #main .banner-strip .dg-wrapper video {
+            max-width: 300px;
+            max-height: 300px; } }
+        @media (max-width: 379.98px) {
+          #main .banner-strip .dg-wrapper video {
+            max-width: 270px;
+            max-height: 270px; } }
     #main .banner-strip .dg-container {
       position: relative;
       width: 100%;
       height: 100%; }
-      #main .banner-strip .dg-container #lightButton2 {
-        bottom: 20px; }
       #main .banner-strip .dg-container .button {
         top: 0;
         position: relative !important;
@@ -374,10 +385,10 @@ p.contact {
           @media (max-width: 379.98px) {
             #main .banner-strip .dg-container .button li {
               transform: scale(0.6); } }
-      #main .banner-strip .dg-container .light {
+      #main .banner-strip .dg-container li.active {
         transform: scale(1.1); }
-        #main .banner-strip .dg-container .light svg path, #main .banner-strip .dg-container .light svg line.a, #main .banner-strip .dg-container .light svg line.b {
-          stroke-dasharray: 500;
+        #main .banner-strip .dg-container li.active svg path, #main .banner-strip .dg-container li.active svg line.a, #main .banner-strip .dg-container li.active svg line.b {
+          stroke-dasharray: 800;
           stroke-dashoffset: 1000;
           animation-name: icon-animation;
           animation-duration: 4s;
@@ -389,6 +400,7 @@ p.contact {
     opacity: 1; }
   50% {
     stroke-dashoffset: 500;
+    stroke: #e72327;
     opacity: 0.9; }
   100% {
     stroke: #e72327;

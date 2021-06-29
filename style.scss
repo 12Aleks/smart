@@ -8,6 +8,18 @@ section {
   display: block;
 }
 
+#mediaCarousel {
+  video {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
 h1.title {
   font: 300 4rem/4.8rem Lato;
   letter-spacing: 0;
@@ -99,16 +111,19 @@ p.descriptions {
   @media (max-width: 575.98px) {
     font: 300 1rem/1.3rem Lato;
   }
-  span{
+
+  span {
     font-weight: 700;
   }
 }
-ul.descriptions{
+
+ul.descriptions {
   list-style: none;
   @media (max-width: 575.98px) {
     padding-left: 15px;
   }
-  li{
+
+  li {
     font: 300 1.5rem/1.875rem Lato;
     letter-spacing: 0;
     color: $global-text-gray;
@@ -121,6 +136,7 @@ ul.descriptions{
     @media (max-width: 575.98px) {
       font: 300 1rem/1.3rem Lato;
     }
+
     &:before {
       content: "\2022";
       color: red;
@@ -324,6 +340,7 @@ p.contact {
       margin-right: auto;
       width: 550px;
       height: 550px;
+
       position: relative;
       @media (max-width: 1599.98px) {
         max-width: 450px;
@@ -338,45 +355,52 @@ p.contact {
         max-height: 270px;
       }
 
-      a {
+      .carousel-fade .carousel-item {
+        opacity: 0;
+        transition: opacity ease-out .7s
+
+      }
+
+      .carousel-fade .carousel-item.active,
+      .carousel-fade .carousel-item-next.carousel-item-left,
+      .carousel-fade .carousel-item-prev.carousel-item-right {
+        opacity: 1;
+      }
+
+      .carousel-fade .active.carousel-item-left,
+      .carousel-fade .active.carousel-item-right {
+        opacity: 0;
+      }
+
+      .carousel-fade .carousel-item-next,
+      .carousel-fade .carousel-item-prev,
+      .carousel-fade .carousel-item.active,
+      .carousel-fade .active.carousel-item-left,
+      .carousel-fade .active.carousel-item-prev {
+        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
+      }
+
+
+      video {
+        object-fit: fill;
         width: 100%;
-        height: 100%;
+        height: auto;
+        max-width: 550px;
+        margin: 0 auto;
         display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        video {
-          height: auto !important;
-          max-width: 550px;
-          max-height: 550px;
-          margin: 0 auto;
-          display: block;
-          @media (max-width: 1599.98px) {
-            max-width: 450px;
-            max-height: 450px;
-          }
-          @media (max-width: 576.98px) {
-            max-width: 300px;
-            max-height: 300px;
-          }
-          @media (max-width: 379.98px) {
-            max-width: 270px;
-            max-height: 270px;
-          }
+        @media (max-width: 1599.98px) {
+          max-width: 450px;
+          max-height: 450px;
         }
-
-        &:first-child {
-          z-index: 2;
+        @media (max-width: 576.98px) {
+          max-width: 300px;
+          max-height: 300px;
         }
-      }
-
-      a.dg-transition {
-        transition: all 0.5s ease-in-out;
-      }
-
-      a.dg-transition-fast {
-        transition: all 0.2s ease-in-out;
+        @media (max-width: 379.98px) {
+          max-width: 270px;
+          max-height: 270px;
+        }
       }
     }
 
@@ -385,9 +409,9 @@ p.contact {
       width: 100%;
       height: 100%;
 
-      #lightButton2 {
-        bottom: 20px;
-      }
+      //#lightButton2 {
+      //  bottom: 20px;
+      //}
 
       .button {
         top: 0;
@@ -405,7 +429,8 @@ p.contact {
         @media (max-width: 379.98px) {
           height: 50px;
         }
-        &:nth-child(1) li{
+
+        &:nth-child(1) li {
           height: 58px;
           width: 52px;
           @media (max-width: 575.98px) {
@@ -414,7 +439,7 @@ p.contact {
           }
         }
 
-        &:nth-child(2) li{
+        &:nth-child(2) li {
           height: 58px;
           width: 61px;
           @media (max-width: 575.98px) {
@@ -426,7 +451,7 @@ p.contact {
           }
         }
 
-        &:nth-child(3) li{
+        &:nth-child(3) li {
           height: 58px;
           width: 54px;
           @media (max-width: 575.98px) {
@@ -438,7 +463,7 @@ p.contact {
           }
         }
 
-        &:nth-child(4) li{
+        &:nth-child(4) li {
           height: 58px;
           width: 70px;
           @media (max-width: 575.98px) {
@@ -450,7 +475,7 @@ p.contact {
           }
         }
 
-        &:nth-child(5) li{
+        &:nth-child(5) li {
           height: 42px;
           width: 68px;
           @media (max-width: 575.98px) {
@@ -461,6 +486,7 @@ p.contact {
 
           }
         }
+
         li {
           cursor: pointer;
           display: inline-block;
@@ -486,10 +512,10 @@ p.contact {
         }
       }
 
-      .light {
+      li.active {
         transform: scale(1.1);
         svg path, svg line.a, svg line.b {
-          stroke-dasharray: 500;
+          stroke-dasharray: 800;
           stroke-dashoffset: 1000;
           animation-name: icon-animation;
           animation-duration: 4s;
@@ -501,11 +527,14 @@ p.contact {
           0% {
             stroke-dashoffset: 1000;
             opacity: 1;
+
           }
           50% {
             stroke-dashoffset: 500;
+            stroke: #e72327;
             opacity: 0.9;
           }
+
           100% {
             stroke: #e72327;
             stroke-dashoffset: 0;
@@ -515,6 +544,7 @@ p.contact {
       }
     }
   }
+
   /*end banner strip*/
 
   .room-strip {
@@ -599,6 +629,7 @@ p.contact {
         overflow-x: auto;
         overflow-y: hidden;
         padding: 0;
+
         img {
           margin: 0 auto;
           max-width: 1920px;
@@ -639,14 +670,15 @@ p.contact {
         height: 320px;
       }
       @media (max-width: 475.98px) {
-      height: 380px;
-    }
+        height: 380px;
+      }
       @media (max-width: 395.98px) {
         height: 430px;
       }
       @media (max-width: 349.98px) {
         height: 520px;
       }
+
       h4 {
         height: 77px;
         @media (max-width: 575.98px) {
@@ -705,12 +737,14 @@ p.contact {
 
   .over {
     overflow: hidden;
-    .houseSmart{
+
+    .houseSmart {
       display: inherit;
       @media (max-width: 445.98px) {
         display: none;
       }
-      .app_img_box{
+
+      .app_img_box {
         max-width: 705px;
         height: auto;
         position: relative;
@@ -720,8 +754,8 @@ p.contact {
         margin: 0 auto;
         @media (max-width: 991.98px) {
           max-width: 600px;
-          .carousel-item{
-            img{
+          .carousel-item {
+            img {
               max-width: 600px;
               height: auto;
             }
@@ -729,25 +763,26 @@ p.contact {
         }
         @media (max-width: 767.98px) {
           max-width: 450px;
-          .carousel-item{
-            img{
+          .carousel-item {
+            img {
               max-width: 450px;
             }
           }
         }
         @media (max-width: 575.98px) {
           max-width: 400px;
-          .carousel-item{
-            img{
+          .carousel-item {
+            img {
               max-width: 400px;
             }
           }
         }
 
-        #carouselExampleIndicators2.carousel-fade{
-          .carousel-item.active{
+        #carouselExampleIndicators2.carousel-fade {
+          .carousel-item.active {
             transition: opacity .1s ease-in-out;
           }
+
           ol.carousel-indicators {
             position: relative;
             padding: 40px 0;
@@ -755,7 +790,7 @@ p.contact {
               padding: 20px 0;
             }
 
-            li{
+            li {
               box-sizing: content-box;
               -ms-flex: 0 1 auto;
               flex: 0 1 auto;
@@ -780,6 +815,7 @@ p.contact {
                 margin-right: 0;
               }
             }
+
             .active {
               background-color: $global-red;
             }
@@ -792,7 +828,8 @@ p.contact {
   .video-strip {
     .video-wrapper {
       padding: 100px 0 0;
-      .embed-responsive{
+
+      .embed-responsive {
         max-width: 1920px;
         margin: 0 auto;
       }
@@ -1014,6 +1051,7 @@ p.contact {
     input:invalid:not(:placeholder-shown) {
       border-color: red;
     }
+
     input:invalid:not(:placeholder-shown) + .form__error {
       display: block;
     }
