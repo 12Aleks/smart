@@ -291,6 +291,9 @@ p.contact {
         transform: translateX(0);
         transform: translate3d(0, 0, 0); }
       #main .banner-strip .dg-wrapper video {
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         object-fit: fill;
         width: 100%;
         height: auto;

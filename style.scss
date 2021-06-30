@@ -383,6 +383,9 @@ p.contact {
 
 
       video {
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         object-fit: fill;
         width: 100%;
         height: auto;
