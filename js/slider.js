@@ -1,29 +1,49 @@
 $(document).ready(function () {
     const $mediaCarousel = $("#mediaCarousel");
-
-
     $mediaCarousel.carousel({interval: false});
+    let slide = $mediaCarousel.find('.carousel-item');
     let videos = document.querySelectorAll("video.video-fluid");
-    videos.forEach(function (e) {
-        e.addEventListener('ended', myHandler, false);
 
+    videos.forEach((video, index) => {
+        if (index !== 0) {
+            video.pause();
+        }
+        video.addEventListener('ended', () => {
+            $mediaCarousel.carousel('next');
+        });
     });
+
+
+    $mediaCarousel.on('slide.bs.carousel', function (event) {
+        let from = slide[event.from].querySelectorAll('video')[0];
+        let to = slide[event.to].querySelectorAll('video')[0];
+        let isPlaying = to.currentTime > 0 && to.readyState > 2;
+
+        to.play();
+
+        if (isPlaying) {
+            from.pause();
+
+        }
+    });
+
 
     $('*[data-target="#mediaCarousel"]').click(function () {
-        videos.forEach(function (e) {
-            setTimeout(() => {
-                e.currentTime = 0;
-            }, 100);
+        $mediaCarousel.on('slid.bs.carousel', function (event) {
+            let from = slide[event.from].querySelectorAll('video')[0];
+            let to = slide[event.to].querySelectorAll('video')[0];
+            let isPlaying = to.currentTime > 0 && to.readyState > 2;
+
+            to.play();
+
+            if (isPlaying) {
+                from.pause();
+            }
         });
-        console.log('Click')
+
+        videos.forEach( video => {
+            video.currentTime = 0
+        })
+
     });
-
-    function myHandler() {
-        setTimeout(() => {
-            this.currentTime = 0;
-        }, 1000);
-
-        $mediaCarousel.carousel('next');
-    }
-
 });

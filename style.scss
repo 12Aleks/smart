@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
 /*Global color*/
 $global-red: #E72327;
 $global-text-gray: #303030;
@@ -73,7 +75,6 @@ h4.subTitle, span.subTitle {
   color: $global-text-gray;
   @media (max-width: 1670.98px) {
     font: 300 2.5rem/1.875rem Lato;
-    //text-align: center;
     margin-top: 40px;
   }
   @media(max-width: 1098.98px) {
@@ -169,7 +170,6 @@ p.contact {
 #navigation {
   background-color: rgba(255, 255, 255, 0.99);
   transition: -webkit-transform 500ms ease-in-out;
-  //transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out,
   -webkit-transform 500ms ease-in-out;
   -webkit-transform: translateZ(0) translateY(0);
