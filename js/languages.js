@@ -302,6 +302,7 @@ const langArr = {
 
 
 // let $href = document.location.pathname;
+
 let $translate = $('.translate');
 let $lang = navigator.language.slice(0, 2);
 
