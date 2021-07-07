@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 /*Global color*/
 $global-red: #E72327;
@@ -23,94 +24,94 @@ section {
 
 
 h1.title {
-  font: 300 4rem/4.8rem Lato;
+  font: 300 3.8rem/4.8rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030;
   opacity: 1;
   line-height: 1;
   @media (max-width: 1670.98px) {
-    font: 300 3rem/3.3rem Lato;
+    font: 300 3rem/3.3rem 'Roboto', sans-serif;
   }
   @media(max-width: 1098.98px) {
-    font: 300 2.8rem/3rem Lato;
+    font: 300 2.8rem/3rem 'Roboto', sans-serif;
   }
   @media (max-width: 767.98px) {
-    font: 300 2.5rem/2.8rem Lato;
+    font: 300 2.5rem/2.8rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
-    font: 300 2rem/2.3rem Lato;
+    font: 300 2rem/2.3rem 'Roboto', sans-serif;
   }
   @media (max-width: 379.98px) {
-    font: 300 1.8rem/2.3rem Lato;
+    font: 300 1.8rem/2.3rem 'Roboto', sans-serif;
   }
 }
 
 h3.title {
-  font: 300 4rem/4.8rem Lato;
+  font: 300 4rem/4.8rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030;
   opacity: 1;
   line-height: 1;
   @media (max-width: 1670.98px) {
-    font: 300 3rem/3.3rem Lato;
+    font: 300 3rem/3.3rem 'Roboto', sans-serif;
   }
   @media(max-width: 1098.98px) {
-    font: 300 2.8rem/3rem Lato;
+    font: 300 2.8rem/3rem 'Roboto', sans-serif;
   }
   @media (max-width: 767.98px) {
-    font: 300 2.5rem/2.8rem Lato;
+    font: 300 2.5rem/2.8rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
-    font: 300 2rem/2.3rem Lato;
+    font: 300 2rem/2.3rem 'Roboto', sans-serif;
     text-align: center;
   }
   @media (max-width: 379.98px) {
-    font: 300 1.8rem/2.3rem Lato;
+    font: 300 1.8rem/2.3rem 'Roboto', sans-serif;
   }
 }
 
 h4.subTitle, span.subTitle {
-  font: 300 3rem/2.4rem Lato;
+  font: 300 3rem/2.4rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: $global-text-gray;
   @media (max-width: 1670.98px) {
-    font: 300 2.5rem/1.875rem Lato;
+    font: 300 2.5rem/1.875rem 'Roboto', sans-serif;
     margin-top: 40px;
   }
   @media(max-width: 1098.98px) {
-    font: 300 2.3rem/1.875rem Lato;
+    font: 300 2.3rem/1.875rem 'Roboto', sans-serif;
   }
   @media (max-width: 991.98px) {
     text-align: center;
   }
   @media (max-width: 767.98px) {
-    font: 300 2rem/1.875rem Lato;
+    font: 300 2rem/1.875rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
-    font: 300 1.3rem/1.5rem Lato;
+    font: 300 1.3rem/1.5rem 'Roboto', sans-serif;
     text-align: left;
 
   }
 }
 
 h6.sm_title {
-  font: 500 1.25rem/1.5rem Lato;
+  font: 500 1.25rem/1.5rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #3D3C3C;
 }
 
 p.descriptions {
-  font: 300 1.5rem/1.875rem Lato;
+  font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: $global-text-gray;
   @media (max-width: 991.98px) {
-    font: 300 1.2rem/1.5rem Lato;
+    font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
   }
   @media (max-width: 767.98px) {
-    font: 300 1.1rem/1.4rem Lato;
+    font: 300 1.1rem/1.4rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
-    font: 300 1rem/1.3rem Lato;
+    font: 300 1rem/1.3rem 'Roboto', sans-serif;
   }
 
   span {
@@ -125,22 +126,22 @@ ul.descriptions {
   }
 
   li {
-    font: 300 1.5rem/1.875rem Lato;
+    font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
     letter-spacing: 0;
     color: $global-text-gray;
     @media (max-width: 991.98px) {
-      font: 300 1.2rem/1.5rem Lato;
+      font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
     }
     @media (max-width: 767.98px) {
-      font: 300 1.1rem/1.4rem Lato;
+      font: 300 1.1rem/1.4rem 'Roboto', sans-serif;
     }
     @media (max-width: 575.98px) {
-      font: 300 1rem/1.3rem Lato;
+      font: 300 1rem/1.3rem 'Roboto', sans-serif;
     }
 
     &:before {
       content: "\2022";
-      color: red;
+      color: $global-red;
       font-weight: 200;
       display: inline-block;
       width: 1em;
@@ -150,11 +151,11 @@ ul.descriptions {
 }
 
 p.contact {
-  font: 500 1rem/1.5rem Lato;
+  font: 500 1rem/1.5rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: $global-text-gray;
   @media (max-width: 575.98px) {
-    font: 300 1rem/1.3rem Lato;
+    font: 300 1rem/1.3rem 'Roboto', sans-serif;
   }
 }
 
@@ -195,11 +196,20 @@ p.contact {
     }
 
     a {
-      font: 300 14px/17px Lato;
+      font: 400 14px/17px 'Roboto', sans-serif;
       text-decoration: none;
       letter-spacing: 0;
-      color: #fff;
-      //color: #707070
+      color: #707070;
+      margin-left: 5px;
+
+      &:hover {
+        color: $global-red;
+        transition: color .7s;
+      }
+    }
+
+    a.active {
+      color: $global-red;
     }
   }
 
@@ -243,7 +253,7 @@ p.contact {
 
       .navbar-collapse {
         a {
-          font: 300 1.125rem/22px Lato;
+          font: 300 1.125rem/22px 'Roboto', sans-serif;
           text-decoration: none;
           letter-spacing: 0;
           color: #707070
@@ -517,6 +527,7 @@ p.contact {
 
       li.active {
         transform: scale(1.1);
+
         svg path, svg line.a, svg line.b {
           stroke-dasharray: 800;
           stroke-dashoffset: 1000;
@@ -1040,7 +1051,7 @@ p.contact {
     padding: 163px 15px 63px;
 
     .form__error {
-      color: red;
+      color: $global-red;
       text-align: left;
       font-size: 12px;
       margin-top: 3px;
@@ -1052,7 +1063,7 @@ p.contact {
     }
 
     input:invalid:not(:placeholder-shown) {
-      border-color: red;
+      border-color: $global-red;
     }
 
     input:invalid:not(:placeholder-shown) + .form__error {
@@ -1064,8 +1075,9 @@ p.contact {
       width: 265px;
       height: 56px;
       float: right;
+      text-transform: uppercase;
       background-color: $global-red;
-      font: 300 16px/19px Lato;
+      font: 300 16px/19px 'Roboto', sans-serif;
       letter-spacing: 0;
       color: #FFFFFF;
       @media (max-width: 379.98px) {
@@ -1089,7 +1101,7 @@ footer {
       padding: 10px 8px;
       text-decoration: none;
       text-align: center;
-      font: 500 1rem/1.5rem Lato;
+      font: 500 1rem/1.5rem 'Roboto', sans-serif;
 
       &:hover {
         color: rgb(247, 219, 212);

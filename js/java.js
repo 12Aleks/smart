@@ -1,8 +1,8 @@
 let $handBox = $('.hand_box'),
     $nav = $('#navigation'),
     $navCol = $('.navbar-collapse'),
-    $navIcon = $('#nav-icon');
-$myDiv = $(".img-room");
+    $navIcon = $('#nav-icon'),
+    $myDiv = $(".img-room");
 $(window).resize(function () {
     let $myChild = $myDiv.find("> *:first-child");
     $myDiv.animate({
@@ -13,15 +13,7 @@ $(window).resize(function () {
 });
 
 
-
 $(document).ready(function () {
-    $('#carouselExampleIndicators.carousel').carousel({
-        interval: 10000
-    });
-    $('#carouselExampleIndicators2.carousel').carousel({
-        interval: 3000
-    });
-
     $('.navbar-toggler').click(function () {
         $('#nav-icon').toggleClass('active')
     });
@@ -60,12 +52,13 @@ $(document).ready(function () {
             $nav.addClass('fold-active');
             $navIcon.removeClass('active');
             $navCol.collapse('hide');
-        } else if($(this).scrollTop() <= 300) {
+        } else if ($(this).scrollTop() <= 300) {
             $nav.removeClass('fold-active');
             $navIcon.removeClass('active');
             $navCol.collapse('hide');
         }
     }
+
     window.addEventListener("load", scroll);
     window.addEventListener("scroll", scroll);
 
@@ -81,26 +74,20 @@ $(document).ready(function () {
         });
     });
 
-//function for adding SVG images in my index.html file
     $('img.svg').each(function () {
         let $img = $(this);
         let $imgID = $img.attr('id');
         let $imgClass = $img.attr('class');
         let $imgURL = $img.attr('src');
         $.get($imgURL, function (data) {
-            // Get the SVG tag, ignore the rest
             let $svg = $(data).find('svg');
-            // Add replaced image's ID to the new SVG
             if (typeof $imgID !== 'undefined') {
                 $svg = $svg.attr('id', $imgID);
             }
-            // Add replaced image's classes to the new SVG
             if (typeof imgClass !== 'undefined') {
                 $svg = $svg.attr('class', $imgClass + ' replaced-svg');
             }
-            // Remove any invalid XML tags as per http:validator.w3.org
             $svg = $svg.removeAttr('xmlns:a');
-            // Replace image with new SVG
             $img.replaceWith($svg);
         });
     });

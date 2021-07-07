@@ -18,9 +18,10 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-2">
                 <div class="w-100 d-flex flex-column align-items-end justify-content-end">
                     <div class="lang">
-                        <a href="#">PL</a>
-                        <a href="#">EN</a>
-                        <a href="#">DE</a>
+                        <a href="/pl" class="translate" id="pl">PL</a>
+                        <a href="/en" class="translate" id="en">EN</a>
+                        <a href="/de" class="translate" id="de">DE</a>
+                        <a href="/ru" class="translate" id="ru">RU</a>
                     </div>
                 </div>
             </div>
@@ -54,20 +55,22 @@
                             <div>
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-item nav-link" href="#opis">Opis systemu<span
-                                                class="sr-only">(current)</span></a>
+                                        <a class="nav-item nav-link lan" href="#opis" key="description">Opis
+                                            systemu<span
+                                                    class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-item nav-link" href="#video">Prezentacja</a>
+                                        <a class="nav-item nav-link lan" href="#video" key="presetation">Prezentacja</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-item nav-link" href="#aplikacja">O aplikacji</a>
+                                        <a class="nav-item nav-link lan" href="#aplikacja" key="aboutApp">O
+                                            aplikacji</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-item nav-link" href="#produkty">Produkty</a>
+                                        <a class="nav-item nav-link lan" href="#produkty" key="products">Produkty</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-item nav-link" href="#kontakt">Kontakt</a>
+                                        <a class="nav-item nav-link lan" href="#kontakt" key="contact">Kontakt</a>
                                     </li>
                                 </ul>
                             </div>
@@ -85,9 +88,11 @@
                 <div id="mediaCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-0 order-sm-0 order-md-0 order-lg-1 align-self-center">
-                            <h1 class="title text-center text-sm-center text-md-center text-lg-left">Poznaj rodzinę
-                                naszych
-                                <br/>produktów WiFi</h1>
+                            <h1 class="title text-center text-sm-center text-md-center text-lg-left lan"
+                                key="bannerFirst">Poznaj rodzinę
+                                naszych</h1>
+                            <h1 class="title text-center text-sm-center text-md-center text-lg-left lan"
+                                key="bannerSecond">produktów WiFi</h1>
                             <ol class="carousel-indicators button pt-2 pl-0 d-flex align-items-center justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start"
                                 id="lightButton">
                                 <li data-target="#mediaCarousel" data-slide-to="0"
@@ -169,8 +174,8 @@
     <div id='opis' class="container smart">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="title">Opis systemu</h3>
-                <h3 class="title">Terma SMART WiFi</h3>
+                <h3 class="title lan" key="slidTitleFirst">Opis systemu</h3>
+                <h3 class="title lan" key="slidTitleSecond">Terma SMART WiFi</h3>
             </div>
             <div class="col-lg-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -187,18 +192,18 @@
                                     Your browser does not support SVG
                                 </object>
                                 <!--                                <img class='svg' src="./images/carusel/phone.svg" alt="control">-->
-                                <span class="subTitle ml-3">Czym jest Terma SMART</span>
+                                <span class="subTitle ml-3 lan" key="firstSlideTitle">Czym jest Terma SMART</span>
                             </h4>
                             <ul class="descriptions">
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">To gama elektrycznych produktów grzewczych
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="firstSlideFirst">To gama elektrycznych produktów grzewczych
                                     sterowanych bezprzewodowo,
                                 </li>
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">to
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="firstSlideSecond">to
                                     innowacyjnie zaprojektowany system sterowania ogrzewaniem pomieszczeń, który
                                     dopasujesz z łatwością do swoich potrzeb, mając do wyboru trzy typy urządzeń i dwa
                                     rodzaje czujników,
                                 </li>
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">to system inteligentnie reagujący na
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="firstSlideThird">to system inteligentnie reagujący na
                                     zmieniające się warunki i
                                     komunikacja z wykorzystaniem chmury.
                                 </li>
@@ -210,16 +215,16 @@
                                     Your browser does not support SVG
                                 </object>
                                 <!--                                <img class='svg' src="./images/carusel/safety.svg" alt="security">-->
-                                <span class="subTitle ml-3">Zdalne sterowanie</span>
+                                <span class="subTitle ml-3 lan" key="secondSlideTitle">Zdalne sterowanie</span>
                             </h4>
                             <ul class="descriptions">
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Unikalną cechą systemu Smart jest to, że
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="secondSlideFirst">Unikalną cechą systemu Smart jest to, że
                                     wszystkie urządzenia komunikują się bezpośrednio z lokalnym (domowym) routerem wifi
                                     -
                                     dzięki temu nie jest potrzebny żaden oddzielny moduł kontrolny, a to oznacza poważną
                                     oszczędność przy zakupie systemu.
                                 </li>
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Do zarządzania systemem służy darmowa aplikacja
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="secondSlideSecond">Do zarządzania systemem służy darmowa aplikacja
                                     sterująca TERMA Smart, dostępna dla systemów Android oraz iOS.
                                 </li>
                             </ul>
@@ -229,18 +234,18 @@
                                 <object type="image/svg+xml" data="./images/carusel/design.svg">
                                     Your browser does not support SVG
                                 </object>
-                                <span class="subTitle ml-3">Design i konstrukcja</span>
+                                <span class="subTitle ml-3 lan" key="thirdSlideTitle">Design i konstrukcja</span>
                             </h4>
                             <ul class="descriptions">
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Nowoczesny design podkreśla unikalność każdego
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="thirdSlideFirst">Nowoczesny design podkreśla unikalność każdego
                                     z urządzeń
                                     wspierając ergonomię użytkowania, a jednocześnie spaja całą rodzinę produktów.
                                 </li>
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Elegancką
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="thirdSlideSecond">Elegancką
                                     czerń i ponadczasową biel można wzbogacić kolorowymi nakładkami, a wielofunkcyjny
                                     wskaźnik dostosuje się do pozycji montażu urządzenia.
                                 </li>
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Urządzenia dysponują mocą do 2
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="thirdSlideThird">Urządzenia dysponują mocą do 2
                                     000W i różnymi wariantami przyłączy elektrycznych, a grzałka VEO wyposażona jest w
                                     unikalne złącze Smart SPLIT.
                                 </li>
@@ -251,10 +256,10 @@
                                 <object type="image/svg+xml" data="./images/carusel/safety.svg">
                                     Your browser does not support SVG
                                 </object>
-                                <span class="subTitle ml-3">Bezpieczeństwo i opcje SMART</span>
+                                <span class="subTitle ml-3 lan" key="fourthSlideTitle">Bezpieczeństwo i opcje SMART</span>
                             </h4>
                             <ul class="descriptions">
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Nad bezpieczeństwem użytkownika czuwają
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="fourthSlideFirst">Nad bezpieczeństwem użytkownika czuwają
                                     sterowniki wyposażone w algorytmy kontrolujące temperaturę, a każde z urządzeń
                                     grzewczych posiada wbudowane specjalnie dobrane zabezpieczenie termiczne,
                                     zapobiegające
@@ -262,7 +267,7 @@
                                     wstępnie funkcje ochronne,
                                     jak AntiFrost oraz czujnik otwarcia okna.
                                 </li>
-                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Samoucząca się funkcja Wcześniejszy Start oraz
+                                <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="fourthSlideSecond">Samoucząca się funkcja Wcześniejszy Start oraz
                                     trzy tryby pracy (Komfortowy, Zbalansowany i Ekonomiczny) wspierają indywidualne
                                     preferencje użytkownika.
                                 </li>
@@ -294,21 +299,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="app_descriptions pb-5">
-                        <h3 class="title text-center pb-5 mb-4">Aplikacja uszyta na miarę</h3>
+                        <h3 class="title text-center pb-5 mb-4 lan" key="appTitle">Aplikacja uszyta na miarę</h3>
                         <div class="app_telephones">
                             <img class="sm_appImgFirst" src="images/downloadApp/app_screen_small.png" alt="app first">
                             <img class="sm_appImgSecond" src="images/downloadApp/app_screen_2_small.png"
                                  alt="app second">
                         </div>
                         <ul class="descriptions">
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">Daje komfort zdalnego zarządzania każdym
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphFrist">Daje komfort zdalnego zarządzania każdym
                                 urządzeniem grzewczym Smart wi-fi,
                             </li>
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">ułatwia
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphSecond">ułatwia
                                 zarządzanie domem poprzez podział na strefy i ustalanie dla każdej z nich odrębnych
                                 parametrów pracy systemu,
                             </li>
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">dostarcza wymiernych korzyści ekonomicznych poprzez
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphThird">dostarcza wymiernych korzyści ekonomicznych poprzez
                                 łatwą
                                 optymalizację zużycia energii na ogrzewanie domu – korzystając z gotowych harmonogramów
                                 lub
@@ -316,17 +321,17 @@
                                 nie
                                 tracąc poczucia wysokiego komfortu cieplnego,
                             </li>
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">pozwala łatwo monitorować pracę urządzeń w
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphFourth">pozwala łatwo monitorować pracę urządzeń w
                                 całym domu,
                             </li>
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">pozwala łatwo monitorować koszty generowane przez
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphFifth">pozwala łatwo monitorować koszty generowane przez
                                 system,
                             </li>
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">może elastycznie
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphSixth">może elastycznie
                                 modyfikować parametry pracy systemu podwyższając temperaturę kiedy Użytkownik wkracza w
                                 określoną strefę wokół domu lub obniżając, kiedy ją opuszcza,
                             </li>
-                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4">pozwala zintegrować dowolną
+                            <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphSeventh">pozwala zintegrować dowolną
                                 ilość urządzeń grzewczych, dzięki czemu doskonale sprawdzi się jako system zarządzania
                                 temperaturą pomieszczeń w mieszkaniach i apartamentach.
                             </li>
@@ -369,8 +374,8 @@
             <div class="container ">
                 <div class="row d-flex flex-wrap">
                     <div class="col-lg-12 products_title_box">
-                        <h3 class="title text-center">Produkty współpracujące</h3>
-                        <h3 class="title text-center">w systemie Smart</h3>
+                        <h3 class="title text-center lan" key="productTitleFirst">Produkty współpracujące</h3>
+                        <h3 class="title text-center lan" key="productTitleSecond">w systemie Smart</h3>
                     </div>
 
                     <div class="col-md-12 col-lg-5 mt-lg-5 order-0 ">
@@ -379,19 +384,19 @@
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-7 d-flex flex-column justify-content-center mb-3 mb-sm-4 mb-md-5 mb-lg-0 mt-lg-5 order-1 ">
-                        <h4 class="subTitle">
+                        <h4 class="subTitle lan" key="veoTitle">
                             <img class='svg' src="./images/slider/grzalka.svg" alt=""
                                  style="height: 52px ;width: 52px;">
                             Grzałka VEO
                         </h4>
-                        <p class="descriptions">Grzałka VEO Wyrafinowany kształt obudowy i elegancki panel frontowy z
+                        <p class="descriptions lan" key="veoFirst">Grzałka VEO Wyrafinowany kształt obudowy i elegancki panel frontowy z
                             przygasającym
                             wyświetlaczem kryją w sobie delikatne z pozoru urządzenie. W rzeczywistości zdalnie
                             sterowana grzałka VEO Smart dysponuje mocą do 2000 W, a unikalne przyłącze elektryczne
                             pozwala zainstalować ją zarówno w pionie, jak i w poziomie, praktycznie w każdym grzejniku z
                             czynnikiem grzewczym.
                         </p>
-                        <p class="descriptions">Podstawowe regulacje (temperatura i prosty Timer) dostępne są poprzez
+                        <p class="descriptions lan" key="veoSecond">Podstawowe regulacje (temperatura i prosty Timer) dostępne są poprzez
                             panel frontowy, ale najwygodniejszy dostęp do pełnej funkcjonalności systemu daje aplikacja
                             mobilna TERMA Smart. Urządzenie współpracuje z czujnikami otwarcia okna oraz dodatkowym
                             czujnikiem temperatury i wilgotności serii SMART.
@@ -404,18 +409,18 @@
                         </div>
                     </div>
                     <div class="col-lg-7 d-flex flex-column justify-content-center mb-3 mb-sm-4 mb-md-5 mb-lg-0 mt-lg-5 order-3 order-sm-3 order-md-3 order-lg-2">
-                        <h4 class="subTitle">
+                        <h4 class="subTitle lan" key="heatingTitle">
                             <img class='svg' src="./images/slider/glowica.svg" alt=""
                                  style="height: 54px ;width: 61px;">
                             Głowica
                         </h4>
-                        <p class="descriptions">Wyrafinowane wzornictwo rodziny SMART, elegancka czerń lub ponadczasowa
+                        <p class="descriptions lan" key="heatingFirst">Wyrafinowane wzornictwo rodziny SMART, elegancka czerń lub ponadczasowa
                             biel obudowy
                             to cechy charakterystyczne głowicy termostatycznej VAZ. Razem przygasającym wyświetlaczem
                             nadają subtelności całemu urządzeniu. Głowica zasilana jest wysokowydajnym ogniwem
                             akumulatorowym, którego pojedyncze ładowanie wystarcza na cały sezon grzewczy.
                         </p>
-                        <p class="descriptions">Niezwykle
+                        <p class="descriptions lan" key="heatingSecond">Niezwykle
                             łatwy montaż oraz procedura autokalibracji pozwalają na instalację głowicy niemal w każdym
                             grzejniku i z każdym typem zaworu termostatycznego. Podstawowe regulacje dostępne są poprzez
                             panel na urządzeniu, a pełną funkcjonalność systemu obsługuje aplikacja mobilna TERMA Smart.
@@ -430,18 +435,18 @@
                         </div>
                     </div>
                     <div class="col-lg-7 d-flex flex-column justify-content-center mb-3 mb-sm-4 mb-md-5 mb-lg-0 mt-lg-5 order-5 ">
-                        <h4 class="subTitle">
+                        <h4 class="subTitle lan" key="radiatorTitle">
                             <img class='svg' src="./images/slider/grzejnik.svg" alt=""
                                  style="height: 54px ;width: 54px;">
                             Grzejnik
                         </h4>
-                        <p class="descriptions">Elektryczny konwektor VOLTAN - nowoczesny, prosty w obsłudze, wydajny, a
+                        <p class="descriptions lan" key="radiatorFirst">Elektryczny konwektor VOLTAN - nowoczesny, prosty w obsłudze, wydajny, a
                             jednocześnie
                             bardzo płaski, niemal niewyróżniający się na tle ściany. Grzejnik wyposażony jest w
                             niskotemperaturowy wymiennik o mocy 2000 W i zaawansowany sterownik z samouczącym się
                             algorytmem kontrolnym.
                         </p>
-                        <p class="descriptions">Podstawowe regulacje dostępne są poprzez panel na urządzeniu, a pełną
+                        <p class="descriptions lan" key="radiatorSecond">Podstawowe regulacje dostępne są poprzez panel na urządzeniu, a pełną
                             funkcjonalność systemu obsługuje aplikacja mobilna TERMA Smart. Urządzenie współpracuje z
                             czujnikami otwarcia okna oraz dodatkowym czujnikiem temperatury i wilgotności serii SMART.
                         </p>
@@ -453,19 +458,19 @@
                         </div>
                     </div>
                     <div class="col-lg-7 d-flex flex-column justify-content-center mb-3 mb-sm-4 mb-md-5 mb-lg-0 mt-lg-5 order-7 order-sm-7 order-md-7 order-lg-6">
-                        <h4 class="subTitle ">
+                        <h4 class="subTitle lan" key="sensorTitle">
                             <img class='svg' src="./images/slider/czujnik.svg" alt=""
                                  style="height: 42px ;width: 68px;">
                             Czujniki
                         </h4>
-                        <p class="descriptions">
+                        <p class="descriptions lan" key="sensorFirst">
                             <span>Czujniki Czujnik temperatury i wilgotności VTS</span><br>
                             Łatwy w montażu dwufunkcyjny czujnik stale
                             monitoruje temperaturę i wilgotność w pomieszczeniu, wysyłając informacje do urządzeń
                             grzewczych, jeśli tylko temperatura w kontrolowanej strefie zmieni się o pół stopnia.
 
                         </p>
-                        <p class="descriptions">
+                        <p class="descriptions lan" key="sensorSecond">
                             <span>Czujnik otwarcia okna VWS </span><br>
                             W przypadku otwarcia okna czujnik natychmiast wysyła informację
                             powodującą wyłączenie ogrzewania w danej strefie.
@@ -479,31 +484,34 @@
     <div id='kontakt' class="container contact-strip">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <h3 class="title text-center text-sm-center text-md-center text-lg-left mb-5">
+                <h3 class="title text-center text-sm-center text-md-center text-lg-left mb-5 lan" key="contact">
                     Kontakt
                 </h3>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <h6 class="pb-3">Jesteśmy dostępni 24/7 </h6>
-                <p class="contact">Pracujemy od poniedziałku do piątku od 07:00 do 18:00. Ponadto jesteśmy
+                <h6 class="pb-3 lan" key="available">Jesteśmy dostępni 24/7 </h6>
+                <p class="contact lan" key="weWork">Pracujemy od poniedziałku do piątku od 07:00 do 18:00. Ponadto jesteśmy
                     dostępni 24 h na dobę przez 7 dni w tygodniu pod numerami telefonów komórkowych oraz za
                     pośrednictwem poczty e-mail. </p>
-                <h6>Dane firmy</h6>
-                <p class="contact">Czaple 100<br>
+                <h6 class="lan" key="details">Dane firmy</h6>
+                <p class="contact lan" key="address">Czaple 100<br>
                     80-298 Gdańsk<br>
                     Polska </p>
 
-                <p class="contact">NIP:583-10-18-844<br>
-                    REGON: 190558447 </p>
+                <p class="contact">
+                    <span class="lan" key="nip">NIP:583-10-18-844</span><br>
+                    <span class="lan" key="regon">REGON: 190558447 </span>
+                </p>
 
-                <p class="contact">nr rej. GIOŚ: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.<br>
-                    KRS nr 0000069067<br>
-                    Kapitał:2 360 500PLN <br>
-                    Nr konta bankowego: ING Bank Slaski S.A. Oddział w Gdańsku 88 1050 1764 1000 0023 0692 5997<br>
+                <p class="contact">
+                    <span class="lan" key="registration">nr rej. GIOŚ: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.</span><br>
+                    <span class="lan" key="KRS">KRS nr 0000069067</span><br>
+                    <span class="lan" key="capital">Kapitał:2 360 500PLN</span><br>
+                    <span class="lan" key="account">Nr konta bankowego: ING Bank Slaski S.A. Oddział w Gdańsku 88 1050 1764 1000 0023 0692 5997</span><br>
                 </p>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <h6 class="pb-3">Formularz kontaktowy</h6>
+                <h6 class="pb-3 lan" key="form">Formularz kontaktowy</h6>
                 <form id="contact-form">
                     <div class="form-group">
                         <input type="email" class="form-control" name="user_email"
@@ -519,7 +527,7 @@
                     <div class="form-group">
                         <textarea class="form-control" rows="6" name="user_message"></textarea>
                     </div>
-                    <button type="submit" class="btn">WYŚLIJ</button>
+                    <button type="submit" class="btn"><span class="lan" key="send">Wyślij</span></button>
                 </form>
             </div>
         </div>
@@ -530,12 +538,12 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="navbar justify-content-center">
-                    <a href="http://www.termagroup.pl/" class="nav-link" target="_blank">TERMA SPÓŁKA</a>
-                    <a href="http://www.termamax.pl/ru/glowna" class="nav-link" target="_blank">MASZYNY BUDOWLANE</a>
-                    <a href="http://www.termaservices.pl/" class="nav-link" target="_blank">USŁUGI PRZEMYSŁOWE</a>
-                    <a href="http://www.termagalvanic.pl/" class="nav-link" target="_blank">GALWANIZERNIA</a>
-                    <a href="https://www.termamed.pl/" class="nav-link" target="_blank">PRODUKTY MEDYCZNE</a>
-                    <a href="http://www.termaoutlet.pl/" class="nav-link" target="_blank">WYPRZEDAŻ GRZEJNIKÓW</a>
+                    <a href="http://www.termagroup.pl/" class="nav-link lan" target="_blank" key="terma">TERMA SPÓŁKA</a>
+                    <a href="http://www.termamax.pl/pl/glowna" class="nav-link lan" target="_blank" key="machinery">MASZYNY BUDOWLANE</a>
+                    <a href="http://www.termaservices.pl/" class="nav-link lan" target="_blank" key="services">USŁUGI PRZEMYSŁOWE</a>
+                    <a href="http://www.termagalvanic.pl/" class="nav-link lan" target="_blank" key="galvanizing">GALWANIZERNIA</a>
+                    <a href="https://www.termamed.pl/" class="nav-link lan" target="_blank" key="medical">PRODUKTY MEDYCZNE</a>
+                    <a href="http://www.termaoutlet.pl/" class="nav-link lan" target="_blank" key="sale">WYPRZEDAŻ GRZEJNIKÓW</a>
                 </div>
             </div>
         </div>
@@ -563,5 +571,7 @@
 <script src="js/sendForm.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/java.js"></script>
+
+<script type="module" src="js/languages.js"></script>
 </body>
 </html>

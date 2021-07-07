@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 /*Global color*/
 /*Global class*/
 section {
@@ -13,90 +14,90 @@ section {
   display: block; }
 
 h1.title {
-  font: 300 4rem/4.8rem Lato;
+  font: 300 3.8rem/4.8rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030;
   opacity: 1;
   line-height: 1; }
   @media (max-width: 1670.98px) {
     h1.title {
-      font: 300 3rem/3.3rem Lato; } }
+      font: 300 3rem/3.3rem 'Roboto', sans-serif; } }
   @media (max-width: 1098.98px) {
     h1.title {
-      font: 300 2.8rem/3rem Lato; } }
+      font: 300 2.8rem/3rem 'Roboto', sans-serif; } }
   @media (max-width: 767.98px) {
     h1.title {
-      font: 300 2.5rem/2.8rem Lato; } }
+      font: 300 2.5rem/2.8rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     h1.title {
-      font: 300 2rem/2.3rem Lato; } }
+      font: 300 2rem/2.3rem 'Roboto', sans-serif; } }
   @media (max-width: 379.98px) {
     h1.title {
-      font: 300 1.8rem/2.3rem Lato; } }
+      font: 300 1.8rem/2.3rem 'Roboto', sans-serif; } }
 
 h3.title {
-  font: 300 4rem/4.8rem Lato;
+  font: 300 4rem/4.8rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030;
   opacity: 1;
   line-height: 1; }
   @media (max-width: 1670.98px) {
     h3.title {
-      font: 300 3rem/3.3rem Lato; } }
+      font: 300 3rem/3.3rem 'Roboto', sans-serif; } }
   @media (max-width: 1098.98px) {
     h3.title {
-      font: 300 2.8rem/3rem Lato; } }
+      font: 300 2.8rem/3rem 'Roboto', sans-serif; } }
   @media (max-width: 767.98px) {
     h3.title {
-      font: 300 2.5rem/2.8rem Lato; } }
+      font: 300 2.5rem/2.8rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     h3.title {
-      font: 300 2rem/2.3rem Lato;
+      font: 300 2rem/2.3rem 'Roboto', sans-serif;
       text-align: center; } }
   @media (max-width: 379.98px) {
     h3.title {
-      font: 300 1.8rem/2.3rem Lato; } }
+      font: 300 1.8rem/2.3rem 'Roboto', sans-serif; } }
 
 h4.subTitle, span.subTitle {
-  font: 300 3rem/2.4rem Lato;
+  font: 300 3rem/2.4rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030; }
   @media (max-width: 1670.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 2.5rem/1.875rem Lato;
+      font: 300 2.5rem/1.875rem 'Roboto', sans-serif;
       margin-top: 40px; } }
   @media (max-width: 1098.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 2.3rem/1.875rem Lato; } }
+      font: 300 2.3rem/1.875rem 'Roboto', sans-serif; } }
   @media (max-width: 991.98px) {
     h4.subTitle, span.subTitle {
       text-align: center; } }
   @media (max-width: 767.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 2rem/1.875rem Lato; } }
+      font: 300 2rem/1.875rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 1.3rem/1.5rem Lato;
+      font: 300 1.3rem/1.5rem 'Roboto', sans-serif;
       text-align: left; } }
 
 h6.sm_title {
-  font: 500 1.25rem/1.5rem Lato;
+  font: 500 1.25rem/1.5rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #3D3C3C; }
 
 p.descriptions {
-  font: 300 1.5rem/1.875rem Lato;
+  font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030; }
   @media (max-width: 991.98px) {
     p.descriptions {
-      font: 300 1.2rem/1.5rem Lato; } }
+      font: 300 1.2rem/1.5rem 'Roboto', sans-serif; } }
   @media (max-width: 767.98px) {
     p.descriptions {
-      font: 300 1.1rem/1.4rem Lato; } }
+      font: 300 1.1rem/1.4rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     p.descriptions {
-      font: 300 1rem/1.3rem Lato; } }
+      font: 300 1rem/1.3rem 'Roboto', sans-serif; } }
   p.descriptions span {
     font-weight: 700; }
 
@@ -106,33 +107,33 @@ ul.descriptions {
     ul.descriptions {
       padding-left: 15px; } }
   ul.descriptions li {
-    font: 300 1.5rem/1.875rem Lato;
+    font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
     letter-spacing: 0;
     color: #303030; }
     @media (max-width: 991.98px) {
       ul.descriptions li {
-        font: 300 1.2rem/1.5rem Lato; } }
+        font: 300 1.2rem/1.5rem 'Roboto', sans-serif; } }
     @media (max-width: 767.98px) {
       ul.descriptions li {
-        font: 300 1.1rem/1.4rem Lato; } }
+        font: 300 1.1rem/1.4rem 'Roboto', sans-serif; } }
     @media (max-width: 575.98px) {
       ul.descriptions li {
-        font: 300 1rem/1.3rem Lato; } }
+        font: 300 1rem/1.3rem 'Roboto', sans-serif; } }
     ul.descriptions li:before {
       content: "\2022";
-      color: red;
+      color: #E72327;
       font-weight: 200;
       display: inline-block;
       width: 1em;
       margin-left: -1em; }
 
 p.contact {
-  font: 500 1rem/1.5rem Lato;
+  font: 500 1rem/1.5rem 'Roboto', sans-serif;
   letter-spacing: 0;
   color: #303030; }
   @media (max-width: 575.98px) {
     p.contact {
-      font: 300 1rem/1.3rem Lato; } }
+      font: 300 1rem/1.3rem 'Roboto', sans-serif; } }
 
 /*End global class*/
 #navigation.fold-active {
@@ -163,10 +164,16 @@ p.contact {
       #navigation .lang {
         margin: 0 18px 0 0; } }
     #navigation .lang a {
-      font: 300 14px/17px Lato;
+      font: 400 14px/17px 'Roboto', sans-serif;
       text-decoration: none;
       letter-spacing: 0;
-      color: #fff; }
+      color: #707070;
+      margin-left: 5px; }
+      #navigation .lang a:hover {
+        color: #E72327;
+        transition: color .7s; }
+    #navigation .lang a.active {
+      color: #E72327; }
   #navigation .logo-wrapper img.small-logo {
     display: none;
     height: 55px; }
@@ -191,7 +198,7 @@ p.contact {
         #navigation #navbar-main .navbar-container {
           width: auto; } }
       #navigation #navbar-main .navbar-container .navbar-collapse a {
-        font: 300 1.125rem/22px Lato;
+        font: 300 1.125rem/22px 'Roboto', sans-serif;
         text-decoration: none;
         letter-spacing: 0;
         color: #707070; }
@@ -783,7 +790,7 @@ p.contact {
   #main .contact-strip {
     padding: 163px 15px 63px; }
     #main .contact-strip .form__error {
-      color: red;
+      color: #E72327;
       text-align: left;
       font-size: 12px;
       margin-top: 3px;
@@ -791,7 +798,7 @@ p.contact {
     #main .contact-strip input:valid:not(:placeholder-shown) {
       border-color: green; }
     #main .contact-strip input:invalid:not(:placeholder-shown) {
-      border-color: red; }
+      border-color: #E72327; }
     #main .contact-strip input:invalid:not(:placeholder-shown) + .form__error {
       display: block; }
     #main .contact-strip button[type='submit'] {
@@ -799,8 +806,9 @@ p.contact {
       width: 265px;
       height: 56px;
       float: right;
+      text-transform: uppercase;
       background-color: #E72327;
-      font: 300 16px/19px Lato;
+      font: 300 16px/19px 'Roboto', sans-serif;
       letter-spacing: 0;
       color: #FFFFFF; }
       @media (max-width: 379.98px) {
@@ -818,7 +826,7 @@ footer {
       padding: 10px 8px;
       text-decoration: none;
       text-align: center;
-      font: 500 1rem/1.5rem Lato; }
+      font: 500 1rem/1.5rem 'Roboto', sans-serif; }
       footer .navbar a:hover {
         color: #f7dbd4;
         transition: all 0.3s ease-in-out; }
