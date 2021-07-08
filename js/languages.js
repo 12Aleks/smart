@@ -306,6 +306,7 @@ const langArr = {
 let $translate = $('.translate');
 let $lang = navigator.language.slice(0, 2);
 
+$('body').addClass($lang);
 
 $translate.each(function () {
     $(this).attr('id') === $lang && $(this).addClass('active');

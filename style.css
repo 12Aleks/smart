@@ -21,7 +21,7 @@ h1.title {
   line-height: 1; }
   @media (max-width: 1670.98px) {
     h1.title {
-      font: 300 3rem/3.3rem 'Roboto', sans-serif; } }
+      font: 300 2.9rem/3.3rem 'Roboto', sans-serif; } }
   @media (max-width: 1098.98px) {
     h1.title {
       font: 300 2.8rem/3rem 'Roboto', sans-serif; } }
@@ -77,7 +77,7 @@ h4.subTitle, span.subTitle {
       font: 300 2rem/1.875rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 1.3rem/1.5rem 'Roboto', sans-serif;
+      font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
       text-align: left; } }
 
 h6.sm_title {
@@ -502,7 +502,9 @@ p.contact {
     margin-right: auto; }
     @media (max-width: 991.98px) {
       #main .smart {
-        padding: 180px 50px 80px; } }
+        padding: 180px 50px 80px; }
+        #main .smart h3.title {
+          text-align: center; } }
     @media (max-width: 767.98px) {
       #main .smart {
         padding: 180px 30px 80px; } }
@@ -513,7 +515,7 @@ p.contact {
       height: 500px; }
       @media (max-width: 991.98px) {
         #main .smart #carouselExampleIndicators {
-          height: 400px; } }
+          height: 420px; } }
       @media (max-width: 575.98px) {
         #main .smart #carouselExampleIndicators {
           height: 320px; } }
@@ -717,6 +719,9 @@ p.contact {
       @media (max-width: 767.98px) {
         #main .app-strip .app_telephones {
           height: 400px; } }
+      @media (max-width: 379.98px) {
+        #main .app-strip .app_telephones {
+          margin-bottom: 40px; } }
       #main .app-strip .app_telephones .sm_appImgFirst, #main .app-strip .app_telephones .sm_appImgSecond {
         height: 550px;
         position: absolute;
