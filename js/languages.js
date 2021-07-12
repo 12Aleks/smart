@@ -155,8 +155,8 @@ const langArr = {
         "aboutApp": "О приложении",
         "products": "Продукция",
         "contact": "Контакт",
-        "bannerFirst": "Познакомьтесь с семeйством",
-        "bannerSecond": "WiFi продуктов",
+        "bannerFirst": "Познакомьтесь с",
+        "bannerSecond": "линейкой продуктов WiFi",
         "slidTitleFirst": "Описание системы",
         "slidTitleSecond": "Terma SMART WiFi",
         "firstSlideTitle": "Что такое Terma SMART",
@@ -297,7 +297,233 @@ const langArr = {
         "galvanizing": "GALWANIZERNIA",
         "medical": "PRODUKTY MEDYCZNE",
         "sale": "WYPRZEDAŻ GRZEJNIKÓW"
+    },
+    fr: {
+        "description": "Description",
+        "presetation": "Présentation",
+        "aboutApp": "À propos de l'application",
+        "products": "Des Produits",
+        "contact": "Contactez nous",
+        "bannerFirst": "Découvrez les produits",
+        "bannerSecond": "du système WiFi Terma",
+        "slidTitleFirst": "Description du système",
+        "slidTitleSecond": "Terma SMART WiFi",
+        "firstSlideTitle": "Qu'est-ce que Terma SMART",
+        "firstSlideFirst": "С'est une gamme de produits de chauffage électrique à commande sans fil,",
+        "firstSlideSecond": "Il s'agit d'un système de régulation de chauffage au design innovant qui peut être facilement adapté à vos besoins, comprenant un choix de trois types d'appareils et deux types de capteurs,",
+        "firstSlideThird": "C'est un système qui répond intelligemment aux conditions changeantes et communique via le cloud.",
+        ///
+        "secondSlideTitle": "Télécommande",
+        "secondSlideFirst": "Une caractéristique unique du système Smart est que tous les appareils communiquent directement avec le routeur wifi local (domestique) - aucun module de contrôle séparé n'est donc nécessaire, ce qui signifie une économie importante lors de l'achat du système.",
+        "secondSlideSecond": "Le système est géré par l'application gratuite TERMA Smart control, disponible pour Android et iOS.",
+        ///
+        "thirdSlideTitle": "Conception et réalisation",
+        "thirdSlideFirst": "Le design moderne met l'accent sur le caractère unique de chaque appareil, prend en charge l'ergonomie d'utilisation et lie toute la famille de produits.",
+        "thirdSlideSecond": "Le noir élégant et le blanc intemporel peuvent être enrichis de plaques de recouvrement colorées, et les boutons du panneau multifonctions s'adapteront à la position de montage de l'appareil (horizontale ou verticale).",
+        "thirdSlideThird": "La puissance de sortie des appareils va jusqu'à 2 000 W, comporte quelques variantes de connexions électriques et l'élément chauffant VEO est équipé d'un connecteur Smart SPLIT unique.",
+        ///
+        "fourthSlideTitle": "Options de sécurité et SMART",
+        "fourthSlideFirst": "La sécurité de l'utilisateur est assurée par des contrôleurs équipés d'algorithmes de contrôle de température, et chaque appareil de chauffage dispose d'une protection thermique spécialement sélectionnée pour éviter la surchauffe. Les fonctions de protection prédéfinies telles que l'Antigel et le détecteur d'ouverture de fenêtre restent actives en arrière-plan.",
+        "fourthSlideSecond": "La fonction d'auto-apprentissage Adaptiv Start et les trois modes de fonctionnement (Confort, Équilibre et Économique) prennent en charge les préférences individuelles de l'utilisateur.",
+        ///
+        "appTitle": "Application dédiée",
+        "appParagraphFrist": "Donne le confort de la gestion à distance de chaque appareil de chauffage Smart wi-fi,",
+        "appParagraphSecond": "facilite la gestion du chauffage domestique en divisant la maison en zones et en définissant des paramètres de fonctionnement du système distincts pour chacune d'entre elles,",
+        "appParagraphThird": "offre des avantages économiques tangibles en optimisant facilement la consommation d'énergie pour le chauffage de la maison - l'utilisation de programmes prêts ou d'un simple programmateur permet d'optimiser les réglages de temps et de température du système sans perdre le confort thermique,",
+        "appParagraphFourth": "vous permet de surveiller facilement le fonctionnement des appareils dans toute la maison,",
+        "appParagraphFifth": "permet de suivre facilement les coûts générés par le système,",
+        "appParagraphSixth": "permet une modification flexible des paramètres de fonctionnement du système en augmentant la température lorsque l'utilisateur entre dans une zone spécifique ou en l'abaissant lorsqu'il est absent,",
+        "appParagraphSeventh": "vous permet d'intégrer un nombre illimité d'appareils de chauffage, ce qui le rend parfait comme système de gestion de la température ambiante dans les appartements et les appartements.",
+
+        "productTitleFirst": "Les produits",
+        "productTitleSecond": "du système SMART",
+        "veoTitle": "Élément chauffant VEO",
+        "veoFirst": "Chauffage VEO La forme sophistiquée du boîtier et un panneau avant élégant avec un écran décoloré dissimulent un appareil apparemment délicat. En fait, l'élément chauffant VEO Smart télécommandé a une puissance allant jusqu'à 2000 W, et la connexion électrique unique lui permet d'être installé à la fois verticalement et horizontalement, presque dans n'importe quel radiateur avec un fluide de chauffage.",
+        "veoSecond": "Réglages de base (température et un simple minuterie) sont disponibles via le panneau avant, mais l'accès le plus pratique à toutes les fonctionnalités du système est fourni par l'application mobile TERMA Smart. L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température et d'humidité supplémentaire de la série SMART.",
+
+        "heatingTitle": "Tête thermostatique",
+        "heatingFirst": "Le design sophistiqué de la famille SMART, le noir élégant ou le blanc intemporel du boîtier sont les maîtres mots de la tête thermostatique VAZ. Associés à l'affichage décoloré, ils ajoutent de la subtilité à l'ensemble de l'appareil. La tête est alimentée par un cellule de batterie, qui est chargée sur une seule charge pendant toute la saison de chauffage.L'assemblage facile et la prcédure d'auto-étalonnage permettent d'installer la tête dans la majorité des vannes thermostatiques.",
+        "heatingSecond": "L'assemblage extrêmement facile et la procédure d'auto-étalonnage permettent d'installer la tête dans presque tous les radiateurs et avec n'importe quel type de vanne thermostatique. Les réglementations de base sont disponibles via le panneau de l'appareil et toutes les fonctionnalités du système sont prises en charge par l'application mobile TERMA Smart. L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température et d'humidité supplémentaire de la série SMART.",
+
+
+        "radiatorTitle": "Radiateur",
+        "radiatorFirst": "Convecteur électrique VOLTAN - moderne, facile à utiliser, efficace et en même temps très plat, presque indiscernable sur le fond du mur. Le radiateur est équipé d'un échangeur de chaleur à basse température de 2000 W et d'un contrôleur avancé avec un -apprentissage de l'algorithme de contrôle.",
+        "radiatorSecond": "Les paramètres de base sont disponibles via le panneau l'appareil et toutes les fonctionnalités du système sont prises en charge par l'application du mobile TERMA Smart, L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température d'humidité dans la série Smart.",
+
+        "sensorTitle": "Capteurs",
+        "sensorFirst": "Capteur de température et d'humidité VTS. Le capteur a une double fonction facile à installer , il surveille en permanence la tempèrature et l'humiditéde la pièce et envoie des informations aux appareils de chauffage dès que la température dans la zone change d'un demi-degré.",
+        "sensorSecond": "Capteur de fenêtre ouverte VWS. Al'ouverture de la fenêtre, la sonde envoie immédiatement une information pour éteindre le chauffage dans la zone donnée.",
+
+        "available": "Nous sommes disponibles 24/7",
+        "weWork": "Nous travaillons du lundi au vendredi de 07h00 à 18h00. De plus, nous sommes disponibles 24 heures sur 24, 7 jours sur 7, à l'aide de numéros de téléphone portable et par e-mail.",
+        "details": "Détails de l'entreprise",
+        "address": "Czaple 100 80-298 Gdańsk Pologne",
+        "nip": "NIP:583-10-18-844",
+        "regon": "REGON: 190558447",
+        "registration": "Enregistrement de la société: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.",
+        "KRS": "KRS № 0000069067",
+        "capital": "Capital: 2 360 500 PLN",
+        "account": "Nr Konta Bankowego: ING Bank Slaski S.A. Oddzial w Gdansku 88 1050 1764 1000 0023 0692 5997 ",
+        "form": "Formulaire de contact",
+        "send": "Envoyer",
+        "terma": "TERMA",
+        "machinery": "MACHINES DE CONSTRUCTION",
+        "services": "SERVICES INDUSTRIELS",
+        "galvanizing": "GALVANISATION",
+        "medical": "MATERIELS MEDICAUX",
+        "sale": "VENTE DE RADIATEURS"
+    },
+    it: {
+        "description": "Descrizione",
+        "presetation": "Presentazione",
+        "aboutApp": "Informazioni sull'app",
+        "products": "Prodotti",
+        "contact": "Contattaci",
+        "bannerFirst": "Incontra la nostra famiglia",
+        "bannerSecond": "prodotti WiFi",
+        "slidTitleFirst": "Descrizione del sistema",
+        "slidTitleSecond": "Terma SMART WiFi",
+        "firstSlideTitle": "Cos'è Terma SMART",
+        "firstSlideFirst": "È una gamma di prodotti per il riscaldamento elettrico controllati in modalità wireless,",
+        "firstSlideSecond": "È un sistema di controllo del riscaldamento dal design innovativo che può essere facilmente adattato alle tue esigenze, che include una scelta di tre tipi di dispositivi e due tipi di sensori,",
+        "firstSlideThird": "È un sistema che risponde in modo intelligente alle condizioni mutevoli e comunica tramite il cloud.",
+        ///
+        "secondSlideTitle": "Telecomando",
+        "secondSlideFirst": "Una caratteristica unica del sistema Smart è che tutti i dispositivi comunicano direttamente con il router wifi locale (domestico), quindi non è necessario alcun modulo di controllo separato, il che significa un notevole risparmio nell'acquisto del sistema.",
+        "secondSlideSecond": "Il sistema è gestito dall'app gratuita TERMA Smart control, disponibile per Android e iOS.",
+        ///
+        "thirdSlideTitle": "Progettazione e costruzione",
+        "thirdSlideFirst": "Il design moderno enfatizza l'unicità di ogni dispositivo, supporta l'ergonomia di utilizzo e lega l'intera famiglia di prodotti.",
+        "thirdSlideSecond": "L'elegante nero e l'intramontabile bianco possono essere arricchiti con placche colorate e i pulsanti del pannello multifunzione si adatteranno alla posizione di montaggio del dispositivo (orizzontale o verticale)",
+        "thirdSlideThird": "La potenza in uscita dei dispositivi arriva fino a 2.000 W, presenta alcune varianti di collegamenti elettrici e l'elemento riscaldante VEO è dotato di un connettore Smart SPLIT unico.",
+        ///
+        "fourthSlideTitle": "Sicurezza e opzioni SMART",
+        "fourthSlideFirst": "La sicurezza dell'utente è garantita da controllori dotati di algoritmi di controllo della temperatura e ogni dispositivo di riscaldamento ha una protezione termica appositamente selezionata per evitare il surriscaldamento. Le funzioni di protezione predefinite come Antigelo e il rilevatore di apertura finestra rimangono attive in background.",
+        "fourthSlideSecond": "La funzione Adaptiv Start ad autoapprendimento e le tre modalità operative (Comfort, Balance ed Economic) supportano le preferenze individuali dell'utente.",
+        ///
+        "appTitle": "App dedicata",
+        "appParagraphFrist": "Offre la comodità della gestione remota di ogni dispositivo di riscaldamento smart wi-fi,",
+        "appParagraphSecond": "facilita la gestione del riscaldamento domestico suddividendo la casa in zone e impostando parametri di funzionamento dell'impianto separati per ciascuna di esse,",
+        "appParagraphThird": "offre vantaggi economici tangibili ottimizzando facilmente i consumi energetici per il riscaldamento della casa - l'utilizzo di orari prestabiliti o di un semplice programmatore orario aiuta ad ottimizzare le impostazioni di tempo e temperatura dell'impianto senza perdere il comfort termico,",
+        "appParagraphFourth": "consente di monitorare facilmente il funzionamento dei dispositivi in ​​tutta la casa,",
+        "appParagraphFifth": "permette di monitorare facilmente i costi generati dal sistema,",
+        "appParagraphSixth": "consente la modifica flessibile dei parametri di funzionamento del sistema aumentando la temperatura quando l'Utente entra in una zona specifica o abbassandola quando si allontana,",
+        "appParagraphSeventh": "permette di integrare qualsiasi numero di dispositivi di riscaldamento, rendendolo perfetto come sistema di gestione della temperatura ambiente in appartamenti e bilocali.",
+
+        "productTitleFirst": "I prodotti del",
+        "productTitleSecond": "sistema SMART",
+        "veoTitle": "Elemento riscaldante VEO",
+        "veoFirst": "Riscaldatore VEO La forma sofisticata dell'alloggiamento e un elegante pannello frontale con display sbiadito nascondono un dispositivo apparentemente delicato. Infatti, l'elemento riscaldante VEO Smart comandato a distanza ha una potenza fino a 2000 W e l'esclusivo collegamento elettrico ne consente l'installazione sia in verticale che in orizzontale, quasi in qualsiasi radiatore dotato di mezzo riscaldante.",
+        "veoSecond": "Regolazioni di base (temperatura e semplice timer) sono disponibili tramite il pannello frontale, ma l'accesso più comodo alla piena funzionalità del sistema è fornito dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
+
+        "heatingTitle": "Testa termostatica",
+        "heatingFirst": "Il design sofisticato della famiglia SMART, l'elegante nero o l'intramontabile bianco dell'alloggiamento sono i tratti distintivi della testa termostatica VAZ. Insieme al display sbiadito, aggiungono sottigliezza all'intero dispositivo. La testa è alimentata da una cella di batteria ad alte prestazioni, che viene caricata con una singola carica per l'intera stagione di riscaldamento.",
+        "heatingSecond": "L'estrema facilità di montaggio e la procedura di autotaratura consentono di installare la testata in quasi tutti i radiatori e con qualsiasi tipo di valvola termostatica. Le normative di base sono disponibili tramite il pannello sul dispositivo e la piena funzionalità del sistema è supportata dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
+
+
+        "radiatorTitle": "Termosifone",
+        "radiatorFirst": "Termoconvettore elettrico VOLTAN - moderno, facile da usare, efficiente e allo stesso tempo molto piatto, quasi indistinguibile sullo sfondo del muro. Il riscaldatore è dotato di uno scambiatore di calore da 2000 W a bassa temperatura e di un controller avanzato con un algoritmo di controllo ad autoapprendimento.",
+        "radiatorSecond": "Le impostazioni di base sono disponibili tramite il pannello sul dispositivo e la piena funzionalità del sistema è supportata dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
+
+        "sensorTitle": "Sensori",
+        "sensorFirst": "Sensore di temperatura e umidità VTS. Un sensore a doppia funzione di facile installazione monitora costantemente la temperatura e l'umidità nell'ambiente, inviando informazioni ai dispositivi di riscaldamento non appena la temperatura nella zona controllata cambia di mezzo grado.",
+        "sensorSecond": "Sensore finestra aperta VWS. All'apertura della finestra, il sensore invia immediatamente le informazioni per spegnere il riscaldamento in una determinata zona.",
+
+        "available": "Siamo disponibili 24 ore su 24, 7 giorni su 7",
+        "weWork": "Lavoriamo dal lunedì al venerdì dalle 07:00 alle 18:00. Inoltre, siamo disponibili 24 ore su 24, 7 giorni su 7, utilizzando i numeri di cellulare e via e-mail.",
+        "details": "Dettagli della Compagnia",
+        "address": "Czaple 100 80-298 Gdańsk Poland",
+        "nip": "NIP:583-10-18-844",
+        "regon": "REGON: 190558447",
+        "registration": "Company registration: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.",
+        "KRS": "KRS № 0000069067",
+        "capital": "Capital: 2 360 500 PLN",
+        "account": "Nr konta bankowego: ING Bank Slaski S.A. Oddział w Gdańsku 88 1050 1764 1000 0023 0692 5997 ",
+        "form": "Modulo di Contatto",
+        "send": "Inviare",
+        "terma": "TERMA",
+        "machinery": "MACCHINE DA CANTIERE",
+        "services": "SERVIZI INDUSTRIALI",
+        "galvanizing": "ZINCATURA",
+        "medical": "PRODOTTI MEDICI",
+        "sale": "VENDITA RADIATORI"
+    },
+    cs: {
+        "description": "Popis systému",
+        "presetation": "Prezentace",
+        "aboutApp": "O aplikaci",
+        "products": "Produkty",
+        "contact": "Kontakt",
+        "bannerFirst": "Seznam se s rodinou",
+        "bannerSecond": "našich produktů Wifi",
+        "slidTitleFirst": "Popis systému",
+        "slidTitleSecond": "Terma SMART WiFi",
+        "firstSlideTitle": "Co je Terma SMART",
+        "firstSlideFirst": "Linie elektrických produktů řízených bezdrátově",
+        "firstSlideSecond": "je inovativně navržený řídicí systém vytápění místnosti, který lze snadno přizpůsobit vašim potřebám, s výběrem ze tří typů zařízení a dvou typů čidel,",
+        "firstSlideThird": "je systém, který inteligentně reaguje na měnící se podmínky a komunikaci pomocí cloudu.",
+        ///
+        "secondSlideTitle": "Dálkové ovládání",
+        "secondSlideFirst": "Jedinečnou vlastností systému Smart je, že všechna zařízení komunikují přímo s místním (domácím) routerem wifi - není tedy potřeba žádný samostatný řídicí centrální modul, což znamená výraznou úsporu při nákupu systému.",
+        "secondSlideSecond": "Systém je řízen bezplatnou ovládací aplikací TERMA Smart, která je k dispozici pro Android a iOS.",
+        ///
+        "thirdSlideTitle": "Design a konstrukce",
+        "thirdSlideFirst": "Moderní design zdůrazňuje jedinečnost každého zařízení, podporuje ergonomii užívání a zároveň spojuje celou rodinu produktů.",
+        "thirdSlideSecond": "Elegantní černou a nadčasovou bílou lze obohatit barevnými okraji a multifunkční indikátor teploty se přizpůsobí montážní poloze zařízení.",
+        "thirdSlideThird": "Zařízení mají výkon až 2 000 W a různé varianty elektrického připojení a topná tyč VEO je vybavena jedinečným konektorem Smart SPLIT.",
+        ///
+        "fourthSlideTitle": "Bezpečnost a možnosti SMART",
+        "fourthSlideFirst": "Bezpečnost uživatele zajišťují regulátory vybavené algoritmy řízení teploty a každé topné zařízení má speciálně zvolenou tepelnou ochranu, aby se zabránilo přehřátí. Předdefinované ochranné funkce, jako je AntiFrost a detektor otevírání oken, zůstávají aktivní na pozadí.",
+        "fourthSlideSecond": "Samoučící se funkce Early Start a tři provozní režimy (komfortní, normální a ekonomický) podporují individuální preference uživatele.",
+        ///
+        "appTitle": "Aplikace na míru",
+        "appParagraphFrist": "Poskytuje pohodlí vzdálené správy každého inteligentního wi-fi topného zařízení,",
+        "appParagraphSecond": "usnadňuje správu domů rozdělením do zón a nastavením samostatných provozních parametrů systému pro každou z nich,",
+        "appParagraphThird": "poskytuje hmatatelné ekonomické výhody díky snadné optimalizaci spotřeby energie na vytápění domu - pomocí připravených plánů nebo jednoduchého průvodce pomáhá optimalizovat nastavení času a teploty systému bez ztráty pocitu vysoké tepelné pohody,",
+        "appParagraphFourth": "umožňuje snadno sledovat provoz zařízení v domácnosti,",
+        "appParagraphFifth": "umožňuje snadno sledovat náklady generované systémem,",
+        "appParagraphSixth": "může flexibilně měnit provozní parametry systému zvýšením teploty, když uživatel vstoupí do určité zóny kolem domu, nebo snížením, když ji opustí,",
+        "appParagraphSeventh": "umožňuje integrovat libovolný počet topných zařízení, takže je perfektní jako systém řízení teploty v domech a bytech.",
+
+        "productTitleFirst": "Spolupracující produkty",
+        "productTitleSecond": "v systému Smart ",
+        "veoTitle": "VEO topná tyč",
+        "veoFirst": "Topná tyč VEO Moderní tvar krytu a elegantní přední panel se stmívajícím displejem skrývají delikátní zařízení. Dálkově ovládaná topná tyč VEO Smart má ve skutečnosti výkon až 2 000 W a jedinečné elektrické řešení mu umožňuje instalovat svisle i vodorovně, prakticky do každého radiátoru s topným médiem.",
+        "veoSecond": "Základní nastavení (teplota a jednoduchý časovač) jsou k dispozici na předním panelu, ale nejpohodlnější přístup k plné funkčnosti systému poskytuje mobilní aplikace TERMA Smart. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.",
+
+        "heatingTitle": "Termostatická hlavice",
+        "heatingFirst": "Propracovaný design rodiny SMART, elegantní černá nebo nadčasová bílá opláštění jsou charakteristickými znaky termostatické hlavice VAZ. Spolu se stmívajícím displejem dodávají celému zařízení jemnost. Hlavice je poháněna vysoce výkonným bateriovým článkem, který stačí nabít jednou za celou topnou sezónu.",
+        "heatingSecond": "Extrémně snadná montáž a postup autokalibrace umožňují instalaci hlavice téměř do jakéhokoli radiátoru a s jakýmkoli typem termostatického ventilu. Základní regulace jsou k dispozici na panelu zařízení a mobilní aplikace TERMA Smart podporuje plnou funkčnost systému. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.",
+
+
+        "radiatorTitle": "Radiátor",
+        "radiatorFirst": "Elektrický konvektor VOLTAN - moderní, snadno použitelný, efektivní a zároveň velmi plochý, téměř nerozeznatelný na pozadí stěny. Topení je vybaveno nízkoteplotním výměníkem tepla 2000 W a pokročilým regulátorem s vlastním algoritmem řízení učení.",
+        "radiatorSecond": "Základní regulace jsou k dispozici na panelu zařízení a mobilní aplikace TERMA Smart podporuje plnou funkčnost systému. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.",
+
+        "sensorTitle": "Čidla",
+        "sensorFirst": "Senzory VTS snímače teploty a vlhkosti. Snadno instalovatelný dvoufunkční senzor neustále sleduje teplotu a vlhkost v místnosti a odesílá informace do topných zařízení, jakmile se teplota v kontrolované zóně změní o půl stupně.",
+        "sensorSecond": "Senzor otevření okna VWS. Pokud je okno otevřené, senzor okamžitě odešle informace, které vypnou topení v dané zóně. ",
+
+        "available": "Jsme k dispozici 24/7",
+        "weWork": "Pracujeme od pondělí do pátku od 7:00 do 18:00. Kromě toho jsme k dispozici 24 hodin denně, 7 dní v týdnu, prostřednictvím mobilních telefonních čísel a e-mailu.",
+        "details": "Firemní údaje",
+        "address": "Czaple 100 80-298 Gdaňsk Polsko",
+        "nip": "NIP:583-10-18-844",
+        "regon": "REGON: 190558447",
+        "registration": "číslo registrace: GIOŚ: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.",
+        "KRS": "KRS № 0000069067",
+        "capital": "Základní jmění: 2 360 500 PLN",
+        "account": "Číslo účtu: ING Bank Slaski S.A. Филиал в Гданьске 88 1050 1764 1000 0023 0692 5997 ",
+        "form": "Kontaktní formulář",
+        "send": "Poslat",
+        "terma": "SPOLEČNOST TERMA",
+        "machinery": "PROTLAKOVÉ STROJE ",
+        "services": "PRŮMYSLOVÉ SLUŽBY ",
+        "galvanizing": "GALVANOVNA",
+        "medical": "REHABILITAČNÍ PŘÍSTROJE",
+        "sale": "TOPENÁŘSKÉ VÝROBKY"
     }
+
 };
 
 
@@ -311,8 +537,17 @@ $('body').addClass($lang);
 $translate.each(function () {
     $(this).attr('id') === $lang && $(this).addClass('active');
 });
+
 $('.lan').each(function () {
     $(this).text(langArr[$lang][$(this).attr('key')]);
+    $('#lang').val($lang)
+});
+
+$('#lang').change(function () {
+    let values = $('#lang :selected').val();
+    $('.lan').each(function () {
+        $(this).text(langArr[values][$(this).attr('key')]);
+    });
 });
 
 

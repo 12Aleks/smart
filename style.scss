@@ -162,9 +162,9 @@ p.contact {
 
 
 #navigation.fold-active {
-  -ms-transform: translateZ(0) translateY(-105px);
-  -webkit-transform: translateZ(0) translateY(-105px);
-  transform: translateZ(0) translateY(-105px);
+  -ms-transform: translateZ(0) translateY(-114px);
+  -webkit-transform: translateZ(0) translateY(-114px);
+  transform: translateZ(0) translateY(-114px);
 }
 
 #navigation {
@@ -236,6 +236,9 @@ p.contact {
 
   .active {
     color: $global-red;
+  }
+  select{
+    width: 50px;
   }
 
   #navbar-main {
