@@ -32,10 +32,10 @@ h1.title {
   @media (max-width: 1670.98px) {
     font: 300 2.9rem/3.3rem 'Roboto', sans-serif;
   }
-  @media(max-width: 1098.98px) {
-    font: 300 2.8rem/3rem 'Roboto', sans-serif;
-  }
-  @media (max-width: 767.98px) {
+  //@media(max-width: 1098.98px) {
+  //  font: 300 2.7rem/3rem 'Roboto', sans-serif;
+  //}
+  @media (max-width: 1098.98px) {
     font: 300 2.5rem/2.8rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
@@ -44,6 +44,10 @@ h1.title {
   @media (max-width: 379.98px) {
     font: 300 1.8rem/2.3rem 'Roboto', sans-serif;
   }
+  @media (max-width: 325.98px) {
+    font: 300 1.5rem/2rem 'Roboto', sans-serif;
+  }
+
 }
 
 h3.title {
@@ -68,6 +72,9 @@ h3.title {
   @media (max-width: 379.98px) {
     font: 300 1.8rem/2.3rem 'Roboto', sans-serif;
   }
+  @media (max-width: 325.98px) {
+    font: 300 1.5rem/2rem 'Roboto', sans-serif;
+  }
 }
 
 h4.subTitle, span.subTitle {
@@ -79,17 +86,19 @@ h4.subTitle, span.subTitle {
     margin-top: 40px;
   }
   @media(max-width: 1098.98px) {
-    font: 300 2.3rem/1.875rem 'Roboto', sans-serif;
+    font: 300 2.2rem/1.875rem 'Roboto', sans-serif;
   }
   @media (max-width: 991.98px) {
     text-align: center;
   }
   @media (max-width: 767.98px) {
-    font: 300 2rem/1.875rem 'Roboto', sans-serif;
+    font: 300 1.9rem/1.875rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
-    font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
-    text-align: left;
+    font: 300 1.1rem/1.5rem 'Roboto', sans-serif;
+  }
+  @media (max-width: 325.98px) {
+    font: 300 1rem/1.5rem 'Roboto', sans-serif;
   }
 }
 
@@ -104,13 +113,13 @@ p.descriptions {
   letter-spacing: 0;
   color: $global-text-gray;
   @media (max-width: 991.98px) {
-    font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
+    font: 300 1.1rem/1.5rem 'Roboto', sans-serif;
   }
   @media (max-width: 767.98px) {
-    font: 300 1.1rem/1.4rem 'Roboto', sans-serif;
+    font: 300 1rem/1.4rem 'Roboto', sans-serif;
   }
   @media (max-width: 575.98px) {
-    font: 300 1rem/1.3rem 'Roboto', sans-serif;
+    font: 300 .95rem/1.3rem 'Roboto', sans-serif;
   }
 
   span {
@@ -185,32 +194,39 @@ p.contact {
     }
   }
 
-  .lang {
-    margin: 0 10px 0 0;
-    @media(max-width: 991.98px) {
-      margin: 0 1px 0 0;
+  #lang {
+    @media(max-width: 576.98px) {
+      margin-right: 15px;
     }
-    @media(max-width: 576px) {
-      margin: 0 18px 0 0;
-    }
-
-    a {
-      font: 400 14px/17px 'Roboto', sans-serif;
-      text-decoration: none;
-      letter-spacing: 0;
-      color: #707070;
-      margin-left: 5px;
-
-      &:hover {
-        color: $global-red;
-        transition: color .7s;
-      }
-    }
-
-    a.active {
-      color: $global-red;
-    }
+    border-radius: 3px;
   }
+
+  //.lang {
+  //  margin: 0 10px 0 0;
+  //  @media(max-width: 991.98px) {
+  //    margin: 0 1px 0 0;
+  //  }
+  //  @media(max-width: 576.98px) {
+  //    margin: 0 18px 0 0;
+  //  }
+  //
+  //  a {
+  //    font: 400 14px/17px 'Roboto', sans-serif;
+  //    text-decoration: none;
+  //    letter-spacing: 0;
+  //    color: #707070;
+  //    margin-left: 5px;
+  //
+  //    &:hover {
+  //      color: $global-red;
+  //      transition: color .7s;
+  //    }
+  //  }
+  //
+  //  a.active {
+  //    color: $global-red;
+  //  }
+  //}
 
   .logo-wrapper {
     img.small-logo {
@@ -237,7 +253,8 @@ p.contact {
   .active {
     color: $global-red;
   }
-  select{
+
+  select {
     width: 50px;
   }
 
@@ -255,10 +272,14 @@ p.contact {
 
       .navbar-collapse {
         a {
-          font: 300 1.125rem/22px 'Roboto', sans-serif;
           text-decoration: none;
+
           letter-spacing: 0;
-          color: #707070
+          color: #707070;
+          font: 300 1.125rem/22px 'Roboto', sans-serif;
+          @media (min-width: 992px) and (max-width: 1198.98px) {
+            font: 300 .95rem/22px 'Roboto', sans-serif;
+          }
         }
 
         a.btn.btn-dark.text-white {
@@ -288,12 +309,12 @@ p.contact {
     font-size: 1.25rem;
     line-height: 1;
     background-color: rgba(255, 255, 255, 1);
-    border: 2px solid $global-text-gray;
+    border: 1px solid $global-text-gray;
     border-radius: .25rem;
   }
 
   #nav-icon {
-    margin: 0.5em 0.9em;
+    margin: 0.5em 0.8em;
     width: 25px;
   }
 
@@ -669,7 +690,7 @@ p.contact {
     margin-right: auto;
     @media (max-width: 991.98px) {
       padding: 180px 50px 80px;
-      h3.title{
+      h3.title {
         text-align: center;
       }
     }
@@ -681,23 +702,6 @@ p.contact {
     }
 
     #carouselExampleIndicators {
-      height: 500px;
-      @media (max-width: 991.98px) {
-        height: 420px;
-      }
-      @media (max-width: 575.98px) {
-        height: 320px;
-      }
-      @media (max-width: 475.98px) {
-        height: 380px;
-      }
-      @media (max-width: 395.98px) {
-        height: 430px;
-      }
-      @media (max-width: 349.98px) {
-        height: 520px;
-      }
-
       h4 {
         height: 77px;
         @media (max-width: 575.98px) {
@@ -958,7 +962,7 @@ p.contact {
       @media(max-width: 767.98px) {
         height: 400px;
       }
-      @media(max-width: 379.98px){
+      @media(max-width: 379.98px) {
         margin-bottom: 40px;
       }
 
@@ -1096,6 +1100,100 @@ p.contact {
   }
 }
 
+.ru {
+  .smart {
+    #carouselExampleIndicators {
+      height: 550px;
+      @media (max-width: 991.98px) {
+        height: 450px;
+      }
+      @media (max-width: 575.98px) {
+        height: 320px;
+      }
+      @media (max-width: 475.98px) {
+        height: 415px;
+      }
+      @media (max-width: 395.98px) {
+        height: 450px;
+      }
+      @media (max-width: 349.98px) {
+        height: 550px;
+      }
+    }
+  }
+}
+
+.pl, .en, .it{
+  .smart {
+    #carouselExampleIndicators {
+
+      height: 470px;
+      @media (max-width: 991.98px) {
+        height: 410px;
+      }
+      @media (max-width: 575.98px) {
+        height: 320px;
+      }
+      @media (max-width: 475.98px) {
+        height: 380px;
+      }
+      @media (max-width: 395.98px) {
+        height: 410px;
+      }
+      @media (max-width: 349.98px) {
+        height: 440px;
+      }
+    }
+  }
+}
+
+
+.de, .fr {
+  .smart {
+    #carouselExampleIndicators {
+      height: 500px;
+      @media (max-width: 991.98px) {
+        height: 410px;
+      }
+      @media (max-width: 575.98px) {
+        height: 320px;
+      }
+      @media (max-width: 475.98px) {
+        height: 380px;
+      }
+      @media (max-width: 395.98px) {
+        height: 410px;
+      }
+      @media (max-width: 349.98px) {
+        height: 480px;
+      }
+    }
+  }
+}
+
+.cs, .sk {
+  .smart {
+    #carouselExampleIndicators {
+
+      height: 470px;
+      @media (max-width: 991.98px) {
+        height: 350px;
+      }
+      @media (max-width: 575.98px) {
+        height: 320px;
+      }
+      @media (max-width: 475.98px) {
+        height: 320px;
+      }
+      @media (max-width: 395.98px) {
+        height: 350px;
+      }
+      @media (max-width: 349.98px) {
+        height: 380px;
+      }
+    }
+  }
+}
 
 footer {
   background-color: $global-red;

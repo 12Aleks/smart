@@ -24,9 +24,6 @@ h1.title {
       font: 300 2.9rem/3.3rem 'Roboto', sans-serif; } }
   @media (max-width: 1098.98px) {
     h1.title {
-      font: 300 2.8rem/3rem 'Roboto', sans-serif; } }
-  @media (max-width: 767.98px) {
-    h1.title {
       font: 300 2.5rem/2.8rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     h1.title {
@@ -34,6 +31,9 @@ h1.title {
   @media (max-width: 379.98px) {
     h1.title {
       font: 300 1.8rem/2.3rem 'Roboto', sans-serif; } }
+  @media (max-width: 325.98px) {
+    h1.title {
+      font: 300 1.5rem/2rem 'Roboto', sans-serif; } }
 
 h3.title {
   font: 300 4rem/4.8rem 'Roboto', sans-serif;
@@ -57,6 +57,9 @@ h3.title {
   @media (max-width: 379.98px) {
     h3.title {
       font: 300 1.8rem/2.3rem 'Roboto', sans-serif; } }
+  @media (max-width: 325.98px) {
+    h3.title {
+      font: 300 1.5rem/2rem 'Roboto', sans-serif; } }
 
 h4.subTitle, span.subTitle {
   font: 300 2.8rem/2.4rem 'Roboto', sans-serif;
@@ -68,17 +71,19 @@ h4.subTitle, span.subTitle {
       margin-top: 40px; } }
   @media (max-width: 1098.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 2.3rem/1.875rem 'Roboto', sans-serif; } }
+      font: 300 2.2rem/1.875rem 'Roboto', sans-serif; } }
   @media (max-width: 991.98px) {
     h4.subTitle, span.subTitle {
       text-align: center; } }
   @media (max-width: 767.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 2rem/1.875rem 'Roboto', sans-serif; } }
+      font: 300 1.9rem/1.875rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     h4.subTitle, span.subTitle {
-      font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
-      text-align: left; } }
+      font: 300 1.1rem/1.5rem 'Roboto', sans-serif; } }
+  @media (max-width: 325.98px) {
+    h4.subTitle, span.subTitle {
+      font: 300 1rem/1.5rem 'Roboto', sans-serif; } }
 
 h6.sm_title {
   font: 500 1.25rem/1.5rem 'Roboto', sans-serif;
@@ -91,13 +96,13 @@ p.descriptions {
   color: #303030; }
   @media (max-width: 991.98px) {
     p.descriptions {
-      font: 300 1.2rem/1.5rem 'Roboto', sans-serif; } }
+      font: 300 1.1rem/1.5rem 'Roboto', sans-serif; } }
   @media (max-width: 767.98px) {
     p.descriptions {
-      font: 300 1.1rem/1.4rem 'Roboto', sans-serif; } }
+      font: 300 1rem/1.4rem 'Roboto', sans-serif; } }
   @media (max-width: 575.98px) {
     p.descriptions {
-      font: 300 1rem/1.3rem 'Roboto', sans-serif; } }
+      font: 300 .95rem/1.3rem 'Roboto', sans-serif; } }
   p.descriptions span {
     font-weight: 700; }
 
@@ -155,25 +160,11 @@ p.contact {
   @media (max-width: 991.98px) {
     #navigation .container {
       padding: 0; } }
-  #navigation .lang {
-    margin: 0 10px 0 0; }
-    @media (max-width: 991.98px) {
-      #navigation .lang {
-        margin: 0 1px 0 0; } }
-    @media (max-width: 576px) {
-      #navigation .lang {
-        margin: 0 18px 0 0; } }
-    #navigation .lang a {
-      font: 400 14px/17px 'Roboto', sans-serif;
-      text-decoration: none;
-      letter-spacing: 0;
-      color: #707070;
-      margin-left: 5px; }
-      #navigation .lang a:hover {
-        color: #E72327;
-        transition: color .7s; }
-    #navigation .lang a.active {
-      color: #E72327; }
+  #navigation #lang {
+    border-radius: 3px; }
+    @media (max-width: 576.98px) {
+      #navigation #lang {
+        margin-right: 15px; } }
   #navigation .logo-wrapper img.small-logo {
     display: none;
     height: 55px; }
@@ -200,10 +191,13 @@ p.contact {
         #navigation #navbar-main .navbar-container {
           width: auto; } }
       #navigation #navbar-main .navbar-container .navbar-collapse a {
-        font: 300 1.125rem/22px 'Roboto', sans-serif;
         text-decoration: none;
         letter-spacing: 0;
-        color: #707070; }
+        color: #707070;
+        font: 300 1.125rem/22px 'Roboto', sans-serif; }
+        @media (min-width: 992px) and (max-width: 1198.98px) {
+          #navigation #navbar-main .navbar-container .navbar-collapse a {
+            font: 300 .95rem/22px 'Roboto', sans-serif; } }
       #navigation #navbar-main .navbar-container .navbar-collapse a.btn.btn-dark.text-white {
         margin-left: .5rem;
         border-radius: 20px;
@@ -222,10 +216,10 @@ p.contact {
     font-size: 1.25rem;
     line-height: 1;
     background-color: white;
-    border: 2px solid #303030;
+    border: 1px solid #303030;
     border-radius: .25rem; }
   #navigation #nav-icon {
-    margin: 0.5em 0.9em;
+    margin: 0.5em 0.8em;
     width: 25px; }
   #navigation #nav-icon:after,
   #navigation #nav-icon:before,
@@ -513,31 +507,14 @@ p.contact {
     @media (max-width: 575.98px) {
       #main .smart {
         padding: 180px 18px 80px; } }
-    #main .smart #carouselExampleIndicators {
-      height: 500px; }
-      @media (max-width: 991.98px) {
-        #main .smart #carouselExampleIndicators {
-          height: 420px; } }
+    #main .smart #carouselExampleIndicators h4 {
+      height: 77px; }
       @media (max-width: 575.98px) {
-        #main .smart #carouselExampleIndicators {
-          height: 320px; } }
-      @media (max-width: 475.98px) {
-        #main .smart #carouselExampleIndicators {
-          height: 380px; } }
-      @media (max-width: 395.98px) {
-        #main .smart #carouselExampleIndicators {
-          height: 430px; } }
-      @media (max-width: 349.98px) {
-        #main .smart #carouselExampleIndicators {
-          height: 520px; } }
-      #main .smart #carouselExampleIndicators h4 {
-        height: 77px; }
-        @media (max-width: 575.98px) {
-          #main .smart #carouselExampleIndicators h4 {
-            height: 60px; } }
-        @media (max-width: 575.98px) {
-          #main .smart #carouselExampleIndicators h4 object {
-            max-height: 40px; } }
+        #main .smart #carouselExampleIndicators h4 {
+          height: 60px; } }
+      @media (max-width: 575.98px) {
+        #main .smart #carouselExampleIndicators h4 object {
+          max-height: 40px; } }
     #main .smart .carousel-indicators {
       position: relative;
       margin: 40px 0; }
@@ -822,6 +799,78 @@ p.contact {
         #main .contact-strip button[type='submit'] {
           width: 235px;
           height: 46px; } }
+
+.ru .smart #carouselExampleIndicators {
+  height: 550px; }
+  @media (max-width: 991.98px) {
+    .ru .smart #carouselExampleIndicators {
+      height: 450px; } }
+  @media (max-width: 575.98px) {
+    .ru .smart #carouselExampleIndicators {
+      height: 320px; } }
+  @media (max-width: 475.98px) {
+    .ru .smart #carouselExampleIndicators {
+      height: 415px; } }
+  @media (max-width: 395.98px) {
+    .ru .smart #carouselExampleIndicators {
+      height: 450px; } }
+  @media (max-width: 349.98px) {
+    .ru .smart #carouselExampleIndicators {
+      height: 550px; } }
+
+.pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
+  height: 470px; }
+  @media (max-width: 991.98px) {
+    .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
+      height: 410px; } }
+  @media (max-width: 575.98px) {
+    .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
+      height: 320px; } }
+  @media (max-width: 475.98px) {
+    .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
+      height: 380px; } }
+  @media (max-width: 395.98px) {
+    .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
+      height: 410px; } }
+  @media (max-width: 349.98px) {
+    .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
+      height: 440px; } }
+
+.de .smart #carouselExampleIndicators, .fr .smart #carouselExampleIndicators {
+  height: 500px; }
+  @media (max-width: 991.98px) {
+    .de .smart #carouselExampleIndicators, .fr .smart #carouselExampleIndicators {
+      height: 410px; } }
+  @media (max-width: 575.98px) {
+    .de .smart #carouselExampleIndicators, .fr .smart #carouselExampleIndicators {
+      height: 320px; } }
+  @media (max-width: 475.98px) {
+    .de .smart #carouselExampleIndicators, .fr .smart #carouselExampleIndicators {
+      height: 380px; } }
+  @media (max-width: 395.98px) {
+    .de .smart #carouselExampleIndicators, .fr .smart #carouselExampleIndicators {
+      height: 410px; } }
+  @media (max-width: 349.98px) {
+    .de .smart #carouselExampleIndicators, .fr .smart #carouselExampleIndicators {
+      height: 480px; } }
+
+.cs .smart #carouselExampleIndicators, .sk .smart #carouselExampleIndicators {
+  height: 470px; }
+  @media (max-width: 991.98px) {
+    .cs .smart #carouselExampleIndicators, .sk .smart #carouselExampleIndicators {
+      height: 350px; } }
+  @media (max-width: 575.98px) {
+    .cs .smart #carouselExampleIndicators, .sk .smart #carouselExampleIndicators {
+      height: 320px; } }
+  @media (max-width: 475.98px) {
+    .cs .smart #carouselExampleIndicators, .sk .smart #carouselExampleIndicators {
+      height: 320px; } }
+  @media (max-width: 395.98px) {
+    .cs .smart #carouselExampleIndicators, .sk .smart #carouselExampleIndicators {
+      height: 350px; } }
+  @media (max-width: 349.98px) {
+    .cs .smart #carouselExampleIndicators, .sk .smart #carouselExampleIndicators {
+      height: 380px; } }
 
 footer {
   background-color: #E72327; }

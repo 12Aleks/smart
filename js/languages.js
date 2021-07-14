@@ -379,8 +379,8 @@ const langArr = {
         "aboutApp": "Informazioni sull'app",
         "products": "Prodotti",
         "contact": "Contattaci",
-        "bannerFirst": "Incontra la nostra famiglia",
-        "bannerSecond": "prodotti WiFi",
+        "bannerFirst": "Incontra la nostra",
+        "bannerSecond": "famiglia prodotti WiFi",
         "slidTitleFirst": "Descrizione del sistema",
         "slidTitleSecond": "Terma SMART WiFi",
         "firstSlideTitle": "Cos'è Terma SMART",
@@ -522,6 +522,81 @@ const langArr = {
         "galvanizing": "GALVANOVNA",
         "medical": "REHABILITAČNÍ PŘÍSTROJE",
         "sale": "TOPENÁŘSKÉ VÝROBKY"
+    },
+    sk: {
+        "description": "Opis systému",
+        "presetation": "Prezentácia",
+        "aboutApp": "O aplikácii",
+        "products": "Produkty",
+        "contact": "Kontakt",
+        "bannerFirst": "Zoznam sa s rodinou",
+        "bannerSecond": "našich produktov Wifi",
+        "slidTitleFirst": "Opis systému",
+        "slidTitleSecond": "Terma SMART WiFi",
+        "firstSlideTitle": "Čo je Terma SMART",
+        "firstSlideFirst": "Línia elektrických produktov riadených bezdrôtovo",
+        "firstSlideSecond": "je inovatívne navrhnutý riadiaci systém vykurovania miestnosti, ktorý možno ľahko prispôsobiť vašim potrebám, s výberom z troch typov zariadení a dvoch typov čidiel,",
+        "firstSlideThird": "je systém, ktorý inteligentne reaguje na meniace sa podmienky a komunikáciu pomocou cloudu.",
+        ///
+        "secondSlideTitle": "Diaľkové ovládanie",
+        "secondSlideFirst": "Jedinečnou vlastnosťou systému Smart je, že všetky zariadenia komunikujú priamo s miestnym (domácim) routerom wifi - nie je teda potrebný žiadny samostatný riadiaci centrálny modul, čo znamená výraznú úsporu pri nákupe systému.",
+        "secondSlideSecond": "Systém je riadený bezplatnou ovládaciou aplikáciou TERMA Smart, ktorá je k dispozícii pre Android a iOS.",
+        ///
+        "thirdSlideTitle": "Dizajn a konštrukcia",
+        "thirdSlideFirst": "Moderný dizajn zdôrazňuje jedinečnosť každého zariadenia, podporuje ergonómiu užívania a zároveň spája celú rodinu produktov.",
+        "thirdSlideSecond": "Elegantnů čiernu a nadčasovou bielou možno obohatiť farebnými okrajmi a multifunkčné indikátory teploty sa prispôsobí montážnej polohe zariadenia.",
+        "thirdSlideThird": "Zariadenia majú výkon až 2 000 W a rôzne varianty elektrického pripojenia a vykurovacia tyč VEO je vybavená jedinečným konektorom Smart SPLIT.",
+        ///
+        "fourthSlideTitle": "Bezpečnosť a možnosti SMART",
+        "fourthSlideFirst": "Bezpečnosť užívateľa zaisťujú regulátory vybavené algoritmy riadenia teploty a každé vykurovacie zariadenie má špeciálne zvolenú tepelnú ochranu, aby sa zabránilo prehriatiu. Preddefinované ochranné funkcie, ako je AntiFrost a detektor otváranie okien, zostávajú aktívne na pozadí.",
+        "fourthSlideSecond": "Samoučiaca sa funkcia Early Start a tri prevádzkové režimy (komfortný, normálny a ekonomický) podporujú individuálne preferencie užívateľa.",
+        ///
+        "appTitle": "Aplikácia na mieru",
+        "appParagraphFrist": "Poskytuje pohodlie vzdialenej správy každého inteligentného wi-fi vykurovacieho zariadenia,",
+        "appParagraphSecond": "uľahčuje správu domov rozdelením do zón a nastavením samostatných prevádzkových parametrov systému pre každú z nich,",
+        "appParagraphThird": "poskytuje hmatateľné ekonomické výhody vďaka ľahkej optimalizácii spotreby energie na vykurovanie domu - pomocou pripravených plánov alebo jednoduchého sprievodcu pomáha optimalizovať nastavenie času a teploty systému bez straty pocitu vysokej tepelnej pohody,",
+        "appParagraphFourth": "umožňuje ľahko sledovať prevádzku zariadení v domácnosti,",
+        "appParagraphFifth": "umožňuje ľahko sledovať náklady generované systémom,",
+        "appParagraphSixth": "môže flexibilne meniť prevádzkové parametre systému zvýšením teploty, keď užívateľ vstúpi do určitej zóny okolo domu, alebo znížením, keď ju opustí,",
+        "appParagraphSeventh": "umožňuje integrovať ľubovoľný počet vykurovacích zariadení, takže je perfektný ako systém riadenia teploty v domoch a bytoch.",
+
+        "productTitleFirst": "Spolupracujúce produkty",
+        "productTitleSecond": "v systéme Smart",
+        "veoTitle": "VEO vykurovacia tyč",
+        "veoFirst": "Vykurovacia tyč VEO Moderný tvar krytu a elegantný predný panel sa stmívajúcím displejom skrývajú delikátnu zariadení. Diaľkovo ovládaná vykurovacia tyč VEO Smart má v skutočnosti výkon až 2 000 W a jedinečné elektrické riešenie mu umožňuje inštalovať zvisle aj vodorovne, prakticky do každého radiátora s vykurovacím médiom.",
+        "veoSecond": "Základné nastavenia (teplota a jednoduchý časovač) sú k dispozícii na prednom paneli, ale najpohodlnejšie prístup k plnej funkčnosti systému poskytuje mobilná aplikácia TERMA Smart. Zariadenie pracuje so senzormi otvárania okien a ďalším senzorom teploty a vlhkosti zo série SMART.",
+
+        "heatingTitle": "Termostatická hlavica",
+        "heatingFirst": "Prepracovaný dizajn rodiny SMART, elegantná čierna alebo nadčasová biela opláštenia sú charakteristickými znakmi termostatické hlavice VAZ. Spolu so stmívajícím displejom dodávajú celému zariadeniu jemnosť. Hlavica je poháňaná vysoko výkonným batériovým článkom, ktorý stačí nabiť raz za celú vykurovaciu sezónu.",
+        "heatingSecond": "Extrémne jednoduchá montáž a postup autokalibrácie umožňujú inštaláciu hlavice takmer do akéhokoľvek radiátora a s akýmkoľvek typom termostatického ventilu. Základné regulácie sú k dispozícii na paneli zariadenia a mobilné aplikácie TERMA Smart podporuje plnú funkčnosť systému. Zariadenie pracuje so senzormi otváranie okien a ďalším senzorom teploty a vlhkosti zo série SMART.",
+
+
+        "radiatorTitle": "Radiátor",
+        "radiatorFirst": "Elektrický konvektor VOLTAN - moderný, ľahko použiteľný, efektívny a zároveň veľmi plochý, takmer nerozoznateľný na pozadí steny. Kúrenie je vybavené nízkoteplotným výmenníkom tepla 2000 W a pokročilým regulátorom s vlastným algoritmom riadenia učenia.",
+        "radiatorSecond": "Základné regulácie sú k dispozícii na paneli zariadenia a mobilné aplikácie TERMA Smart podporuje plnú funkčnosť systému. Zariadenie pracuje so senzormi otváranie okien a ďalším senzorom teploty a vlhkosti zo série SMART.",
+
+        "sensorTitle": "Čidlá",
+        "sensorFirst": "Senzory VTS snímače teploty a vlhkosti. Ľahko inštalovateľný dvoufunkční senzor neustále monitoruje teplotu a vlhkosť v miestnosti a odosiela informácie do vykurovacích zariadení, akonáhle sa teplota v kontrolovanej zóne zmení o pol stupňa.",
+        "sensorSecond": "Senzor otvorenie okna VWS Ak je okno otvorené, senzor okamžite odošle informácie, ktoré vypnú kúrenie v danej zóne. ",
+
+        "available": "Sme k dispozícii 24/7",
+        "weWork": "Pracujeme od pondelka do piatku od 7:00 do 18:00. Okrem toho sme k dispozícii 24 hodín denne, 7 dní v týždni, prostredníctvom mobilných telefónnych čísel a e-mailu.",
+        "details": "Firemné údaje",
+        "address": "Czapla 100 80-298 Gdaňsk Poľsko",
+        "nip": "NIP:583-10-18-844",
+        "regon": "REGON: 190558447",
+        "registration": "Číslo registrácie: Gios: E0001379W",
+        "KRS": "KRS № 0000069067",
+        "capital": "Základné imanie: 2 360 500 PLN",
+        "account": "Číslo účtu: ING Bank Slaski S.A. v Gdansku 88 1050 1764 1000 0023 0692 5997 ",
+        "form": "Kontaktný formulár",
+        "send": "Poslať",
+        "terma": "SPOLOČNOSŤ TERMA",
+        "machinery": "PROTLAKOVÉ STROJE",
+        "services": "PRIEMYSELNÉ SLUŽBY",
+        "galvanizing": "GALVANOVŇA",
+        "medical": "REHABILITAČNÍ PRÍSTROJE",
+        "sale": "KÚRENÁRSKE VÝROBKY"
     }
 
 };
@@ -531,6 +606,7 @@ const langArr = {
 
 let $translate = $('.translate');
 let $lang = navigator.language.slice(0, 2);
+
 
 $('body').addClass($lang);
 
@@ -545,22 +621,11 @@ $('.lan').each(function () {
 
 $('#lang').change(function () {
     let values = $('#lang :selected').val();
+
+    $('body').removeAttr('class').addClass(values);
+
     $('.lan').each(function () {
         $(this).text(langArr[values][$(this).attr('key')]);
     });
 });
 
-
-$translate.click(function () {
-    $translate.each(function () {
-        $(this).removeClass('active');
-    });
-
-    let lang = $(this).attr('id');
-
-    $(this).addClass('active');
-
-    $('.lan').each(function () {
-        $(this).text(langArr[lang][$(this).attr('key')]);
-    });
-});
