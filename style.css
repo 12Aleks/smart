@@ -131,6 +131,9 @@ ul.descriptions {
       display: inline-block;
       width: 1em;
       margin-left: -1em; }
+      @media (max-width: 575.98px) {
+        ul.descriptions li:before {
+          font-weight: 900; } }
 
 p.contact {
   font: 500 1rem/1.5rem 'Roboto', sans-serif;
@@ -180,6 +183,18 @@ p.contact {
     color: #E72327; }
   #navigation select {
     width: 50px; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+      #navigation select {
+        width: 59px; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+      #navigation select {
+        width: 59px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+      #navigation select {
+        width: 59px; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      #navigation select {
+        width: 59px; } }
   #navigation #navbar-main {
     padding: 0 1rem; }
     @media (min-width: 576px) {
@@ -742,6 +757,9 @@ p.contact {
   #main .products-strip {
     background: #F9F9F9;
     padding: 237px 0 137px; }
+    @media (max-width: 1199.98px) {
+      #main .products-strip {
+        padding: 110px 0 137px; } }
     @media (max-width: 991.98px) {
       #main .products-strip {
         padding: 80px 15px 70px; } }
@@ -749,6 +767,9 @@ p.contact {
       stroke: #e72327; }
     #main .products-strip .products_title_box {
       padding-bottom: 187px; }
+      @media (max-width: 1199.98px) {
+        #main .products-strip .products_title_box {
+          padding-bottom: 70px; } }
       @media (max-width: 991.98px) {
         #main .products-strip .products_title_box {
           padding-bottom: 90px; } }
@@ -772,7 +793,7 @@ p.contact {
           max-width: 300px;
           max-height: 300px; } }
   #main .contact-strip {
-    padding: 163px 15px 63px; }
+    padding: 163px 30px 63px; }
     #main .contact-strip .form__error {
       color: #E72327;
       text-align: left;
