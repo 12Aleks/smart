@@ -574,6 +574,7 @@ p.contact {
           }
           @media (max-width: 379.98px) {
             transform: scale(.6);
+
           }
         }
       }
@@ -581,7 +582,7 @@ p.contact {
       li.active {
         transform: scale(1.1);
 
-        svg path, svg line.a, svg line.b {
+        svg path, svg line.a, svg line.b, svg path.b  {
           stroke-dasharray: 800;
           stroke-dashoffset: 1000;
           animation-name: icon-animation;
