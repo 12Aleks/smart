@@ -212,6 +212,7 @@
             </div>
         </div>
     </div>
+
     <div id='opis' class="container smart">
         <div class="row">
             <div class="col-lg-12">
@@ -342,20 +343,17 @@
             </div>
         </div>
     </div>
+
     <div class="over">
-        <div id='aplikacja' class="container-fluid app-strip">
-            <img class="appImgFirst" src="images/downloadApp/app_screen_1.png" alt="app first">
-            <img class="appImgSecond" src="images/downloadApp/app_screen_2.png" alt="app second">
+        <div id='aplikacja' class="container app-strip">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <img class="sm_appImgFirst" src="images/downloadApp/phones.png" alt="app first">
+                </div>
+                <div class="col-lg-6">
                     <div class="app_descriptions pb-5">
                         <h3 class="title text-center pb-5 mb-0 mb-sm-4 mb-md-4 mb-lg-4 lan" key="appTitle">Aplikacja
                             uszyta na miarę</h3>
-                        <div class="app_telephones">
-                            <img class="sm_appImgFirst" src="images/downloadApp/app_screen_small.png" alt="app first">
-                            <img class="sm_appImgSecond" src="images/downloadApp/app_screen_2_small.png"
-                                 alt="app second">
-                        </div>
                         <ul class="descriptions mb-0">
                             <li class="mb-3 mb-sm-3 mb-md-3 mb-lg-4 lan" key="appParagraphFrist">Daje komfort zdalnego
                                 zarządzania każdym
@@ -398,10 +396,10 @@
                         <div id="carouselExampleIndicators2" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="./images/app/router.png" alt="router">
+                                    <img src="./images/app/slider_first_img.png" alt="router">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./images/app/cloud.png" alt="cloud">
+                                    <img src="./images/app/slider_second_img.png" alt="cloud">
                                 </div>
                             </div>
                             <ol class="carousel-indicators">
@@ -514,7 +512,7 @@
 
                     <div class="col-lg-5 mt-lg-5 order-6 order-sm-6 order-md-6 order-lg-7">
                         <div class="img_products_box even">
-                            <img class="img-fluid " src="images/products/czujniki_circle.png" alt="">
+                            <img class="img-fluid " src="images/products/sensor.png" alt="sensor">
                         </div>
                     </div>
                     <div id="sensor-element" class="col-lg-7 d-flex flex-column justify-content-center mb-0 mb-sm-2 mb-md-2 mb-lg-0 mt-lg-5 order-7 order-sm-7 order-md-7 order-lg-6">
@@ -548,32 +546,7 @@
                     Kontakt
                 </h3>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <h6 class="pb-3 lan" key="available">Jesteśmy dostępni 24/7 </h6>
-                <p class="contact lan" key="weWork">Pracujemy od poniedziałku do piątku od 07:00 do 18:00. Ponadto
-                    jesteśmy
-                    dostępni 24 h na dobę przez 7 dni w tygodniu pod numerami telefonów komórkowych oraz za
-                    pośrednictwem poczty e-mail. </p>
-                <h6 class="lan" key="details">Dane firmy</h6>
-                <p class="contact lan" key="address">Czaple 100<br>
-                    80-298 Gdańsk<br>
-                    Polska </p>
-
-                <p class="contact">
-                    <span class="lan" key="nip">NIP:583-10-18-844</span><br>
-                    <span class="lan" key="regon">REGON: 190558447 </span>
-                </p>
-
-                <p class="contact">
-                    <span class="lan"
-                          key="registration">nr rej. GIOŚ: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.</span><br>
-                    <span class="lan" key="KRS">KRS nr 0000069067</span><br>
-                    <span class="lan" key="capital">Kapitał:2 360 500PLN</span><br>
-                    <span class="lan" key="account">Nr konta bankowego: ING Bank Slaski S.A. Oddział w Gdańsku 88 1050 1764 1000 0023 0692 5997</span><br>
-                </p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <h6 class="pb-3 lan" key="form">Formularz kontaktowy</h6>
+            <div class="col-12 offset-lg-3 col-lg-6">
                 <form id="contact-form">
                     <div class="form-group">
                         <input type="email" class="form-control" name="user_email"
@@ -586,11 +559,12 @@
                                maxlength="15" required>
                         <span class="form__error">To pole powinno zawierać numer telefonu w formacie +48 444 444 444</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-4">
                         <textarea class="form-control" rows="6" name="user_message"></textarea>
                     </div>
                     <button type="submit" class="btn"><span class="lan" key="send">Wyślij</span></button>
                 </form>
+                <h3 class="phone"></h3>
             </div>
         </div>
     </div>

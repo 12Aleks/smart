@@ -154,11 +154,11 @@ const langArr = {
         "medical": "MEDIZINPRODUKTE",
         "sale": "VERTRIEB VON HEIZKÖRPERN",
         //
-        "thermostatic_head":"Thermostatic Head",
-        "temperature_sensor":"Temperature Sensor",
-        "electric_heater":"Electric Heating Element",
-        "electric_radiator":"Electric Radiator",
-        "window-sensor":"Window Opening Sensor",
+        "thermostatic_head":"Thermostatkopf",
+        "temperature_sensor":"Temperatursensor",
+        "electric_heater":"Elektroheizpatrone",
+        "electric_radiator":"Elektroheizkörper",
+        "window-sensor":"Offen-Fenster-Sensor",
     },
     ru: {
         "description": "Описание системы",
@@ -396,11 +396,11 @@ const langArr = {
         "medical": "MATERIELS MEDICAUX",
         "sale": "VENTE DE RADIATEURS",
         //
-        "thermostatic_head":"Thermostatic Head",
-        "temperature_sensor":"Temperature Sensor",
-        "electric_heater":"Electric Heating Element",
-        "electric_radiator":"Electric Radiator",
-        "window-sensor":"Window Opening Sensor",
+        "thermostatic_head":"Tête thermostatique",
+        "temperature_sensor":"Capteur de température",
+        "electric_heater":"Kit résistances électrique",
+        "electric_radiator":"Radiateur électrique",
+        "window-sensor":"Capteur d'ouverture de fenêtre",
     },
     it: {
         "description": "Descrizione",
@@ -477,11 +477,11 @@ const langArr = {
         "medical": "PRODOTTI MEDICI",
         "sale": "VENDITA RADIATORI",
         //
-        "thermostatic_head":"Thermostatic Head",
-        "temperature_sensor":"Temperature Sensor",
-        "electric_heater":"Electric Heating Element",
-        "electric_radiator":"Electric Radiator",
-        "window-sensor":"Window Opening Sensor",
+        "thermostatic_head":"Testa termostatica",
+        "temperature_sensor":"Termometro",
+        "electric_heater":"Kit riscaldatore elettrico",
+        "electric_radiator":"Stufa elettrica",
+        "window-sensor":"Sensore di apertura della finestra",
     },
     cs: {
         "description": "Popis systému",
@@ -558,11 +558,11 @@ const langArr = {
         "medical": "REHABILITAČNÍ PŘÍSTROJE",
         "sale": "TOPENÁŘSKÉ VÝROBKY",
         //
-        "thermostatic_head":"Thermostatic Head",
-        "temperature_sensor":"Temperature Sensor",
-        "electric_heater":"Electric Heating Element",
-        "electric_radiator":"Electric Radiator",
-        "window-sensor":"Window Opening Sensor",
+        "thermostatic_head":"Termostatická Hlavice",
+        "temperature_sensor":"Čidlo teploty",
+        "electric_heater":"Elektrická topná tyč",
+        "electric_radiator":"Elektrický radiátor",
+        "window-sensor":"Čidlo otevřených oken",
     },
     sk: {
         "description": "Opis systému",
@@ -639,11 +639,11 @@ const langArr = {
         "medical": "REHABILITAČNÍ PRÍSTROJE",
         "sale": "KÚRENÁRSKE VÝROBKY",
         //
-        "thermostatic_head":"Thermostatic Head",
-        "temperature_sensor":"Temperature Sensor",
-        "electric_heater":"Electric Heating Element",
-        "electric_radiator":"Electric Radiator",
-        "window-sensor":"Window Opening Sensor",
+        "thermostatic_head":"Termostatická hlavica",
+        "temperature_sensor":"Teplotný senzor",
+        "electric_heater":"Elektrická vykorovacia tyč",
+        "electric_radiator":"Elektrický radiátor",
+        "window-sensor":"Senzor otvorených okien",
     }
 
 };

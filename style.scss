@@ -704,6 +704,42 @@ p.contact {
           }
         }
 
+        .wrapper-window-sensor {
+          .round {
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            -o-animation-delay: 1s;
+            animation-delay: 1s;
+          }
+        }
+
+        .wrapper-heating {
+          .round {
+            -webkit-animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            -o-animation-delay: 2s;
+            animation-delay: 2s;
+          }
+        }
+
+        .wrapper-sensor {
+          .round {
+            -webkit-animation-delay: 3s;
+            -moz-animation-delay: 3s;
+            -o-animation-delay: 3s;
+            animation-delay: 3s;
+          }
+        }
+
+        .wrapper-heating {
+          .round {
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            -o-animation-delay: 4s;
+            animation-delay: 4s;
+          }
+        }
+
         .round {
           width: 63px;
           height: 63px;
@@ -932,44 +968,49 @@ p.contact {
   .over {
     overflow: hidden;
 
-    .houseSmart {
-      display: inherit;
-      @media (max-width: 445.98px) {
-        display: none;
+    .sm_appImgFirst {
+      max-width: 400px;
+      width: 100%;
+      float: right;
+      @media(max-width: 991.98px) {
+        max-width: 350px;
+        display: block;
+        margin: 0 auto 53px;
+        float: inherit;
       }
+      @media(max-width: 575.98px) {
+        max-width: 250px;
+      }
+    }
 
+    .houseSmart {
       .app_img_box {
-        max-width: 705px;
         height: auto;
         position: relative;
         z-index: 10;
-        background: url("./images/app/backgroundImg.png") no-repeat;
-        background-size: 100%;
         margin: 0 auto;
-        @media (max-width: 991.98px) {
-          max-width: 600px;
-          .carousel-item {
-            img {
-              max-width: 600px;
-              height: auto;
-            }
+        .carousel-item {
+          img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
           }
+        }
+        @media (max-width: 991.98px) {
+          max-width: 550px;
         }
         @media (max-width: 767.98px) {
           max-width: 450px;
-          .carousel-item {
-            img {
-              max-width: 450px;
-            }
-          }
         }
         @media (max-width: 575.98px) {
           max-width: 400px;
-          .carousel-item {
-            img {
-              max-width: 400px;
-            }
-          }
+        }
+        @media (max-width: 445.98px) {
+          max-width: 300px;
+        }
+        @media (max-width: 360.98px) {
+          max-width: 250px;
         }
 
         #carouselExampleIndicators2.carousel-fade {
@@ -1038,12 +1079,12 @@ p.contact {
     }
 
     .appImgFirst, .appImgSecond {
-      width: 800px;
+      width: 550px;
       position: absolute;
       z-index: 9;
       transition: width 3ms linear;
       @media(max-width: 1680px) {
-        width: 700px;
+        width: 500px;
       }
       @media(max-width: 1540px) {
         width: 590px;
@@ -1072,10 +1113,10 @@ p.contact {
 
 
     .appImgSecond {
-      bottom: 800px;
-      right: -70%;
+      bottom: 200px;
+      right: 0;
       @media(max-width: 1680px) {
-        bottom: 700px;
+        bottom: 200px;
       }
       @media(max-width: 1540px) {
         bottom: 590px;
@@ -1085,31 +1126,17 @@ p.contact {
       }
     }
 
-
-    .appFirst, .appSecond {
-      -moz-transition: left ease-out 1.5s, top ease-out 1.5s;
-      -o-transition: left ease-out 1.5s, top ease-out 1.5s;
-      -webkit-transition: left ease-out 1.5s, top ease-out 1.5s;
-      transition: left ease-out 1.5s, top ease-out 1.5s;
-    }
-
-    .appSecond {
-      -moz-transition: right ease-out 1.5s, bottom ease-out 1.5s;
-      -o-transition: right ease-out 1.5s, bottom ease-out 1.5s;
-      -webkit-transition: right ease-out 1.5s, bottom ease-out 1.5s;
-      transition: right ease-out 1.5s, bottom ease-out 1.5s;
-    }
-
     .appFirst {
-      top: 125px;
-      left: -19%;
+      top: -22px;
+      left: 33%;
     }
 
     .appSecond {
-      bottom: -165px;
-      right: -14%;
+      bottom: 210px;
+      right: 1%;
       @media(max-width: 1680px) {
-        bottom: -125px;
+        bottom: 210px;
+        right: -2%;
       }
       @media(max-width: 1540px) {
         bottom: -95px;
@@ -1119,67 +1146,8 @@ p.contact {
       }
     }
 
-    .app_telephones {
-      display: none;
-      position: relative;
-      height: 530px;
-      margin-bottom: 65px;
-      @media(max-width: 1199.98px) {
-        display: inherit;
-      }
-      @media(max-width: 991.98px) {
-        height: 515px;
-      }
-      @media(max-width: 767.98px) {
-        height: 400px;
-      }
-      @media(max-width: 379.98px) {
-        margin-bottom: 40px;
-      }
-
-      .sm_appImgFirst, .sm_appImgSecond {
-        height: 550px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        @media(max-width: 991.98px) {
-          height: 450px;
-        }
-        @media(max-width: 767.98px) {
-          height: 338px;
-        }
-      }
-
-      .sm_appImgFirst {
-        z-index: 99;
-        left: 39%;
-        top: 52%;
-        @media(max-width: 991.98px) {
-          left: 41%;
-        }
-        @media(max-width: 767.98px) {
-          left: calc(50% - 50px);
-        }
-      }
-
-      .sm_appImgSecond {
-        z-index: 98;
-        left: 61%;
-        top: 48%;
-        @media(max-width: 991.98px) {
-          left: 59%;
-        }
-        @media(max-width: 767.98px) {
-          left: calc(50% + 50px);
-        }
-      }
-    }
-
     .app_descriptions {
       max-width: 741px;
-      padding: 0 15px;
       margin-right: auto;
       margin-left: auto;
     }
@@ -1263,7 +1231,8 @@ p.contact {
       border-radius: 0;
       width: 265px;
       height: 56px;
-      float: right;
+      margin: 5px auto 30px;
+      display: block;
       text-transform: uppercase;
       background-color: $global-red;
       font: 300 16px/19px 'Roboto', sans-serif;
@@ -1283,9 +1252,19 @@ p.contact {
       .row {
         .img-room {
           .wrapper-heating {
-
             span {
               top: -33px;
+            }
+          }
+
+          .wrapper-radiator {
+            span {
+              top: 55px;
+              left: 60px;
+              @media(max-width: 1199.98px) {
+                top: 35px;
+                left: 60px;
+              }
             }
           }
         }
@@ -1300,16 +1279,16 @@ p.contact {
         height: 450px;
       }
       @media (max-width: 575.98px) {
-        height: 320px;
+        height: 400px;
       }
       @media (max-width: 475.98px) {
-        height: 415px;
-      }
-      @media (max-width: 395.98px) {
         height: 450px;
       }
+      @media (max-width: 395.98px) {
+        height: 500px;
+      }
       @media (max-width: 349.98px) {
-        height: 550px;
+        height: 580px;
       }
     }
   }
@@ -1339,7 +1318,7 @@ p.contact {
   }
 }
 
-.en, .de, .fr,.it,.cs, .sk {
+.en, .de, .fr, .it, .cs, .sk {
   #main {
     .room-strip {
       .row {
@@ -1360,16 +1339,16 @@ p.contact {
     #carouselExampleIndicators {
       height: 500px;
       @media (max-width: 991.98px) {
-        height: 410px;
+        height: 420px;
       }
       @media (max-width: 575.98px) {
-        height: 320px;
+        height: 360px;
       }
       @media (max-width: 475.98px) {
-        height: 380px;
+        height: 400px;
       }
       @media (max-width: 395.98px) {
-        height: 410px;
+        height: 440px;
       }
       @media (max-width: 349.98px) {
         height: 480px;
@@ -1378,7 +1357,118 @@ p.contact {
   }
 }
 
+.it {
+  #main {
+    .room-strip {
+      .row {
+        .img-room {
+          .wrapper-radiator {
+            .round {
+              span {
+                top: 35px
+              }
+            }
+          }
+
+          .wrapper-window-sensor {
+            .round {
+              span {
+                width: 225px;
+              }
+            }
+          }
+
+          .wrapper-sensor {
+            .round {
+              span {
+                top: -32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.fr {
+  #main {
+    .room-strip {
+      .row {
+        .img-room {
+          .wrapper-window-sensor {
+            .round {
+              span {
+                width: 235px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.de {
+  #main {
+    .room-strip {
+      .row {
+        .img-room {
+          .wrapper-heating, .wrapper-head, .wrapper-sensor {
+            .round {
+              span {
+                top: -33px;
+              }
+            }
+          }
+
+          .wrapper-radiator {
+            .round {
+              span {
+                top: 55px;
+                left: 65px;
+                @media(max-width: 1199.98px) {
+                  top: 52px;
+                  left: 51px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .cs, .sk {
+  #main {
+    .room-strip {
+      .row {
+        .img-room {
+          .wrapper-window-sensor {
+            .round {
+              span {
+                top: -57px;
+                width: 205px;
+              }
+            }
+          }
+
+          .wrapper-radiator {
+            .round {
+              span {
+                @media(max-width: 1399.98px) {
+                  top: 50px;
+                  left: 66px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .smart {
     #carouselExampleIndicators {
 
@@ -1429,9 +1519,6 @@ footer {
 
     &:nth-child(1) {
       padding: 10px 8px 10px 0;
-
     }
   }
 }
-
-
