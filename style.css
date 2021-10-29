@@ -131,6 +131,16 @@ h6.sm_title {
   color: #3D3C3C;
 }
 
+a.btn-lg {
+  margin-bottom: 15px !important;
+  min-width: 200px;
+}
+@media (max-width: 767.98px) {
+  a.btn-lg {
+    font-size: 16px;
+  }
+}
+
 p.descriptions {
   font: 300 1.5rem/1.875rem "Roboto", sans-serif;
   letter-spacing: 0;
@@ -1199,6 +1209,10 @@ p.contact {
 }
 #main .products-strip h4 {
   margin-bottom: 30px;
+}
+#main .products-strip button {
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 #main .products-strip .img_products_box {
   max-width: 372px;
