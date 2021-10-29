@@ -116,8 +116,6 @@ a.btn-lg{
   }
 }
 
-
-
 p.descriptions {
   font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
   letter-spacing: 0;
@@ -1332,6 +1330,17 @@ p.contact {
     }
   }
 }
+.en, .de, .pl, .fr, .it, .cs, .sk{
+  .sensor_button{
+    a.btn-lg:nth-child(1){
+      margin-top: 30px !important;
+      @media (max-width: 991.98px) {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
 
 .en, .de, .fr, .it, .cs, .sk {
   #main {

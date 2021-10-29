@@ -1339,6 +1339,15 @@ p.contact {
   }
 }
 
+.en .sensor_button a.btn-lg:nth-child(1), .de .sensor_button a.btn-lg:nth-child(1), .pl .sensor_button a.btn-lg:nth-child(1), .fr .sensor_button a.btn-lg:nth-child(1), .it .sensor_button a.btn-lg:nth-child(1), .cs .sensor_button a.btn-lg:nth-child(1), .sk .sensor_button a.btn-lg:nth-child(1) {
+  margin-top: 30px !important;
+}
+@media (max-width: 991.98px) {
+  .en .sensor_button a.btn-lg:nth-child(1), .de .sensor_button a.btn-lg:nth-child(1), .pl .sensor_button a.btn-lg:nth-child(1), .fr .sensor_button a.btn-lg:nth-child(1), .it .sensor_button a.btn-lg:nth-child(1), .cs .sensor_button a.btn-lg:nth-child(1), .sk .sensor_button a.btn-lg:nth-child(1) {
+    margin-top: 0 !important;
+  }
+}
+
 .en #main .room-strip .row .img-room .wrapper-heating span, .de #main .room-strip .row .img-room .wrapper-heating span, .fr #main .room-strip .row .img-room .wrapper-heating span, .it #main .room-strip .row .img-room .wrapper-heating span, .cs #main .room-strip .row .img-room .wrapper-heating span, .sk #main .room-strip .row .img-room .wrapper-heating span {
   width: 185px;
 }
