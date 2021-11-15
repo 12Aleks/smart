@@ -736,6 +736,7 @@ $('#lang').change(function () {
             $(this).text(langArr[values][$(this).attr('key')]);
 
     });
-    window.location.assign(domains[values])
+    window.location.assign(`http:// + ${domains[values]}`)
+    
 });
 
