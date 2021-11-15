@@ -707,9 +707,9 @@ let $translate = $('.translate');
 
 let $hostname = window.location.host.split(".")[0].length > 2? window.location.host.split(".")[0]: window.location.host.split(".")[1]
 
-console.log(typeof $hostname)
+console.log($hostname)
 
-let $lang = 'pl'
+let $lang = $hostname
 
 // let $lang = navigator.language.slice(0, 2);
 
