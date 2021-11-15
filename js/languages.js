@@ -80,9 +80,10 @@ const langArr = {
         "electric_radiator": "Electric Radiator",
         "window-sensor": "Window Opening Sensor",
         "button": "Download product card",
-        "VTS":"./product_card/VTS-v1_EN_20211021_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_EN_20211021_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
     },
     de: {
         "description": "Systembeschreibung",
@@ -164,9 +165,10 @@ const langArr = {
         "electric_radiator": "Elektroheizkörper",
         "window-sensor": "Offen-Fenster-Sensor",
         "button": "Produktkarten Download",
-        "VTS":"./product_card/VTS-v1_DE_20211021_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_DE_20211021_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "VAZ": "./product_card/VAZ-v1_DE_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_DE_20211021_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_DE_20211021_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
     },
     ru: {
         "description": "Описание системы",
@@ -249,10 +251,11 @@ const langArr = {
         "electric_radiator": "Электрический радиатор",
         "window-sensor": "Датчик открытия окна",
         "button": "Скачать техкарту",
-        "VTS":"./product_card/VTS-v1_RU_20211022_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_RU_20211022_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
-        
+        "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_RU_20211022_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_RU_20211022_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+
     },
     pl: {
         "description": "Opis systemu",
@@ -334,9 +337,10 @@ const langArr = {
         "electric_radiator": "Grzejnik elektryczny",
         "window-sensor": "Czujnik otwarcia okna",
         "button": "Pobierz kartę techniczną",
-        "VTS":"./product_card/VTS-v1_PL_20211021_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_PL_20211021_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_PL_20211020_cibto.pdf",
+        "VAZ": "./product_card/VAZ-v1_PL_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_PL_20211021_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_PL_20211021_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_PL_20211020_cibto.pdf",
     },
     fr: {
         "description": "Description",
@@ -419,9 +423,10 @@ const langArr = {
         "electric_radiator": "Radiateur électrique",
         "window-sensor": "Capteur d'ouverture de fenêtre",
         "button": "Download product card",
-        "VTS":"./product_card/VTS-v1_FR_20211025_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_FR_20211025_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_FR_20211025_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_FR_20211025_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
     },
     it: {
         "description": "Descrizione",
@@ -504,9 +509,10 @@ const langArr = {
         "electric_radiator": "Stufa elettrica",
         "window-sensor": "Sensore di apertura della finestra",
         "button": "Download product card",
-        "VTS":"./product_card/VTS-v1_EN_20211021_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_EN_20211021_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
     },
     cs: {
         "description": "Popis systému",
@@ -589,9 +595,10 @@ const langArr = {
         "electric_radiator": "Elektrický radiátor",
         "window-sensor": "Čidlo otevřených oken",
         "button": "Download product card",
-        "VTS":"./product_card/VTS-v1_EN_20211021_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_EN_20211021_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
     },
     sk: {
         "description": "Opis systému",
@@ -674,19 +681,37 @@ const langArr = {
         "electric_radiator": "Elektrický radiátor",
         "window-sensor": "Senzor otvorených okien",
         "button": "Download product card",
-        "VTS":"./product_card/VTS-v1_EN_20211021_cibto.pdf",
-        "VOS":"./product_card/VOS-v1_EN_20211021_cibto.pdf",
-        "VEO":"./product_card/VEO-v6_EN_20211020_cibto.pdf",
-
+        "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
+        "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
+        "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
+        "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
     }
 
 };
+
+let domains = {
+    pl:"termasmart.pl",
+    en: 'en.termasmart.com',
+    de: 'de.termasmart.com',
+    fr: 'fr.termasmart.com',
+    ru: 'ru.termasmart.com',
+    it: 'it.termasmart.com',
+    cs: 'cs.termasmart.com',
+    sk: 'sk.termasmart.com'
+}
 
 
 // let $href = document.location.pathname;
 
 let $translate = $('.translate');
-let $lang = navigator.language.slice(0, 2);
+
+let $hostname = window.location.host.split(".")[0].length > 2? window.location.host.split(".")[0]: window.location.host.split(".")[1]
+
+console.log(typeof $hostname)
+
+let $lang = 'pl'
+
+// let $lang = navigator.language.slice(0, 2);
 
 
 $('body').addClass($lang);
@@ -696,18 +721,21 @@ $translate.each(function () {
 });
 
 $('.lan').each(function () {
-    $(this).attr('target') ? $(this).attr('href', langArr[$lang][$(this).attr('key')]):
-    $(this).text(langArr[$lang][$(this).attr('key')]);
+    $(this).attr('target') ? $(this).attr('href', langArr[$lang][$(this).attr('key')]) :
+        $(this).text(langArr[$lang][$(this).attr('key')]);
     $('#lang').val($lang)
 });
 
 $('#lang').change(function () {
     let values = $('#lang :selected').val();
+    // console.log(domains[values])
+    
     $('body').removeAttr('class').addClass(values);
     $('.lan').each(function () {
-        $(this).attr('target') ? $(this).attr('href', langArr[values][$(this).attr('key')]):
-        $(this).text(langArr[values][$(this).attr('key')]);
-       
+        $(this).attr('target') ? $(this).attr('href', langArr[values][$(this).attr('key')]) :
+            $(this).text(langArr[values][$(this).attr('key')]);
+
     });
+    location.assign(domains[values])
 });
 
