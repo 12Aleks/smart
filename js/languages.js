@@ -705,9 +705,9 @@ let domains = {
 
 let $translate = $('.translate');
 
-let $hostname = window.location.host.split(".")[0].length > 2? window.location.host.split(".")[0]: window.location.host.split(".")[1]
+let $hostname = window.location.host.split(".")[(window.location.host.split(".")[0].length > 2? 1: 0)]
 
-console.log($hostname)
+console.log("Hostname",$hostname)
 
 let $lang = $hostname
 
