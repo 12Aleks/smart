@@ -690,7 +690,7 @@ const langArr = {
 };
 
 let domains = {
-    pl:"termasmart.pl",
+    pl: 'termasmart.pl',
     en: 'en.termasmart.com',
     de: 'de.termasmart.com',
     fr: 'fr.termasmart.com',
