@@ -87,6 +87,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://en.termagroup.pl/",
+        "machinery_text":"MACHINERY",
+        "machinery_link":"http://www.termamax.pl/en/glowna",
+        "services_text": " ",
+        "services_link":" ",
     },
     de: {
         "description": "Systembeschreibung",
@@ -175,6 +181,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_DE_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_DE_20211021_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://de.termagroup.pl/",
+        "machinery_text":"BAUMASCHINEN",
+        "machinery_link":"http://www.termamax.pl/de/glowna",
+        "services_text": " ",
+        "services_link":" ",
     },
     ru: {
         "description": "Описание системы",
@@ -264,6 +276,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_RU_20211022_cibto.pdf",
         "VOS": "./product_card/VOS-v1_RU_20211022_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://ru.termagroup.pl/",
+        "machinery_text":"СТРОИТЕЛЬНЫЕ МАШИНЫ",
+        "machinery_link":"http://www.termamax.pl/ru/glowna",
+        "services_text": " ",
+        "services_link":" ",
 
     },
     pl: {
@@ -353,6 +371,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_PL_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_PL_20211021_cibto.pdf",
         "VEO": "./product_card/VEO-v6_PL_20211020_cibto.pdf",
+        "terma_text":"TERMA SPÓŁKA",
+        "terma_link": "http://www.termagroup.pl/",
+        "machinery_text":"MASZYNY BUDOWLANE",
+        "machinery_link":"http://www.termamax.pl/pl/glowna",
+        "services_text": "USŁUGI PRZEMYSŁOWE",
+        "services_link":"http://www.termaservices.pl/",
     },
     fr: {
         "description": "Description",
@@ -442,6 +466,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_FR_20211025_cibto.pdf",
         "VOS": "./product_card/VOS-v1_FR_20211025_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://en.termagroup.pl/",
+        "machinery_text":"MACHINERY",
+        "machinery_link":"http://www.termamax.pl/en/glowna",
+        "services_text": " ",
+        "services_link":" ",
     },
     it: {
         "description": "Descrizione",
@@ -531,6 +561,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://en.termagroup.pl/",
+        "machinery_text":"MACHINERY",
+        "machinery_link":"http://www.termamax.pl/en/glowna",
+        "services_text": " ",
+        "services_link":" ",
     },
     cs: {
         "description": "Popis systému",
@@ -620,6 +656,12 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://en.termagroup.pl/",
+        "machinery_text":"MACHINERY",
+        "machinery_link":"http://www.termamax.pl/en/glowna",
+        "services_text": " ",
+        "services_link":" ",
     },
     sk: {
         "description": "Opis systému",
@@ -709,6 +751,13 @@ const langArr = {
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
         "VEO": "./product_card/VEO-v6_EN_20211020_cibto.pdf",
+        "terma_text":"TERMA",
+        "terma_link": "http://en.termagroup.pl/",
+        "machinery_text":"MACHINERY",
+        "machinery_link":"http://www.termamax.pl/en/glowna",
+        "services_text": " ",
+        "services_link":" ",
+        "":"",
     }
 
 };
@@ -733,7 +782,7 @@ let $hostname = window.location.host.split(".")[(window.location.host.split(".")
 
 // console.log("Hostname",$hostname)
 
-let $lang = $hostname
+let $lang = 'en'
 
 // let $lang = navigator.language.slice(0, 2);
 
