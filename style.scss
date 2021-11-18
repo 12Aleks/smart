@@ -381,6 +381,24 @@ p.contact {
     margin-top: -100px;
   }
 
+
+    #heating-element, #head-element, #radiator-element{
+      margin-bottom: 12rem;
+      @media (max-width: 1599.98px) {
+        margin-bottom: 8rem;
+      }
+      @media (max-width: 991.98px) {
+        margin-bottom: 5rem;
+      }
+      @media (max-width: 767.98px) {
+        margin-bottom: 4rem;
+      }
+      @media (max-width: 575.98px) {
+        margin-bottom: 3rem;
+      }
+    }
+
+
   /*banner strip*/
   .banner-strip {
     padding: 130px 10% 160px;
@@ -1197,6 +1215,72 @@ p.contact {
 
     h4 {
       margin-bottom: 30px;
+    }
+    div.download_wrapper{
+      margin-top: 30px;
+      max-width: max-content;
+    
+      a.download{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        svg{
+            fill: $global-text-gray;
+            transition: all .5s;
+        }
+        span{
+          color: $global-text-gray;
+          font: 500 20px/20px Lato, sans-serif;
+          padding-left: 5px;
+          transition: all .5s;
+        }
+        &:hover{
+          svg{
+              fill:#E6242F;
+              transition: all .7s;
+          }
+          span{
+            color: #E6242F;
+            transition: all .7s;
+          }
+        }
+      }
+  
+      a[type='button'].btn{
+        display:none;
+        color: #fff;
+        background-color: #E6242F;
+        border-radius: 0;
+        border-color: #E6242F;
+        width: max-content;
+        transition: all .5s;
+        &:hover{
+          color: #E6242F;
+          background-color: transparent;
+          transition: all .7s;
+        }
+      }
+      @media (max-width: 974.98px){
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 310px ){
+        a.download{
+          span{
+            font: 500 16px/20px Lato, sans-serif;
+          }
+        }
+      }
+    }
+    @media(max-width: 767.98px){
+     div.dubl{
+        flex-direction: column;
+        div.download_wrapper:nth-last-child(1){
+          margin-top: 15px;
+        }
+     }
+
     }
 
     button{

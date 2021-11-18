@@ -42,16 +42,16 @@ const langArr = {
         "veoFirst": "VEO heater The sophisticated shape of the housing and an elegant front panel with a fading display conceal a seemingly delicate device. In fact, the remotely controlled VEO Smart heating element has a power of up to 2000 W, and the unique electrical connection allows it to be installed both vertically and horizontally, almost in any radiator with a heating medium.",
         "veoSecond": "Basic adjustments (temperature and a simple timer) are available through the front panel, but the most convenient access to the full functionality of the system is provided by the TERMA Smart mobile application. The device works with window opening sensors and an additional temperature and humidity sensor from the SMART series.",
 
-        "heatingTitle": "Thermostatic head",
+        "heatingTitle": "Thermostatic head VAZ",
         "heatingFirst": "The sophisticated design of the SMART family, elegant black or the timeless white of the housing are the hallmarks of the VAZ thermostatic head. Together with the fading display, they add subtlety to the entire device. The head is powered by a high-performance battery cell, which is charged on a single charge for the entire heating season.",
         "heatingSecond": "Extremely easy assembly and the auto-calibration procedure allow the head to be installed in almost any radiator and with any type of thermostatic valve. Basic regulations are available through the panel on the device, and the full functionality of the system is supported by the TERMA Smart mobile application. The device works with window opening sensors and an additional temperature and humidity sensor from the SMART series.",
 
 
-        "radiatorTitle": "Radiator",
+        "radiatorTitle": "Radiator VOLTAN",
         "radiatorFirst": "Electric convector VOLTAN - modern, easy to use, efficient, and at the same time very flat, almost indistinguishable against the background of the wall. The heater is equipped with a low-temperature 2000 W heat exchanger and an advanced controller with a self-learning control algorithm.",
         "radiatorSecond": "Basic settings are available through the panel on the device, and the full functionality of the system is supported by the TERMA Smart mobile application. The device works with window opening sensors and an additional temperature and humidity sensor from the SMART series.",
 
-        "sensorTitle": "Sensors",
+        "sensorTitle": "Sensors VTS and VWS",
         "sensorFirst": "VTS temperature and humidity sensor. An easy-to-install dual-function sensor constantly monitors the temperature and humidity in the room, sending information to the heating devices as soon as the temperature in the controlled zone changes by half a degree. ",
         "sensorSecond": "VWS open window sensor. When the window is opened, the sensor sends information immediately to switch off heating in a given zone.",
 
@@ -79,7 +79,10 @@ const langArr = {
         "electric_heater": "Electric Heating Element",
         "electric_radiator": "Electric Radiator",
         "window-sensor": "Window Opening Sensor",
-        "button": "Download product card",
+        "buy_sensor": "Buy sensor",
+        "buy_termostatic_head":"Buy thermostatic head",
+        "buy_heating_element":"Buy heating element",
+        "download": "Product card",
         "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
@@ -127,16 +130,16 @@ const langArr = {
         "veoFirst": "Die raffinierte Form des Gehäuses und die elegante Frontplatte mit dimmbarem Display verbergen ein scheinbar filigranes Gerät. Die ferngesteuerte Heizpatrone VEO Smart hat eine Leistung von bis zu 2000 W. Dank ihres einzigartigen elektrischen Anschlusses kann sie sowohl vertikal als auch horizontal in praktisch jedem mit einem Heizmedium befüllten Heizkörper installiert werden.",
         "veoSecond": "Grundlegende Einstellungen (Temperatur und einfacher Timer) sind über die Frontplatte verfügbar, aber der bequemste Zugriff auf die volle Funktionalität des Systems erfolgt über die mobile Anwendung TERMA Smart. Das Gerät arbeitet mit Fensteröffnungssensoren und zusätzlichen Temperatur- und Feuchtigkeitssensoren der SMART-Serie.",
 
-        "heatingTitle": "Thermostatkopf",
+        "heatingTitle": "Thermostatkopf VAZ",
         "heatingFirst": "Das raffinierte Design der SMART-Familie, das elegante schwarze oder zeitlose weiße Gehäuse sind die charakteristischen Merkmale des VAZ-Thermostatkopfes. Zusammen mit dem dimmbaren Display verleihen sie dem ganzen Gerät eine subtile Raffinesse. Der Kopf wird von einer Hochleistungsbatteriezelle gespeist, die mit einer einzigen Ladung für die gesamte Heizsaison ausreicht.",
         "heatingSecond": "Durch die extrem einfache Montage und den Selbstkalibrierungsvorgang kann der Kopf in fast jeden Heizkörper und mit jedem Thermostatventiltyp installiert werden. Grundlegende Einstellungen sind über das Bedienfeld auf dem Gerät verfügbar und die volle Funktionalität des Systems wird durch die mobile Anwendung TERMA Smart unterstützt. Das Gerät arbeitet mit \"Geöffnete Fenster\" Sensoren und zusätzlichen Temperatur- und Feuchtigkeitssensoren der SMART-Serie zusammen.",
 
 
-        "radiatorTitle": "Heizkörper",
+        "radiatorTitle": "Heizkörper VOLTAN",
         "radiatorFirst": "Elektrischer Konvektor VOLTAN - modern, einfach in der Bedienung, effizient und gleichzeitig sehr flach, fast unsichtbar auf der Wand. Der Heizkörper ist mit einem Niedertemperaturtauscher mit einer Leistung von 2000 W und einer fortschrittlichen Steuerung mit einem selbstlernenden Kontrollalgorithmus ausgestattet.",
         "radiatorSecond": "Grundlegende Regelungen sind über das Bedienfeld auf dem Gerät verfügbar und die volle Funktionalität des Systems wird durch die mobile Anwendung TERMA Smart unterstützt. Das Gerät arbeitet mit \"Geöffnete Fenster\" Sensoren und zusätzlichen Temperatur- und Feuchtigkeitssensoren der SMART-Serie zusammen.",
 
-        "sensorTitle": "Temperatursonsoren",
+        "sensorTitle": "Temperatursonsoren VTS und VWS",
         "sensorFirst": "Sensoren Temperatursensor und Feuchtigkeitssensor VTS. Der einfach zu montierende Doppelfunktionssensor überwacht permanent Raumtemperatur und Luftfeuchtigkeit. Er sendet Informationen an die Heizgeräte, sobald sich die Temperatur in der kontrollierten Zone nur um ein halbes Grad verändert.",
         "sensorSecond": "Sensor für \"Geöffnetes Fenster\" VWS. Sollte ein Fenster geöffnet werden, sendet der Sensor sofort eine Information, wodurch die Heizung in der betreffenden Zone ausgeschaltet wird.",
 
@@ -164,7 +167,10 @@ const langArr = {
         "electric_heater": "Elektroheizpatrone",
         "electric_radiator": "Elektroheizkörper",
         "window-sensor": "Offen-Fenster-Sensor",
-        "button": "Produktkarten Download",
+        "buy_sensor": "Kaufen Sensor",
+        "buy_termostatic_head":"Kaufen Thermostatkopf",
+        "buy_heating_element":"Kaufen Elektroheizpatrone",
+        "download": "Produktkarten",
         "VAZ": "./product_card/VAZ-v1_DE_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_DE_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_DE_20211021_cibto.pdf",
@@ -213,16 +219,16 @@ const langArr = {
         "veoFirst": "За сложной формой корпуса и элегантной передней панелью имеющей затемнённый дисплей скрывается, казалось бы, хрупкое устройство. Фактически, дистанционно управляемый электронагреватель VEO Smart имеет мощность до 2000 w, а уникальное электрическое соединение позволяет устанавливать его как вертикально, так и горизонтально, практически в каждом радиаторе с теплоносителем.",
         "veoSecond": "Основные настройки (температура и простой таймер) доступны через переднюю панель, но наиболее удобный доступ к полному функционалу системы обеспечивает мобильное приложение TERMA Smart. Устройство работает с датчиками открывания окон и дополнительным датчиком температуры и влажности из серии SMART.",
 
-        "heatingTitle": "Термоголовка",
+        "heatingTitle": "Термоголовка VAZ",
         "heatingFirst": "Изысканный дизайн семейства SMART, элегантный черный или неподвластный времени белый корпус являются отличительными чертами термостатической головки VAZ. Вместе с заттемняющимся дисплеем они добавляют тонкости всему устройству. Головка питается от высокопроизводительного аккумуляторного элемента, которая заряжается одним зарядом в течение всего отопительного сезона.",
         "heatingSecond": "Чрезвычайно простая сборка и процедура автоматической калибровки позволяют устанавливать головку практически в любой радиатор и с любым типом термостатического клапана. Основные правила доступны через панель на устройстве, а полная функциональность системы поддерживается мобильным приложением TERMA Smart. Устройство работает с датчиками открывания окон и дополнительным датчиком температуры и влажности из серии SMART.",
 
 
-        "radiatorTitle": "Радиатор",
+        "radiatorTitle": "Радиатор VOLTAN",
         "radiatorFirst": "Электрический конвектор VOLTAN-современный, простой в использовании, эффективный, но очень плоский, почти не различимый на фоне стены. Нагреватель оснащен низкотемпературным теплообменником мощностью 2000w и усовершенствованным контроллером с самообучающимся алгоритмом управления.",
         "radiatorSecond": "Основные настройки доступны через панель на устройстве, а полную функциональность системы поддерживает мобильное приложение Terma Smart. Устройство работает с датчиками открытия окна и дополнительным датчиком температуры и влажности серии SMART.",
 
-        "sensorTitle": "Датчики",
+        "sensorTitle": "Датчики VTS и VWS",
         "sensorFirst": "Датчик температуры и влажности VTS. Простой в установке двухфункциональный датчик постоянно контролирует температуру и влажность в помещении, отправляя информацию в отопительные приборы, как только температура в контролируемой зоне изменяется на полградуса. ",
         "sensorSecond": "VWS датчик открытого окна. Когда окно открывается, датчик немедленно отправляет информацию об отключении обогрева в данной зоне.",
 
@@ -250,7 +256,10 @@ const langArr = {
         "electric_heater": "Электронагреватель",
         "electric_radiator": "Электрический радиатор",
         "window-sensor": "Датчик открытия окна",
-        "button": "Скачать техкарту",
+        "buy_sensor": "Купить датчик",
+        "buy_termostatic_head":"Купить термостатическую головку",
+        "buy_heating_element":"Купить электронагреватель",
+        "download": "Техническая карта",
         "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_RU_20211022_cibto.pdf",
         "VOS": "./product_card/VOS-v1_RU_20211022_cibto.pdf",
@@ -300,15 +309,15 @@ const langArr = {
         "veoFirst": "Grzałka VEO Wyrafinowany kształt obudowy i elegancki panel frontowy z przygasającym wyświetlaczem kryją w sobie delikatne z pozoru urządzenie. W rzeczywistości zdalnie sterowana grzałka VEO Smart dysponuje mocą do 2000 W, a unikalne przyłącze elektryczne pozwala zainstalować ją zarówno w pionie, jak i w poziomie, praktycznie w każdym grzejniku z czynnikiem grzewczym.",
         "veoSecond": "Podstawowe regulacje (temperatura i prosty Timer) dostępne są poprzez panel frontowy, ale najwygodniejszy dostęp do pełnej funkcjonalności systemu daje aplikacja mobilna TERMA Smart. Urządzenie współpracuje z czujnikami otwarcia okna oraz dodatkowym czujnikiem temperatury i wilgotności serii SMART.",
 
-        "heatingTitle": "Głowica",
+        "heatingTitle": "Głowica VAZ",
         "heatingFirst": "Wyrafinowane wzornictwo rodziny SMART, elegancka czerń lub ponadczasowa biel obudowy to cechy charakterystyczne głowicy termostatycznej VAZ. Razem przygasającym wyświetlaczem nadają subtelności całemu urządzeniu. Głowica zasilana jest wysokowydajnym ogniwem akumulatorowym, którego pojedyncze ładowanie wystarcza na cały sezon grzewczy.",
         "heatingSecond": "Niezwykle łatwy montaż oraz procedura autokalibracji pozwalają na instalację głowicy niemal w każdym grzejniku i z każdym typem zaworu termostatycznego. Podstawowe regulacje dostępne są poprzez panel na urządzeniu, a pełną funkcjonalność systemu obsługuje aplikacja mobilna TERMA Smart. Urządzenie współpracuje z czujnikami otwarcia okna oraz dodatkowym czujnikiem temperatury i wilgotności serii SMART.",
 
-        "radiatorTitle": "Grzejnik",
+        "radiatorTitle": "Grzejnik VOLTAN",
         "radiatorFirst": "Elektryczny konwektor VOLTAN - nowoczesny, prosty w obsłudze, wydajny, a jednocześnie bardzo płaski, niemal niewyróżniający się na tle ściany. Grzejnik wyposażony jest w niskotemperaturowy wymiennik o mocy 2000 W i zaawansowany sterownik z samouczącym się algorytmem kontrolnym.",
         "radiatorSecond": "Podstawowe regulacje dostępne są poprzez panel na urządzeniu, a pełną funkcjonalność systemu obsługuje aplikacja mobilna TERMA Smart. Urządzenie współpracuje z czujnikami otwarcia okna oraz dodatkowym czujnikiem temperatury i wilgotności serii SMART.",
 
-        "sensorTitle": "Czujniki",
+        "sensorTitle": "Czujniki VTS i VWS",
         "sensorFirst": "Czujniki Czujnik temperatury i wilgotności VTS. Łatwy w montażu dwufunkcyjny czujnik stale monitoruje temperaturę i wilgotność w pomieszczeniu, wysyłając informacje do urządzeń grzewczych, jeśli tylko temperatura w kontrolowanej strefie zmieni się o pół stopnia.",
         "sensorSecond": "Czujnik otwarcia okna VWS. W przypadku otwarcia okna czujnik natychmiast wysyła informację powodującą wyłączenie ogrzewania w danej strefie.",
 
@@ -336,7 +345,10 @@ const langArr = {
         "electric_heater": "Grzalka elektryczna",
         "electric_radiator": "Grzejnik elektryczny",
         "window-sensor": "Czujnik otwarcia okna",
-        "button": "Pobierz kartę techniczną",
+        "buy_sensor": "Kup czujnik",
+        "buy_radiator":"Kup głowice",
+        "buy_heating_element":"Kup grzałkę",
+        "download": "Karta techniczna",
         "VAZ": "./product_card/VAZ-v1_PL_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_PL_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_PL_20211021_cibto.pdf",
@@ -385,12 +397,12 @@ const langArr = {
         "veoFirst": "Chauffage VEO La forme sophistiquée du boîtier et un panneau avant élégant avec un écran décoloré dissimulent un appareil apparemment délicat. En fait, l'élément chauffant VEO Smart télécommandé a une puissance allant jusqu'à 2000 W, et la connexion électrique unique lui permet d'être installé à la fois verticalement et horizontalement, presque dans n'importe quel radiateur avec un fluide de chauffage.",
         "veoSecond": "Réglages de base (température et un simple minuterie) sont disponibles via le panneau avant, mais l'accès le plus pratique à toutes les fonctionnalités du système est fourni par l'application mobile TERMA Smart. L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température et d'humidité supplémentaire de la série SMART.",
 
-        "heatingTitle": "Tête thermostatique",
+        "heatingTitle": "Tête thermostatique VAZ",
         "heatingFirst": "Le design sophistiqué de la famille SMART, le noir élégant ou le blanc intemporel du boîtier sont les maîtres mots de la tête thermostatique VAZ. Associés à l'affichage décoloré, ils ajoutent de la subtilité à l'ensemble de l'appareil. La tête est alimentée par un cellule de batterie, qui est chargée sur une seule charge pendant toute la saison de chauffage.L'assemblage facile et la prcédure d'auto-étalonnage permettent d'installer la tête dans la majorité des vannes thermostatiques.",
         "heatingSecond": "L'assemblage extrêmement facile et la procédure d'auto-étalonnage permettent d'installer la tête dans presque tous les radiateurs et avec n'importe quel type de vanne thermostatique. Les réglementations de base sont disponibles via le panneau de l'appareil et toutes les fonctionnalités du système sont prises en charge par l'application mobile TERMA Smart. L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température et d'humidité supplémentaire de la série SMART.",
 
 
-        "radiatorTitle": "Radiateur",
+        "radiatorTitle": "Radiateur VOLTAN",
         "radiatorFirst": "Convecteur électrique VOLTAN - moderne, facile à utiliser, efficace et en même temps très plat, presque indiscernable sur le fond du mur. Le radiateur est équipé d'un échangeur de chaleur à basse température de 2000 W et d'un contrôleur avancé avec un -apprentissage de l'algorithme de contrôle.",
         "radiatorSecond": "Les paramètres de base sont disponibles via le panneau l'appareil et toutes les fonctionnalités du système sont prises en charge par l'application du mobile TERMA Smart, L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température d'humidité dans la série Smart.",
 
@@ -422,7 +434,10 @@ const langArr = {
         "electric_heater": "Kit résistances électrique",
         "electric_radiator": "Radiateur électrique",
         "window-sensor": "Capteur d'ouverture de fenêtre",
-        "button": "Download product card",
+        "buy_sensor": "Buy sensor",
+        "buy_termostatic_head":"Buy thermostatic head",
+        "buy_heating_element":"Buy heating element",
+        "download": "Product card",
         "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_FR_20211025_cibto.pdf",
         "VOS": "./product_card/VOS-v1_FR_20211025_cibto.pdf",
@@ -471,16 +486,16 @@ const langArr = {
         "veoFirst": "Riscaldatore VEO La forma sofisticata dell'alloggiamento e un elegante pannello frontale con display sbiadito nascondono un dispositivo apparentemente delicato. Infatti, l'elemento riscaldante VEO Smart comandato a distanza ha una potenza fino a 2000 W e l'esclusivo collegamento elettrico ne consente l'installazione sia in verticale che in orizzontale, quasi in qualsiasi radiatore dotato di mezzo riscaldante.",
         "veoSecond": "Regolazioni di base (temperatura e semplice timer) sono disponibili tramite il pannello frontale, ma l'accesso più comodo alla piena funzionalità del sistema è fornito dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
 
-        "heatingTitle": "Testa termostatica",
+        "heatingTitle": "Testa termostatica VAZ",
         "heatingFirst": "Il design sofisticato della famiglia SMART, l'elegante nero o l'intramontabile bianco dell'alloggiamento sono i tratti distintivi della testa termostatica VAZ. Insieme al display sbiadito, aggiungono sottigliezza all'intero dispositivo. La testa è alimentata da una cella di batteria ad alte prestazioni, che viene caricata con una singola carica per l'intera stagione di riscaldamento.",
         "heatingSecond": "L'estrema facilità di montaggio e la procedura di autotaratura consentono di installare la testata in quasi tutti i radiatori e con qualsiasi tipo di valvola termostatica. Le normative di base sono disponibili tramite il pannello sul dispositivo e la piena funzionalità del sistema è supportata dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
 
 
-        "radiatorTitle": "Termosifone",
+        "radiatorTitle": "Termosifone VOLTAN",
         "radiatorFirst": "Termoconvettore elettrico VOLTAN - moderno, facile da usare, efficiente e allo stesso tempo molto piatto, quasi indistinguibile sullo sfondo del muro. Il riscaldatore è dotato di uno scambiatore di calore da 2000 W a bassa temperatura e di un controller avanzato con un algoritmo di controllo ad autoapprendimento.",
         "radiatorSecond": "Le impostazioni di base sono disponibili tramite il pannello sul dispositivo e la piena funzionalità del sistema è supportata dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
 
-        "sensorTitle": "Sensori",
+        "sensorTitle": "Sensors VTS et VWS",
         "sensorFirst": "Sensore di temperatura e umidità VTS. Un sensore a doppia funzione di facile installazione monitora costantemente la temperatura e l'umidità nell'ambiente, inviando informazioni ai dispositivi di riscaldamento non appena la temperatura nella zona controllata cambia di mezzo grado.",
         "sensorSecond": "Sensore finestra aperta VWS. All'apertura della finestra, il sensore invia immediatamente le informazioni per spegnere il riscaldamento in una determinata zona.",
 
@@ -508,7 +523,10 @@ const langArr = {
         "electric_heater": "Kit riscaldatore elettrico",
         "electric_radiator": "Stufa elettrica",
         "window-sensor": "Sensore di apertura della finestra",
-        "button": "Download product card",
+        "buy_sensor": "Buy sensor",
+        "buy_termostatic_head":"Buy thermostatic head",
+        "buy_heating_element":"Buy heating element",
+        "download": "Product card",
         "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
@@ -557,12 +575,12 @@ const langArr = {
         "veoFirst": "Topná tyč VEO Moderní tvar krytu a elegantní přední panel se stmívajícím displejem skrývají delikátní zařízení. Dálkově ovládaná topná tyč VEO Smart má ve skutečnosti výkon až 2 000 W a jedinečné elektrické řešení mu umožňuje instalovat svisle i vodorovně, prakticky do každého radiátoru s topným médiem.",
         "veoSecond": "Základní nastavení (teplota a jednoduchý časovač) jsou k dispozici na předním panelu, ale nejpohodlnější přístup k plné funkčnosti systému poskytuje mobilní aplikace TERMA Smart. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.",
 
-        "heatingTitle": "Termostatická hlavice",
+        "heatingTitle": "Termostatická hlavice VAZ",
         "heatingFirst": "Propracovaný design rodiny SMART, elegantní černá nebo nadčasová bílá opláštění jsou charakteristickými znaky termostatické hlavice VAZ. Spolu se stmívajícím displejem dodávají celému zařízení jemnost. Hlavice je poháněna vysoce výkonným bateriovým článkem, který stačí nabít jednou za celou topnou sezónu.",
         "heatingSecond": "Extrémně snadná montáž a postup autokalibrace umožňují instalaci hlavice téměř do jakéhokoli radiátoru a s jakýmkoli typem termostatického ventilu. Základní regulace jsou k dispozici na panelu zařízení a mobilní aplikace TERMA Smart podporuje plnou funkčnost systému. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.",
 
 
-        "radiatorTitle": "Radiátor",
+        "radiatorTitle": "Radiátor VOLTAN",
         "radiatorFirst": "Elektrický konvektor VOLTAN - moderní, snadno použitelný, efektivní a zároveň velmi plochý, téměř nerozeznatelný na pozadí stěny. Topení je vybaveno nízkoteplotním výměníkem tepla 2000 W a pokročilým regulátorem s vlastním algoritmem řízení učení.",
         "radiatorSecond": "Základní regulace jsou k dispozici na panelu zařízení a mobilní aplikace TERMA Smart podporuje plnou funkčnost systému. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.",
 
@@ -594,7 +612,10 @@ const langArr = {
         "electric_heater": "Elektrická topná tyč",
         "electric_radiator": "Elektrický radiátor",
         "window-sensor": "Čidlo otevřených oken",
-        "button": "Download product card",
+        "buy_sensor": "Buy sensor",
+        "buy_termostatic_head":"Buy thermostatic head",
+        "buy_heating_element":"Buy heating element",
+        "download": "Product card",
         "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
@@ -643,12 +664,12 @@ const langArr = {
         "veoFirst": "Vykurovacia tyč VEO Moderný tvar krytu a elegantný predný panel sa stmívajúcím displejom skrývajú delikátnu zariadení. Diaľkovo ovládaná vykurovacia tyč VEO Smart má v skutočnosti výkon až 2 000 W a jedinečné elektrické riešenie mu umožňuje inštalovať zvisle aj vodorovne, prakticky do každého radiátora s vykurovacím médiom.",
         "veoSecond": "Základné nastavenia (teplota a jednoduchý časovač) sú k dispozícii na prednom paneli, ale najpohodlnejšie prístup k plnej funkčnosti systému poskytuje mobilná aplikácia TERMA Smart. Zariadenie pracuje so senzormi otvárania okien a ďalším senzorom teploty a vlhkosti zo série SMART.",
 
-        "heatingTitle": "Termostatická hlavica",
+        "heatingTitle": "Termostatická hlavica VAZ",
         "heatingFirst": "Prepracovaný dizajn rodiny SMART, elegantná čierna alebo nadčasová biela opláštenia sú charakteristickými znakmi termostatické hlavice VAZ. Spolu so stmívajícím displejom dodávajú celému zariadeniu jemnosť. Hlavica je poháňaná vysoko výkonným batériovým článkom, ktorý stačí nabiť raz za celú vykurovaciu sezónu.",
         "heatingSecond": "Extrémne jednoduchá montáž a postup autokalibrácie umožňujú inštaláciu hlavice takmer do akéhokoľvek radiátora a s akýmkoľvek typom termostatického ventilu. Základné regulácie sú k dispozícii na paneli zariadenia a mobilné aplikácie TERMA Smart podporuje plnú funkčnosť systému. Zariadenie pracuje so senzormi otváranie okien a ďalším senzorom teploty a vlhkosti zo série SMART.",
 
 
-        "radiatorTitle": "Radiátor",
+        "radiatorTitle": "Radiátor VOLTAN",
         "radiatorFirst": "Elektrický konvektor VOLTAN - moderný, ľahko použiteľný, efektívny a zároveň veľmi plochý, takmer nerozoznateľný na pozadí steny. Kúrenie je vybavené nízkoteplotným výmenníkom tepla 2000 W a pokročilým regulátorom s vlastným algoritmom riadenia učenia.",
         "radiatorSecond": "Základné regulácie sú k dispozícii na paneli zariadenia a mobilné aplikácie TERMA Smart podporuje plnú funkčnosť systému. Zariadenie pracuje so senzormi otváranie okien a ďalším senzorom teploty a vlhkosti zo série SMART.",
 
@@ -680,7 +701,10 @@ const langArr = {
         "electric_heater": "Elektrická vykorovacia tyč",
         "electric_radiator": "Elektrický radiátor",
         "window-sensor": "Senzor otvorených okien",
-        "button": "Download product card",
+        "buy_sensor": "Buy sensor",
+        "buy_termostatic_head":"Buy thermostatic head",
+        "buy_heating_element":"Buy heating element",
+        "download": "Product card",
         "VAZ": "./product_card/VAZ-v1_EN_20211021_cibto.pdf",
         "VTS": "./product_card/VTS-v1_EN_20211021_cibto.pdf",
         "VOS": "./product_card/VOS-v1_EN_20211021_cibto.pdf",
@@ -707,7 +731,7 @@ let $translate = $('.translate');
 
 let $hostname = window.location.host.split(".")[(window.location.host.split(".")[0].length > 2? 1: 0)]
 
-console.log("Hostname",$hostname)
+// console.log("Hostname",$hostname)
 
 let $lang = $hostname
 
@@ -721,19 +745,17 @@ $translate.each(function () {
 });
 
 $('.lan').each(function () {
-    $(this).attr('target') ? $(this).attr('href', langArr[$lang][$(this).attr('key')]) :
-        $(this).text(langArr[$lang][$(this).attr('key')]);
-    $('#lang').val($lang)
+    $(this).attr('target') ? $(this).attr('href', langArr[$lang][$(this).attr('key')]) : $(this).text(langArr[$lang][$(this).attr('key')]);
+    $('#lang').val($lang);
 });
 
 $('#lang').change(function () {
     let values = $('#lang :selected').val();
-    // console.log(domains[values])
     
     $('body').removeAttr('class').addClass(values);
     $('.lan').each(function () {
         $(this).attr('target') ? $(this).attr('href', langArr[values][$(this).attr('key')]) :
-            $(this).text(langArr[values][$(this).attr('key')]);
+        $(this).text(langArr[values][$(this).attr('key')]);
 
     });
     window.location.assign(`http://${domains[values]}`)
