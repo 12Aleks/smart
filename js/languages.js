@@ -93,6 +93,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/en/glowna",
         "services_text": " ",
         "services_link":" ",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"MEDICAL PRODUCTS",
+        "medical_link":"https://www.termamed.pl/en"
     },
     de: {
         "description": "Systembeschreibung",
@@ -187,6 +191,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/de/glowna",
         "services_text": " ",
         "services_link":" ",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"MEDIZINPRODUKTEN",
+        "medical_link":"https://www.termamed.pl/de"
     },
     ru: {
         "description": "Описание системы",
@@ -282,6 +290,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/ru/glowna",
         "services_text": " ",
         "services_link":" ",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"МЕДЕЦИНСКИЕ ИЗДЕЛИЯ",
+        "medical_link":"https://www.termamed.pl/en"
 
     },
     pl: {
@@ -377,6 +389,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/pl/glowna",
         "services_text": "USŁUGI PRZEMYSŁOWE",
         "services_link":"http://www.termaservices.pl/",
+        "galwanic_text": "GALWANIZERNIA",
+        "galwanic_link":"http://www.termagalvanic.pl/",
+        "medical_text":"PRODUKTY MEDYCZNE",
+        "medical_link":"https://www.termamed.pl/"
     },
     fr: {
         "description": "Description",
@@ -472,6 +488,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/en/glowna",
         "services_text": " ",
         "services_link":" ",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"MEDICAL PRODUCTS",
+        "medical_link":"https://www.termamed.pl/en"
     },
     it: {
         "description": "Descrizione",
@@ -567,6 +587,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/en/glowna",
         "services_text": " ",
         "services_link":" ",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"MEDICAL PRODUCTS",
+        "medical_link":"https://www.termamed.pl/en"
     },
     cs: {
         "description": "Popis systému",
@@ -662,6 +686,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/en/glowna",
         "services_text": " ",
         "services_link":" ",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"MEDICAL PRODUCTS",
+        "medical_link":"https://www.termamed.pl/en"
     },
     sk: {
         "description": "Opis systému",
@@ -757,7 +785,10 @@ const langArr = {
         "machinery_link":"http://www.termamax.pl/en/glowna",
         "services_text": " ",
         "services_link":" ",
-        "":"",
+        "galwanic_text": " ",
+        "galwanic_link":" ",
+        "medical_text":"MEDICAL PRODUCTS",
+        "medical_link":"https://www.termamed.pl/en"
     }
 
 };
@@ -774,18 +805,11 @@ let domains = {
 }
 
 
-// let $href = document.location.pathname;
-
 let $translate = $('.translate');
 
 let $hostname = window.location.host.split(".")[(window.location.host.split(".")[0].length > 2? 1: 0)]
 
-// console.log("Hostname",$hostname)
-
 let $lang = 'en'
-
-// let $lang = navigator.language.slice(0, 2);
-
 
 $('body').addClass($lang);
 
@@ -808,6 +832,7 @@ $('#lang').change(function () {
 
     });
     window.location.assign(`http://${domains[values]}`)
-    
 });
+
+
 
