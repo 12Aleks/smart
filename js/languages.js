@@ -809,7 +809,7 @@ let $translate = $('.translate');
 
 let $hostname = window.location.host.split(".")[(window.location.host.split(".")[0].length > 2? 1: 0)]
 
-let $lang = 'en'
+let $lang = $hostname
 
 $('body').addClass($lang);
 
