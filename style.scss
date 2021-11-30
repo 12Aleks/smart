@@ -382,6 +382,8 @@ p.contact {
   }
 
 
+
+
     #heating-element, #head-element, #radiator-element{
       margin-bottom: 12rem;
       @media (max-width: 1599.98px) {
@@ -997,21 +999,99 @@ p.contact {
 
   .over {
     overflow: hidden;
-
-    .sm_appImgFirst {
-      max-width:460px;
-      width: 100%;
-      float: right;
+    position: relative;
+     img.sm_appImgFirst, img.sm_appImgSecond {
+      opacity: 0;
+      position: absolute;
+      width: 460px;
       @media(max-width: 991.98px) {
-        max-width: 350px;
-        display: block;
-        margin: 0 auto 53px;
-        float: inherit;
+        width: 350px;
       }
       @media(max-width: 575.98px) {
-        max-width: 250px;
+        width: 250px;
       }
     }
+
+  
+    img.sm_appImgFirst{
+      left:-4%;
+      top: 0;
+      @media(max-width: 1199.98px){
+        left: -13%;
+      }
+      @media(max-width: 991.98px){
+        left: 22%;
+      }
+      @media (min-width: 576px) and (max-width: 767.98px){
+        left: calc(30.5% - 100px);
+      }
+      @media(max-width: 575.98px){
+        left: calc(41% - 100px);
+      }
+      @media(max-width: 480.98px){
+        left: calc(37% - 100px);
+      }
+    }
+
+    img.sm_appImgSecond {
+      left: 12%;
+      top: 135px;
+      @media(max-width: 1199.98px){
+        left: 3%;
+      }
+      @media(max-width: 991.98px){
+        top: 110px;
+        left: 30%;
+       }
+       @media (min-width: 576px) and (max-width: 767.98px){
+        left: calc(42% - 100px);
+       }
+       @media(max-width: 575.98px){
+        top: 80px;
+        left: calc(50% - 100px);
+       }
+       @media(max-width: 480.98px){
+        left: calc(48% - 100px);
+      }
+    }
+  
+    .animate.right {
+      -webkit-animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: fadeInRight;
+       animation-name: fadeInRight;
+       animation-duration: 1s;
+       animation-fill-mode: both;
+    }
+
+
+    img.sm_appImgFirst.animate.right{
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+    img.sm_appImgSecond.animate.right{
+      -webkit-animation-delay: .5s;
+      -moz-animation-delay: .5s;
+      animation-delay: .5s;
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+  
+
 
     .houseSmart {
       .app_img_box {
@@ -1108,38 +1188,81 @@ p.contact {
       padding: 180px 15px 138px;
     }
 
-    .appImgFirst, .appImgSecond {
-      width: 550px;
-      position: absolute;
-      z-index: 9;
-      transition: width 3ms linear;
-      @media(max-width: 1680px) {
-        width: 500px;
-      }
-      @media(max-width: 1540px) {
-        width: 590px;
-      }
-      @media(max-width: 1350px) {
-        width: 490px;
-      }
-      @media(max-width: 1198.99px) {
-        display: none;
-      }
-    }
+    // .left{
+    //   -webkit-animation-duration: 1s;
+    //   animation-duration: 1s;
+    //   -webkit-animation-fill-mode: both;
+    //   animation-fill-mode: both;
+    //   -webkit-animation-delay: 2.3s;
+    //   -moz-animation-delay: 2.3s;
+    //   animation-delay: 2.3s;
+    // }
 
-    .appImgFirst {
-      top: 800px;
-      left: -70%;
-      @media(max-width: 1680px) {
-        top: 700px;
-      }
-      @media(max-width: 1540px) {
-        top: 590px;
-      }
-      @media(max-width: 1350px) {
-        top: 490px;
-      }
-    }
+    // @-webkit-keyframes fadeInLeft {
+    //   from {
+    //     opacity: 0;
+    //     -webkit-transform: translate3d(-100%, 0, 0);
+    //     transform: translate3d(-100%, 0, 0);
+    //   }
+    
+    //   to {
+    //     opacity: 1;
+    //     -webkit-transform: none;
+    //     transform: none;
+    //   }
+    // }
+    // @keyframes fadeInLeft {
+    //   from {
+    //     opacity: 0;
+    //     -webkit-transform: translate3d(-100%, 0, 0);
+    //     transform: translate3d(-100%, 0, 0);
+    //   }
+    
+    //   to {
+    //     opacity: 1;
+    //     -webkit-transform: none;
+    //     transform: none;
+    //   }
+    // }
+    
+    // .fadeInLeft {
+    //   -webkit-animation-name: fadeInLeft;
+    //   animation-name: fadeInLeft;
+    // }
+    
+
+    // .appImgFirst, .appImgSecond {
+    //   width: 550px;
+    //   position: absolute;
+    //   z-index: 9;
+    //   transition: width 3ms linear;
+    //   @media(max-width: 1680px) {
+    //     width: 500px;
+    //   }
+    //   @media(max-width: 1540px) {
+    //     width: 590px;
+    //   }
+    //   @media(max-width: 1350px) {
+    //     width: 490px;
+    //   }
+    //   @media(max-width: 1198.99px) {
+    //     display: none;
+    //   }
+    // }
+
+    // .appImgFirst {
+    //   top: 800px;
+    //   left: -70%;
+    //   @media(max-width: 1680px) {
+    //     top: 700px;
+    //   }
+    //   @media(max-width: 1540px) {
+    //     top: 590px;
+    //   }
+    //   @media(max-width: 1350px) {
+    //     top: 490px;
+    //   }
+    // }
 
 
     .appImgSecond {
@@ -1185,7 +1308,7 @@ p.contact {
 
   .products-strip {
     background: $global-background;
-    padding: 237px 0 137px;
+    padding: 237px 0 237px;
     @media(max-width: 1199.98px) {
       padding: 110px 0 137px;
     }
@@ -1306,7 +1429,7 @@ p.contact {
   }
 
   .contact-strip {
-    padding: 163px 30px 63px;
+    padding: 263px 30px 163px;
 
     .form__error {
       color: $global-red;

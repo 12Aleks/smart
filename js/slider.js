@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    //slider and dots
+
     const $mediaCarousel = $("#mediaCarousel");
     $mediaCarousel.carousel({interval: false});
     let slide = $mediaCarousel.find('.carousel-item');
@@ -46,4 +48,6 @@ $(document).ready(function () {
         })
 
     });
+
+
 });
