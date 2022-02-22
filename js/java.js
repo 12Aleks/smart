@@ -89,6 +89,7 @@ $(document).ready(function () {
     rootMargin: '25px',
     threshold: 0,
   }
+  
 
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -106,7 +107,6 @@ $(document).ready(function () {
   let container = document.querySelector(
     'div.col-md-12.col-lg-5.positon-relative',
   )
-  console.log(window.innerWidth)
   
   container.style.height = heightImg + 180 + 'px';
 })
