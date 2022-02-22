@@ -1019,6 +1019,7 @@ let domains = {
   sk: 'sk.termasmart.com',
 }
 
+
 //translate
 let $translate = $('.translate')
 let $hostname = window.location.host.split('.')[
