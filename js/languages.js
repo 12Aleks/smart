@@ -114,6 +114,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_EN_20211021_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://en.termagroup.pl/',
     machinery_text: 'MACHINERY',
@@ -238,6 +239,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_DE_20211021_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://de.termagroup.pl/',
     machinery_text: 'BAUMASCHINEN',
@@ -365,6 +367,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_RU_20211022_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://ru.termagroup.pl/',
     machinery_text: 'СТРОИТЕЛЬНЫЕ МАШИНЫ',
@@ -492,6 +495,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_PL_20211021_cibto.pdf',
     VEO: './product_card/VEO-v6_PL_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v5_pl_20211129_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/mcEElyB60RA',
     terma_text: 'TERMA SPÓŁKA',
     terma_link: 'http://www.termagroup.pl/',
     machinery_text: 'MASZYNY BUDOWLANE',
@@ -619,6 +623,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_FR_20211025_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://en.termagroup.pl/',
     machinery_text: 'MACHINERY',
@@ -746,6 +751,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_EN_20211021_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://en.termagroup.pl/',
     machinery_text: 'MACHINERY',
@@ -871,6 +877,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_EN_20211021_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://en.termagroup.pl/',
     machinery_text: 'MACHINERY',
@@ -995,6 +1002,7 @@ const langArr = {
     VOS: './product_card/VOS-v1_EN_20211021_cibto.pdf',
     VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
     VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
+    youtube: 'https://www.youtube.com/embed/dA2UqeOGBzY',
     terma_text: 'TERMA',
     terma_link: 'http://en.termagroup.pl/',
     machinery_text: 'MACHINERY',
@@ -1006,10 +1014,10 @@ const langArr = {
     medical_text: 'MEDICAL PRODUCTS',
     medical_link: 'https://www.termamed.pl/en',
   },
-}
+};
 
 let domains = {
-  pl: 'termasmart.pl',
+  pl: 'termasmart.com',
   en: 'en.termasmart.com',
   de: 'de.termasmart.com',
   fr: 'fr.termasmart.com',
@@ -1017,33 +1025,33 @@ let domains = {
   it: 'it.termasmart.com',
   cs: 'cs.termasmart.com',
   sk: 'sk.termasmart.com',
-}
+};
 
 
 //translate
-let $translate = $('.translate')
+let $translate = $('.translate');
 let $hostname = window.location.host.split('.')[
   window.location.host.split('.')[0].length > 2 ? 1 : 0
-]
-let $lang = $hostname
+];
+let $lang = $hostname;
 
-$('body').addClass($lang)
+$('body').addClass($lang);
 
 $translate.each(function () {
   $(this).attr('id') === $lang && $(this).addClass('active')
-})
+});
 
 $('.lan').each(function () {
   $(this).attr('target')
     ? $(this).attr('href', langArr[$lang][$(this).attr('key')])
-    : $(this).text(langArr[$lang][$(this).attr('key')])
+    : $(this).text(langArr[$lang][$(this).attr('key')]);
   $('#lang').val($lang)
 })
 
 $('#lang').change(function () {
-  let values = $('#lang :selected').val()
+  let values = $('#lang :selected').val();
 
-  $('body').removeAttr('class').addClass(values)
+  $('body').removeAttr('class').addClass(values);
   $('.lan').each(function () {
     $(this).attr('target')
       ? $(this).attr('href', langArr[values][$(this).attr('key')])
