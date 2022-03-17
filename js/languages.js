@@ -1043,9 +1043,9 @@ $translate.each(function () {
 });
 
 $('.lan').each(function () {
-    $(this).attr('target') ? $(this).attr('href', langArr[values][$(this).attr('key')]) :
-        $(this).attr('src') ? $(this).attr('src', langArr[values][$(this).attr('key')]) :
-            $(this).text(langArr[values][$(this).attr('key')]);
+    if($(this).attr('target')){ $(this).attr('href', langArr[values][$(this).attr('key')]) }
+    else if ($(this).attr('src') ) { $(this).attr('src', langArr[values][$(this).attr('key')])}
+    else { $(this).text(langArr[values][$(this).attr('key')])}
     $('#lang').val($lang)
 });
 
@@ -1053,9 +1053,9 @@ $('#lang').change(function () {
     let values = $('#lang :selected').val();
     $('body').removeAttr('class').addClass(values);
     $('.lan').each(function () {
-        $(this).attr('target') ? $(this).attr('href', langArr[values][$(this).attr('key')]) :
-            $(this).attr('src') ? $(this).attr('src', langArr[values][$(this).attr('key')]) :
-                $(this).text(langArr[values][$(this).attr('key')]);
+        if($(this).attr('target')){ $(this).attr('href', langArr[values][$(this).attr('key')]) }
+        else if ($(this).attr('src') ) { $(this).attr('src', langArr[values][$(this).attr('key')])}
+        else { $(this).text(langArr[values][$(this).attr('key')])}
     });
     window.location.assign(`http://${domains[values]}`)
 });
