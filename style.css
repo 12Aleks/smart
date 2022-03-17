@@ -1536,7 +1536,7 @@ p.contact {
 }
 
 .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
-  height: 470px;
+  height: 500px;
 }
 @media (max-width: 991.98px) {
   .pl .smart #carouselExampleIndicators, .en .smart #carouselExampleIndicators, .it .smart #carouselExampleIndicators {
