@@ -1031,10 +1031,10 @@ let domains = {
 //translate
 let $translate = $('.translate');
 let $hostname = window.location.host.split('.')[
-    window.location.host.split('.')[0].length > 2 ? 1 : 0
+    window.location.host.split('.')[0].length > 2 ?  1 : 0
     ];
 console.log($hostname);
-let $lang = $hostname === 'com' ? 'pl' : $hostname;
+let $lang = $hostname === 'com' || 'termasmart' ? 'pl' : $hostname;
 
 $('body').addClass($lang);
 
@@ -1048,7 +1048,7 @@ $('.lan').each(function () {
         :  $(this).attr('src') ?$(this).attr('src', langArr[$lang][$(this).attr('key')])
         : $(this).text(langArr[$lang][$(this).attr('key')]);
     $('#lang').val($lang)
-})
+});
 
 $('#lang').change(function () {
     let values = $('#lang :selected').val();
@@ -1060,4 +1060,4 @@ $('#lang').change(function () {
             : $(this).text(langArr[values][$(this).attr('key')])
     });
     window.location.assign(`http://${domains[values]}`)
-})
+});
