@@ -443,7 +443,7 @@ const langArr = {
 
         heatingTitle: 'Głowica VAZ',
         heatingFirst:
-            'Wyrafinowane wzornictwo rodziny SMART, elegancka czerń lub ponadczasowa biel obudowy to cechy charakterystyczne głowicy termostatycznej VAZ. Razem przygasającym wyświetlaczem nadają subtelności całemu urządzeniu. Głowica zasilana jest wysokowydajnym ogniwem akumulatorowym, którego pojedyncze ładowanie wystarcza na cały sezon grzewczy.',
+            'Wyrafinowane wzornictwo rodziny SMART, elegancka czerń lub ponadczasowa biel obudowy to cechy charakterystyczne głowicy termostatycznej VAZ. Razem przygasającym wyświetlaczem nadają subtelności całemu urządzeniu. Głowica zasilana jest wysokowydajnym ogniwem akumulatorowym, którego pojedyncze ładowanie, w zależności od ustawień, może wystarczyć nawet na cały sezon grzewczy.',
         heatingSecond:
             'Niezwykle łatwy montaż oraz procedura autokalibracji pozwalają na instalację głowicy niemal w każdym grzejniku i z każdym typem zaworu termostatycznego. Podstawowe regulacje dostępne są poprzez panel na urządzeniu, a pełną funkcjonalność systemu obsługuje aplikacja mobilna TERMA Smart. Urządzenie współpracuje z czujnikami otwarcia okna oraz dodatkowym czujnikiem temperatury i wilgotności serii SMART.',
 

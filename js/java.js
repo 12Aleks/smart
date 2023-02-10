@@ -3,7 +3,8 @@ let $handBox = $('.hand_box'),
   $nav = $('#navigation'),
   $navCol = $('.navbar-collapse'),
   $navIcon = $('#nav-icon'),
-  $myDiv = $('.img-room')
+  $myDiv = $('.img-room'),
+  $button = document.getElementById("back-to-top");
 
 $(window).resize(function () {
   let $myChild = $myDiv.find('> *:first-child')
@@ -12,7 +13,7 @@ $(window).resize(function () {
 
   //resize and height of the block with animated images on small screens
   let heightImg = arr[0].height;
-  let container = document.querySelector('div.col-md-12.col-lg-5.positon-relative');  
+  let container = document.querySelector('div.col-md-12.col-lg-5.positon-relative');
   container.style.height = heightImg + 180 + 'px';
 })
 
@@ -36,6 +37,10 @@ $(document).ready(function () {
   })
 
   function scroll() {
+    if($(this).scrollTop() > 150 ) $button.style.display = "block";
+    if($(this).scrollTop() <= 150 ) $button.style.display = "none";
+
+
     if ($(this).scrollTop() > 400) {
       $nav.addClass('fold-active')
       $navIcon.removeClass('active')
@@ -46,6 +51,10 @@ $(document).ready(function () {
       $navCol.collapse('hide')
     }
   }
+
+  $('#back-to-top').on('click', function(){
+    $('body,html').animate({scrollTop : 0}, 500);
+  });
 
   window.addEventListener('load', scroll)
   window.addEventListener('scroll', scroll)
@@ -63,6 +72,7 @@ $(document).ready(function () {
         $(this).find('.appImgSecond').one().addClass('appSecond')
     })
   })
+
 
   $('img.svg').each(function () {
     let $img = $(this)
@@ -89,7 +99,7 @@ $(document).ready(function () {
     rootMargin: '25px',
     threshold: 0,
   }
-  
+
 
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -107,6 +117,6 @@ $(document).ready(function () {
   let container = document.querySelector(
     'div.col-md-12.col-lg-5.positon-relative',
   )
-  
+
   container.style.height = heightImg + 180 + 'px';
 })

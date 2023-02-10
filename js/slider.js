@@ -25,7 +25,6 @@ $(document).ready(function () {
 
         if (isPlaying) {
             from.pause();
-
         }
     });
 
@@ -48,5 +47,6 @@ $(document).ready(function () {
         })
 
     });
+
 
 });

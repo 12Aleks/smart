@@ -1703,4 +1703,25 @@ footer .navbar:nth-child(1) {
   padding: 10px 8px 10px 0;
 }
 
+button#back-to-top {
+  display: none;
+  -webkit-box-shadow: 0 0 3px 0 slategrey;
+  -moz-box-shadow: 0 0 3px 0 slategray;
+  box-shadow: 0 0 3px 0 slategrey;
+  background-color: #dc604d;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 30px;
+  right: 2.5%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

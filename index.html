@@ -6,7 +6,7 @@
     <meta name="keywords" content="grzałka,grzałki,smart,ogrzewanie">
     <link rel="icon" href="favicon.png" sizes="16x16">
     <!-- bootstrap 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- My css -->
     <link rel="stylesheet" href="style.css">
 
@@ -17,11 +17,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-EKL714CLSZ');
     </script>
 
 </head>
+
 <body id="laguages">
 <section id="navigation">
     <header class="container">
@@ -47,9 +47,10 @@
 
                     <div class="d-flex align-content-center flex-wrap">
                         <div class="logo-wrapper d-inline-block align-top">
-                            <img class="big-logo" src="images/logo_terma_smart.png" alt="logo" class="logo-symbol">
-                            <img class="small-logo" src="images/logo_terma_smart_small.png" alt="logo"
-                                 class="logo-symbol">
+                            <a href="https://www.termaheat.pl/smart">
+                                <img class="big-logo logo-symbol" src="images/logo_terma_smart.png" alt="logo"/>
+                                <img class="small-logo logo-symbol" src="images/logo_terma_smart_small.png" alt="logo"/>
+                            </a>
                         </div>
                     </div>
 
@@ -96,6 +97,7 @@
         </div>
     </header>
 </section>
+
 <section id="main">
     <div class="container-fluid banner-strip">
         <div class="banner_box">
@@ -269,7 +271,7 @@
                                 <object type="image/svg+xml" data="http://termasmart.pl/images/carusel/phone.svg">
                                     Your browser does not support SVG
                                 </object>
-                                <!--                                <img class='svg' src="./images/carusel/safety.svg" alt="security">-->
+                                <!-- <img class='svg' src="./images/carusel/safety.svg" alt="security">-->
                                 <span class="subTitle ml-3 lan" key="secondSlideTitle">Zdalne sterowanie</span>
                             </h4>
                             <ul class="descriptions">
@@ -528,14 +530,6 @@
                                              key="buy_termostatic_head">Kup głowice</span> VAZ</a>
                         </div>
                     </div>
-                    <!-- <div class="col-md-12 col-lg-12 col-xl-12 mb-4 mb-sm-5 mb-md-5 mb-lg-0 order-4 d-flex align-items-center">
-                        <a type="button" class="btn mt-3 mb-3 btn-lg lan d-block"
-                           target="_blank" key="VAZ" href=""><span class='lan'
-                                                                   key="button">Pobierz kartę techniczną</span> VAZ</a>
-                    </div> -->
-
-
-
                     <div class="col-lg-5 mt-lg-5 order-4 d-flex flex-column align-items-center justify-content-between"
                          id="radiatorsCirkle">
                         <div class="img_products_box odd">
@@ -575,11 +569,6 @@
                                              key="buy_termostatic_head">Kup grzejnik</span> VOLTAN</a>
                         </div>
                     </div>
-                    <!-- <div class="col-md-12 col-lg-12 col-xl-12 mb-4 mb-sm-5 mb-md-5 mb-lg-0 order-6 d-flex align-items-center">
-                        <a type="button" class="btn btn-outline-dark mt-3 mb-3 btn-lg d-block m-auto" href=""><span class='lan' key="button">Pobierz kartę techniczną</span> VOLTAN</a>
-                    </div> -->
-
-
                     <div class="col-lg-5 mt-lg-5 order-6 order-sm-6 order-md-6 order-lg-7">
                         <div class="img_products_box even">
                             <img class="img-fluid " src="images/products/sensor.png" alt="sensor">
@@ -633,12 +622,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="sensor_button col-md-12 col-lg-12 col-xl-12 order-8 d-flex flex-column flex-sm-row align-items-center justify-content-around">
-                        <a type="button" class="btn btn-outline-dark btn-lg lan d-block m-auto" target="_blank"
-                           key="VTS" href=""><span class='lan' key="button">Pobierz kartę techniczną</span> VTS</a>
-                        <a type="button" class="btn btn-outline-dark btn-lg lan d-block m-auto" target="_blank"
-                           key="VOS" href=""><span class='lan' key="button">Pobierz kartę techniczną</span> VOS</a>
-                    </div> -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-8 video-wrapper">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe src="https://www.youtube.com/embed/GBxgnZmFi8Q" frameborder="0"
@@ -660,6 +643,7 @@
 
                     </div>
                 </div>
+            </div>
         </section>
     </div>
     <div id='kontakt' class="container contact-strip">
@@ -687,11 +671,11 @@
                     </div>
                     <button type="submit" class="btn"><span class="lan" key="send">Wyślij</span></button>
                 </form>
-                <!-- <h3 class="phone"></h3> -->
             </div>
         </div>
     </div>
 </section>
+<button id="back-to-top" title="Go to top" style="display: block;">&#8593;</button>
 <footer>
     <div class="container">
         <div class="row">
@@ -714,15 +698,11 @@
 </footer>
 
 <!--Bootstrap 4-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--//<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!--My js-->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 <script>
