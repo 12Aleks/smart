@@ -37,7 +37,7 @@ $(document).ready(function () {
   })
 
   function scroll() {
-    if($(this).scrollTop() > 150 ) $button.style.display = "block";
+    if($(this).scrollTop() > 150 ) $button.style.display = "flex";
     if($(this).scrollTop() <= 150 ) $button.style.display = "none";
 
 

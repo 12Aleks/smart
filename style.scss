@@ -1749,6 +1749,8 @@ footer {
 
 button#back-to-top {
   display: none;
+  justify-content: center;
+  align-items: center;
   -webkit-box-shadow: 0 0 3px 0 slategrey;
   -moz-box-shadow: 0 0 3px 0 slategray;
   box-shadow: 0 0 3px 0 slategrey;
@@ -1769,8 +1771,8 @@ button#back-to-top {
   border-radius: 50%;
   @media(max-width: 567.98px){
     font-size: 20px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
 }
