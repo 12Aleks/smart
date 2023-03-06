@@ -65,11 +65,9 @@ $(document).ready(function () {
       let $elementTop = $(this).offset().top
       let $leftPosition = $windowTop - $elementTop
       let $maxScroll = -900,
-        $minScroll = 150
-      if ($leftPosition >= $maxScroll)
-        $(this).find('.appImgFirst').one().addClass('appFirst')
-      if ($leftPosition >= $minScroll)
-        $(this).find('.appImgSecond').one().addClass('appSecond')
+          $minScroll = 150
+      $leftPosition >= $maxScroll && $(this).find('.appImgFirst').one().addClass('appFirst')
+      $leftPosition >= $minScroll && $(this).find('.appImgSecond').one().addClass('appSecond')
     })
   })
 

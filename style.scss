@@ -1748,8 +1748,6 @@ footer {
 }
 
 button#back-to-top {
-
-
   display: none;
   -webkit-box-shadow: 0 0 3px 0 slategrey;
   -moz-box-shadow: 0 0 3px 0 slategray;
@@ -1769,5 +1767,10 @@ button#back-to-top {
   cursor: pointer;
   //padding: 15px;
   border-radius: 50%;
+  @media(max-width: 567.98px){
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+  }
 
 }
