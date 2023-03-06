@@ -509,7 +509,7 @@ const langArr = {
         galwanic_link: 'http://www.termagalvanic.pl/',
         medical_text: 'PRODUKTY MEDYCZNE',
         medical_link: 'https://www.termamed.pl/',
-        banner_visualization: './images/wizualizacja_new.png'
+        banner_visualization: './images/wizualizacja_new.jpg'
     },
     fr: {
         description: 'Description',
