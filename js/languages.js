@@ -125,6 +125,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
+        banner_visualization: './images/wizualizacja_new_en.jpg'
     },
     de: {
         description: 'Systembeschreibung',
@@ -250,6 +251,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDIZINPRODUKTEN',
         medical_link: 'https://www.termamed.pl/de',
+        banner_visualization: './images/wizualizacja_new_de.jpg'
     },
     ru: {
         description: 'Описание системы',
@@ -378,6 +380,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'МЕДЕЦИНСКИЕ ИЗДЕЛИЯ',
         medical_link: 'https://www.termamed.pl/en',
+        banner_visualization: './images/wizualizacja_new_ru.jpg'
     },
     pl: {
         description: 'Opis systemu',
@@ -506,6 +509,7 @@ const langArr = {
         galwanic_link: 'http://www.termagalvanic.pl/',
         medical_text: 'PRODUKTY MEDYCZNE',
         medical_link: 'https://www.termamed.pl/',
+        banner_visualization: './images/wizualizacja_new.png'
     },
     fr: {
         description: 'Description',
@@ -634,6 +638,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
+        banner_visualization: './images/wizualizacja_new_fr.jpg'
     },
     it: {
         description: 'Descrizione',
@@ -762,6 +767,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
+        banner_visualization: './images/wizualizacja_new_it.jpg'
     },
     cs: {
         description: 'Popis systému',
@@ -888,6 +894,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
+        banner_visualization: './images/wizualizacja_new_cz.jpg'
     },
     sk: {
         description: 'Opis systému',
@@ -1013,6 +1020,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
+        banner_visualization: './images/wizualizacja_new_sk.jpg'
     },
 };
 
