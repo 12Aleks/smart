@@ -118,7 +118,7 @@ a.btn-lg {
 }
 
 ul.descriptions li, p.descriptions {
-  font: 300 clamp(1.3rem, 10vh, 1.5rem)/1.875rem "Roboto", sans-serif;
+  font: 300 clamp(1.3rem, 2vh, 1.5rem)/1.875rem "Roboto", sans-serif;
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   ul.descriptions li, p.descriptions {
@@ -132,7 +132,7 @@ ul.descriptions li, p.descriptions {
 }
 @media (max-width: 991.98px) {
   ul.descriptions li, p.descriptions {
-    font: 300 clamp(0.95rem, 10vw, 1rem)/clamp(1.3rem, 10vh, 1.4rem) "Roboto", sans-serif;
+    font: 300 clamp(0.95rem, 2vw, 1rem)/clamp(1.3rem, 10vh, 1.4rem) "Roboto", sans-serif;
   }
 }
 
@@ -282,11 +282,12 @@ button[type=submit] {
   text-decoration: none;
   letter-spacing: 0;
   color: #707070;
-  font: 300 clamp(0.95rem, 10vw, 1.125rem)/22px "Roboto", sans-serif;
+  font: 300 clamp(0.95rem, 1.4vw, 1.125rem)/22px "Roboto", sans-serif;
 }
 @media (max-width: 991.98px) {
   #navigation #navbar-main .navbar-container .navbar-collapse a {
     text-align: right;
+    font: 300 clamp(1rem, 2vw, 1.125rem)/22px "Roboto", sans-serif;
   }
 }
 #navigation #navbar-main .navbar-container .navbar-collapse a.btn.btn-dark.text-white {
