@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 /*Global color*/
 $global-red: #E72327;
@@ -21,16 +19,13 @@ section {
     display: block;
   }
 }
+h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact {
+  letter-spacing: 1px;
+  color: $global-text-gray;
+}
 
 h1.title {
-  font: 300 3.8rem/4.8rem 'Roboto', sans-serif;
-  letter-spacing: 0;
-  color: #303030;
-  opacity: 1;
-  line-height: 1;
-  @media (max-width: 1670.98px) {
-    font: 300 2.9rem/3.3rem 'Roboto', sans-serif;
-  }
+  font: 300 clamp(3rem, 5vw ,3.8rem)/4.8rem 'Roboto', sans-serif;
   @media (max-width: 1098.98px) {
     font: 300 2.5rem/2.8rem 'Roboto', sans-serif;
   }
@@ -43,18 +38,10 @@ h1.title {
   @media (max-width: 325.98px) {
     font: 300 1.5rem/2rem 'Roboto', sans-serif;
   }
-
 }
 
 h3.title {
-  font: 300 4rem/4.8rem 'Roboto', sans-serif;
-  letter-spacing: 0;
-  color: #303030;
-  opacity: 1;
-  line-height: 1;
-  @media (max-width: 1670.98px) {
-    font: 300 3rem/3.3rem 'Roboto', sans-serif;
-  }
+  font: 300 clamp(2.8rem, 5vw ,3.5rem)/4.5rem 'Roboto', sans-serif;
   @media(max-width: 1098.98px) {
     font: 300 2.8rem/3rem 'Roboto', sans-serif;
   }
@@ -74,24 +61,19 @@ h3.title {
 }
 
 h4.subTitle, span.subTitle {
-  font: 300 2.8rem/2.4rem 'Roboto', sans-serif;
-  letter-spacing: 0;
-  color: $global-text-gray;
+  font: 300 2.4rem/2.4rem 'Roboto', sans-serif;
   @media (max-width: 1670.98px) {
     font: 300 2.5rem/1.875rem 'Roboto', sans-serif;
     margin-top: 40px;
   }
   @media(max-width: 1099.98px) {
-    font: 300 2.2rem/1.875rem 'Roboto', sans-serif;
+    font: 300 1.875rem/1.875rem 'Roboto', sans-serif;
   }
   @media (max-width: 991.98px) {
     text-align: center;
   }
-  @media (max-width: 767.98px) {
-    font: 300 1.9rem/1.875rem 'Roboto', sans-serif;
-  }
   @media (max-width: 575.98px) {
-    font: 300 1.1rem/1.5rem 'Roboto', sans-serif;
+    font: 300 1.2rem/1.5rem 'Roboto', sans-serif;
   }
   @media (max-width: 325.98px) {
     font: 300 1rem/1.5rem 'Roboto', sans-serif;
@@ -100,11 +82,9 @@ h4.subTitle, span.subTitle {
 
 h6.sm_title {
   font: 500 1.25rem/1.5rem 'Roboto', sans-serif;
-  letter-spacing: 0;
-  color: #3D3C3C;
 }
 
-a.btn-lg{
+a.btn-lg {
   margin-bottom: 15px !important;
   min-width: 200px;
   @media (max-width: 767.98px) {
@@ -112,37 +92,22 @@ a.btn-lg{
   }
 }
 
+ul.descriptions li, p.descriptions {
+  font: 300 clamp(1.3rem, 10vh, 1.5rem)/1.875rem 'Roboto', sans-serif;
+
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    font: 300 1.3rem/1.6rem 'Roboto', sans-serif;
+  }
+
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    font: 300 1.3rem/1.6rem 'Roboto', sans-serif;
+  }
+  @media (max-width: 991.98px) {
+    font: 300 clamp(.95rem,10vw,1rem)/clamp(1.3rem, 10vh, 1.4rem) 'Roboto', sans-serif;
+  }
+}
 
 p.descriptions {
-  font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
-  letter-spacing: 0;
-  color: $global-text-gray;
-  /* ----------- Non-Retina Screens ----------- */
-  @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    font: 300 1.3rem/1.6rem 'Roboto', sans-serif;
-  }
-
-  /* ----------- Retina Screens ----------- */
-  @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-    font: 300 1.3rem/1.6rem 'Roboto', sans-serif;
-  } 
-  @media (max-width: 991.98px) {
-    font: 300 1rem/1.4rem 'Roboto', sans-serif;
-  }
-  @media (max-width: 767.98px) {
-    font: 300 1rem/1.3rem 'Roboto', sans-serif;
-  }
-  @media (max-width: 575.98px) {
-    font: 300 .95rem/1.3rem 'Roboto', sans-serif;
-  }
-
   span {
     font-weight: 500;
   }
@@ -155,35 +120,6 @@ ul.descriptions {
   }
 
   li {
-    font: 300 1.5rem/1.875rem 'Roboto', sans-serif;
-    letter-spacing: 0;
-    color: $global-text-gray;
-   /* ----------- Non-Retina Screens ----------- */
-   @media screen 
-   and (min-device-width: 1200px) 
-   and (max-device-width: 1600px) 
-   and (-webkit-min-device-pixel-ratio: 1) { 
-     font: 300 1.3rem/1.6rem 'Roboto', sans-serif;
-   }
-
-  /* ----------- Retina Screens ----------- */
-   @media screen 
-   and (min-device-width: 1200px) 
-   and (max-device-width: 1600px) 
-   and (-webkit-min-device-pixel-ratio: 2)
-   and (min-resolution: 192dpi) { 
-    font: 300 1.3rem/1.6rem 'Roboto', sans-serif;
-   } 
-   @media (max-width: 991.98px) {
-     font: 300 1rem/1.4rem 'Roboto', sans-serif;
-   }
-   @media (max-width: 767.98px) {
-     font: 300 1rem/1.3rem 'Roboto', sans-serif;
-   }
-   @media (max-width: 575.98px) {
-     font: 300 .95rem/1.3rem 'Roboto', sans-serif;
-   }
-
     &:before {
       content: "\2022";
       color: $global-red;
@@ -200,26 +136,36 @@ ul.descriptions {
 
 p.contact {
   font: 500 1rem/1.5rem 'Roboto', sans-serif;
-  letter-spacing: 0;
-  color: $global-text-gray;
   @media (max-width: 575.98px) {
     font: 300 1rem/1.3rem 'Roboto', sans-serif;
   }
 }
 
-/*End global class*/
-#navigation.fold-active {
-  -ms-transform: translateZ(0) translateY(-114px);
-  -webkit-transform: translateZ(0) translateY(-114px);
-  transform: translateZ(0) translateY(-114px);
+button[type='submit'] {
+  border-radius: 0;
+  width: 265px;
+  height: 56px;
+  margin: 5px auto 30px;
+  display: block;
+  text-transform: uppercase;
+  background-color: $global-red;
+  font: 300 16px/19px 'Roboto', sans-serif;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  @media (max-width: 379.98px) {
+    width: 235px;
+    height: 46px;
+  }
 }
+
+/*End global class*/
 
 #navigation {
   background-color: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 0 3px 0 #ebebeb;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out,
   -webkit-transform 500ms ease-in-out;
-  -webkit-transform: translateZ(0) translateY(0);
   transform: translateZ(0) translateY(0);
   width: 100%;
   top: 0;
@@ -232,32 +178,33 @@ p.contact {
     }
   }
 
+  &.fold-active {
+    -ms-transform: translateZ(0) translateY(-114px);
+    transform: translateZ(0) translateY(-114px);
+  }
+
   #lang {
     @media(max-width: 576.98px) {
       margin-right: 15px;
     }
     border-radius: 3px;
+    padding: 2px 0;
     color: black;
   }
 
   .logo-wrapper {
-    img.small-logo {
-      display: none;
-      height: 55px;
-    }
-
-    img.big-logo {
+    img {
       display: inherit;
-      height: 55px;
-    }
 
-    @media(max-width: 429.98px) {
-      img.small-logo {
-        display: inherit;
+      &.small-logo {
+        display: none;
       }
 
-      img.big-logo {
+      @media (max-width: 429.98px) {
         display: none;
+        &.small-logo {
+          display: inherit;
+        }
       }
     }
   }
@@ -300,21 +247,20 @@ p.contact {
       .navbar-collapse {
         a {
           text-decoration: none;
-
           letter-spacing: 0;
           color: #707070;
-          font: 300 1.125rem/22px 'Roboto', sans-serif;
-          @media (min-width: 992px) and (max-width: 1198.98px) {
-            font: 300 .95rem/22px 'Roboto', sans-serif;
-          }
-        }
-
-        a.btn.btn-dark.text-white {
-          margin-left: .5rem;
-          border-radius: 20px;
-          padding: 10px 20px;
+          font: 300 clamp( .95rem, 10vw, 1.125rem)/22px 'Roboto', sans-serif;
           @media(max-width: 991.98px) {
-            margin-left: 0;
+            text-align: right;
+          }
+
+          &.btn.btn-dark.text-white {
+            margin-left: .5rem;
+            border-radius: 20px;
+            padding: 10px 20px;
+            @media(max-width: 991.98px) {
+              margin-left: 0;
+            }
           }
         }
       }
@@ -349,7 +295,6 @@ p.contact {
   #nav-icon:before,
   #nav-icon div {
     background-color: $global-text-gray;
-
     content: '';
     display: block;
     height: 3px;
@@ -357,59 +302,71 @@ p.contact {
     transition: all .2s ease-in-out;
   }
 
-  .active:before {
-    transform: translateY(12px) rotate(135deg);
-  }
-
-  .active:after {
-    transform: translateY(-12px) rotate(-135deg);
-  }
-
-  .active div {
-    transform: scale(0);
+  .active {
+    &:before {
+      transform: translateY(12px) rotate(135deg);
+    }
+    &:after {
+      transform: translateY(-12px) rotate(-135deg);
+    }
+    div {
+      transform: scale(0);
+    }
   }
 }
 
 
 #main {
-  margin-top: 105px;
+  margin-top: 82px;
 
   #opis, #aplikacja, #video, #kontakt, #produkty {
-    margin-top: -100px;
+    scroll-padding-top: 100px;
+  }
+  #aplikacja, #opis, #kontakt, #produkty, #booklet{
+    padding: 160px 0;
+    @media (max-width: 1599.98px) {
+      padding: 100px 0;
+    }
+    @media (max-width: 991.98px) {
+      padding: 80px 0;
+    }
+    @media (max-width: 767.98px) {
+      padding: 60px 0;
+    }
+    @media (max-width: 575.98px) {
+      padding: 40px 0;
+    }
   }
 
-    #heating-element, #head-element, #radiator-element{
-      margin-bottom: 12rem;
-      @media (max-width: 1599.98px) {
-        margin-bottom: 8rem;
-      }
-      @media (max-width: 991.98px) {
-        margin-bottom: 5rem;
-      }
-      @media (max-width: 767.98px) {
-        margin-bottom: 4rem;
-      }
-      @media (max-width: 575.98px) {
-        margin-bottom: 3rem;
-      }
+  #heating-element, #head-element, #radiator-element {
+    margin-bottom: 8rem;
+    @media (max-width: 991.98px) {
+      margin-bottom: 5rem;
     }
+    @media (max-width: 767.98px) {
+      margin-bottom: 4rem;
+    }
+    @media (max-width: 575.98px) {
+      margin-bottom: 3rem;
+    }
+  }
 
 
   /*banner strip*/
   .banner-strip {
-    padding: 130px 10% 160px;
+    padding: 200px 10%;
     height: 100%;
     @media (max-width: 1599.98px) {
-      padding: 85px 5% 100px;
+      padding: 150px 5%;
     }
     @media (max-width: 991.98px) {
-      padding: 70px 15px;
+      padding: 100px 15px;
     }
     @media (max-width: 767.98px) {
-      padding: 50px 15px;
+      padding: 60px 15px;
     }
     @media (max-width: 575.98px) {
-      padding: 30px 15px;
+      padding: 40px 15px;
     }
 
     .dg-wrapper {
@@ -417,8 +374,8 @@ p.contact {
       margin-right: auto;
       width: 550px;
       height: 550px;
-
       position: relative;
+
       @media (max-width: 1599.98px) {
         max-width: 450px;
         max-height: 450px;
@@ -460,9 +417,7 @@ p.contact {
 
 
       video {
-        -webkit-mask-image: -webkit-radial-gradient(white, black);
         -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
         object-fit: fill;
         width: 100%;
         height: auto;
@@ -658,45 +613,20 @@ p.contact {
       }
 
       @keyframes hand {
-        0% {
+        0%, 50%, 100% {
           left: 0;
-          -webkit-transform: rotate(0deg);
-          -moz-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
-          -o-transform: rotate(0deg);
           transform: rotate(0deg);
         }
         25% {
           left: -10px;
-          -webkit-transform: rotate(-5deg);
-          -moz-transform: rotate(-5deg);
           -ms-transform: rotate(-5deg);
-          -o-transform: rotate(-5deg);
           transform: rotate(-5deg);
-        }
-        50% {
-          left: 0;
-          -webkit-transform: rotate(0deg);
-          -moz-transform: rotate(0deg);
-          -ms-transform: rotate(0deg);
-          -o-transform: rotate(0deg);
-          transform: rotate(0deg);
         }
         75% {
           left: 10px;
-          -webkit-transform: rotate(5deg);
-          -moz-transform: rotate(5deg);
           -ms-transform: rotate(5deg);
-          -o-transform: rotate(5deg);
           transform: rotate(5deg);
-        }
-        100% {
-          left: 0;
-          -webkit-transform: rotate(0deg);
-          -moz-transform: rotate(0deg);
-          -ms-transform: rotate(0deg);
-          -o-transform: rotate(0deg);
-          transform: rotate(0deg);
         }
       }
 
@@ -780,13 +710,13 @@ p.contact {
           z-index: 800;
           position: absolute;
           color: #fff;
-          font: 600 20px/25px Lato, sans-serif;
+          font: 600 1.25rem/1.5rem Lato, sans-serif;
           text-shadow: 0 2px 4px grey;
           text-transform: uppercase;
           top: -55px;
           left: 40px;
           @media(max-width: 1199.98px) {
-            font: 600 16px/25px Lato, sans-serif;
+            font: 600 1rem/1.5rem Lato, sans-serif;
             text-shadow: 0 4px 6px grey;
           }
         }
@@ -915,15 +845,13 @@ p.contact {
 
 
   .smart {
-    padding: 237px 15px 137px;
-    max-width: 741px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 740px;
+    margin:0 auto;
+    h3.title {
+      text-align: center;
+    }
     @media (max-width: 991.98px) {
       padding: 180px 50px 80px;
-      h3.title {
-        text-align: center;
-      }
     }
     @media (max-width: 767.98px) {
       padding: 180px 30px 80px;
@@ -939,7 +867,7 @@ p.contact {
           height: 60px;
         }
 
-        object {
+        img {
           @media (max-width: 575.98px) {
             max-height: 40px;
           }
@@ -992,24 +920,19 @@ p.contact {
   .over {
     overflow: hidden;
     position: relative;
-     img.sm_appImgFirst, img.sm_appImgSecond {
+
+    img.sm_appImgFirst, img.sm_appImgSecond {
       opacity: 0;
       position: absolute;
       width: 460px;
+      height: auto;
       /* ----------- Non-Retina Screens ----------- */
-      @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 1) { 
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
         width: 390px
       }
 
       /* ----------- Retina Screens ----------- */
-      @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (min-resolution: 192dpi) { 
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
         width: 390px
       }
       @media(max-width: 991.98px) {
@@ -1020,40 +943,33 @@ p.contact {
       }
     }
 
-  
-    img.sm_appImgFirst{
-      left:-4%;
+
+    img.sm_appImgFirst {
+      left: -4%;
       top: 0;
       /* ----------- Non-Retina Screens ----------- */
-      @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 1) { 
-        left: 0%;
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+        left: 0;
       }
 
       /* ----------- Retina Screens ----------- */
-      @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (min-resolution: 192dpi) { 
-        left: 0%;
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        left: 0;
       }
-      @media(max-width: 1199.98px){
+      @media(max-width: 1199.98px) {
         left: -13%;
       }
-      @media(max-width: 991.98px){
+      @media(max-width: 991.98px) {
         left: 22%;
       }
-      @media (min-width: 576px) and (max-width: 767.98px){
+      @media (min-width: 576px) and (max-width: 767.98px) {
         left: calc(30.5% - 100px);
       }
-      @media(max-width: 575.98px){
+      @media(max-width: 575.98px) {
         top: 15px;
         left: calc(41% - 100px);
       }
-      @media(max-width: 480.98px){
+      @media(max-width: 480.98px) {
         left: calc(37% - 100px);
       }
     }
@@ -1062,58 +978,52 @@ p.contact {
       left: 12%;
       top: 135px;
       /* ----------- Non-Retina Screens ----------- */
-      @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 1) { 
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
         left: 14%;
         top: 125px;
       }
 
       /* ----------- Retina Screens ----------- */
-      @media screen 
-      and (min-device-width: 1200px) 
-      and (max-device-width: 1600px) 
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (min-resolution: 192dpi) { 
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
         left: 14%;
         top: 125px;
       }
-      @media(max-width: 1199.98px){
+      @media(max-width: 1199.98px) {
         left: 3%;
       }
-      @media(max-width: 991.98px){
+      @media(max-width: 991.98px) {
         top: 110px;
         left: 30%;
-       }
-       @media (min-width: 576px) and (max-width: 767.98px){
+      }
+      @media (min-width: 576px) and (max-width: 767.98px) {
         left: calc(42% - 100px);
-       }
-       @media(max-width: 575.98px){
+      }
+      @media(max-width: 575.98px) {
         top: 95px;
         left: calc(50% - 100px);
-       }
-       @media(max-width: 480.98px){
+      }
+      @media(max-width: 480.98px) {
         left: calc(48% - 100px);
       }
     }
-  
+
     .animate.right {
       -webkit-animation-duration: 1s;
       -webkit-animation-fill-mode: both;
       -webkit-animation-name: fadeInRight;
-       animation-name: fadeInRight;
-       animation-duration: 1s;
-       animation-fill-mode: both;
+      animation-name: fadeInRight;
+      animation-duration: 1s;
+      animation-fill-mode: both;
     }
 
 
-    img.sm_appImgFirst.animate.right{
+    img.sm_appImgFirst.animate.right {
       -webkit-animation-delay: 1.5s;
       -moz-animation-delay: 1.5s;
       animation-delay: 1.5s;
     }
-    img.sm_appImgSecond.animate.right{
+
+    img.sm_appImgSecond.animate.right {
       -webkit-animation-delay: .5s;
       -moz-animation-delay: .5s;
       animation-delay: .5s;
@@ -1122,18 +1032,14 @@ p.contact {
     @keyframes fadeInRight {
       from {
         opacity: 0;
-        -webkit-transform: translate(-100%);
         transform: translate(-100%);
       }
-    
+
       to {
         opacity: 1;
-        -webkit-transform: none;
         transform: none;
       }
     }
-
-  
 
 
     .houseSmart {
@@ -1142,6 +1048,7 @@ p.contact {
         position: relative;
         z-index: 10;
         margin: 0 auto;
+
         .carousel-item {
           img {
             max-width: 100%;
@@ -1150,6 +1057,7 @@ p.contact {
             margin: 0 auto;
           }
         }
+
         @media (max-width: 991.98px) {
           max-width: 550px;
         }
@@ -1213,24 +1121,23 @@ p.contact {
     }
   }
 
-  
-  div.video-wrapper {
+  section:not([class]) {
     padding: 100px 0 0;
-   .embed-responsive {
-        max-width: 1920px;
-        margin: 0 auto;
+    margin-top: -100px;
+    & > div{
+      background: $global-background;
+      div.video-wrapper {
+        .embed-responsive {
+          max-width: 1920px;
+          margin: 0 auto;
+        }
+      }
     }
-  }  
+  }
+
 
   .app-strip {
-    padding: 268px 0 168px;
-    position: relative;
-    @media (max-width: 991.98px) {
-      padding: 180px 15px 138px;
-    }
-    @media (max-width: 567.98px){
-      padding: 180px 15px 166px;
-    }
+
 
     .appImgSecond {
       bottom: 200px;
@@ -1273,36 +1180,18 @@ p.contact {
     }
   }
 
-  .products-strip {
-    background: $global-background;
-    padding: 237px 0 237px;
-    @media(max-width: 1199.98px) {
-      padding: 110px 0 137px;
-    }
-    @media (max-width: 991.98px) {
-      padding: 80px 15px 86px;
-    }
-
+  section.products-strip {
+     background: $global-background;;
 
     svg .a, svg .b {
       stroke: #e72327;
     }
-    div.video-wrapper {
-      padding: 187px 15px 0;
-      @media(max-width: 1199.98px) {
-        padding: 90px 15px 0;
-      }
-      @media (max-width: 991.98px) {
-        padding: 70px 15px 0;
-      }
-    } 
+
+
     .products_title_box {
-      padding-bottom: 187px;
+      padding-bottom: 80px;
       @media(max-width: 1199.98px) {
-        padding-bottom: 70px;
-      }
-      @media (max-width: 991.98px) {
-        padding-bottom: 90px;
+        padding-bottom: 60px;
       }
       @media (max-width: 767.98px) {
         padding-bottom: 40px;
@@ -1318,74 +1207,83 @@ p.contact {
     h4 {
       margin-bottom: 30px;
     }
-    div.download_wrapper{
+
+    div.download_wrapper {
       margin-top: 30px;
       max-width: max-content;
-    
-      a.download{
+
+      a.download {
         text-decoration: none;
         display: flex;
         align-items: center;
-        svg{
-            fill: $global-text-gray;
-            transition: all .5s;
+
+        svg {
+          fill: $global-text-gray;
+          transition: all .5s;
         }
-        span{
+
+        span {
           color: $global-text-gray;
           font: 500 20px/20px Lato, sans-serif;
           padding-left: 5px;
           transition: all .5s;
         }
-        &:hover{
-          svg{
-              fill:#E6242F;
-              transition: all .7s;
+
+        &:hover {
+          svg {
+            fill: #E6242F;
+            transition: all .7s;
           }
-          span{
+
+          span {
             color: #E6242F;
             transition: all .7s;
           }
         }
       }
-  
-      a[type='button'].btn{
-        display:none;
+
+      a[type='button'].btn {
+        display: none;
         color: #fff;
         background-color: #E6242F;
         border-radius: 0;
         border-color: #E6242F;
         width: max-content;
         transition: all .5s;
-        &:hover{
+
+        &:hover {
           color: #E6242F;
           background-color: transparent;
           transition: all .7s;
         }
       }
-      @media (max-width: 974.98px){
+
+      @media (max-width: 974.98px) {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
       }
-      @media (max-width: 310px ){
-        a.download{
-          span{
+      @media (max-width: 310px) {
+        a.download {
+          span {
             font: 500 16px/20px Lato, sans-serif;
           }
         }
       }
     }
-    @media(max-width: 767.98px){
-     div.dubl{
+
+    @media(max-width: 767.98px) {
+      div.dubl {
         flex-direction: column;
-        div.download_wrapper:nth-last-child(1){
+
+        div.download_wrapper:nth-last-child(1) {
           margin-top: 15px;
         }
-     }
+      }
 
     }
 
-    button{
+    button {
       letter-spacing: .8px;
       text-transform: uppercase;
     }
@@ -1408,13 +1306,6 @@ p.contact {
   }
 
   .contact-strip {
-    padding: 263px 30px 168px;
-    @media (max-width: 991.98px) {
-      padding: 180px 30px 138px;
-    }
-    @media (max-width: 767.98px) {
-      padding: 180px 30px 56px;
-    }
     .form__error {
       color: $global-red;
       text-align: left;
@@ -1434,25 +1325,11 @@ p.contact {
     input:invalid:not(:placeholder-shown) + .form__error {
       display: block;
     }
-
-    button[type='submit'] {
-      border-radius: 0;
-      width: 265px;
-      height: 56px;
-      margin: 5px auto 30px;
-      display: block;
-      text-transform: uppercase;
-      background-color: $global-red;
-      font: 300 16px/19px 'Roboto', sans-serif;
-      letter-spacing: 0;
-      color: #FFFFFF;
-      @media (max-width: 379.98px) {
-        width: 235px;
-        height: 46px;
-      }
-    }
   }
 }
+
+
+
 
 .ru {
   #main {
@@ -1505,29 +1382,14 @@ p.contact {
 .pl, .en, .it {
   .smart {
     #carouselExampleIndicators {
-
-      height: 500px;
-      @media (max-width: 991.98px) {
-        height: 410px;
-      }
-      @media (max-width: 575.98px) {
-        height: 320px;
-      }
-      @media (max-width: 475.98px) {
-        height: 380px;
-      }
-      @media (max-width: 395.98px) {
-        height: 410px;
-      }
-      @media (max-width: 349.98px) {
-        height: 440px;
-      }
+      padding: 0 15px;
     }
   }
 }
-.en, .de, .pl, .fr, .it, .cs, .sk{
-  .sensor_button{
-    a.btn-lg:nth-child(1){
+
+.en, .de, .pl, .fr, .it, .cs, .sk {
+  .sensor_button {
+    a.btn-lg:nth-child(1) {
       margin-top: 30px !important;
       @media (max-width: 991.98px) {
         margin-top: 0 !important;
@@ -1552,13 +1414,15 @@ p.contact {
     }
   }
 }
-.en, .ru, .de, .fr, .it, .cs, .sk{
-  footer{
-    a:nth-child(3), a:nth-child(4), a:nth-last-child(1){
+
+.en, .ru, .de, .fr, .it, .cs, .sk {
+  footer {
+    a:nth-child(3), a:nth-child(4), a:nth-last-child(1) {
       display: none
     }
   }
 }
+
 .de, .fr {
   .smart {
     #carouselExampleIndicators {
@@ -1768,9 +1632,8 @@ button#back-to-top {
   border: none;
   outline: none;
   cursor: pointer;
-  //padding: 15px;
   border-radius: 50%;
-  @media(max-width: 567.98px){
+  @media(max-width: 567.98px) {
     font-size: 20px;
     width: 50px;
     height: 50px;

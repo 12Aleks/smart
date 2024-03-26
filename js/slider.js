@@ -1,52 +1,45 @@
 $(document).ready(function () {
-    //slider and dots
-
     const $mediaCarousel = $("#mediaCarousel");
-    $mediaCarousel.carousel({interval: false});
-    let slide = $mediaCarousel.find('.carousel-item');
-    let videos = document.querySelectorAll("video.video-fluid");
+    const slide = $mediaCarousel.find('.carousel-item');
+    const videos = document.querySelectorAll("video.video-fluid");
+
+    $mediaCarousel.carousel({ interval: false });
+    const playVideo = (video) => {
+        video.play();
+    };
+    const pauseVideo = (video) => {
+        video.pause();
+    };
+    const resetVideoTime = (video) => {
+        video.currentTime = 0;
+    };
 
     videos.forEach((video, index) => {
         if (index !== 0) {
-            video.pause();
+            pauseVideo(video);
         }
         video.addEventListener('ended', () => {
             $mediaCarousel.carousel('next');
         });
     });
 
-
     $mediaCarousel.on('slide.bs.carousel', function (event) {
-        let from = slide[event.from].querySelectorAll('video')[0];
-        let to = slide[event.to].querySelectorAll('video')[0];
-        let isPlaying = to.currentTime > 0 && to.readyState > 2;
+        const from = slide[event.from].querySelector('video');
+        const to = slide[event.to].querySelector('video');
 
-        to.play();
-
-        if (isPlaying) {
-            from.pause();
-        }
+        playVideo(to);
+        pauseVideo(from);
     });
-
 
     $('*[data-target="#mediaCarousel"]').click(function () {
         $mediaCarousel.on('slid.bs.carousel', function (event) {
-            let from = slide[event.from].querySelectorAll('video')[0];
-            let to = slide[event.to].querySelectorAll('video')[0];
-            let isPlaying = to.currentTime > 0 && to.readyState > 2;
+            const from = slide[event.from].querySelector('video');
+            const to = slide[event.to].querySelector('video');
 
-            to.play();
-
-            if (isPlaying) {
-                from.pause();
-            }
+            playVideo(to);
+            pauseVideo(from);
         });
 
-        videos.forEach( video => {
-            video.currentTime = 0
-        })
-
+        videos.forEach(resetVideoTime);
     });
-
-
 });
