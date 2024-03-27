@@ -127,7 +127,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/wizualizacja_new_en.jpg'
+        banner_visualization: './images/visualization_en.webp'
     },
     de: {
         description: 'Systembeschreibung',
@@ -255,7 +255,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDIZINPRODUKTEN',
         medical_link: 'https://www.termamed.pl/de',
-        banner_visualization: './images/wizualizacja_new_de.jpg'
+        banner_visualization: './images/visualization_de.webp'
     },
     ru: {
         description: 'Описание системы',
@@ -344,12 +344,10 @@ const langArr = {
         address: 'Czaple 100 80-298 Гданьск Польша',
         nip: 'NIP:583-10-18-844',
         regon: 'REGON: 190558447',
-        registration:
-            'Рег. № GIOŚ: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.',
+        registration: 'Рег. № GIOŚ: E0001379W I Sąd Rej. w Gdańsku, VIII Wydz. Gosp.',
         KRS: 'KRS № 0000069067',
         capital: 'Капитал: 2 360 500 PLN',
-        account:
-            'Номер банковского счета: ING Bank Slaski S.A. Филиал в Гданьске 88 1050 1764 1000 0023 0692 5997 ',
+        account: 'Номер банковского счета: ING Bank Slaski S.A. Филиал в Гданьске 88 1050 1764 1000 0023 0692 5997 ',
         form: 'Форма обратной связи',
         send: 'Отправить',
         terma: 'TERMA',
@@ -358,7 +356,6 @@ const langArr = {
         galvanizing: 'ГАЛЬВАНИЗАЦИЯ',
         medical: 'МЕДИЦИНСКИЕ ИЗДЕЛИЯ',
         sale: 'ПРОДАЖА РАДИАТОРОВ',
-
         thermostatic_head: 'Термостатическая головка',
         temperature_sensor: 'Датчик температуры',
         electric_heater: 'Электронагреватель',
@@ -386,7 +383,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'МЕДЕЦИНСКИЕ ИЗДЕЛИЯ',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/wizualizacja_new_ru.jpg'
+        banner_visualization: './images/visualization_ru.webp'
     },
     pl: {
         description: 'Opis systemu',
@@ -517,7 +514,7 @@ const langArr = {
         galwanic_link: 'http://www.termagalvanic.pl/',
         medical_text: 'PRODUKTY MEDYCZNE',
         medical_link: 'https://www.termamed.pl/',
-        banner_visualization: './images/wizualizacja_new.jpg'
+        banner_visualization: './images/visualization.webp'
     },
     fr: {
         description: 'Description',
@@ -648,7 +645,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/wizualizacja_new_fr.jpg'
+        banner_visualization: './images/visualization_fr.webp'
     },
     it: {
         description: 'Descrizione',
@@ -779,7 +776,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/wizualizacja_new_it.jpg'
+        banner_visualization: './images/visualization_it.webp'
     },
     cs: {
         description: 'Popis systému',
@@ -908,7 +905,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/wizualizacja_new_cz.jpg'
+        banner_visualization: './images/visualization_cz.webp'
     },
     sk: {
         description: 'Opis systému',
@@ -1036,7 +1033,7 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/wizualizacja_new_sk.jpg'
+        banner_visualization: './images/visualization_sk.webp'
     },
 };
 
@@ -1057,7 +1054,7 @@ let $translate = $('.translate');
 let $hostname = window.location.host.split('.')[
     window.location.host.split('.')[0].length > 2 ?  1 : 0
     ];
-console.log($hostname);
+
 let $lang = $hostname === 'com' || 'termasmart' ? 'pl' : $hostname;
 
 $('body').addClass($lang);

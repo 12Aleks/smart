@@ -47,6 +47,7 @@
                         </div>
                     </div>
                     <button id="menu" class="navbar-toggler" type="button" data-toggle="collapse"
+                            aria-label="Navbar toggle"
                             data-target="#collapsibleNavbar">
                         <div id="nav-icon">
                             <div></div>
@@ -212,9 +213,9 @@
                             </div>
                         </a>
                     </div>
-                    <img id='small' src="./images/wizualizacja_new.jpg" alt="wizualizacja" class="lan"
-                         key="banner_visualization"/>
-                    <img id='large' src="./images/room_new.jpg" alt="wizualizacja" width="1920" height="921"/>
+                    <img id='small' src="./images/visualization.webp" alt="visualization" class="lan"
+                         key="banner_visualization" width="1388" height="666" loading="lazy"/>
+                    <img id='large' src="./images/room.webp" alt="room" width="1920" height="921" loading="lazy"/>
                 </div>
             </div>
         </div>
@@ -332,7 +333,10 @@
             <div class="row">
                 <div class="col-lg-12 video-wrapper">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mcEElyB60RA" frameborder="0"
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/mcEElyB60RA"
+                                frameborder="0"
+                                title="System Terma Smart WI-FI"
                                 controls="0" loop="1"
                                 key="youtube"
                                 class="lan"
@@ -347,9 +351,9 @@
         <div id='aplikacja' class="container app-strip">
             <div class="row">
                 <div class="col-md-12 col-lg-5 positon-relative w-100 phone_wrapper">
-                    <img class="sm_appImgFirst animate" src="images/downloadApp/app_screen_small.png" alt="app first"
+                    <img class="sm_appImgFirst animate" src="images/downloadApp/app_screen_small.webp" alt="app first"
                          width="460" height="662" loading="lazy">
-                    <img class="sm_appImgSecond animate" src="images/downloadApp/app_screen_2_small.png"
+                    <img class="sm_appImgSecond animate" src="images/downloadApp/app_screen_2_small.webp"
                          alt="app second" width="460" height="662" loading="lazy">
                 </div>
                 <div class="col-md-12 col-lg-7">
@@ -640,13 +644,13 @@
                     <div class="form-group mb-4">
                         <textarea class="form-control" rows="6" name="user_message"></textarea>
                     </div>
-                    <button type="submit" class="btn"><span class="lan" key="send">Wyślij</span></button>
+                    <button type="submit" class="btn"><span class="lan" key="send" aria-label="Send form">Wyślij</span></button>
                 </form>
             </div>
         </div>
     </div>
 </section>
-<button id="back-to-top" title="Go to top" style="display: none">&#8593;</button>
+<button id="back-to-top" title="Go to top" style="display: none" aria-label="Scroll to top">&#8593;</button>
 <footer>
     <div class="container">
         <div class="row">
