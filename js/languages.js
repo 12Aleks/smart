@@ -1066,6 +1066,7 @@ $translate.each(function () {
 });
 
 $('.lan').each(function () {
+    
     if ($(this).attr('target')) {
         $(this).attr('href', langArr[$lang][$(this).attr('key')]);
     } else if ($(this).attr('src')) {
