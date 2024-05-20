@@ -1051,34 +1051,42 @@ let domains = {
 
 //translate
 let $translate = $('.translate');
-let $hostname = window.location.host.split('.')[
-    window.location.host.split('.')[0].length > 2 ?  1 : 0
-    ];
+let $hostname = window.location.host.split('.');
 
-let $lang = $hostname === 'com' || 'termasmart' ? 'pl' : $hostname;
+$hostname = $hostname[$hostname[0].length > 2 ? 1 : 0];
+
+let $lang = ($hostname === 'com' || $hostname === 'termasmart') ? 'pl' : $hostname;
 
 $('body').addClass($lang);
 
 $translate.each(function () {
-    $(this).attr('id') === $lang && $(this).addClass('active')
+    if ($(this).attr('id') === $lang) {
+        $(this).addClass('active');
+    }
 });
 
 $('.lan').each(function () {
-    $(this).attr('target')
-        ? $(this).attr('href', langArr[$lang][$(this).attr('key')])
-        :  $(this).attr('src') ?$(this).attr('src', langArr[$lang][$(this).attr('key')])
-        : $(this).text(langArr[$lang][$(this).attr('key')]);
-    $('#lang').val($lang)
+    if ($(this).attr('target')) {
+        $(this).attr('href', langArr[$lang][$(this).attr('key')]);
+    } else if ($(this).attr('src')) {
+        $(this).attr('src', langArr[$lang][$(this).attr('key')]);
+    } else {
+        $(this).text(langArr[$lang][$(this).attr('key')]);
+    }
+    $('#lang').val($lang);
 });
 
 $('#lang').change(function () {
     let values = $('#lang :selected').val();
-    $('body').removeAttr('class').addClass(values);
+    $('body').removeClass().addClass(values);
     $('.lan').each(function () {
-        $(this).attr('target')
-            ? $(this).attr('href', langArr[values][$(this).attr('key')])
-            :  $(this).attr('src')? $(this).attr('src', langArr[values][$(this).attr('key')])
-            : $(this).text(langArr[values][$(this).attr('key')])
+        if ($(this).attr('target')) {
+            $(this).attr('href', langArr[values][$(this).attr('key')]);
+        } else if ($(this).attr('src')) {
+            $(this).attr('src', langArr[values][$(this).attr('key')]);
+        } else {
+            $(this).text(langArr[values][$(this).attr('key')]);
+        }
     });
-    window.location.assign(`http://${domains[values]}`)
+    window.location.assign(`http://${domains[values]}`);
 });
