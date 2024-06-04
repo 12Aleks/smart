@@ -3,7 +3,7 @@ $(document).ready(function(){
         event.preventDefault();
 
         var formData = new FormData(this);
-        formData.append('service_id', 'sendgrid');
+        formData.append('service_id', 'service_ocq0gmt');
         formData.append('template_id', 'template_gpbIvHiT');
         formData.append('user_id', 'user_kFjNjnFycgYCgyF49YgH0');
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
             contentType: false,
             processData: false
         }).done(function () {
-            alert('Twoja wiadomość została wysłana!');
+            alert('Your message has been sent!');
             $('form input[type="email"], form input[type="tel"], form textarea').val('');
         }).fail(function (error) {
             alert('Oops... ' + JSON.stringify(error));

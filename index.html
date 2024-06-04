@@ -602,7 +602,9 @@
                             <iframe src="https://www.youtube.com/embed/GBxgnZmFi8Q" frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen
+                                    class="lan"
                                     title="Video 1"
+                                    key="youtubeFirst"
                                     loading="lazy">
                             </iframe>
                         </div>
@@ -613,6 +615,8 @@
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen
                                     title="Video 2"
+                                    key="youtubeSecond"
+                                    class="lan"
                                     loading="lazy">
                             </iframe>
                         </div>
@@ -631,15 +635,17 @@
             <div class="col-12 offset-lg-2 col-lg-8">
                 <form id="contact-form">
                     <div class="form-group">
-                        <input type="email" class="form-control" name="user_email"
+                        <input type="email" class="form-control lan" name="user_email"
                                placeholder="Adres e-mail*" required>
-                        <span class="form__error">To pole powinno zawierać E-Mail w formacie example@site.com</span>
+                        <span class="form__error" key="error_email">To pole powinno zawierać E-Mail w formacie example@site.com</span>
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" name="user_phone"
-                               placeholder="Telefon" pattern="[\+]\d{2}\s\d{3}\s\d{3}\s\d{3}" minlength="15"
-                               maxlength="15" required>
-                        <span class="form__error">To pole powinno zawierać numer telefonu w formacie +48 444 444 444</span>
+                        <input type="tel" class="form-control lan" name="user_phone"
+                               placeholder="Telefon"
+                               minlength="7"
+                               maxlength="15"
+                               required>
+                        <span class="form__error"  key="error_phone">To pole powinno zawierać numer telefonu</span>
                     </div>
                     <div class="form-group mb-4">
                         <textarea class="form-control" rows="6" name="user_message"></textarea>
@@ -688,15 +694,15 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 <!--My js-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+<script src="js/languages.js" defer></script>
+<script src="js/slider.js" defer></script>
+<script src="js/java.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
     (function () {
         emailjs.init('user_kFjNjnFycgYCgyF49YgH0');
     })();
 </script>
-<script src="js/slider.js" defer></script>
 <script src="js/sendForm.js" defer></script>
-<script src="js/java.js" defer></script>
-<script src="js/languages.js" defer></script>
 </body>
 </html>

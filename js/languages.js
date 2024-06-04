@@ -116,6 +116,8 @@ const langArr = {
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
         youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/_tq6otKpoLc',
         brochure_text: 'Download the new brochure',
         terma_text: 'TERMA',
         terma_link: 'http://en.termagroup.pl/',
@@ -127,7 +129,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/visualization_en.webp'
+        banner_visualization: './images/visualization_en.webp',
+        error_email: 'This field should contain E-Mail in the format example@site.com',
+        error_phone: 'Phone numbers cannot contain less than 7 or more than 15 digits'
     },
     de: {
         description: 'Systembeschreibung',
@@ -179,7 +183,7 @@ const langArr = {
             'Kann die Betriebsparameter des Systems flexibel ändern und die Temperatur erhöhen, wenn der Benutzer eine bestimmte Zone im Haus betritt oder sie wieder absenken, wenn er sie verlässt,',
         appParagraphSixth:
             'Ermöglicht die Integration beliebig vieler Heizgeräte und ist damit ideal für die Nutzung als Raumtemperatur-Management-System in Wohnungen und Appartements.',
-
+        appParagraphSeventh: '',
         productTitleFirst: 'Produkte arbeiten im Smart',
         productTitleSecond: 'System zusammen',
         veoTitle: 'Heizpatrone VEO',
@@ -243,7 +247,9 @@ const langArr = {
         VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
-        youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtube: 'https://www.youtube.com/embed/4nW9zYEYwWE',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/KTRKgGO9044',
         brochure_text: 'Laden Sie die neue Broschüre',
         terma_text: 'TERMA',
         terma_link: 'http://de.termagroup.pl/',
@@ -255,7 +261,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDIZINPRODUKTEN',
         medical_link: 'https://www.termamed.pl/de',
-        banner_visualization: './images/visualization_de.webp'
+        banner_visualization: './images/visualization_de.webp',
+        error_email: 'This field should contain E-Mail in the format example@site.com',
+        error_phone: 'Phone numbers cannot contain less than 7 or more than 15 digits'
     },
     ru: {
         description: 'Описание системы',
@@ -372,6 +380,8 @@ const langArr = {
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
         youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/I4pJfeqHFS0',
         brochure_text: 'Новая брошюра',
         terma_text: 'TERMA',
         terma_link: 'http://ru.termagroup.pl/',
@@ -383,7 +393,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'МЕДЕЦИНСКИЕ ИЗДЕЛИЯ',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/visualization_ru.webp'
+        banner_visualization: './images/visualization_ru.webp',
+        error_email: 'Это поле должно содержать адрес электронной почты в формате example@site.com',
+        error_phone: 'Номера телефонов не могут содержать менее 7 и более 15 цифр'
     },
     pl: {
         description: 'Opis systemu',
@@ -503,6 +515,8 @@ const langArr = {
         VOLTAN: './product_card/VOLTAN-v5_pl_20211129_cibto.pdf',
         brochure: './product_card/pl-termabroszurasmartwifi_20240322_cibto_0.pdf',
         youtube: 'https://www.youtube.com/embed/mcEElyB60RA',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/v-3UYI6LP6I',
         brochure_text: 'Pobierz nową broszurę',
         terma_text: 'TERMA SPÓŁKA',
         terma_link: 'http://www.termagroup.pl/',
@@ -514,7 +528,9 @@ const langArr = {
         galwanic_link: 'http://www.termagalvanic.pl/',
         medical_text: 'PRODUKTY MEDYCZNE',
         medical_link: 'https://www.termamed.pl/',
-        banner_visualization: './images/visualization.webp'
+        banner_visualization: './images/visualization.webp',
+        error_email: 'To pole powinno zawierać E-Mail w formacie example@site.com',
+        error_phone: 'Numery telefonów nie mogą zawierać mniej niż 7 i więcej niż 15 cyfr'
     },
     fr: {
         description: 'Description',
@@ -633,7 +649,9 @@ const langArr = {
         VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
-        youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtube: 'https://www.youtube.com/embed/yIVfgygQEWk',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/gsUoWuTb6Zk',
         brochure_text: 'Téléchargez la nouvelle brochure',
         terma_text: 'TERMA',
         terma_link: 'http://en.termagroup.pl/',
@@ -645,7 +663,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/visualization_fr.webp'
+        banner_visualization: './images/visualization_fr.webp',
+        error_email: 'This field should contain E-Mail in the format example@site.com',
+        error_phone: 'Phone numbers cannot contain less than 7 or more than 15 digits'
     },
     it: {
         description: 'Descrizione',
@@ -764,7 +784,9 @@ const langArr = {
         VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
-        youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtube: 'https://www.youtube.com/embed/2vsVIp-zQik',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/LUi54NnWeGo',
         brochure_text: 'Scarica la nuova brochure',
         terma_text: 'TERMA',
         terma_link: 'http://en.termagroup.pl/',
@@ -776,7 +798,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/visualization_it.webp'
+        banner_visualization: './images/visualization_it.webp',
+        error_email: 'This field should contain E-Mail in the format example@site.com',
+        error_phone: 'Phone numbers cannot contain less than 7 or more than 15 digits'
     },
     cs: {
         description: 'Popis systému',
@@ -893,7 +917,9 @@ const langArr = {
         VEO: './product_card/VEO-v6_EN_20211020_cibto.pdf',
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
-        youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtube: 'https://www.youtube.com/embed/b_c2tXnzWJ4',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/_tq6otKpoLc',
         brochure_text: 'Stáhněte si novou brožuru',
         terma_text: 'TERMA',
         terma_link: 'http://en.termagroup.pl/',
@@ -905,7 +931,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/visualization_cz.webp'
+        banner_visualization: './images/visualization_cz.webp',
+        error_email: 'This field should contain E-Mail in the format example@site.com',
+        error_phone: 'Phone numbers cannot contain less than 7 or more than 15 digits'
     },
     sk: {
         description: 'Opis systému',
@@ -1022,6 +1050,8 @@ const langArr = {
         VOLTAN: './product_card/VOLTAN-v1_en_20211213_cibto.pdf',
         brochure: './product_card/EN-termaBroszuraSmartWifi.pdf',
         youtube: 'https://www.youtube.com/embed/uUJVCaz7lKw',
+        youtubeFirst: 'https://www.youtube.com/embed/GBxgnZmFi8Q',
+        youtubeSecond: 'https://www.youtube.com/embed/_tq6otKpoLc',
         brochure_text: 'Stiahnite si novú brožúru',
         terma_text: 'TERMA',
         terma_link: 'http://en.termagroup.pl/',
@@ -1033,7 +1063,9 @@ const langArr = {
         galwanic_link: ' ',
         medical_text: 'MEDICAL PRODUCTS',
         medical_link: 'https://www.termamed.pl/en',
-        banner_visualization: './images/visualization_sk.webp'
+        banner_visualization: './images/visualization_sk.webp',
+        error_email: 'This field should contain E-Mail in the format example@site.com',
+        error_phone: 'Phone numbers cannot contain less than 7 or more than 15 digits'
     },
 };
 
@@ -1066,7 +1098,7 @@ $translate.each(function () {
 });
 
 $('.lan').each(function () {
-    
+
     if ($(this).attr('target')) {
         $(this).attr('href', langArr[$lang][$(this).attr('key')]);
     } else if ($(this).attr('src')) {
