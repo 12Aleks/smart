@@ -1437,8 +1437,8 @@ div.files_wrapper{
 }
 
 .en, .ru, .de, .fr, .it, .cs, .sk {
-  footer {
-    a:nth-child(3), a:nth-child(4), a:nth-last-child(1) {
+  footer, div.files_wrapper {
+    a:nth-child(3), a:nth-child(4), a:nth-last-child(1), a.cennik {
       display: none
     }
   }
