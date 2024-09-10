@@ -2,7 +2,7 @@
 /*Global color*/
 $global-red: #E72327;
 $global-text-gray: #303030;
-$global-background: #F9F9F9;
+$global-background: #f8f8f8;
 
 /*Global class*/
 section {
@@ -22,6 +22,9 @@ section {
 h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact {
   letter-spacing: 1px;
   color: $global-text-gray;
+  a{
+    color: $global-text-gray;
+  }
 }
 
 h1.title {
@@ -78,6 +81,16 @@ h4.subTitle, span.subTitle {
   @media (max-width: 325.98px) {
     font: 300 1rem/1.5rem 'Roboto', sans-serif;
   }
+}
+
+a.linkToContent:hover h4 {
+  color: $global-red;
+  transition: color .5s;
+}
+
+h4.subTitle.lan a.linkToContent:hover {
+  color: $global-red;
+  transition: color 0.5s;
 }
 
 h6.sm_title {
@@ -1216,7 +1229,7 @@ button[type='submit'] {
 
         span {
           color: $global-text-gray;
-          font: 500 20px/20px Lato, sans-serif;
+          font: 500 clamp(1.125rem, 2vw, 1.25rem)/20px Lato, sans-serif;
           padding-left: 5px;
           transition: all .5s;
         }
@@ -1263,6 +1276,8 @@ button[type='submit'] {
         }
       }
     }
+
+
 
     @media(max-width: 767.98px) {
       div.dubl {
@@ -1320,7 +1335,21 @@ button[type='submit'] {
   }
 }
 
-
+div.files_wrapper{
+  a.download{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    @media (max-width: 567.98px) {
+      max-width: 400px
+    }
+    span.text-dark{
+      font: 500 clamp(1.125rem, 2vw, 1.25rem) / 20px Lato, sans-serif;
+    }
+  
+  }
+}
 
 
 .ru {

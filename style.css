@@ -6,7 +6,8 @@ section {
 }
 
 #mediaCarousel video {
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   height: auto;
   max-width: 550px;
@@ -16,6 +17,9 @@ section {
 
 h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact {
   letter-spacing: 1px;
+  color: #303030;
+}
+h1.title a, h3.title a, h4.subTitle a, h6.sm_title a, span.subTitle a, ul.descriptions li a, p.descriptions a, p.contact a {
   color: #303030;
 }
 
@@ -103,6 +107,16 @@ h4.subTitle, span.subTitle {
   }
 }
 
+a.linkToContent:hover h4 {
+  color: #E72327;
+  transition: color 0.5s;
+}
+
+h4.subTitle.lan a.linkToContent:hover {
+  color: #E72327;
+  transition: color 0.5s;
+}
+
 h6.sm_title {
   font: 500 1.25rem/1.5rem "Roboto", sans-serif;
 }
@@ -125,7 +139,7 @@ ul.descriptions li, p.descriptions {
     font: 300 1.3rem/1.6rem "Roboto", sans-serif;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   ul.descriptions li, p.descriptions {
     font: 300 1.3rem/1.6rem "Roboto", sans-serif;
   }
@@ -194,8 +208,7 @@ button[type=submit] {
 #navigation {
   background-color: rgba(255, 255, 255, 0.99);
   box-shadow: 0 0 3px 0 #ebebeb;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
   transform: translateZ(0) translateY(0);
   width: 100%;
   top: 0;
@@ -209,7 +222,6 @@ button[type=submit] {
   }
 }
 #navigation.fold-active {
-  -ms-transform: translateZ(0) translateY(-114px);
   transform: translateZ(0) translateY(-114px);
 }
 #navigation #lang {
@@ -297,7 +309,7 @@ button[type=submit] {
   padding: 0;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 1px solid #303030;
   border-radius: 0.25rem;
 }
@@ -446,7 +458,8 @@ button[type=submit] {
 }
 #main .banner-strip .dg-wrapper video {
   -webkit-backface-visibility: hidden;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   height: auto;
   max-width: 550px;
@@ -633,9 +646,6 @@ button[type=submit] {
   position: absolute;
   top: 5px;
   left: 0;
-  -moz-animation: hand 0.8s;
-  -o-animation: hand 3s;
-  -webkit-animation: hand 3s;
   animation: hand 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -643,17 +653,14 @@ button[type=submit] {
 @keyframes hand {
   0%, 50%, 100% {
     left: 0;
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   25% {
     left: -10px;
-    -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
   75% {
     left: 10px;
-    -ms-transform: rotate(5deg);
     transform: rotate(5deg);
   }
 }
@@ -683,27 +690,15 @@ button[type=submit] {
   }
 }
 #main .room-strip .row .img-room .wrapper-window-sensor .round {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
   animation-delay: 1s;
 }
 #main .room-strip .row .img-room .wrapper-heating .round {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
   animation-delay: 2s;
 }
 #main .room-strip .row .img-room .wrapper-sensor .round {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
   animation-delay: 3s;
 }
 #main .room-strip .row .img-room .wrapper-heating .round {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
   animation-delay: 4s;
 }
 #main .room-strip .row .img-room .round {
@@ -822,28 +817,14 @@ button[type=submit] {
     left: -140px;
   }
 }
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: inset 0 0 0 0 white;
-  }
-  70% {
-    -webkit-box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.3);
-  }
-  100% {
-    -webkit-box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
-  }
-}
 @keyframes pulse {
   0% {
-    -moz-box-shadow: inset 0 0 0 0 white;
-    box-shadow: inset 0 0 0 0 white;
+    box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
   }
   70% {
-    -moz-box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.3);
     box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.3);
   }
   100% {
-    -moz-box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
     box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
@@ -913,7 +894,6 @@ button[type=submit] {
 }
 #main .smart .carousel-indicators li {
   box-sizing: content-box;
-  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 155px;
   height: 3px;
@@ -954,7 +934,7 @@ button[type=submit] {
     width: 390px;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #main .over img.sm_appImgFirst, #main .over img.sm_appImgSecond {
     width: 390px;
   }
@@ -980,7 +960,7 @@ button[type=submit] {
     left: 0;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #main .over img.sm_appImgFirst {
     left: 0;
   }
@@ -1023,7 +1003,7 @@ button[type=submit] {
     top: 125px;
   }
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #main .over img.sm_appImgSecond {
     left: 14%;
     top: 125px;
@@ -1059,19 +1039,14 @@ button[type=submit] {
 #main .over .animate.right {
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both;
-  -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 #main .over img.sm_appImgFirst.animate.right {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 #main .over img.sm_appImgSecond.animate.right {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 @keyframes fadeInRight {
@@ -1135,7 +1110,6 @@ button[type=submit] {
 }
 #main .over .houseSmart .app_img_box #carouselExampleIndicators2.carousel-fade ol.carousel-indicators li {
   box-sizing: content-box;
-  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 155px;
   height: 3px;
@@ -1164,7 +1138,7 @@ button[type=submit] {
   margin-top: -100px;
 }
 #main section:not([class]) > div {
-  background: #F9F9F9;
+  background: #f8f8f8;
 }
 #main section:not([class]) > div div.video-wrapper .embed-responsive {
   max-width: 1920px;
@@ -1219,7 +1193,7 @@ button[type=submit] {
   margin-left: auto;
 }
 #main section.products-strip {
-  background: #F9F9F9;
+  background: #f8f8f8;
 }
 #main section.products-strip svg .a, #main section.products-strip svg .b {
   stroke: #e72327;
@@ -1247,6 +1221,7 @@ button[type=submit] {
 }
 #main section.products-strip div.download_wrapper {
   margin-top: 30px;
+  max-width: -moz-max-content;
   max-width: max-content;
 }
 #main section.products-strip div.download_wrapper a.download {
@@ -1260,7 +1235,7 @@ button[type=submit] {
 }
 #main section.products-strip div.download_wrapper a.download span {
   color: #303030;
-  font: 500 20px/20px Lato, sans-serif;
+  font: 500 clamp(1.125rem, 2vw, 1.25rem)/20px Lato, sans-serif;
   padding-left: 5px;
   transition: all 0.5s;
 }
@@ -1278,6 +1253,7 @@ button[type=submit] {
   background-color: #E6242F;
   border-radius: 0;
   border-color: #E6242F;
+  width: -moz-max-content;
   width: max-content;
   transition: all 0.5s;
 }
@@ -1333,14 +1309,38 @@ button[type=submit] {
   margin-top: 3px;
   display: none;
 }
+#main .contact-strip input:valid:not(:-moz-placeholder-shown) {
+  border-color: green;
+}
 #main .contact-strip input:valid:not(:placeholder-shown) {
   border-color: green;
+}
+#main .contact-strip input:invalid:not(:-moz-placeholder-shown) {
+  border-color: #E72327;
 }
 #main .contact-strip input:invalid:not(:placeholder-shown) {
   border-color: #E72327;
 }
+#main .contact-strip input:invalid:not(:-moz-placeholder-shown) + .form__error {
+  display: block;
+}
 #main .contact-strip input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
+}
+
+div.files_wrapper a.download {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 567.98px) {
+  div.files_wrapper a.download {
+    max-width: 400px;
+  }
+}
+div.files_wrapper a.download span.text-dark {
+  font: 500 clamp(1.125rem, 2vw, 1.25rem)/20px Lato, sans-serif;
 }
 
 .ru #main .room-strip .row .img-room .wrapper-heating span {
@@ -1517,11 +1517,11 @@ footer .navbar a {
   font: 500 1rem/1.5rem "Roboto", sans-serif;
 }
 footer .navbar a:hover {
-  color: #f7dbd4;
+  color: rgb(247, 219, 212);
   transition: all 0.3s ease-in-out;
 }
 footer .navbar a .active {
-  color: #f7dbd4;
+  color: rgb(247, 219, 212);
   transition: all 0.3s ease-in-out;
 }
 footer .navbar:nth-child(1) {
@@ -1532,8 +1532,6 @@ button#back-to-top {
   display: none;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0 0 3px 0 slategrey;
-  -moz-box-shadow: 0 0 3px 0 slategray;
   box-shadow: 0 0 3px 0 slategrey;
   background-color: #dc604d;
   color: white;
@@ -1556,6 +1554,4 @@ button#back-to-top {
     width: 50px;
     height: 50px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
