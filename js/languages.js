@@ -81,7 +81,8 @@ const langArr = {
         radiatorSecond:
             'Basic settings are available through the panel on the device, and the full functionality of the system is supported by the TERMA Smart mobile application. The device works with window opening sensors and an additional temperature and humidity sensor from the SMART series.',
 
-        sensorTitle: 'Sensors VTS and VWS',
+        sensorTitle: 'Sensors ',
+        sensorandTitle: ' and ',
         sensorFirst:
             'VTS temperature and humidity sensor. An easy-to-install dual-function sensor constantly monitors the temperature and humidity in the room, sending information to the heating devices as soon as the temperature in the controlled zone changes by half a degree. ',
         sensorSecond:
@@ -222,7 +223,8 @@ const langArr = {
         radiatorSecond:
             'Grundlegende Regelungen sind über das Bedienfeld auf dem Gerät verfügbar und die volle Funktionalität des Systems wird durch die mobile Anwendung TERMA Smart unterstützt. Das Gerät arbeitet mit "Geöffnete Fenster" Sensoren und zusätzlichen Temperatur- und Feuchtigkeitssensoren der SMART-Serie zusammen.',
 
-        sensorTitle: 'Temperatursonsoren VTS und VWS',
+        sensorTitle: 'Temperatursonsoren ',
+        sensorandTitle: ' und ',
         sensorFirst:
             'Sensoren Temperatursensor und Feuchtigkeitssensor VTS. Der einfach zu montierende Doppelfunktionssensor überwacht permanent Raumtemperatur und Luftfeuchtigkeit. Er sendet Informationen an die Heizgeräte, sobald sich die Temperatur in der kontrollierten Zone nur um ein halbes Grad verändert.',
         sensorSecond:
@@ -367,7 +369,8 @@ const langArr = {
         radiatorSecond:
             'Основные настройки доступны через панель на устройстве, а полную функциональность системы поддерживает мобильное приложение Terma Smart. Устройство работает с датчиками открытия окна и дополнительным датчиком температуры и влажности серии SMART.',
 
-        sensorTitle: 'Датчики VTS и VWS',
+        sensorTitle: 'Датчики ',
+        sensorandTitle: ' и ',
         sensorFirst:
             'Датчик температуры и влажности VTS. Простой в установке двухфункциональный датчик постоянно контролирует температуру и влажность в помещении, отправляя информацию в отопительные приборы, как только температура в контролируемой зоне изменяется на полградуса. ',
         sensorSecond:
@@ -509,7 +512,8 @@ const langArr = {
         radiatorSecond:
             'Podstawowe regulacje dostępne są poprzez panel na urządzeniu, a pełną funkcjonalność systemu obsługuje aplikacja mobilna TERMA Smart. Urządzenie współpracuje z czujnikami otwarcia okna oraz dodatkowym czujnikiem temperatury i wilgotności serii SMART.',
 
-        sensorTitle: 'Czujniki VTS i VWS',
+        sensorTitle: 'Czujniki ',
+        sensorandTitle: ' i ',
         sensorFirst:
             'Czujnik temperatury i wilgotności VTS. Łatwy w montażu dwufunkcyjny czujnik stale monitoruje temperaturę i wilgotność w pomieszczeniu, wysyłając informacje do urządzeń grzewczych, jeśli tylko temperatura w kontrolowanej strefie zmieni się o pół stopnia.',
         sensorSecond:
@@ -654,7 +658,8 @@ const langArr = {
         radiatorSecond:
             "Les paramètres de base sont disponibles via le panneau l'appareil et toutes les fonctionnalités du système sont prises en charge par l'application du mobile TERMA Smart, L'appareil fonctionne avec des capteurs d'ouverture de fenêtre et un capteur de température d'humidité dans la série Smart.",
 
-        sensorTitle: 'Capteurs',
+        sensorTitle: 'Capteurs ',
+        sensorandTitle: ' et ',
         sensorFirst:
             "Capteur de température et d'humidité VTS. Le capteur a une double fonction facile à installer , il surveille en permanence la tempèrature et l'humiditéde la pièce et envoie des informations aux appareils de chauffage dès que la température dans la zone change d'un demi-degré.",
         sensorSecond:
@@ -799,7 +804,8 @@ const langArr = {
         radiatorSecond:
             "Le impostazioni di base sono disponibili tramite il pannello sul dispositivo e la piena funzionalità del sistema è supportata dall'applicazione mobile TERMA Smart. Il dispositivo funziona con sensori di apertura finestra e un sensore aggiuntivo di temperatura e umidità della serie SMART.",
 
-        sensorTitle: 'Sensors VTS et VWS',
+        sensorTitle: 'Sensors ',
+        sensorandTitle: ' et ',
         sensorFirst:
             "Sensore di temperatura e umidità VTS. Un sensore a doppia funzione di facile installazione monitora costantemente la temperatura e l'umidità nell'ambiente, inviando informazioni ai dispositivi di riscaldamento non appena la temperatura nella zona controllata cambia di mezzo grado.",
         sensorSecond:
@@ -942,7 +948,8 @@ const langArr = {
         radiatorSecond:
             'Základní regulace jsou k dispozici na panelu zařízení a mobilní aplikace TERMA Smart podporuje plnou funkčnost systému. Zařízení pracuje se senzory otevírání oken a dalším senzorem teploty a vlhkosti ze série SMART.',
 
-        sensorTitle: 'Čidla',
+        sensorTitle: 'Čidla ',
+        sensorandTitle: ' a ',
         sensorFirst:
             'Senzory VTS snímače teploty a vlhkosti. Snadno instalovatelný dvoufunkční senzor neustále sleduje teplotu a vlhkost v místnosti a odesílá informace do topných zařízení, jakmile se teplota v kontrolované zóně změní o půl stupně.',
         sensorSecond:
@@ -1085,7 +1092,8 @@ const langArr = {
         radiatorSecond:
             'Základné regulácie sú k dispozícii na paneli zariadenia a mobilné aplikácie TERMA Smart podporuje plnú funkčnosť systému. Zariadenie pracuje so senzormi otváranie okien a ďalším senzorom teploty a vlhkosti zo série SMART.',
 
-        sensorTitle: 'Čidlá',
+        sensorTitle: 'Čidlá ',
+        sensorandTitle: ' a ',
         sensorFirst:
             'Senzory VTS snímače teploty a vlhkosti. Ľahko inštalovateľný dvoufunkční senzor neustále monitoruje teplotu a vlhkosť v miestnosti a odosiela informácie do vykurovacích zariadení, akonáhle sa teplota v kontrolovanej zóne zmení o pol stupňa.',
         sensorSecond:
