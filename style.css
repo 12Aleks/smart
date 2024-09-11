@@ -15,11 +15,11 @@ section {
   display: block;
 }
 
-h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact {
+h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact, tr, td {
   letter-spacing: 1px;
   color: #303030;
 }
-h1.title a, h3.title a, h4.subTitle a, h6.sm_title a, span.subTitle a, ul.descriptions li a, p.descriptions a, p.contact a {
+h1.title a, h3.title a, h4.subTitle a, h6.sm_title a, span.subTitle a, ul.descriptions li a, p.descriptions a, p.contact a, tr a, td a {
   color: #303030;
 }
 
@@ -148,6 +148,14 @@ ul.descriptions li, p.descriptions {
   ul.descriptions li, p.descriptions {
     font: 300 clamp(0.95rem, 2vw, 1rem)/clamp(1.3rem, 10vh, 1.4rem) "Roboto", sans-serif;
   }
+}
+
+tr, td, th, capiton {
+  font: 300 clamp(0.85rem, 1vw, 1rem)/clamp(1.3rem, 1vw, 1.4rem) "Roboto", sans-serif;
+}
+
+th {
+  font-weight: 500;
 }
 
 p.descriptions span {
@@ -1328,6 +1336,12 @@ button[type=submit] {
   display: block;
 }
 
+div.files_wrapper .table-responsive {
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
 div.files_wrapper a.download {
   max-width: 550px;
   width: 100%;
@@ -1402,7 +1416,7 @@ div.files_wrapper a.download span.text-dark {
   width: 185px;
 }
 
-.en div.files_wrapper a.cennik, .ru div.files_wrapper a.cennik, .de div.files_wrapper a.cennik, .fr div.files_wrapper a.cennik, .it div.files_wrapper a.cennik, .cs div.files_wrapper a.cennik, .sk div.files_wrapper a.cennik {
+.en div.files_wrapper a.cennik, .en div.files_wrapper .table-responsive.cennik, .ru div.files_wrapper a.cennik, .ru div.files_wrapper .table-responsive.cennik, .de div.files_wrapper a.cennik, .de div.files_wrapper .table-responsive.cennik, .fr div.files_wrapper a.cennik, .fr div.files_wrapper .table-responsive.cennik, .it div.files_wrapper a.cennik, .it div.files_wrapper .table-responsive.cennik, .cs div.files_wrapper a.cennik, .cs div.files_wrapper .table-responsive.cennik, .sk div.files_wrapper a.cennik, .sk div.files_wrapper .table-responsive.cennik {
   display: none;
 }
 .en footer a:nth-child(3), .en footer a:nth-child(4), .en footer a:nth-last-child(1), .ru footer a:nth-child(3), .ru footer a:nth-child(4), .ru footer a:nth-last-child(1), .de footer a:nth-child(3), .de footer a:nth-child(4), .de footer a:nth-last-child(1), .fr footer a:nth-child(3), .fr footer a:nth-child(4), .fr footer a:nth-last-child(1), .it footer a:nth-child(3), .it footer a:nth-child(4), .it footer a:nth-last-child(1), .cs footer a:nth-child(3), .cs footer a:nth-child(4), .cs footer a:nth-last-child(1), .sk footer a:nth-child(3), .sk footer a:nth-child(4), .sk footer a:nth-last-child(1) {

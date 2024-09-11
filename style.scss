@@ -19,7 +19,7 @@ section {
     display: block;
   }
 }
-h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact {
+h1.title, h3.title, h4.subTitle, h6.sm_title, span.subTitle, ul.descriptions li, p.descriptions, p.contact, tr, td {
   letter-spacing: 1px;
   color: $global-text-gray;
   a{
@@ -118,6 +118,13 @@ ul.descriptions li, p.descriptions {
   @media (max-width: 991.98px) {
     font: 300 clamp(.95rem, 2vw, 1rem)/clamp(1.3rem, 10vh, 1.4rem) 'Roboto', sans-serif;
   }
+}
+
+tr, td, th, capiton{
+  font: 300 clamp(.85rem, 1vw, 1rem)/clamp(1.3rem, 1vw, 1.4rem) 'Roboto', sans-serif;
+}
+th{
+  font-weight: 500;
 }
 
 p.descriptions {
@@ -1329,6 +1336,7 @@ button[type='submit'] {
       border-color: $global-red;
     }
 
+
     input:invalid:not(:placeholder-shown) + .form__error {
       display: block;
     }
@@ -1336,6 +1344,12 @@ button[type='submit'] {
 }
 
 div.files_wrapper{
+  .table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+   }
   a.download{
     max-width: 550px;
     width: 100%;
@@ -1438,7 +1452,7 @@ div.files_wrapper{
 
 .en, .ru, .de, .fr, .it, .cs, .sk {
   div.files_wrapper {
-    a.cennik {
+    a.cennik, .table-responsive.cennik {
       display: none
     }
   }
