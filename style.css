@@ -112,7 +112,7 @@ a.linkToContent:hover h4 {
   transition: color 0.5s;
 }
 
-h4.subTitle.lan a.linkToContent:hover {
+h4.subTitle a.linkToContent:hover {
   color: #E72327;
   transition: color 0.5s;
 }
