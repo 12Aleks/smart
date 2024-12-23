@@ -1622,32 +1622,57 @@ div.files_wrapper{
 }
 
 footer {
-  background-color: $global-red;
-
-  .navbar {
-    width: 100%;
-
+  section.psti-link, section.outside-links{
     a {
-      display: block;
+
       color: #f2f2f2;
-      padding: 10px 8px;
+
       text-decoration: none;
       text-align: center;
       font: 500 1rem/1.5rem 'Roboto', sans-serif;
-
-      &:hover {
-        color: rgb(247, 219, 212);
-        transition: all 0.3s ease-in-out;
-      }
-
-      .active {
-        color: rgb(247, 219, 212);
-        transition: all 0.3s ease-in-out;
+    }
+  }
+  section.psti-link{
+    background-color: #dc604d;
+    text-align: center;
+    display: none;
+    a{
+      &:hover, &:active{
+        color: $global-red;
       }
     }
+  }
+  section.outside-links{
+    background-color: $global-red;
 
-    &:nth-child(1) {
-      padding: 10px 8px 10px 0;
+    .navbar {
+      width: 100%;
+
+      a {
+        display: block;
+        padding: 10px 8px;
+        &:hover {
+          color: rgb(247, 219, 212);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .active {
+          color: rgb(247, 219, 212);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      &:nth-child(1) {
+        padding: 10px 8px 10px 0;
+      }
+    }
+  }
+}
+
+.en{
+  footer{
+    section.psti-link{
+      display: block;
     }
   }
 }
