@@ -1674,6 +1674,10 @@ footer {
     section.psti-link, section.psti-link a:nth-last-child(1){
       display: block;
     }
+    section.psti-link a:nth-last-child(1){
+      width: fit-content;
+      margin: auto;
+    }
   }
 }
 

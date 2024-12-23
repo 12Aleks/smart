@@ -1586,6 +1586,10 @@ footer section.outside-links .navbar:nth-child(1) {
 .en footer section.psti-link, .en footer section.psti-link a:nth-last-child(1) {
   display: block;
 }
+.en footer section.psti-link a:nth-last-child(1) {
+  width: fit-content;
+  margin: auto;
+}
 
 button#back-to-top {
   display: none;
