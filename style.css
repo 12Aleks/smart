@@ -1583,7 +1583,7 @@ footer section.outside-links .navbar:nth-child(1) {
   padding: 10px 8px 10px 0;
 }
 
-.en footer section.psti-link {
+.en footer section.psti-link, .en footer section.psti-link a:nth-last-child(1) {
   display: block;
 }
 

@@ -1671,7 +1671,7 @@ footer {
 
 .en{
   footer{
-    section.psti-link{
+    section.psti-link, section.psti-link a:nth-last-child(1){
       display: block;
     }
   }
