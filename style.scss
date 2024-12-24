@@ -1634,15 +1634,17 @@ footer {
     background-color: #dc604d;
     text-align: center;
     a{
-      width: 49%;
+      max-width: 48%;
+      width: 100%;
+      margin: 0 10px;
       &:hover, &:active{
         color: $global-red;
       }
-      //&.psti-link{
-      //  display: none;
-      //}
+      &.psti-link{
+        display: none;
+      }
       @media(max-width: 991.98px) {
-        width: 100%;
+        max-width: 100%;
       }
     }
   }
