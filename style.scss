@@ -1622,23 +1622,27 @@ div.files_wrapper{
 }
 
 footer {
-  section.psti-link, section.outside-links{
+  section.security-links, section.outside-links{
     a {
-
       color: #f2f2f2;
-
       text-decoration: none;
       text-align: center;
       font: 500 1rem/1.5rem 'Roboto', sans-serif;
     }
   }
-  section.psti-link{
+  section.security-links{
     background-color: #dc604d;
     text-align: center;
-    display: none;
     a{
+      width: 49%;
       &:hover, &:active{
         color: $global-red;
+      }
+      &.psti-link{
+        display: none;
+      }
+      @media(max-width: 991.98px) {
+        width: 100%;
       }
     }
   }
@@ -1671,10 +1675,13 @@ footer {
 
 .en{
   footer{
-    section.psti-link, section.psti-link a:nth-last-child(1){
+    section.security-links, section.security-links a:nth-last-child(1){
       display: block;
+      &.psti-link{
+        display: block;
+      }
     }
-    section.psti-link a:nth-last-child(1){
+    section.security-links a:nth-last-child(1){
       width: fit-content;
       margin: auto;
     }
