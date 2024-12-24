@@ -1638,9 +1638,9 @@ footer {
       &:hover, &:active{
         color: $global-red;
       }
-      &.psti-link{
-        display: none;
-      }
+      //&.psti-link{
+      //  display: none;
+      //}
       @media(max-width: 991.98px) {
         width: 100%;
       }
@@ -1682,7 +1682,7 @@ footer {
       }
     }
     section.security-links a:nth-last-child(1){
-      width: fit-content;
+      //width: fit-content;
       margin: auto;
     }
   }

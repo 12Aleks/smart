@@ -1563,9 +1563,6 @@ footer section.security-links a {
 footer section.security-links a:hover, footer section.security-links a:active {
   color: #E72327;
 }
-footer section.security-links a.psti-link {
-  display: none;
-}
 @media (max-width: 991.98px) {
   footer section.security-links a {
     width: 100%;
@@ -1600,7 +1597,6 @@ footer section.outside-links .navbar:nth-child(1) {
   display: block;
 }
 .en footer section.security-links a:nth-last-child(1) {
-  width: fit-content;
   margin: auto;
 }
 
